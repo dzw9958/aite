@@ -1,0 +1,31 @@
+@charset "utf-8";
+html,body{background:#ffffff;color:#333333;-webkit-user-select:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-touch-callout:none;-webkit-touch-callout:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}
+body,button,input,select,textarea {font:14px \5b8b\4f53,'Helvetica Neue',Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif\"Microsoft YaHei"\"微软雅黑";}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}/*阻止旋转屏幕时自动调整字体大小*/
+textarea{resize:none;}
+/*取消按钮在inphone上的默认样式*/
+input[type=button]{-webkit-appearance:none;outline:none} 
+input::-webkit-input-placeholder{color:#ffffff;}
+textarea::-webkit-input-placeholder{color:#ffffff;}
+input::-webkit-input-speech-button {display:none}
+table {border-collapse:collapse;border-spacing:0;}
+th {text-align:inherit;}
+fieldset,img {border:none;}
+abbr,acronym {border:none;font-variant:normal;}
+del {text-decoration:line-through;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup {top:-0.5em;}
+sub {bottom:-0.25em;}
+ins,a,a:hover {text-decoration:none;}
+a:focus,*:focus {outline:none;}
+.clearfix {zoom:1;}
+/*布局*/
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}

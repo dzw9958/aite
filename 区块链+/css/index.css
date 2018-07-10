@@ -1,0 +1,532 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a img {
+  width: 100%;
+  height: auto;
+}
+/*
+* 以下板块通用标题
+*/
+.common_title {
+  margin: auto;
+  padding: 65px 0 85px;
+  width: 1200px;
+  height: auto;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+}
+.common_title h1 span {
+  color: #0092dd;
+}
+/*
+* 区块链的野蛮生长,给世界带来的三大巨变板块
+*/
+.change_contain {
+  margin: auto;
+  margin-bottom: 85px;
+  width: 1200px;
+  height: auto;
+}
+.change_contain .change_box {
+  width: 1200px;
+  height: 289px;
+}
+.change_contain .change_box li {
+  float: left;
+  margin-left: 24px;
+  padding: 23px 37px 0;
+  width: 310px;
+  height: 266px;
+}
+.change_contain .change_box li i {
+  display: block;
+  margin: 0 auto 35px;
+  width: 64px;
+  height: 64px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.change_contain .change_box li h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.change_contain .change_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+}
+.change_contain .change_box li:nth-child(1) {
+  margin-left: 0;
+}
+.change_contain .change_box li:nth-child(1) i {
+  background-position: -344px 0;
+}
+.change_contain .change_box li:nth-child(2) i {
+  background-position: -410px 0;
+}
+.change_contain .change_box li:nth-child(3) i {
+  background-position: -476px 0;
+}
+.change_contain .change_box li:hover {
+  -webkit-box-shadow: 1px 0 21px 0 #d0ebf9;
+  box-shadow: 1px 0 21px 0 #d0ebf9;
+}
+/*
+* 区块链+板块
+*/
+.chain_contain {
+  width: 100%;
+  height: 688px;
+  background-color: #5e6d74;
+}
+.chain_contain .common_title h1 {
+  color: #ffffff;
+}
+.chain_contain .chain_box {
+  margin: auto;
+  width: 1200px;
+  height: 440px;
+}
+.chain_contain .chain_box li {
+  position: relative;
+  bottom: 0;
+  float: left;
+  width: 300px;
+  height: 440px;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.chain_contain .chain_box li .chain_bg {
+  width: 100%;
+  height: 100%;
+}
+.chain_contain .chain_box li .chain_over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 440px;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.chain_contain .chain_box li .chain_over i {
+  display: block;
+  margin: 117px auto 45px;
+  width: 83px;
+  height: 85px;
+  background: url(../img/index/elves.png) no-repeat;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.chain_contain .chain_box li .chain_over h2 {
+  margin-bottom: 35px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+.chain_contain .chain_box li .chain_over p {
+  margin: auto;
+  margin-bottom: 15px;
+  height: 0;
+  line-height: 18px;
+  font-size: 16px;
+  color: #ffffff;
+  overflow: hidden;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.chain_contain .chain_box li .chain_over p b {
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-right: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.chain_contain .chain_box li:nth-child(1) .chain_over i {
+  background-position: 0 0;
+}
+.chain_contain .chain_box li:nth-child(1) .chain_over p {
+  width: 126px;
+}
+.chain_contain .chain_box li:nth-child(2) .chain_over i {
+  background-position: -83px 0;
+}
+.chain_contain .chain_box li:nth-child(2) .chain_over p {
+  width: 170px;
+}
+.chain_contain .chain_box li:nth-child(3) .chain_over i {
+  background-position: -166px 0;
+}
+.chain_contain .chain_box li:nth-child(3) .chain_over p {
+  width: 170px;
+}
+.chain_contain .chain_box li:nth-child(4) .chain_over i {
+  background-position: -249px 0;
+}
+.chain_contain .chain_box li:nth-child(4) .chain_over p {
+  width: 154px;
+}
+.chain_contain .chain_box li:hover {
+  bottom: 17px;
+}
+.chain_contain .chain_box li:hover .chain_over {
+  background-color: #1f86b9;
+}
+.chain_contain .chain_box li:hover .chain_over i {
+  margin-top: 38px;
+}
+.chain_contain .chain_box li:hover .chain_over p {
+  height: 18px;
+}
+/*
+* 区块链行业需要的六大安全能力板块
+*/
+.safety_contain {
+  width: 100%;
+  height: 777px;
+  background-color: #f9f9f9;
+}
+.safety_contain .safety_box {
+  margin: auto;
+  width: 1200px;
+  height: 520px;
+}
+.safety_contain .safety_box li {
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  width: 390px;
+  height: 220px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.safety_contain .safety_box li i {
+  display: block;
+  margin: 0 auto 20px;
+  width: 66px;
+  height: 52px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.safety_contain .safety_box li h2 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #333333;
+}
+.safety_contain .safety_box li p {
+  margin: auto;
+  width: 280px;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+}
+.safety_contain .safety_box li:nth-child(1) {
+  margin-left: 0;
+}
+.safety_contain .safety_box li:nth-child(1) i {
+  background-position: 0 -85px;
+}
+.safety_contain .safety_box li:nth-child(2) i {
+  background-position: -66px -85px;
+}
+.safety_contain .safety_box li:nth-child(3) i {
+  background-position: -132px -85px;
+}
+.safety_contain .safety_box li:nth-child(4) {
+  margin-left: 0;
+}
+.safety_contain .safety_box li:nth-child(4) i {
+  background-position: -198px -85px;
+}
+.safety_contain .safety_box li:nth-child(5) i {
+  background-position: -264px -85px;
+}
+.safety_contain .safety_box li:nth-child(6) i {
+  background-position: -330px -85px;
+}
+.safety_contain .safety_box li:hover {
+  -webkit-box-shadow: 1px 0 21px 0 #d0ebf9;
+  box-shadow: 1px 0 21px 0 #d0ebf9;
+}
+/*
+* 技术优势板块
+*/
+.edge_contain {
+  width: 100%;
+  height: 692px;
+  background-color: #dbebf3;
+}
+.edge_contain .edge_box {
+  margin: auto;
+  width: 1200px;
+  height: 436px;
+}
+.edge_contain .edge_box li {
+  float: left;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  width: 382px;
+  height: 192px;
+  border: solid 1px #dbebf3;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_contain .edge_box li .edge_img {
+  float: left;
+  width: 166px;
+  height: 192px;
+}
+.edge_contain .edge_box li .edge_img i {
+  display: block;
+  margin-top: 54px;
+  margin-left: 42px;
+  width: 85px;
+  height: 82px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.edge_contain .edge_box li h2 {
+  float: left;
+  margin-top: 58px;
+  margin-bottom: 15px;
+  width: 216px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.edge_contain .edge_box li p {
+  float: left;
+  width: 168px;
+  height: auto;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666666;
+}
+.edge_contain .edge_box li:nth-child(1) {
+  margin-left: 0;
+}
+.edge_contain .edge_box li:nth-child(1) .edge_img i {
+  background-position: 3px -142px;
+}
+.edge_contain .edge_box li:nth-child(2) .edge_img i {
+  background-position: -82px -142px;
+}
+.edge_contain .edge_box li:nth-child(3) .edge_img i {
+  background-position: -167px -142px;
+}
+.edge_contain .edge_box li:nth-child(4) {
+  margin-left: 0;
+}
+.edge_contain .edge_box li:nth-child(4) .edge_img i {
+  background-position: -245px -142px;
+}
+.edge_contain .edge_box li:nth-child(5) .edge_img i {
+  background-position: -326px -142px;
+}
+.edge_contain .edge_box li:nth-child(6) .edge_img i {
+  background-position: -410px -142px;
+}
+.edge_contain .edge_box li:hover {
+  border-color: #0093dd;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 7px 15px 0 #b0d3e6;
+  box-shadow: 0 7px 15px 0 #b0d3e6;
+}
+.edge_contain .edge_box li:hover .edge_img i {
+  background-position-y: -224px;
+}
+/*
+* 更多应用场景板块
+*/
+.more_contain {
+  margin: auto;
+  margin-bottom: 100px;
+  width: 1200px;
+  height: auto;
+}
+.more_contain .more_box {
+  position: relative;
+  width: 1200px;
+  height: 504px;
+  background: url(../img/index/more_bg.png) no-repeat;
+  background-position: center top;
+}
+.more_contain .more_box li {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #e5f4fc;
+}
+.more_contain .more_box li img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.more_contain .more_box li .more_mask {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.3;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.more_contain .more_box li p {
+  position: absolute;
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #999999;
+}
+.more_contain .more_box li:hover .more_mask {
+  opacity: 0;
+}
+.more_contain .more_box li:nth-child(1) {
+  top: 12px;
+  left: 293px;
+}
+.more_contain .more_box li:nth-child(1) p {
+  top: 0;
+  left: -72px;
+}
+.more_contain .more_box li:nth-child(2) {
+  top: 33px;
+  left: 762px;
+}
+.more_contain .more_box li:nth-child(2) p {
+  top: 0;
+  right: -72px;
+}
+.more_contain .more_box li:nth-child(3) {
+  top: 163px;
+  left: 21px;
+}
+.more_contain .more_box li:nth-child(3) p {
+  bottom: -24px;
+  left: -21px;
+}
+.more_contain .more_box li:nth-child(4) {
+  top: 205px;
+  left: 1026px;
+}
+.more_contain .more_box li:nth-child(4) p {
+  bottom: -28px;
+  right: -34px;
+}
+.more_contain .more_box li:nth-child(5) {
+  top: 312px;
+  left: 259px;
+}
+.more_contain .more_box li:nth-child(5) p {
+  bottom: 0;
+  left: -65px;
+}
+.more_contain .more_box li:nth-child(6) {
+  top: 345px;
+  left: 643px;
+}
+.more_contain .more_box li:nth-child(6) p {
+  bottom: 0;
+  right: -72px;
+}
+/*
+* 快人一步，链上区块
+*/
+.tail_contain {
+  width: 100%;
+  height: 400px;
+  background-color: #4c859f;
+}
+.tail_contain .tail_box {
+  margin: auto;
+  padding-top: 55px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.tail_contain .tail_box i {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 72px;
+  height: 72px;
+  background: url(../img/index/elves.png) no-repeat;
+  background-position: -397px -65px;
+}
+.tail_contain .tail_box h1 {
+  margin-bottom: 18px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.tail_contain .tail_box p {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #cbddf0;
+}
+.tail_contain .tail_box button {
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #cbddf0;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  background-color: #4c859f;
+}

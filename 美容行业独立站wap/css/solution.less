@@ -1,0 +1,728 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@w, @h){
+    background-position: @w @h;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 388/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 美容保健方案板块
+*/
+.program_contain{
+    .wh(750/@r, auto);
+    .program_title{
+        padding: 40/@r 0; 
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 5/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        h6{
+            .whh(100%, 18/@r);
+            .font(14/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .program_box{
+        .wh(100%, auto);
+        overflow: hidden;
+        .program_left{
+            float: left;
+            margin-top: 40/@r;
+            margin-left: 20/@r;
+            .wh(287/@r, 236/@r);
+            img{
+                .wh(100%, 100%);
+            }
+        }
+        .program_window{
+            float: right;
+            margin-right: 24/@r;
+            .wh(388/@r, 335/@r);
+            overflow: hidden;
+        }
+        .program_list{
+            position: relative;
+            left: 0;
+            .wh(1164/@r, 318/@r);
+            -webkit-transition: all .5s linear;
+            -o-transition: all .5s linear;
+            transition: all .5s linear;
+            li{
+                float: left;
+                .wh(388/@r, 159/@r);
+                .program_icon{
+                    float: left;
+                    margin-right: 3/@r;
+                    .wh(27/@r, 159/@r);
+                    i{
+                        display: block;
+                        margin-top: 3/@r;
+                        .wh(27/@r, 25/@r);
+                        background: url(../img/solution/elves.png) no-repeat;
+                        background-size: 440/@r 340/@r;
+                    }
+                }
+                h2{
+                    float: left;
+                    margin-bottom: 10/@r;
+                    .whh(358/@r, 26/@r);
+                    .font(22/@r, #ff76bd);
+                    font-weight: bold;
+                }
+                p{
+                    float: left;
+                    .wh(358/@r, auto);
+                    line-height: 36/@r;
+                    .font(20/@r, @6);
+                }
+            }
+            li:nth-child(1){
+                .program_icon{
+                    i{
+                        .bgp(0, 0);
+                    }
+                }
+            }
+            li:nth-child(4){
+                .program_icon{
+                    i{
+                        .bgp(-26/@r, 0);
+                    }
+                }
+            }
+            li:nth-child(2){
+                .program_icon{
+                    i{
+                        .bgp(-52/@r, 0);
+                    }
+                }
+            }
+            li:nth-child(5){
+                .program_icon{
+                    i{
+                        .bgp(-77/@r, 0);
+                    }
+                }
+            }
+            li:nth-child(3){
+                .program_icon{
+                    i{
+                        .bgp(-103/@r, 0);
+                    }
+                }
+            }
+        }
+        .program_sub{
+            margin: auto;
+            .wh(66/@r, 3/@r);
+            li{
+                float: left;
+                margin: 0 5/@r;
+                .wh(12/@r, 3/@r);
+                .bgs(#ffc7e4);
+                border-radius: 1/@r;
+            }
+            li.on{
+                .bgs(#ff76bd);
+            }
+        }
+    }
+}
+/*
+* 目前行业现状板块
+*/
+.status_contain{
+    .wh(750/@r, auto);
+    .bgs(#fafafa);
+    .status_title{
+        padding: 50/@r 0 15/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 5/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        h6{
+            margin-bottom: 25/@r;
+            .whh(100%, 18/@r);
+            .font(14/@r, @3);
+            font-weight: bold;
+        }
+        p{
+            margin: auto;
+            .wh(622/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @6);
+        }
+    }
+    .status_box{
+        padding: 5/@r 20/@r;
+        .wh(710/@r, auto);
+        overflow: hidden;
+        li{
+            margin-bottom: 15/@r;
+            padding: 9/@r;
+            .wh(690/@r, 160/@r);
+            border: solid 1/@r #ff76bd;
+            .status_img{
+                float: left;
+                margin-right: 10/@r;
+                .wh(324/@r, 160/@r);
+                i{
+                    display: block;
+                    margin: 38.5/@r auto;
+                    .wh(88/@r, 83/@r);
+                    background: url(../img/solution/elves.png) no-repeat;
+                    background-size: 440/@r 340/@r;
+                }
+            }
+            h2{
+                float: left;
+                margin: 10/@r 0;
+                .whh(356/@r, 26/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                float: left;
+                .wh(356/@r, auto);
+                line-height: 36/@r;
+                .font(20/@r, @6);
+            }
+        }
+        li:nth-child(1){
+            .status_img{
+                i{
+                    .bgp(-176/@r, 0);
+                }
+            }
+        }
+        li:nth-child(2){
+            .status_img{
+                i{
+                    .bgp(-264/@r, 0);
+                }
+            }
+            .status_img, h2, p{
+                float: right;
+            }
+        }
+        li:nth-child(3){
+            .status_img{
+                i{
+                    .bgp(-352/@r, 0);
+                }
+            }
+        }
+    }
+}
+/*
+* 如何解决痛点板块
+*/
+.solve_contain{
+    .wh(750/@r, auto);
+    .solve_title{
+        padding-top: 45/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 5/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        h6{
+            margin-bottom: 18/@r;
+            .whh(100%, 18/@r);
+            .font(14/@r, @3);
+            font-weight: bold;
+        }
+        p{
+            .whh(100%, 22/@r);
+            .font(20/@r, @6);
+        }
+    }
+    .solve_box{
+        margin: auto;
+        padding: 25/@r 35/@r;
+        .wh(680/@r, auto);
+        .solve_left, .solve_right{
+            float: left;
+            padding-right: 5/@r;
+            padding-bottom: 14/@r;
+            .wh(335/@r, auto);
+            overflow: hidden;
+            h2{
+                margin-bottom: 22/@r;
+                .whh(100%, 30/@r);
+                .font(26/@r, #ff76bd);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                position: relative;
+                margin-bottom: 10/@r;
+                padding: 18/@r 55/@r 18/@r 18/@r;
+                .wh(260/@r, 72/@r);
+                line-height: 36/@r;
+                .font(20/@r, @3);
+                border: solid 1/@r #ff76bd;
+                i{
+                    position: absolute;
+                    top: 48/@r;
+                    right: 15/@r;
+                    .wh(0, 0);
+                    border: 13/@r solid transparent;
+                    border-top-color: #ff76bd;
+                }
+            }
+        }
+        .solve_right{
+            float: right;
+            padding-right: 0;
+            padding-left: 5/@r;
+            p{
+                padding: 18/@r 18/@r 18/@r 55/@r;
+                i{
+                    left: 15/@r;
+                }
+            }
+        }
+        .solve_bottom{
+            clear: both;
+            .wh(100%, auto);
+            h2{
+                margin: auto;
+                margin-bottom: 22/@r;
+                .whh(316/@r, 49/@r);
+                .font(24/@r, @b);
+                text-align: center;
+                .bgs(#ff76bd);
+            }
+            .solve_bg{
+                padding: 5/@r 30/@r 8/@r;
+                .wh(618/@r, auto);
+                border: 1/@r solid #ff76bd;
+                .bgs(#ffedf6);
+                p{
+                    margin-top: 15/@r; 
+                    .wh(100%, auto);
+                    line-height: 36/@r;
+                    .font(20/@r, #ff76bd);
+                }
+            }
+        }
+    }
+}
+/*
+* 解决方案板块
+*/
+.solution_contain{
+    .wh(750/@r, 580/@r);
+    background: url(../img/solution/bg.png) no-repeat;
+    background-size: 750/@r 640/@r;
+    .solution_bg{
+        .wh(100%, 100%);
+        .bgs(rgba(255, 118, 189, 0.48));
+    }
+    .solution_title{
+        padding: 28/@r 0 48/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 5/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @b);
+            font-weight: bold;
+        }
+        h6{
+            margin-bottom: 15/@r;
+            .whh(100%, 18/@r);
+            .font(14/@r, @b);
+            font-weight: bold;
+        }
+        p{
+            margin: auto;
+            .wh(640/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @b);
+        }
+    }
+    .solution_window{
+        .wh(749/@r, 300/@r);
+        overflow: hidden;
+    }
+    .solution_box{
+        position: relative;
+        left: 0;
+        .wh(1500/@r , 276/@r);
+        -webkit-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+        li{
+            position: relative;
+            float: left;
+            margin-top: 54/@r;
+            .wh(374/@r, 181/@r);
+            border-right: 1/@r solid @b;
+            h2{
+                position: absolute;
+                top: -54/@r;
+                left: 122/@r;
+                .whh(130/@r, 30/@r);
+                .font(22/@r, @b);
+                font-weight: bold;
+                text-align: center;
+                i{
+                    float: left;
+                    margin-right: 12/@r;
+                    .wh(30/@r, 30/@r);
+                    background: url(../img/solution/elves.png) no-repeat;
+                    background-size: 440/@r 340/@r;
+                }
+                span{
+                    float: left;
+                }
+            }
+            p{
+                margin: auto;
+                .wh(300/@r, auto);
+                line-height: 36/@r;
+                .font(20/@r, @b);
+            }
+        }
+        li:nth-child(1){
+            h2{
+                i{
+                    .bgp(0, -27/@r);
+                }
+            }
+        }
+        li:nth-child(2){
+            h2{
+                i{
+                    .bgp(-32/@r, -27/@r);
+                }
+            }
+        }
+        li:nth-child(3){
+            h2{
+                i{
+                    .bgp(-64/@r, -27/@r);
+                }
+            }
+        }
+        li:nth-child(4){
+            h2{
+                i{
+                    .bgp(0, -27/@r);
+                }
+            }
+        }
+    }
+    .solution_sub{
+        margin: auto;
+        margin-top: 10/@r;
+        .wh(44/@r, 13/@r);
+        li{
+            float: left;
+            margin: 0 4.5/@r;
+            .wh(13/@r, 13/@r);
+            border-radius: 50%;
+            .bgs(@b);
+        }
+        li.on{
+            .bgs(#ff76bd);
+        }
+    }
+}
+/*
+* 艾特八宗最板块
+*/
+.most_contain{
+    .wh(750/@r, auto);
+    .most_title{
+        padding: 50/@r 0 42/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 5/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        h6{
+            .whh(100%, 18/@r);
+            .font(14/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .most_list{
+        position: relative;
+        margin: auto;
+        margin-bottom: 55/@r;
+        .wh(744/@r, 107/@r);
+        li{
+            position: absolute;
+            top: 0;
+            .wh(97/@r, 97/@r);
+            border-radius: 50%;
+            border-width: 5/@r;
+            border-style: solid;
+            background-color: @b;
+            i{
+                display: block;
+                margin: 22/@r auto 8/@r;
+                .wh(41/@r, 29/@r);
+                background: url(../img/solution/elves.png) no-repeat;
+                background-size: 440/@r 340/@r;
+            }
+            h3{
+                .whh(100%, 18/@r);
+                .font(14/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        li:nth-child(1){
+            left: 0;
+            border-color: #d04b4b;
+            i{
+                .bgp(0, -86/@r);
+            }
+        }
+        li:nth-child(2){
+            left: 91/@r;
+            border-color: #39b3ff;
+            i{
+                .bgp(-42/@r, -86/@r);
+            }
+        }
+        li:nth-child(3){
+            left: 182/@r;
+            border-color: #4a4a4a;
+            i{
+                .bgp(-84/@r, -86/@r);
+            }
+        }
+        li:nth-child(4){
+            left: 273/@r;
+            border-color: #6db663;
+            i{
+                .bgp(-126/@r, -86/@r);
+            }
+        }
+        li:nth-child(5){
+            left: 364/@r;
+            border-color: #d2a2d9;
+            i{
+                .bgp(-168/@r, -86/@r);
+            }
+        }
+        li:nth-child(6){
+            left: 455/@r;
+            border-color: #dfc59d;
+            i{
+                .bgp(-210/@r, -86/@r);
+            }
+        }
+        li:nth-child(7){
+            left: 546/@r;
+            border-color: #f5a4aa;
+            i{
+                .bgp(-252/@r, -86/@r);
+            }
+        }
+        li:nth-child(8){
+            left: 637/@r;
+            border-color: #508299;
+            i{
+                .bgp(-294/@r, -86/@r);
+            }
+        }
+    }
+    .most_bottom{
+        padding-bottom: 42/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h2{
+            margin-bottom: 20/@r;
+            .whh(100%, 32/@r);
+            .font(30/@r, @3);
+        }
+        b{
+            display: block;
+            margin: auto;
+            margin-bottom: 20/@r;
+            .wh(67/@r, 6/@r);
+            .bgs(#ff76bd);
+        }
+        p{
+            margin: auto;
+            .wh(680/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @6);
+        }
+    }
+}
+/*
+* 选择艾特，只做你的专心专意开始板块
+*/
+.focus_contain{
+    padding-top: 45/@r;
+    .wh(750/@r, 699/@r);
+    background: url(../img/solution/bg-r.png) no-repeat;
+    background-size: 750/@r 744/@r;
+    .focus_window{
+        margin: auto;
+        .wh(680/@r, 700/@r);
+        overflow: hidden;
+    }
+    .focus_box{
+        position: relative;
+        left: 0;
+        margin-bottom: 7/@r;
+        .wh(1360/@r, 680/@r);
+        -webkit-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+        li{
+            float: left;
+            margin: 25/@r 0;
+            .wh(680/@r, 120/@r);
+            .focus_icon{
+                float: left;
+                .wh(132/@r, 120/@r);
+                i{
+                    display: block;
+                    .wh(110/@r, 111/@r);
+                    background: url(../img/solution/elves.png) no-repeat;
+                    background-size: 440/@r 340/@r;
+                }
+            }
+            h2{
+                float: left;
+                .whh(548/@r, 26/@r);
+                .font(22/@r, #ff76bd);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                .wh(548/@r, auto);
+                line-height: 30/@r;
+                .font(20/@r, @b);
+            }
+        }
+        li:nth-child(1){
+            .focus_icon{
+                i{
+                    .bgp(0, -115/@r);
+                }
+            }
+        }
+        li:nth-child(2){
+            .focus_icon{
+                i{
+                    .bgp(0, -226/@r);
+                }
+            }
+        }
+        li:nth-child(3){
+            .focus_icon{
+                i{
+                    .bgp(-110/@r, -115/@r);
+                }
+            }
+        }
+        li:nth-child(4){
+            .focus_icon{
+                i{
+                    .bgp(-110/@r, -226/@r);
+                }
+            }
+        }
+        li:nth-child(5){
+            .focus_icon{
+                i{
+                    .bgp(-220/@r, -115/@r);
+                }
+            }
+        }
+        li:nth-child(6){
+            .focus_icon{
+                i{
+                    .bgp(-220/@r, -226/@r);
+                }
+            }
+        }
+        li:nth-child(7){
+            .focus_icon{
+                i{
+                    .bgp(-330/@r, -115/@r);
+                }
+            }
+        }
+        li:nth-child(8){
+            .focus_icon{
+                i{
+                    .bgp(-330/@r, -226/@r);
+                }
+            }
+        }
+    }
+    .focus_sub{
+        margin: auto;
+        .wh(44/@r, 13/@r);
+        li{
+            float: left;
+            margin: 0 4.5/@r;
+            .wh(13/@r, 13/@r);
+            border-radius: 50%;
+            .bgs(@b);
+        }
+        li.on{
+            .bgs(#ff76bd);
+        }
+    }
+}

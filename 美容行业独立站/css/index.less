@@ -1,0 +1,654 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+/*
+* banner板块
+*/
+.banner{
+  .wh(100%, 650px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* banner板块下
+*/
+.banner_down{
+  margin: auto;
+  margin-bottom: 32px;
+  .wh(1200px, auto);
+  >p{
+    .whh(100%, 50px);
+    .font(14px, #333333);
+  }
+  ul{
+    .wh(1198px, 198px);
+    border: solid 1px #dddddd;
+    li{
+      float: left;
+      .wh(299px, 198px);
+      border-left: solid 1px #dddddd;
+      img{
+        display: block;
+        margin: 8px auto;
+        .wh(200px, 110px);
+      }
+      h2{
+        margin-bottom: 10px;
+        .whh(100%, 22px);
+        .font(20px, #333333);
+        text-align: center;
+      }
+      p{
+        .whh(100%, 16px);
+        .font(14px, #666666);
+        text-align: center;
+      }
+    }
+    li:nth-child(1){
+      width: 298px;
+      border-left: 0;
+    }
+  }
+}
+/*
+* 专为美业打造的系列产品
+*/
+.products{
+  margin: auto;
+  margin-bottom: 35px;
+  .wh(1200px, auto);
+  .products_title{
+    margin-bottom: 15px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 13px;
+      .whh(100%, 40px);
+      .font(36px, #333333);
+      font-weight: bold;
+    }
+    p{
+      margin: auto;
+      .wh(602px, 48px);
+      line-height: 24px;
+      .font(14px, #666666);
+    }
+  }
+  ul{
+    margin: auto;
+    .wh(1196, 500px);
+    li{
+      float: left;
+      .wh(299px, 250px);
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear;
+      div{
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 12px;
+        .wh(84px, 84px);
+        border-radius: 50%;
+        i{
+          display: block;
+          position: relative;
+          top: 17px;
+          left: 17px;
+          .wh(50px, 50px);
+          background: url(../img/index/elves-1.png) no-repeat;
+        }
+      }
+      div.products_icon_one{
+        background-color: #ea475b;
+        i{
+          background-position: 0 0;
+        }
+      }
+      div.products_icon_two{
+        background-color: #47afea;
+        i{
+          background-position: -50px 0;
+        }
+      }
+      div.products_icon_three{
+        background-color: #8d54a7;
+        i{
+          background-position: 0 -50px;
+        }
+      }
+      div.products_icon_four{
+        background-color: #fa9257;
+        i{
+          background-position: -50px -50px;
+        }
+      }
+      div.products_icon_five{
+        background-color: #51d2a3;
+        i{
+          background-position: 0 -100px;
+        }
+      }
+      div.products_icon_six{
+        background-color: #ea9447;
+        i{
+          background-position: -50px -100px;
+        }
+      }
+      div.products_icon_seven{
+        background-color: #45b616;
+        i{
+          background-position: 0 -150px;
+        }
+      }
+      div.products_icon_eight{
+        background-color: #fcac00;
+        i{
+          background-position: -50px -150px;
+        }
+      }
+      h2{
+        margin-bottom: 11px;
+        .whh(100%, 20px);
+        .font(18px, #333333);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(265px, 100px);
+        line-height: 20px;
+        .font(14px, #666666);
+        i{
+          display: inline-block;
+          width: 28px;
+        }
+        span{
+          float: left;
+          .wh(132.5px, 20px);
+        }
+      }
+    }
+    li:hover{
+      -webkit-box-shadow: 0 0 10px #ea475b;
+              box-shadow: 0 0 10px #ea475b;
+    }
+  }
+}
+/*
+* 是什么阻碍您的企业发展？
+*/
+.develop{
+  .wh(100%, 740px);
+  background-color: #e94f40;
+  .develop_content{
+    margin: auto;
+    .wh(1200px, auto);
+    .develop_content_title{
+      padding-top: 56px;
+      margin-bottom: 55px;
+      text-align: center;
+      .wh(100%, auto);
+      h1{
+        margin-bottom: 22px;
+        .whh(100%, 40px);
+        .font(36px, #ffffff);
+        font-weight: bold;
+      }
+      p{
+        .whh(100%, 18px);
+        .font(16px, #ffffff);
+      }
+    }
+    .develop_content_box{
+      position: relative;
+      margin-bottom: 36px;
+      .wh(100%, 410px);
+      img{
+        display: block;
+        margin: auto;
+        .wh(690px, 410px);
+      }
+      p{
+        position: absolute;
+        height: 26px;
+        line-height: 26px;
+        .font(24px, #ffffff);
+      }
+      p:nth-child(2),
+      p:nth-child(4),
+      p:nth-child(6),
+      p:nth-child(8),
+      p:nth-child(10){
+        left: 0;
+        text-align: right;
+      }
+      p:nth-child(3),
+      p:nth-child(5),
+      p:nth-child(7),
+      p:nth-child(9),
+      p:nth-child(11){
+        right: 0;
+        text-align: left;
+      }
+      p:nth-child(2),
+      p:nth-child(3),{
+        top: 42px;
+        width: 245px;
+      }
+      p:nth-child(4),
+      p:nth-child(5),{
+        top: 113px;
+        width: 220px;
+      }
+      p:nth-child(6),
+      p:nth-child(7),{
+        top: 183px;
+        width: 212px;
+      }
+      p:nth-child(8),
+      p:nth-child(9),{
+        top: 256px;
+        width: 221px;
+      }
+      p:nth-child(10),
+      p:nth-child(11),{
+        top: 326px;
+        width: 248px;
+      }
+    }
+    .develop_content_btn{
+      .wh(100%, 53px);
+      button{
+        display: block;
+        margin: auto;
+        .whh(336px, 48px);
+        .font(24px, #e94f40);
+        background-color: #feffb1;
+        border-radius: 8px;
+        border-bottom: solid 5px #dedf72;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/*
+* 运营管理解决方案
+*/
+.operate{
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .wh(1200px, auto);
+  .operate_title{
+    margin-bottom: 25px;
+    .wh(100%, 40px);
+    text-align: center;
+    h1{
+      .whh(100%, 40px);
+      .font(36px, #333333);
+      font-weight: bold;
+    }
+  }
+  .operate_choice{
+    .wh(100%, 40px);
+    li{
+      float: left;
+      margin-left: 60px;
+      .wh(150px, 38px);
+      line-height: 22px;
+      .font(20px, #333333);
+      text-align: center;
+      cursor: pointer;
+    }
+    li:nth-child(1){
+      margin-left: 0;
+    }
+    li.on{
+      color: #e94f40;
+      border-bottom: solid 2px #e94055;
+    }
+  }
+  .operate_list{
+    position: relative;
+    margin: auto;
+    .wh(1084px, 610px);
+    overflow: hidden;
+    ul{
+      position: absolute;
+      top: 0;
+      left: 0;
+      .wh(6504px, 610px);
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear;
+      li{
+        float: left;
+        .wh(1084px, 610px);
+        img{
+          .wh(100%, 100%);
+        }
+      }
+    }
+  }
+}
+/*
+* 行业解决方案
+*/
+.industry{
+  margin: auto;
+  margin-bottom: 40px;
+  .wh(1200px, auto);
+  .industry_title{
+    margin-bottom: 45px;
+    .wh(100%, 40px);
+    text-align: center;
+    h1{
+      .whh(100%, 40px);
+      .font(36px, #333333);
+      font-weight: bold;
+    }
+  }
+  .industry_box{
+    .wh(1200px, 380px);
+    li{
+      float: left;
+      margin-left: 60px;
+      .wh(360px, 380px);
+      img{
+        display: block;
+        margin: auto;
+        margin-bottom: 18px;
+        .wh(174px, 201px);
+      }
+      h2{
+        margin-bottom: 15px;
+        .whh(100%, 24px);
+        .font(20px, #333333);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        .wh(100%, 120px);
+        line-height: 24px;
+        .font(16px, #666666);
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+    }
+    li:hover{
+      h2{
+        color: #e94f40;
+      }
+    }
+  }
+}
+/*
+* 服务流程
+*/
+.flow{
+  .wh(100%, 670px);
+  background-color: #e94f40;
+  .flow_content{
+    margin: auto;
+    padding-top: 65px;
+    .wh(1200px, auto);
+    .flow_content_title{
+      margin-bottom: 40px;
+      .wh(100%, auto);
+      text-align: center;
+      h1{
+        margin-bottom: 25px;
+        .whh(100%, 40px);
+        .font(36px, #ffffff);
+        font-weight: bold;
+      }
+      p{
+        margin: auto;
+        .wh(684px, 44px);
+        line-height: 22px;
+        .font(18px, #ffffff);
+      }
+    }
+    .flow_content_img{
+      margin: auto;
+      .wh(1006px, 368px);
+      img{
+        .wh(100%, 100%);
+      }
+    }
+  }
+}
+/*
+* 选择系统的4大标准
+*/
+.standard{
+  margin: auto;
+  margin-top: 36px;
+  margin-bottom: 45px;
+  .wh(1200px, auto);
+  .standard_title{
+    margin-bottom: 42px;
+    .wh(100%, 40px);
+    text-align: center;
+    h1{
+      .whh(100%, 40px);
+      .font(36px, #333333);
+      font-weight: bold;
+    }
+  }
+  .standard_list{
+    .wh(1200px, 300px);
+    li{
+      float: left;
+      margin-left: 40px;
+      .wh(270px, 300px);
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 22px;
+        .wh(140px, 140px);
+        background: url(../img/index/elves-2.png) no-repeat;
+      }
+      h2{
+        margin-bottom: 16px;
+        .whh(100%, 24px);
+        .font(20px, #333333);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        .wh(100%, 96px);
+        line-height: 24px;
+        .font(16px, #666666);
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+      i{
+        background-position: 0 0;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -140px 0;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: 0 -140px;
+      }
+    }
+    li:nth-child(4){
+      i{
+        background-position: -140px -140px;
+      }
+    }
+    li:hover{
+      h2{
+        color: #e94f40;
+      }
+    }
+  }
+}
+/*
+* 灰色板块
+*/
+.gray{
+  .wh(100%, 216px);
+  background-color: #f2f2f2;
+  .gray_content{
+    margin: auto;
+    padding-top: 58px;
+    .wh(1200px, 100px);
+    li{
+      float: left;
+      padding: 0 30px 0 50px;
+      .wh(320px, 100px);
+      div{
+        float: left;
+        margin-right: 25px;
+        .wh(75px, 100px);
+        i{
+          display: block;
+          margin-top: 5px;
+          .wh(75px, 75px);
+          background: url(../img/index/elves-1.png) no-repeat;
+        }
+      }
+      h2{
+        float: left;
+        margin-bottom: 18px;
+        .whh(220px, 24px);
+        .font(20px, #e94f40);
+        font-weight: bold;
+      }
+      p{
+        float: left;
+        .wh(220px, 57px);
+        line-height: 19px;
+        .font(14px, #e94f40);
+        i{
+          display: inline-block;
+          width: 28px;
+        }
+      }
+    }
+    li:nth-child(1){
+      div{
+        i{
+          background-position: 0 -200px;
+        }
+      }
+    }
+    li:nth-child(2){
+      div{
+        i{
+          background-position: 0 -275px;
+        }
+      }
+    }
+    li:nth-child(3){
+      div{
+        i{
+          background-position: 0 -350px;
+        }
+      }
+    }
+  }
+}
+/*
+* 图文混合
+*/
+.blend{
+  margin: auto;
+  margin-top: 55px;
+  .wh(1200px, auto);
+  overflow: hidden;
+  .blend_img{
+    float: left;
+    margin-right: 90px;
+    padding-left: 15px;
+    padding-right: 60px;
+    .wh(300px, 516px);
+    border-right: solid 1px #cecece;
+    img{
+      .wh(100%, 100%);
+    }
+  }
+  .blend_list{
+    float: left;
+    .wh(692px, 496px);
+    li{
+      .wh(100%, 124px);
+      i{
+        float: left;
+        margin-right: 8px;
+        .wh(47px, 47px);
+        background: url(../img/index/elves-2.png) no-repeat;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear;
+      }
+      i:hover{
+        -webkit-transform: scale(2);
+                transform: scale(2);
+      }
+      h2{
+        float: left;
+        .whh(637px, 26px);
+        .font(18px, #333333);
+        font-weight: bold;
+      }
+      h3{
+        float: left;
+        margin-bottom: 12px;
+        .whh(637px, 28px);
+        .font(20px, #333333);
+        font-weight: normal;
+      }
+      p{
+        float: left;
+        .wh(100%, 40px);
+        line-height: 20px;
+        .font(14px, #666666);
+      }
+    }
+    li:nth-child(1){
+      i{
+        background-position: -3px -282px;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -77px -282px;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: -153px -282px;
+      }
+    }
+    li:nth-child(4){
+      i{
+        background-position: -227px -282px;
+      }
+    }
+  }
+}

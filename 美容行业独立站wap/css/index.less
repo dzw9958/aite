@@ -1,0 +1,580 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@w, @h){
+    background-position: @w @h;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 388/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* banner下板块
+*/
+.provide_contain{
+    .wh(750/@r, 666/@r);
+    .bgs(#fef6fa);
+    .provide_title{
+        padding-left: 20/@r;
+        .whh(730/@r, 86/@r);
+        .font(22/@r, @3);
+        .bgs(@b);
+    }
+    .provide_box{
+        padding: 20/@r;
+        padding-bottom: 0;
+        .wh(710/@r, 560/@r);
+        li{
+            margin-bottom: 20/@r;
+            .wh(540/@r, 120/@r);
+            .bgs(@b);
+            img{
+                float: left;
+                margin: 9/@r 15/@r;
+                .wh(148/@r, 102/@r);
+            }
+            h2{
+                float: left;
+                margin-top: 30/@r;
+                margin-bottom: 15/@r;
+                .whh(362/@r, 30/@r);
+                .font(28/@r, @3);
+            }
+            p{
+                float: left;
+                .whh(362/@r, 24/@r);
+                .font(22/@r, @9);
+            }
+        }
+        li.fr{
+            img, h2, p{
+                float: right;
+                text-align: right;
+            }
+        }
+    }
+}
+/*
+* 专为美业打造的系列产品板块
+*/
+.products_contain{
+    .wh(750/@r, auto);
+    .products_title{
+        margin-top: 40/@r;
+        margin-bottom: 20/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 20/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        p{
+            margin: auto;
+            .wh(660/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @6);
+        }
+    }
+    .products_window{
+        .wh(100%, 875/@r);
+        overflow: hidden;
+    }
+    .products_box{
+        position: relative;
+        left: 0;
+        .wh(1500/@r, 800/@r);
+        transition: all .5s linear;
+        li{
+            float: left;
+            margin: 17/@r 20/@r;
+            padding: 35/@r 20/@r 0;
+            .wh(295/@r, 331/@r);
+            box-shadow: 0 0 15/@r 10/@r #fef6f6;
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 24/@r;
+                .wh(93/@r, 93/@r);
+                background: url(../img/index/elves.png) no-repeat;
+                background-size: 600/@r 330/@r;
+            }
+            h2{
+                margin-bottom: 20/@r;
+                .whh(100%, 30/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            p, span{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+                b{
+                    display: inline-block;
+                    width: 36/@r;
+                }
+            }
+            span{
+                float: left;
+                width: 50%;
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(0, 0)
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-94/@r, 0);
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(0, -94/@r);
+            }
+        }
+        li:nth-child(4){
+            i{
+                .bgp(-94/@r, -94/@r);
+            }
+        }
+        li:nth-child(5){
+            i{
+                .bgp(-188/@r, 0);
+            }
+        }
+        li:nth-child(6){
+            i{
+                .bgp(-282/@r, 0);
+            }
+        }
+        li:nth-child(7){
+            i{
+                .bgp(-188/@r, -94/@r);
+            }
+        }
+        li:nth-child(8){
+            i{
+                .bgp(-282/@r, -94/@r);
+            }
+        }
+    }
+    .products_jump{
+        margin: auto;
+        margin-top: 28/@r;
+        margin-bottom: 34/@r;
+        .wh(44/@r, 13/@r);
+        li{
+            float: left;
+            margin: 0 4.5/@r;
+            .wh(13/@r, 13/@r);
+            border-radius: 50%;
+            .bgs(#ffcee7);
+        }
+        li.on{
+            .bgs(#ff76bd);
+        }
+    }
+}
+/*
+* 是什么阻碍您的企业发展？板块
+*/
+.develop_contain{
+    .wh(750/@r, 573/@r);
+    .bgs(#f97acc);
+    .develop_title{
+        padding: 48/@r 0 50/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 20/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @b);
+            font-weight: bold;
+        }
+        p{
+            .whh(100%, 22/@r);
+            .font(20/@r, @b);
+        }
+    }
+    .develop_box{
+        position: relative;
+        margin-bottom: 58/@r;
+        .wh(100%, 258/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(431/@r, 258/@r);
+        }
+        p{
+            position: absolute;
+            .whh(auto, 22/@r);
+            .font(20/@r, @b);
+        }
+        p:nth-child(2), p:nth-child(4), p:nth-child(6), p:nth-child(8), p:nth-child(10){
+            left: 0;
+            text-align: right;
+        }
+        p:nth-child(3), p:nth-child(5), p:nth-child(7), p:nth-child(9), p:nth-child(11){
+            right: 0;
+            text-align: left;
+        }
+        p:nth-child(2), p:nth-child(3){
+            top: 23/@r;
+            width: 165/@r;
+        }
+        p:nth-child(4), p:nth-child(5){
+            top: 66/@r;
+            width: 155/@r;
+        }
+        p:nth-child(6), p:nth-child(7){
+            top: 113/@r;
+            width: 150/@r;
+        }
+        p:nth-child(8), p:nth-child(9){
+            top: 160/@r;
+            width: 155/@r;
+        }
+        p:nth-child(10), p:nth-child(11){
+            top: 206/@r;
+            width: 170/@r;
+        }
+    }
+    .develop_btn{
+        margin: auto;
+        .wh(288/@r, 53/@r);
+        button{
+            .whh(100%, 48/@r);
+            .font(24/@r, #e94f40);
+            border-radius: 8/@r;
+            .bgs(#feffb1);
+            border: 0;
+            border-bottom: solid 5/@r #dedf72;
+        }
+    }
+}
+/*
+* 运营管理解决方案板块
+*/
+.operate_contain{
+    .wh(750/@r, auto);
+    .operate_title{
+        padding: 48/@r 0 20/@r;
+        .wh(100%, auto);
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .operate_view{
+        margin-bottom: 20/@r;
+        .wh(100%, 70/@r);
+        overflow: hidden;
+    }
+    .operate_box{
+        padding-bottom: 10/@r;
+        .wh(100%, 70/@r);
+        .bgs(#fef6fa);
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .operate_jump{
+        .wh(1100/@r, 70/@r);
+        li{
+            float: left;
+            margin: 0 35/@r;
+            padding: 21/@r 0;
+            .whh(auto, 26/@r);
+        }
+        li.on{
+            border-bottom: solid 2/@r #ff76bd;
+        }
+    }
+    .operate_window{
+        margin: auto;
+        .wh(729/@r, 410/@r);
+        overflow: hidden;
+    }
+    .operate_list{
+        position: relative;
+        left: 0;
+        .wh(4374/@r, 410/@r);
+        transition: all .5s linear;
+        li{
+            float: left;
+            .wh(729/@r, 410/@r);
+            img{
+                display: block;
+                .wh(100%, 100%);
+            }
+        }
+    }
+}
+/*
+* 行业解决方案板块
+*/
+.industry_contain{
+    .wh(750/@r, 700/@r);
+    .bgs(#fef6fa);
+    .industry_title{
+        padding: 50/@r 0 33/@r;
+        text-align: center;
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .industry_box{
+        margin: auto;
+        .wh(710/@r, 570/@r);
+        li{
+            float: left;
+            margin-bottom: 20/@r;
+            .wh(100%, 170/@r);
+            .bgs(@b);
+            img{
+                float: left;
+                margin: 34/@r 25/@r;
+                .wh(87/@r, 102/@r);
+            }
+            h2{
+                float: left;
+                margin: 20/@r 0 8/@r;
+                .whh(573/@r, 26/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                .wh(573/@r, auto);
+                .font(20/@r, @6);
+            }
+        }
+        li.fr{
+            img, h2, p{
+                float: right;
+            }
+            h2{
+                text-align: right;
+            }
+        }
+    }
+}
+/*
+* 服务流程板块
+*/
+.flow_contain{
+    .wh(750/@r, 760/@r);
+    .bgs(#f97acc);
+    .flow_title{
+        padding: 50/@r 0 40/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 25/@r;
+            .wh(100%, 38/@r);
+            .font(34/@r, @b);
+            font-weight: bold;
+        }
+        p{
+            margin: auto;
+            .wh(674/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @b);
+        }
+    }
+    .flow_box{
+        position: relative;
+        margin: auto;
+        .wh(715/@r, 462/@r);
+        background: url(../img/index/flow.jpg) no-repeat;
+        .bgp(center, center);
+        background-size: 100% 100%;
+        li{
+            position: absolute;
+            .whh(auto, 22/@r);
+            .font(20/@r, @b);
+        }
+        li:nth-child(1){
+            top: 130/@r;
+            left: 22/@r;
+        }
+        li:nth-child(2){
+            top: 130/@r;
+            left: 300/@r;
+        }
+        li:nth-child(3){
+            top: 130/@r;
+            left: 560/@r;
+        }
+        li:nth-child(4){
+            top: 306/@r;
+            left: 278/@r;
+        }
+        li:nth-child(5){
+            top: 488/@r;
+            left: 0;
+        }
+        li:nth-child(6){
+            top: 488/@r;
+            left: 267/@r;
+        }
+        li:nth-child(7){
+            top: 488/@r;
+            left: 574/@r;
+        }
+    }
+}
+/*
+* 选择系统的4大标准板块
+*/
+.standard_contain{
+    .wh(750/@r, auto);
+    .standard_title{
+        padding: 38/@r 0 55/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .standard_box{
+        margin: auto;
+        .wh(720/@r, 784/@r);
+        li{
+            float: left;
+            margin: 0 45/@r 20/@r;
+            .wh(270/@r, 372/@r);
+            i{
+                display: block;
+                margin: 0 auto 30/@r;
+                .wh(140/@r, 140/@r);
+                border-radius: 50%;
+                background: url(../img/index/elves.png) no-repeat;
+                background-size: 600/@r 330/@r;
+            }
+            h2{
+                margin-bottom: 20/@r;
+                .whh(100%, 26/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 36/@r;
+                .font(20/@r, @6);
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(0, -188/@r);
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-142/@r, -188/@r);
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(-284/@r, -188/@r);
+            }
+        }
+        li:nth-child(4){
+            i{
+                .bgp(-426/@r, -188/@r);
+            }
+        }
+    }
+}
+/*
+* 首页尾部板块
+*/
+.tail_contain{
+    .wh(750/@r, 518/@r);
+    .bgs(#f8f8f8);
+    .tail_box{
+        padding: 25/@r 20/@r 10/@r;
+        .wh(710/@r, 483/@r);
+        li{
+            margin-bottom: 20/@r;
+            .wh(100%, 141/@r);
+            .bgs(@b);
+            i{
+                float: left;
+                margin: 30/@r 30/@r 37/@r 13/@r;
+                .wh(73/@r, 74/@r);
+                background: url(../img/index/elves.png) no-repeat;
+                background-size: 600/@r 330/@r;
+            }
+            h2{
+                float: left;
+                margin: 18/@r 0 10/@r;
+                .wh(584/@r, 26/@r);
+                .font(22/@r, #ff76bd);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                .wh(584/@r, auto);
+                line-height: 36/@r;
+                .font(20/@r, #ff76bd);
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(-381/@r, 0);
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-454/@r, 0);
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(-528/@r, 0);
+            }
+        }
+    }
+}

@@ -1,0 +1,302 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+@b: #ffffff;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, 565px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* 系统介绍板块
+*/
+.introduce_contain{
+  margin: 50px auto 110px;
+  .wh(1200px, auto);
+  .introduce_title{
+    margin-bottom: 80px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 18px;
+      .whh(100%, 32px);
+      .font(30px, @3);
+    }
+    i{
+      display: block;
+      margin: 0 auto 30px;
+      .wh(90px, 7px);
+      border-radius: 3px;
+      background-color: #249fdf;
+    }
+    P{
+      margin: auto;
+      .wh(694px, auto);
+      line-height: 18px;
+      .font(14px, @9);
+    }
+  }
+  .introduce_box{
+    .wh(1200px, 127px);
+    overflow: hidden;
+    div{
+      float: left;
+      margin-left: 70px;
+    }
+    div:first-child{
+      margin-left: 0;
+    }
+    .introduce_img{
+      .wh(120px, 127px);
+      background: url(../img/consume/elves.png) no-repeat;
+    }
+    .introduce_one{
+      background-position: 0 0;
+    }
+    .introduce_two{
+      background-position: -120px 0;
+    }
+    .introduce_three{
+      background-position: -241px 0;
+    }
+    .introduce_text{
+      padding: 33.5px 0;
+      .wh(90px, 60px);
+      p{
+        .whh(100%, 30px);
+        .font(18px, @6);
+        text-align: center;
+      }
+    }
+    .introduce_add{
+      position: relative;
+      padding: 43.5px 0;
+      .wh(40px, 40px);
+      .introduce_across{
+        position: absolute;
+        top: 60.5px;
+        left: 0;
+        .wh(40px, 6px);
+        background-color: #e8e7e7;
+      }
+      .introduce_vertical{
+        position: absolute;
+        top: 43.5px;
+        left: 17px;
+        .wh(6px, 40px);
+        background-color: #e8e7e7;
+      }
+    }
+  }
+}
+/*
+* 系统功能板块
+*/
+.function_contain{
+  padding: 50px 0 100px;
+  .wh(100%, auto);
+  background-color: #f4f4f4;
+  .function_title{
+    margin: auto;
+    margin-bottom: 40px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 22px;
+      .whh(100%, 32px);
+      .font(30px, @3);
+    }
+    i{
+      display: block;
+      margin: auto;
+      .wh(90px, 7px);
+      border-radius: 3px;
+      background-color: #249fdf;
+    }
+  }
+  .function_box{
+    margin: auto;
+    .wh(1200px, 293px);
+    li{
+      float: left;
+      margin-left: 20px;
+      .wh(285px, 293px);
+      text-align: center;
+      background-color: @b;
+      i{
+        display: block;
+        margin: 47px auto 20px;
+        .wh(58px, 58px);
+        background: url(../img/consume/elves.png) no-repeat;
+      }
+      h2{
+        margin-bottom: 28px;
+        .whh(100%, 18px);
+        .font(16px, @3);
+      }
+      p{
+        .whh(100%, 22px);
+        .font(14px, @6);
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+      i{
+        background-position: 0 -132px;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -62px -132px;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: -120px -132px;
+      }
+    }
+    li:nth-child(4){
+      i{
+        background-position: -177px -132px;
+      }
+    }
+    li:hover{
+      -webkit-box-shadow: 0 0 10px #249fdf;
+              box-shadow: 0 0 10px #249fdf;
+    }
+  }
+}
+/*
+* 系统优势板块
+*/
+.edge_contain{
+  .wh(100%, 700px);
+  background: url(../img/consume/cms-brief.png) no-repeat;
+  background-size: 100% 100%;
+  .edge_bg{
+    .wh(100%, 100%);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .edge_title{
+    margin: auto;
+    padding: 50px 0 70px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 22px;
+      .whh(100%, 32px);
+      .font(30px, @b);
+    }
+    i{
+      display: block;
+      margin: auto;
+      .wh(90px, 7px);
+      border-radius: 3px;
+      background-color: @b;
+    }
+  }
+  .edge_box{
+    margin: auto;
+    .wh(1200px, 360px);
+    li{
+      position: relative;
+      float: left;
+      .wh(240px, 360px);
+      img{
+        .wh(100%, 100%);
+      }
+      .edge_text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 32px;
+        .wh(176px, 360px);
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+        h2{
+          margin-top: 77px;
+          margin-bottom: 19px;
+          .whh(100%, 26px);
+          .font(24px, @b);
+          text-align: center;
+        }
+        i{
+          display: block;
+          margin: 0 auto 26px;
+          .wh(89px, 2px);
+          background-color: @b;
+        }
+        p{
+          .wh(100%, auto);
+          line-height: 24px;
+          .font(16px, @b);
+        }
+      }
+    }
+    li:hover{
+      .edge_text{
+        background-color: rgba(0, 175, 232, 0.9);
+      }
+    }
+  }
+}
+/*
+* 消费金融系统流程图板块
+*/
+.flow_contain{
+  margin: auto;
+  padding: 50px 0 100px;
+  .wh(1200px, auto);
+  .flow_title{
+    margin-bottom: 90px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 22px;
+      .whh(100%, 32px);
+      .font(30px, @3);
+    }
+    i{
+      display: block;
+      margin: auto;
+      .wh(90px, 7px);
+      border-radius: 3px;
+      background-color: #249fdf;
+    }
+  }
+  .flow_box{
+    margin: auto;
+    .wh(975px, 424px);
+    img{
+      .wh(100%, 100%);
+    }
+  }
+}

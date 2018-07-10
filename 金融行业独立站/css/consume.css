@@ -1,0 +1,337 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: 565px;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 系统介绍板块
+*/
+.introduce_contain {
+  margin: 50px auto 110px;
+  width: 1200px;
+  height: auto;
+}
+.introduce_contain .introduce_title {
+  margin-bottom: 80px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.introduce_contain .introduce_title h1 {
+  margin-bottom: 18px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.introduce_contain .introduce_title i {
+  display: block;
+  margin: 0 auto 30px;
+  width: 90px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #249fdf;
+}
+.introduce_contain .introduce_title P {
+  margin: auto;
+  width: 694px;
+  height: auto;
+  line-height: 18px;
+  font-size: 14px;
+  color: #999999;
+}
+.introduce_contain .introduce_box {
+  width: 1200px;
+  height: 127px;
+  overflow: hidden;
+}
+.introduce_contain .introduce_box div {
+  float: left;
+  margin-left: 70px;
+}
+.introduce_contain .introduce_box div:first-child {
+  margin-left: 0;
+}
+.introduce_contain .introduce_box .introduce_img {
+  width: 120px;
+  height: 127px;
+  background: url(../img/consume/elves.png) no-repeat;
+}
+.introduce_contain .introduce_box .introduce_one {
+  background-position: 0 0;
+}
+.introduce_contain .introduce_box .introduce_two {
+  background-position: -120px 0;
+}
+.introduce_contain .introduce_box .introduce_three {
+  background-position: -241px 0;
+}
+.introduce_contain .introduce_box .introduce_text {
+  padding: 33.5px 0;
+  width: 90px;
+  height: 60px;
+}
+.introduce_contain .introduce_box .introduce_text p {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+}
+.introduce_contain .introduce_box .introduce_add {
+  position: relative;
+  padding: 43.5px 0;
+  width: 40px;
+  height: 40px;
+}
+.introduce_contain .introduce_box .introduce_add .introduce_across {
+  position: absolute;
+  top: 60.5px;
+  left: 0;
+  width: 40px;
+  height: 6px;
+  background-color: #e8e7e7;
+}
+.introduce_contain .introduce_box .introduce_add .introduce_vertical {
+  position: absolute;
+  top: 43.5px;
+  left: 17px;
+  width: 6px;
+  height: 40px;
+  background-color: #e8e7e7;
+}
+/*
+* 系统功能板块
+*/
+.function_contain {
+  padding: 50px 0 100px;
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+}
+.function_contain .function_title {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.function_contain .function_title h1 {
+  margin-bottom: 22px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.function_contain .function_title i {
+  display: block;
+  margin: auto;
+  width: 90px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #249fdf;
+}
+.function_contain .function_box {
+  margin: auto;
+  width: 1200px;
+  height: 293px;
+}
+.function_contain .function_box li {
+  float: left;
+  margin-left: 20px;
+  width: 285px;
+  height: 293px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.function_contain .function_box li i {
+  display: block;
+  margin: 47px auto 20px;
+  width: 58px;
+  height: 58px;
+  background: url(../img/consume/elves.png) no-repeat;
+}
+.function_contain .function_box li h2 {
+  margin-bottom: 28px;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #333333;
+}
+.function_contain .function_box li p {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666666;
+}
+.function_contain .function_box li:nth-child(1) {
+  margin-left: 0;
+}
+.function_contain .function_box li:nth-child(1) i {
+  background-position: 0 -132px;
+}
+.function_contain .function_box li:nth-child(2) i {
+  background-position: -62px -132px;
+}
+.function_contain .function_box li:nth-child(3) i {
+  background-position: -120px -132px;
+}
+.function_contain .function_box li:nth-child(4) i {
+  background-position: -177px -132px;
+}
+.function_contain .function_box li:hover {
+  -webkit-box-shadow: 0 0 10px #249fdf;
+  box-shadow: 0 0 10px #249fdf;
+}
+/*
+* 系统优势板块
+*/
+.edge_contain {
+  width: 100%;
+  height: 700px;
+  background: url(../img/consume/cms-brief.png) no-repeat;
+  background-size: 100% 100%;
+}
+.edge_contain .edge_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.edge_contain .edge_title {
+  margin: auto;
+  padding: 50px 0 70px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.edge_contain .edge_title h1 {
+  margin-bottom: 22px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.edge_contain .edge_title i {
+  display: block;
+  margin: auto;
+  width: 90px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.edge_contain .edge_box {
+  margin: auto;
+  width: 1200px;
+  height: 360px;
+}
+.edge_contain .edge_box li {
+  position: relative;
+  float: left;
+  width: 240px;
+  height: 360px;
+}
+.edge_contain .edge_box li img {
+  width: 100%;
+  height: 100%;
+}
+.edge_contain .edge_box li .edge_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 32px;
+  width: 176px;
+  height: 360px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_contain .edge_box li .edge_text h2 {
+  margin-top: 77px;
+  margin-bottom: 19px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+.edge_contain .edge_box li .edge_text i {
+  display: block;
+  margin: 0 auto 26px;
+  width: 89px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.edge_contain .edge_box li .edge_text p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.edge_contain .edge_box li:hover .edge_text {
+  background-color: rgba(0, 175, 232, 0.9);
+}
+/*
+* 消费金融系统流程图板块
+*/
+.flow_contain {
+  margin: auto;
+  padding: 50px 0 100px;
+  width: 1200px;
+  height: auto;
+}
+.flow_contain .flow_title {
+  margin-bottom: 90px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.flow_contain .flow_title h1 {
+  margin-bottom: 22px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.flow_contain .flow_title i {
+  display: block;
+  margin: auto;
+  width: 90px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #249fdf;
+}
+.flow_contain .flow_box {
+  margin: auto;
+  width: 975px;
+  height: 424px;
+}
+.flow_contain .flow_box img {
+  width: 100%;
+  height: 100%;
+}

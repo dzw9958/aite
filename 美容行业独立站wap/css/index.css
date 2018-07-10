@@ -1,0 +1,649 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 5.17333333rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* banner下板块
+*/
+.provide_contain {
+  width: 10rem;
+  height: 8.88rem;
+  background-color: #fef6fa;
+}
+.provide_contain .provide_title {
+  padding-left: 0.26666667rem;
+  width: 9.73333333rem;
+  height: 1.14666667rem;
+  line-height: 1.14666667rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+.provide_contain .provide_box {
+  padding: 0.26666667rem;
+  padding-bottom: 0;
+  width: 9.46666667rem;
+  height: 7.46666667rem;
+}
+.provide_contain .provide_box li {
+  margin-bottom: 0.26666667rem;
+  width: 7.2rem;
+  height: 1.6rem;
+  background-color: #ffffff;
+}
+.provide_contain .provide_box li img {
+  float: left;
+  margin: 0.12rem 0.2rem;
+  width: 1.97333333rem;
+  height: 1.36rem;
+}
+.provide_contain .provide_box li h2 {
+  float: left;
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  width: 4.82666667rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+}
+.provide_contain .provide_box li p {
+  float: left;
+  width: 4.82666667rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.29333333rem;
+  color: #999999;
+}
+.provide_contain .provide_box li.fr img,
+.provide_contain .provide_box li.fr h2,
+.provide_contain .provide_box li.fr p {
+  float: right;
+  text-align: right;
+}
+/*
+* 专为美业打造的系列产品板块
+*/
+.products_contain {
+  width: 10rem;
+  height: auto;
+}
+.products_contain .products_title {
+  margin-top: 0.53333333rem;
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.products_contain .products_title h1 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.products_contain .products_title p {
+  margin: auto;
+  width: 8.8rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.products_contain .products_window {
+  width: 100%;
+  height: 11.66666667rem;
+  overflow: hidden;
+}
+.products_contain .products_box {
+  position: relative;
+  left: 0;
+  width: 20rem;
+  height: 10.66666667rem;
+  transition: all .5s linear;
+}
+.products_contain .products_box li {
+  float: left;
+  margin: 0.22666667rem 0.26666667rem;
+  padding: 0.46666667rem 0.26666667rem 0;
+  width: 3.93333333rem;
+  height: 4.41333333rem;
+  box-shadow: 0 0 0.2rem 0.13333333rem #fef6f6;
+}
+.products_contain .products_box li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.32rem;
+  width: 1.24rem;
+  height: 1.24rem;
+  background: url(../img/index/elves.png) no-repeat;
+  background-size: 8rem 4.4rem;
+}
+.products_contain .products_box li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.products_contain .products_box li p,
+.products_contain .products_box li span {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.products_contain .products_box li p b,
+.products_contain .products_box li span b {
+  display: inline-block;
+  width: 0.48rem;
+}
+.products_contain .products_box li span {
+  float: left;
+  width: 50%;
+}
+.products_contain .products_box li:nth-child(1) i {
+  background-position: 0 0;
+}
+.products_contain .products_box li:nth-child(2) i {
+  background-position: -1.25333333rem 0;
+}
+.products_contain .products_box li:nth-child(3) i {
+  background-position: 0 -1.25333333rem;
+}
+.products_contain .products_box li:nth-child(4) i {
+  background-position: -1.25333333rem -1.25333333rem;
+}
+.products_contain .products_box li:nth-child(5) i {
+  background-position: -2.50666667rem 0;
+}
+.products_contain .products_box li:nth-child(6) i {
+  background-position: -3.76rem 0;
+}
+.products_contain .products_box li:nth-child(7) i {
+  background-position: -2.50666667rem -1.25333333rem;
+}
+.products_contain .products_box li:nth-child(8) i {
+  background-position: -3.76rem -1.25333333rem;
+}
+.products_contain .products_jump {
+  margin: auto;
+  margin-top: 0.37333333rem;
+  margin-bottom: 0.45333333rem;
+  width: 0.58666667rem;
+  height: 0.17333333rem;
+}
+.products_contain .products_jump li {
+  float: left;
+  margin: 0 0.06rem;
+  width: 0.17333333rem;
+  height: 0.17333333rem;
+  border-radius: 50%;
+  background-color: #ffcee7;
+}
+.products_contain .products_jump li.on {
+  background-color: #ff76bd;
+}
+/*
+* 是什么阻碍您的企业发展？板块
+*/
+.develop_contain {
+  width: 10rem;
+  height: 7.64rem;
+  background-color: #f97acc;
+}
+.develop_contain .develop_title {
+  padding: 0.64rem 0 0.66666667rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.develop_contain .develop_title h1 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.develop_contain .develop_title p {
+  width: 100%;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.develop_contain .develop_box {
+  position: relative;
+  margin-bottom: 0.77333333rem;
+  width: 100%;
+  height: 3.44rem;
+}
+.develop_contain .develop_box img {
+  display: block;
+  margin: auto;
+  width: 5.74666667rem;
+  height: 3.44rem;
+}
+.develop_contain .develop_box p {
+  position: absolute;
+  width: auto;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.develop_contain .develop_box p:nth-child(2),
+.develop_contain .develop_box p:nth-child(4),
+.develop_contain .develop_box p:nth-child(6),
+.develop_contain .develop_box p:nth-child(8),
+.develop_contain .develop_box p:nth-child(10) {
+  left: 0;
+  text-align: right;
+}
+.develop_contain .develop_box p:nth-child(3),
+.develop_contain .develop_box p:nth-child(5),
+.develop_contain .develop_box p:nth-child(7),
+.develop_contain .develop_box p:nth-child(9),
+.develop_contain .develop_box p:nth-child(11) {
+  right: 0;
+  text-align: left;
+}
+.develop_contain .develop_box p:nth-child(2),
+.develop_contain .develop_box p:nth-child(3) {
+  top: 0.30666667rem;
+  width: 2.2rem;
+}
+.develop_contain .develop_box p:nth-child(4),
+.develop_contain .develop_box p:nth-child(5) {
+  top: 0.88rem;
+  width: 2.06666667rem;
+}
+.develop_contain .develop_box p:nth-child(6),
+.develop_contain .develop_box p:nth-child(7) {
+  top: 1.50666667rem;
+  width: 2rem;
+}
+.develop_contain .develop_box p:nth-child(8),
+.develop_contain .develop_box p:nth-child(9) {
+  top: 2.13333333rem;
+  width: 2.06666667rem;
+}
+.develop_contain .develop_box p:nth-child(10),
+.develop_contain .develop_box p:nth-child(11) {
+  top: 2.74666667rem;
+  width: 2.26666667rem;
+}
+.develop_contain .develop_btn {
+  margin: auto;
+  width: 3.84rem;
+  height: 0.70666667rem;
+}
+.develop_contain .develop_btn button {
+  width: 100%;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  font-size: 0.32rem;
+  color: #e94f40;
+  border-radius: 0.10666667rem;
+  background-color: #feffb1;
+  border: 0;
+  border-bottom: solid 0.06666667rem #dedf72;
+}
+/*
+* 运营管理解决方案板块
+*/
+.operate_contain {
+  width: 10rem;
+  height: auto;
+}
+.operate_contain .operate_title {
+  padding: 0.64rem 0 0.26666667rem;
+  width: 100%;
+  height: auto;
+}
+.operate_contain .operate_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.operate_contain .operate_view {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.93333333rem;
+  overflow: hidden;
+}
+.operate_contain .operate_box {
+  padding-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.93333333rem;
+  background-color: #fef6fa;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.operate_contain .operate_jump {
+  width: 14.66666667rem;
+  height: 0.93333333rem;
+}
+.operate_contain .operate_jump li {
+  float: left;
+  margin: 0 0.46666667rem;
+  padding: 0.28rem 0;
+  width: auto;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+}
+.operate_contain .operate_jump li.on {
+  border-bottom: solid 0.02666667rem #ff76bd;
+}
+.operate_contain .operate_window {
+  margin: auto;
+  width: 9.72rem;
+  height: 5.46666667rem;
+  overflow: hidden;
+}
+.operate_contain .operate_list {
+  position: relative;
+  left: 0;
+  width: 58.32rem;
+  height: 5.46666667rem;
+  transition: all .5s linear;
+}
+.operate_contain .operate_list li {
+  float: left;
+  width: 9.72rem;
+  height: 5.46666667rem;
+}
+.operate_contain .operate_list li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*
+* 行业解决方案板块
+*/
+.industry_contain {
+  width: 10rem;
+  height: 9.33333333rem;
+  background-color: #fef6fa;
+}
+.industry_contain .industry_title {
+  padding: 0.66666667rem 0 0.44rem;
+  text-align: center;
+}
+.industry_contain .industry_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.industry_contain .industry_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: 7.6rem;
+}
+.industry_contain .industry_box li {
+  float: left;
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 2.26666667rem;
+  background-color: #ffffff;
+}
+.industry_contain .industry_box li img {
+  float: left;
+  margin: 0.45333333rem 0.33333333rem;
+  width: 1.16rem;
+  height: 1.36rem;
+}
+.industry_contain .industry_box li h2 {
+  float: left;
+  margin: 0.26666667rem 0 0.10666667rem;
+  width: 7.64rem;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.industry_contain .industry_box li p {
+  float: left;
+  width: 7.64rem;
+  height: auto;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.industry_contain .industry_box li.fr img,
+.industry_contain .industry_box li.fr h2,
+.industry_contain .industry_box li.fr p {
+  float: right;
+}
+.industry_contain .industry_box li.fr h2 {
+  text-align: right;
+}
+/*
+* 服务流程板块
+*/
+.flow_contain {
+  width: 10rem;
+  height: 10.13333333rem;
+  background-color: #f97acc;
+}
+.flow_contain .flow_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.flow_contain .flow_title h1 {
+  margin-bottom: 0.33333333rem;
+  width: 100%;
+  height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.flow_contain .flow_title p {
+  margin: auto;
+  width: 8.98666667rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.flow_contain .flow_box {
+  position: relative;
+  margin: auto;
+  width: 9.53333333rem;
+  height: 6.16rem;
+  background: url(../img/index/flow.jpg) no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.flow_contain .flow_box li {
+  position: absolute;
+  width: auto;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.flow_contain .flow_box li:nth-child(1) {
+  top: 1.73333333rem;
+  left: 0.29333333rem;
+}
+.flow_contain .flow_box li:nth-child(2) {
+  top: 1.73333333rem;
+  left: 4rem;
+}
+.flow_contain .flow_box li:nth-child(3) {
+  top: 1.73333333rem;
+  left: 7.46666667rem;
+}
+.flow_contain .flow_box li:nth-child(4) {
+  top: 4.08rem;
+  left: 3.70666667rem;
+}
+.flow_contain .flow_box li:nth-child(5) {
+  top: 6.50666667rem;
+  left: 0;
+}
+.flow_contain .flow_box li:nth-child(6) {
+  top: 6.50666667rem;
+  left: 3.56rem;
+}
+.flow_contain .flow_box li:nth-child(7) {
+  top: 6.50666667rem;
+  left: 7.65333333rem;
+}
+/*
+* 选择系统的4大标准板块
+*/
+.standard_contain {
+  width: 10rem;
+  height: auto;
+}
+.standard_contain .standard_title {
+  padding: 0.50666667rem 0 0.73333333rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.standard_contain .standard_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.standard_contain .standard_box {
+  margin: auto;
+  width: 9.6rem;
+  height: 10.45333333rem;
+}
+.standard_contain .standard_box li {
+  float: left;
+  margin: 0 0.6rem 0.26666667rem;
+  width: 3.6rem;
+  height: 4.96rem;
+}
+.standard_contain .standard_box li i {
+  display: block;
+  margin: 0 auto 0.4rem;
+  width: 1.86666667rem;
+  height: 1.86666667rem;
+  border-radius: 50%;
+  background: url(../img/index/elves.png) no-repeat;
+  background-size: 8rem 4.4rem;
+}
+.standard_contain .standard_box li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.standard_contain .standard_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.standard_contain .standard_box li:nth-child(1) i {
+  background-position: 0 -2.50666667rem;
+}
+.standard_contain .standard_box li:nth-child(2) i {
+  background-position: -1.89333333rem -2.50666667rem;
+}
+.standard_contain .standard_box li:nth-child(3) i {
+  background-position: -3.78666667rem -2.50666667rem;
+}
+.standard_contain .standard_box li:nth-child(4) i {
+  background-position: -5.68rem -2.50666667rem;
+}
+/*
+* 首页尾部板块
+*/
+.tail_contain {
+  width: 10rem;
+  height: 6.90666667rem;
+  background-color: #f8f8f8;
+}
+.tail_contain .tail_box {
+  padding: 0.33333333rem 0.26666667rem 0.13333333rem;
+  width: 9.46666667rem;
+  height: 6.44rem;
+}
+.tail_contain .tail_box li {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 1.88rem;
+  background-color: #ffffff;
+}
+.tail_contain .tail_box li i {
+  float: left;
+  margin: 0.4rem 0.4rem 0.49333333rem 0.17333333rem;
+  width: 0.97333333rem;
+  height: 0.98666667rem;
+  background: url(../img/index/elves.png) no-repeat;
+  background-size: 8rem 4.4rem;
+}
+.tail_contain .tail_box li h2 {
+  float: left;
+  margin: 0.24rem 0 0.13333333rem;
+  width: 7.78666667rem;
+  height: 0.34666667rem;
+  font-size: 0.29333333rem;
+  color: #ff76bd;
+  font-weight: bold;
+}
+.tail_contain .tail_box li p {
+  float: left;
+  width: 7.78666667rem;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #ff76bd;
+}
+.tail_contain .tail_box li:nth-child(1) i {
+  background-position: -5.08rem 0;
+}
+.tail_contain .tail_box li:nth-child(2) i {
+  background-position: -6.05333333rem 0;
+}
+.tail_contain .tail_box li:nth-child(3) i {
+  background-position: -7.04rem 0;
+}

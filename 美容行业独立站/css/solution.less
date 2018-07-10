@@ -1,0 +1,826 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+/*
+* banner板块
+*/
+.banner{
+  .wh(100%, 650px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* 美容保健方案
+*/
+.program{
+  margin: 28px auto 40px;
+  .wh(1200px, auto);
+  .program_title{
+    margin-bottom: 30px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(100%, 34px);
+      .font(30px, @3);
+      font-weight: bold;
+    }
+    h6{
+      .whh(100%, 18px);
+      .font(16px, @3);
+      font-weight: bold;
+    }
+  }
+  ul{
+    position: relative;
+    .wh(1200px, 605px);
+    li{
+      position: absolute;
+      .wh(260px, 100px);
+      h2{
+        margin-bottom: 8px;
+        .whh(100%, 22px);
+        .font(18px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, 72px);
+        line-height: 24px;
+        .font(16px, @6);
+      }
+      i{
+        position: absolute;
+        top: 0;
+        left: -30px;
+        .wh(25px, 22px);
+        background: url(../img/solution/elves.png) no-repeat;
+      }
+    }
+    li:nth-child(1){
+      top: 110px;
+      left: 370px;
+      .wh(460px, 378px);
+      img{
+        .wh(100%, 100%);
+      }
+    }
+    li:nth-child(2){
+      top: 0;
+      left: 160px;
+      i{
+        background-position: -256px -281px;
+      }
+    }
+    li:nth-child(3){
+      top: 5PX;
+      right: 140px;
+      i{
+        background-position: -282px -281px;
+      }
+    }
+    li:nth-child(4){
+      top: 240px;
+      left: 30px;
+      i{
+        background-position: -305px -281px;
+      }
+    }
+    li:nth-child(5){
+      top: 320px;
+      right: 20px;
+      i{
+        background-position: -330px -281px;
+      }
+    }
+    li:nth-child(6){
+      top: 500px;
+      left: 510px;
+      i{
+        background-position: -357px -281px;
+      }
+    }
+  }
+}
+/*
+* 目前行业现状
+*/
+.status{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  .wh(100%, auto);
+  background-color: #f9f9f9;
+  .status_title{
+    margin: auto;
+    margin-bottom: 30px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(100%, 34px);
+      .font(30px, @3);
+      font-weight: bold;
+    }
+    h6{
+      margin-bottom: 12px;
+      .whh(100%, 18px);
+      .font(16px, @3);
+      font-weight: bold;
+    }
+    p{
+      margin: auto;
+      .whh(430px, 48px);
+      line-height: 24px;
+      .font(18px, @3);
+    }
+  }
+  ul{
+    margin: auto;
+    .wh(1200px, 325px);
+    li{
+      float: left;
+      margin-left: 84px;
+      .wh(342px, 323px);
+      border: solid 1px #ff4b60; 
+      div{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 32px;
+        padding-top: 24px;
+        .wh(324px, 109px);
+        border-radius: 5px;
+        background-color: #ffe5e8;
+        i{
+          display: block;
+          margin: auto;
+          .wh(88px, 83px);
+          background: url(../img/solution/elves.png) no-repeat;
+        }
+      }
+      h2{
+        margin-bottom: 20px;
+        .wh(100%, 24px);
+        .font(20px, @3);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(302px, 84px);
+        line-height: 28px;
+        .font(16px, @6);
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+      i{
+        background-position: 0 -219px;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -88px -219px;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: -168px -219px;
+      }
+    }
+  }
+}
+/*
+* 如何解决痛点
+*/
+.solve{
+  margin: 25px auto 45px;
+  .wh(1200px, auto);
+  overflow: hidden;
+  .solve_title{
+    margin-bottom: 45px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(100%, 34px);
+      .font(30px, @3);
+      font-weight: bold;
+    }
+    h6{
+      margin-bottom: 8px;
+      .whh(100%, 20px);
+      .font(16px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 20px);
+      .font(18px, @6);
+    }
+  }
+  .solve_left{
+    float: left;
+    margin-right: 73px;
+    .wh(325px, 615px);
+    h2{
+      margin-bottom: 25px;
+      .whh(100%, 28px);
+      .font(24px, #ff4b60);
+      font-weight: bold;
+      text-align: center;
+    }
+    p{
+      position: relative;
+      margin-top: 40px;
+      padding: 18px 63px 18px 22px;
+      .wh(238px, 72px);
+      line-height: 36px;
+      .font(18px, @3);
+      border: solid 1px #ff4b60;
+      i{
+        position: absolute;
+        top: 42px;
+        right: 20px;
+        .wh(0, 0);
+        border-top: solid 12px rgba(256, 256, 256, 0);
+        border-right: 0;
+        border-bottom: solid 12px rgba(256, 256, 256, 0);
+        border-left: solid 14px #ff4b60;
+      }
+    }
+    p:nth-child(2){
+      margin-top: 0;
+    }
+  }
+  .solve_right{
+    float: left;
+    margin-left: 73px;
+    .wh(325px, 615px);
+    h2{
+      margin-bottom: 25px;
+      .whh(100%, 28px);
+      .font(24px, #ff4b60);
+      font-weight: bold;
+      text-align: center;
+    }
+    p{
+      position: relative;
+      margin-top: 40px;
+      padding: 18px 22px 18px 63px;
+      .wh(238px, 72px);
+      line-height: 36px;
+      .font(18px, @3);
+      border: solid 1px #ff4b60;
+      i{
+        position: absolute;
+        top: 42px;
+        left: 20px;
+        .wh(0, 0);
+        border-top: solid 12px rgba(256, 256, 256, 0);
+        border-right: solid 14px #ff4b60;
+        border-bottom: solid 12px rgba(256, 256, 256, 0);
+        border-left: 0;
+      }
+    }
+    p:nth-child(2){
+      margin-top: 0;
+    }
+  }
+  .solve_center{
+    float: left;
+    .wh(404px, 615px);
+    h2{
+      margin-bottom: 25px;
+      .whh(100%, 28px);
+      .font(24px, #ff4b60);
+      font-weight: bold;
+      text-align: center;
+    }
+    div{
+      .wh(402px, 558px);
+      border: solid 1px #ff4b60;
+      background-color: #ffe5e8;
+      h3{
+        margin: 18px auto 0;
+        .whh(316px, 49px);
+        .font(24px, #ffffff);
+        text-align: center;
+        background-color: #ff4b60;
+      }
+      p{
+        margin: 24px auto 0;
+        width: 334px;
+        line-height: 34px;
+        .font(18px, #ff4b60);
+        font-weight: bold;
+      }
+      p:nth-child(2){
+        margin-top: 30px;
+      }
+    }
+  }
+}
+/*
+* 解决方案
+*/
+.solution{
+  position: relative;
+  .wh(100%, 690px);
+  img{
+    .wh(100%, 100%);
+  }
+  .solution_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    .wh(100%, 690px);
+    background-color: rgba(0, 0, 0, 0.6)
+  }
+  .solution_title{
+    margin: 45px auto 60px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(100%, 32px);
+      .font(30px, #ffffff);
+    }
+    h6{
+      margin-bottom: 8px;
+      .whh(100%, 18px);
+      .font(16px, #ffffff);
+    }
+    p{
+      margin: auto;
+      .wh(873px, 48px);
+      line-height: 24px;
+      .font(16px, #ffffff);
+    }
+  }
+  .solution_slider{
+    position: relative;
+    margin: auto;
+    .wh(1200px, 333px);
+    overflow: hidden;
+    .bd{
+      padding: 0 42px;
+      .tempWrap{
+        width: 1115px !important;
+      }
+      .wh(1116px, 333px);
+      ul{
+        zoom: 1;
+        overflow: hidden;
+        li{
+          position: relative;
+          float: left;
+          margin-top: 44px;
+          .wh(371px, 289px);
+          border-right: solid 1px #ffffff;
+          div{
+            position: absolute;
+            top: -44px;
+            left: 142px;
+            .wh(86px, 86px);
+            border-radius: 50%;
+            border: solid 1px #ffffff;
+            i{
+              display: block;
+              position: relative;
+              top: 17px;
+              left: 18px;
+              .wh(50px, 52px);
+              background: url(../img/solution/elves.png) no-repeat;
+            } 
+          }
+          h2{
+            margin-top: 82px;
+            margin-bottom: 16px;
+            .whh(100%, 24px);
+            .font(22px, #ffffff);
+            text-align: center;
+          }
+          p{
+            margin: auto;
+            width: 240px;
+            line-height: 24px;
+            .font(14px, #Ffffff);
+          }
+        }
+        li:nth-child(1){
+          i{
+            background-position: -252px -220px;
+          }
+        }
+        li:nth-child(2){
+          i{
+            background-position: -303px -220px;
+          }
+        }
+        li:nth-child(3){
+          i{
+            background-position: -354px -220px;
+          }
+        }
+        li:nth-child(4){
+          i{
+            background-position: -252px -220px;
+          }
+        }
+      }
+    }
+    a.next{
+      position: absolute;
+      bottom: 99px;
+      left: 0;
+      .wh(42px, 74px);
+      background-color: rgba(138, 131, 126, 0.51);
+      i{
+        display: block;
+        position: relative;
+        top: 21.5px;
+        left: 12px;
+        .wh(18px, 31px);
+        background: url(../img/solution/elves.png) no-repeat;
+        background-position: -333px -311px;
+      }
+    }
+    a.prev{
+      position: absolute;
+      bottom: 99px;
+      right: 0;
+      .wh(42px, 74px);
+      background-color: rgba(138, 131, 126, 0.51);
+      i{
+        display: block;
+        position: relative;
+        top: 21.5px;
+        left: 12px;
+        .wh(18px, 31px);
+        background: url(../img/solution/elves.png) no-repeat;
+        background-position: -355px -311px;
+      }
+    }
+  }
+}
+/*
+* 艾特八宗最
+*/
+.most{
+  margin: 26px auto 30px;
+  .wh(1200px, auto);
+  .most_title{
+    margin-bottom: 28px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(1200px, 34px);
+      .font(30px, @3);
+      font-weight: bold;
+    }
+    h6{
+      .whh(1200px, 20px);
+      .font(16px, @3);
+      font-weight: bold;
+    }
+  }
+  ul{
+    margin-bottom: 55px;
+    position: relative;
+    .wh(100%, 226px);
+    li{
+      position: absolute;
+      top: 28.5px;
+      .wh(149px, 149px);
+      border-radius: 50%;
+      border: solid 10px @9;
+      background-color: #ffffff;
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear;
+      i{
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        .wh(66px, 46px);
+        background: url(../img/solution/elves.png) no-repeat;
+      }
+      h3{
+        .whh(100%, 22px);
+        .font(18px, #000000);
+        text-align: center;
+      }
+    }
+    li:nth-child(1){
+      left: 17px;
+      border-color: #d04b4b;
+      i{
+        background-position: 0 -353px;
+      }
+    }
+    li:nth-child(2){
+      left: 159px;
+      border-color: #39b3ff;
+      i{
+        background-position: -55px -353px;
+      }
+    }
+    li:nth-child(3){
+      left: 301px;
+      border-color: #4a4a4a;
+      i{
+        background-position: -111px -353px;
+      }
+    }
+    li:nth-child(4){
+      left: 443px;
+      border-color: #6db663;
+      i{
+        background-position: -178px -353px;
+      }
+    }
+    li:nth-child(5){
+      left: 585px;
+      border-color: #d2a2d9;
+      i{
+        background-position: -244px -353px;
+      }
+    }
+    li:nth-child(6){
+      left: 727px;
+      border-color: #dfc59d;
+      i{
+        background-position: -299px -353px;
+      }
+    }
+    li:nth-child(7){
+      left: 869px;
+      border-color: #f5a4aa;
+      i{
+        background-position: -351px -353px;
+      }
+    }
+    li:nth-child(8){
+      left: 1011px;
+      border-color: #508299;
+      i{
+        background-position: -266px -303px;
+      }
+    }
+    li:hover{
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+  }
+  .most_bottom{
+    .wh(1200px, auto);
+    text-align: center;
+    h2{
+      margin-bottom: 11px;
+      .whh(100%, 26px);
+      .font(24px, #000000);
+    }
+    i{
+      margin: auto;
+      margin-bottom: 15px;
+      display: block;
+      .wh(67px, 6px);
+      background-color: #ff4f6c;
+    }
+    p{
+      margin: auto;
+      .wh(960px, 60px);
+      line-height: 30px;
+      .font(16px, @6);
+    }
+  }
+}
+/*
+* 选择艾特，只做你的专心专意
+*/
+.focus{
+  .wh(100%, 1068px);
+  background: url(../img/solution/focus.png) no-repeat;
+  background-size: 100% 100%;
+  .focus_title{
+    padding-top: 55px;
+    margin: 0 auto 90px;
+    .wh(1200px, 38px);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(36px, #ffffff);
+    }
+  }
+  ul{
+    margin: auto;
+    padding: 0 40px;
+    .wh(1120px, 900px);
+    li{
+      position: relative;
+      float: left;
+      padding-left: 140px;
+      .wh(360px, 225px);
+      i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .wh(109px, 109px);
+        border-radius: 50%;
+        background: url(../img/solution/elves.png) no-repeat;
+      }
+      h2{
+        .whh(100%, 38px);
+        .font(24px, #ff4f6c);
+      }
+      p{
+        width: 100%;
+        line-height: 24px;
+        .font(16px, #ffffff);
+      }
+    }
+    li:nth-child(odd){
+      margin-right: 120px;
+    }
+    li:nth-child(1){
+      i{
+        background-position: 0 0;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -110px 0;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: -220px 0;
+      }
+    }
+    li:nth-child(4){
+      i{
+        background-position: -330px 0;
+      }
+    }
+    li:nth-child(5){
+      i{
+        background-position: 0 -110px;
+      }
+    }
+    li:nth-child(6){
+      i{
+        background-position: -110px -110px;
+      }
+    }
+    li:nth-child(7){
+      i{
+        background-position: -220px -110px;
+      }
+    }
+    li:nth-child(8){
+      i{
+        background-position: -330px -110px;
+      }
+    }
+  }
+}
+/*
+* 保障服务
+*/
+.services_contain{
+  margin: auto;
+  margin-top: 30px;
+  .wh(1200px, auto);
+  .services_title{
+    margin-bottom: 10px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 5px;
+      .whh(100%, 34px);
+      .font(30px, @3);
+      font-weight: bold;
+    }
+    h6{
+      .whh(100%, 22px);
+      .font(18px, @3);
+      font-weight: bold;
+    }
+  }
+  div{
+    margin-bottom: 20px;
+    .wh(100%, 87px);
+    i{
+      display: block;
+    }
+    i.services_one{
+      margin: auto;
+      .wh(1px, 49px);
+      background-color: #c7c7c7;
+    }
+    i.services_two{
+      float: left;
+      .wh(500px, 1px);
+      background-color: #c7c7c7;
+    }
+    i.services_three{
+      float: left;
+      margin-left: 199px;
+      .wh(1px, 37px);
+      background-color: #c7c7c7;
+    }
+    i.fl{
+      margin-left: 100px;
+    }
+    i.fr{
+      margin-right: 100px;
+    }
+    i:nth-child(8){
+      margin-left: 198px;
+    }
+  }
+  ul{
+    .wh(1200px, 215px);
+    li{
+      float: left;
+      margin: 0 3px;
+      .wh(194px, 215px);
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 19px;
+        .wh(46px, 46px);
+        background: url(../img/solution/elves.png) no-repeat;
+      }
+      h2{
+        margin-bottom: 10px;
+        .whh(100%, 22px);
+        .font(18px, #222222);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        .wh(100%, 116px);
+        line-height: 29px;
+        .font(14px, @6);
+        span{
+          display: block;
+          .whh(100%, 29px);
+          text-align: center;
+        }
+      }
+    }
+    li:nth-child(1){
+      i{
+        background-position: 0 -303px;
+      }
+    }
+    li:nth-child(2){
+      i{
+        background-position: -47px -303px;
+      }
+    }
+    li:nth-child(3){
+      i{
+        background-position: -94px -303px;
+      }
+    }
+    li:nth-child(4){
+      i{
+        background-position: -140px -303px;
+      }
+    }
+    li:nth-child(5){
+      i{
+        background-position: -186px -303px;
+      }
+    }
+    li:nth-child(6){
+      i{
+        background-position: -227px -303px;
+      }
+    }
+  }
+}

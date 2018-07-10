@@ -1,0 +1,429 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: 565px;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 以下板块通用标题
+*/
+.common_title {
+  margin: auto;
+  padding: 70px 0 82px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+}
+.common_title p {
+  margin: auto;
+  width: 1180px;
+  height: auto;
+  line-height: 32px;
+  font-size: 18px;
+  color: #666666;
+}
+/*
+* 系统介绍板块
+*/
+.introduce_contain {
+  margin: auto;
+  margin-bottom: 55px;
+  width: 1200px;
+  height: auto;
+}
+.introduce_contain ul {
+  width: 100%;
+  height: 560px;
+}
+.introduce_contain ul li {
+  float: left;
+  margin-right: 75px;
+  width: 350px;
+  height: 280px;
+}
+.introduce_contain ul li img {
+  display: block;
+  margin-bottom: 25px;
+  width: 350px;
+  height: 211px;
+}
+.introduce_contain ul li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.introduce_contain ul li:nth-child(3),
+.introduce_contain ul li:nth-child(6) {
+  margin-right: 0;
+}
+.introduce_contain ul li:hover p {
+  color: #0093dd;
+}
+/*
+* 系统优势板块
+*/
+.advantage_contain {
+  width: 100%;
+  height: 575px;
+  background: url(../img/p2p/cms-brief.png) no-repeat;
+  background-size: 100% 100%;
+}
+.advantage_contain .advantage_box {
+  margin: auto;
+  width: 1200px;
+  height: 272px;
+}
+.advantage_contain .advantage_box li {
+  float: left;
+  margin-bottom: 60px;
+  width: 400px;
+  height: 76px;
+}
+.advantage_contain .advantage_box li .dashed_box {
+  float: left;
+  margin-right: 14px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: dashed 1px #bfbfbf;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.advantage_contain .advantage_box li .dashed_box .solid_box {
+  margin: 7px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.advantage_contain .advantage_box li .dashed_box .solid_box i {
+  display: block;
+  position: relative;
+  top: 11px;
+  left: 12px;
+  width: 37px;
+  height: 39px;
+  background: url(../img/p2p/elves.png) no-repeat;
+}
+.advantage_contain .advantage_box li h2 {
+  float: left;
+  width: 310px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #333333;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.advantage_contain .advantage_box li p {
+  float: left;
+  width: 310px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #999999;
+}
+.advantage_contain .advantage_box li:nth-child(1) .dashed_box .solid_box i {
+  background-position: 0 0;
+}
+.advantage_contain .advantage_box li:nth-child(2) .dashed_box .solid_box i {
+  background-position: -37px 0;
+}
+.advantage_contain .advantage_box li:nth-child(3) .dashed_box .solid_box i {
+  background-position: -74px 0;
+}
+.advantage_contain .advantage_box li:nth-child(4) .dashed_box .solid_box i {
+  background-position: -111px 0;
+}
+.advantage_contain .advantage_box li:nth-child(5) .dashed_box .solid_box i {
+  background-position: -148px 0;
+}
+.advantage_contain .advantage_box li:nth-child(6) .dashed_box .solid_box i {
+  background-position: -185px 0;
+}
+.advantage_contain .advantage_box li:hover .dashed_box {
+  border-color: #0093dd;
+}
+.advantage_contain .advantage_box li:hover .dashed_box .solid_box {
+  background-color: #0093dd;
+}
+.advantage_contain .advantage_box li:hover .dashed_box .solid_box i {
+  background-position-y: -39px;
+}
+.advantage_contain .advantage_box li:hover h2 {
+  color: #0093dd;
+}
+/*
+* 六大安全保障板块
+*/
+.safety_contain {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.safety_contain .safety_box {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  height: 0;
+}
+.safety_contain .safety_box li {
+  position: absolute;
+  top: 0;
+  width: 191px;
+  height: 272px;
+}
+.safety_contain .safety_box li .safety_top {
+  width: 100%;
+  height: 112px;
+  background-color: #effbff;
+}
+.safety_contain .safety_box li .safety_top i {
+  display: inline-block;
+  position: relative;
+  top: 27px;
+  left: 63px;
+  width: 64px;
+  height: 58px;
+  background: url(../img/p2p/elves.png) no-repeat;
+}
+.safety_contain .safety_box li .safety_bottom {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li .safety_bottom h2 {
+  padding-top: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li .safety_bottom p {
+  margin: auto;
+  width: 128px;
+  height: auto;
+  line-height: 26px;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li:nth-child(1) {
+  left: 0;
+}
+.safety_contain .safety_box li:nth-child(1) i {
+  background-position: 0 -80px;
+}
+.safety_contain .safety_box li:nth-child(2) {
+  left: 202px;
+}
+.safety_contain .safety_box li:nth-child(2) i {
+  background-position: -64px -80px;
+}
+.safety_contain .safety_box li:nth-child(3) {
+  left: 404px;
+}
+.safety_contain .safety_box li:nth-child(3) i {
+  background-position: -128px -80px;
+}
+.safety_contain .safety_box li:nth-child(4) {
+  left: 605px;
+}
+.safety_contain .safety_box li:nth-child(4) i {
+  background-position: -192px -80px;
+}
+.safety_contain .safety_box li:nth-child(5) {
+  left: 807px;
+}
+.safety_contain .safety_box li:nth-child(5) i {
+  background-position: -256px -80px;
+}
+.safety_contain .safety_box li:nth-child(6) {
+  left: 1009px;
+}
+.safety_contain .safety_box li:nth-child(6) i {
+  background-position: -320px -80px;
+}
+.safety_contain .safety_box li:hover .safety_bottom {
+  background-color: #ffffff;
+}
+.safety_contain .safety_box li:hover .safety_bottom h2 {
+  color: #333333;
+}
+.safety_contain .safety_box li:hover .safety_bottom p {
+  color: #999999;
+}
+.safety_contain .safety_bg {
+  margin-top: 112px;
+  padding: 120px 0 45px;
+  width: 100%;
+  height: 75px;
+  background-color: #0093dd;
+}
+.safety_contain .safety_bg .safety_bg_img {
+  margin: auto;
+  width: 1200px;
+  height: 75px;
+  background: url(../img/p2p/advantage2.png) no-repeat;
+  background-position: center;
+}
+/*
+* 我们的优势板块
+*/
+.edge_bg {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.edge_bg .edge_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.edge_bg .edge_contain .edge_box {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 590px;
+  height: 300px;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_bg .edge_contain .edge_box .fl {
+  float: left;
+}
+.edge_bg .edge_contain .edge_box .fr {
+  float: right;
+}
+.edge_bg .edge_contain .edge_box .edge_img {
+  position: relative;
+  width: 295px;
+  height: 300px;
+}
+.edge_bg .edge_contain .edge_box .edge_img img {
+  width: 100%;
+  height: 100%;
+}
+.edge_bg .edge_contain .edge_box .edge_img i {
+  position: absolute;
+  top: 95px;
+  left: 87px;
+  width: 122px;
+  height: 110px;
+  background: url(../img/p2p/elves.png) no-repeat;
+}
+.edge_bg .edge_contain .edge_box .edge_text {
+  padding: 0 35px;
+  width: 225px;
+  height: 300px;
+}
+.edge_bg .edge_contain .edge_box .edge_text h2 {
+  margin-top: 75px;
+  margin-bottom: 22px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_bg .edge_contain .edge_box .edge_text h6 {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_bg .edge_contain .edge_box .edge_text p {
+  width: 100%;
+  height: auto;
+  line-height: 29px;
+  font-size: 16px;
+  color: #999999;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_bg .edge_contain .edge_one .edge_img i {
+  background-position: 0 -140px;
+}
+.edge_bg .edge_contain .edge_two {
+  margin-right: 0;
+}
+.edge_bg .edge_contain .edge_two .edge_img i {
+  background-position: -115px -140px;
+}
+.edge_bg .edge_contain .edge_three .edge_img i {
+  background-position: -231px -140px;
+}
+.edge_bg .edge_contain .edge_four {
+  margin-right: 0;
+}
+.edge_bg .edge_contain .edge_four .edge_img i {
+  background-position: -353px -140px;
+}
+.edge_bg .edge_contain .edge_box:hover {
+  background-color: #0093dd;
+}
+.edge_bg .edge_contain .edge_box:hover .edge_text h2,
+.edge_bg .edge_contain .edge_box:hover .edge_text h6,
+.edge_bg .edge_contain .edge_box:hover .edge_text p {
+  color: #ffffff;
+}

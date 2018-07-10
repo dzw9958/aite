@@ -1,0 +1,511 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: 600px;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 以下板块通用标题
+*/
+.common_title {
+  margin: auto;
+  padding: 70px 0 65px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 34px;
+  color: #333333;
+}
+.common_title p {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #949494;
+}
+.common_title i {
+  display: block;
+  margin: auto;
+  width: 132px;
+  height: 2px;
+  background-color: #249fdf;
+}
+/*
+* 产品介绍板块
+*/
+.introduce_contain {
+  margin: auto;
+  margin-bottom: 65px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.introduce_contain .introduce_box {
+  width: 100%;
+  height: 357px;
+}
+.introduce_contain .introduce_box li {
+  float: left;
+  padding: 0 30px;
+  margin-right: 21px;
+  width: 312px;
+  height: 337px;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.introduce_contain .introduce_box li div {
+  margin: 38px auto 21px;
+  width: 153px;
+  height: 153px;
+  border-radius: 50%;
+}
+.introduce_contain .introduce_box li div i {
+  display: inline-block;
+  position: relative;
+  top: 42px;
+  left: 41px;
+  width: 71px;
+  height: 69px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.introduce_contain .introduce_box li h2 {
+  margin-bottom: 13px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.introduce_contain .introduce_box li p {
+  width: 100%;
+  height: auto;
+  max-height: 75px;
+  line-height: 25px;
+  font-size: 13px;
+  color: #999999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.introduce_contain .introduce_box li:nth-child(1) {
+  margin-left: 21px;
+}
+.introduce_contain .introduce_box li:nth-child(1) div {
+  background-color: #ffcd3d;
+}
+.introduce_contain .introduce_box li:nth-child(1) div i {
+  background-position: 0 0;
+}
+.introduce_contain .introduce_box li:nth-child(2) div {
+  background-color: #79d9ef;
+}
+.introduce_contain .introduce_box li:nth-child(2) div i {
+  background-position: -73px 0;
+}
+.introduce_contain .introduce_box li:nth-child(3) div {
+  background-color: #ff875e;
+}
+.introduce_contain .introduce_box li:nth-child(3) div i {
+  background-position: -146px 0;
+}
+.introduce_contain .introduce_box li:hover {
+  -webkit-box-shadow: 0px 7px 20px 0px rgba(191, 191, 191, 0.35);
+  box-shadow: 0px 7px 20px 0px rgba(191, 191, 191, 0.35);
+}
+/*
+* 产品优势板块
+*/
+.advantage_contain {
+  width: 100%;
+  height: 688px;
+  min-width: 1200px;
+  background: url(../img/index/art2_bg.png);
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+.advantage_contain .advantage_box {
+  margin: auto;
+  width: 1200px;
+  height: 394px;
+}
+.advantage_contain .advantage_box .advantage_fl {
+  float: left;
+  margin-top: 60px;
+  width: 512px;
+  height: auto;
+}
+.advantage_contain .advantage_box .advantage_fl h2 {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.advantage_contain .advantage_box .advantage_fl p {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 15px;
+  color: #666666;
+}
+.advantage_contain .advantage_box .advantage_fl p span {
+  font-size: 16px;
+  color: #666666;
+  font-weight: bold;
+}
+.advantage_contain .advantage_box .advantage_fr {
+  float: right;
+  position: relative;
+  width: 498px;
+  height: 394px;
+  background: url(../img/index/advantage1.png) no-repeat;
+  background-size: 100% 100%;
+}
+.advantage_contain .advantage_box .advantage_fr li {
+  position: absolute;
+}
+.advantage_contain .advantage_box .advantage_fr li h2 {
+  width: 112px;
+  height: auto;
+  line-height: 20px;
+  font-size: 16px;
+  color: #ff9f1e;
+}
+.advantage_contain .advantage_box .advantage_fr li p {
+  width: 112px;
+  height: auto;
+  line-height: 20px;
+  font-size: 12px;
+  color: #5ba3d6;
+}
+.advantage_contain .advantage_box .advantage_fr li:nth-child(1) {
+  top: 18px;
+  left: 195px;
+}
+.advantage_contain .advantage_box .advantage_fr li:nth-child(2) {
+  top: 152px;
+  left: 12px;
+}
+.advantage_contain .advantage_box .advantage_fr li:nth-child(3) {
+  top: 142px;
+  left: 375px;
+}
+.advantage_contain .advantage_box .advantage_fr li:nth-child(4) {
+  top: 285px;
+  left: 195px;
+}
+/*
+* 六大安全保障板块
+*/
+.safety_contain {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.safety_contain .safety_box {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  height: 0;
+}
+.safety_contain .safety_box li {
+  position: absolute;
+  top: 0;
+  width: 191px;
+  height: 272px;
+}
+.safety_contain .safety_box li .safety_top {
+  width: 100%;
+  height: 112px;
+  background-color: #effbff;
+}
+.safety_contain .safety_box li .safety_top i {
+  display: inline-block;
+  position: relative;
+  top: 27px;
+  left: 63px;
+  width: 64px;
+  height: 58px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.safety_contain .safety_box li .safety_bottom {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li .safety_bottom h2 {
+  padding-top: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li .safety_bottom p {
+  margin: auto;
+  width: 128px;
+  height: auto;
+  line-height: 26px;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.safety_contain .safety_box li:nth-child(1) {
+  left: 0;
+}
+.safety_contain .safety_box li:nth-child(1) i {
+  background-position: 0 -71px;
+}
+.safety_contain .safety_box li:nth-child(2) {
+  left: 202px;
+}
+.safety_contain .safety_box li:nth-child(2) i {
+  background-position: -66px -71px;
+}
+.safety_contain .safety_box li:nth-child(3) {
+  left: 404px;
+}
+.safety_contain .safety_box li:nth-child(3) i {
+  background-position: -130px -71px;
+}
+.safety_contain .safety_box li:nth-child(4) {
+  left: 605px;
+}
+.safety_contain .safety_box li:nth-child(4) i {
+  background-position: 0 -130px;
+}
+.safety_contain .safety_box li:nth-child(5) {
+  left: 807px;
+}
+.safety_contain .safety_box li:nth-child(5) i {
+  background-position: -66px -130px;
+}
+.safety_contain .safety_box li:nth-child(6) {
+  left: 1009px;
+}
+.safety_contain .safety_box li:nth-child(6) i {
+  background-position: -130px -130px;
+}
+.safety_contain .safety_box li:hover .safety_bottom {
+  background-color: #ffffff;
+}
+.safety_contain .safety_box li:hover .safety_bottom h2 {
+  color: #333333;
+}
+.safety_contain .safety_box li:hover .safety_bottom p {
+  color: #999999;
+}
+.safety_contain .safety_bg {
+  margin-top: 112px;
+  width: 100%;
+  height: 270px;
+  background-color: #0095de;
+  overflow: hidden;
+}
+.safety_contain .safety_bg .safety_bg_img {
+  margin: 150px auto 45px;
+  width: 1200px;
+  height: 75px;
+  background: url(../img/index/advantage2.png) no-repeat;
+  background-position: center;
+}
+/*
+* 应用技术板块
+*/
+.technology_contain {
+  margin: auto;
+  margin-bottom: 103px;
+  width: 1200px;
+  height: auto;
+}
+.technology_contain .technology_bg {
+  margin: auto;
+  width: 1106px;
+  height: 469px;
+  border-radius: 5px;
+  background-color: #0093dd;
+}
+.technology_contain .technology_bg .technology_box {
+  position: relative;
+  top: 41px;
+  left: -47px;
+  width: 1200px;
+  height: 400px;
+}
+.technology_contain .technology_bg .technology_box li {
+  float: left;
+  margin-left: 20px;
+  padding: 0 14px;
+  width: 257px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(36, 159, 223, 0.6);
+  box-shadow: 0px 6px 20px 0px rgba(36, 159, 223, 0.6);
+}
+.technology_contain .technology_bg .technology_box li i {
+  display: block;
+  margin: 37px auto 32px;
+  width: 57px;
+  height: 64px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.technology_contain .technology_bg .technology_box li h2 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.technology_contain .technology_bg .technology_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #999999;
+}
+.technology_contain .technology_bg .technology_box li:nth-child(1) {
+  margin-left: 0;
+}
+.technology_contain .technology_bg .technology_box li:nth-child(1) i {
+  background-position: 1px -191px;
+}
+.technology_contain .technology_bg .technology_box li:nth-child(2) i {
+  background-position: -57px -191px;
+}
+.technology_contain .technology_bg .technology_box li:nth-child(3) i {
+  background-position: -114px -191px;
+}
+.technology_contain .technology_bg .technology_box li:nth-child(4) i {
+  background-position: -171px -191px;
+}
+.technology_contain .technology_bg .technology_box li:hover h2 {
+  color: #0093dd;
+}
+/*
+* 优势板块
+*/
+.edge_contain {
+  width: 100%;
+  height: 552px;
+  background: url(../img/index/section-bg1.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.edge_contain .common_title h1,
+.edge_contain .common_title p {
+  color: #ffffff;
+}
+.edge_contain .edge_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.edge_contain .edge_box li {
+  float: left;
+  width: 300px;
+  height: 243px;
+  text-align: center;
+}
+.edge_contain .edge_box li div {
+  margin: 0 auto 24px;
+  width: 161px;
+  height: 161px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.edge_contain .edge_box li div i {
+  display: inline-block;
+  position: relative;
+  top: 49px;
+  width: 79px;
+  height: 64px;
+  background: url(../img/index/elves.png) no-repeat;
+}
+.edge_contain .edge_box li h2 {
+  margin-bottom: 18px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.edge_contain .edge_box li p {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.edge_contain .edge_box li:nth-child(1) i {
+  background-position: 0 -255px;
+}
+.edge_contain .edge_box li:nth-child(2) i {
+  background-position: -79px -255px;
+}
+.edge_contain .edge_box li:nth-child(3) i {
+  background-position: -147px -255px;
+}
+.edge_contain .edge_box li:nth-child(4) i {
+  background-position: -226px -255px;
+}
+.edge_contain .edge_box li:hover div {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}

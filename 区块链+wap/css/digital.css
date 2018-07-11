@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 6.66666667rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 分割块
+*/
+.cut_box {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: #f6f6f6;
+}
+/*
+* 区块链的野蛮生长,给世界带来的三大巨变板块
+*/

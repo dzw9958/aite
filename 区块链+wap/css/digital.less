@@ -40,12 +40,391 @@ body{
     }
 }
 /*
-* 分割块
+* 系统介绍板块
 */
-.cut_box{
-    .wh(750/@r, 15/@r);
-    .bgs(#f6f6f6);
+.introduce_contain{
+    .wh(750/@r, auto);
+    .introduce_title{
+        padding: 70/@r 0 60/@r;
+        .whh(100%, auto);
+        h1{
+            margin-bottom: 18/@r;
+            .whh(100%, 32/@r);
+            .font(28/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        b{
+            display: block;
+            margin: auto;
+            margin-bottom: 15/@r;
+            .wh(90/@r, 7/@r);
+            border-radius: 3/@r;
+            .bgs(#249fdf);
+        }
+        p{
+            margin: auto;
+            .wh(705/@r, auto);
+            line-height: 32/@r;
+            .font(18/@r, @9);
+        }
+    }
+    .introduce_box{
+        padding-bottom: 63/@r;
+        .wh(100%, auto);
+        overflow: hidden;
+        li{
+            float: left;
+            .wh(250/@r, auto);
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 13/@r;
+                .wh(139/@r, 144/@r);
+                background: url(../img/digital/elves.png) no-repeat;
+                background-size: 410/@r 290/@r;
+            }
+            p{
+                margin: auto;
+                .wh(200/@r, auto);
+                line-height: 32/@r;
+                .font(18/@r, @3);
+                text-align: center;
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(0, 0);
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-140/@r, 0);
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(-279/@r, 0);
+            }
+        }
+    }
 }
 /*
-* 区块链的野蛮生长,给世界带来的三大巨变板块
+* 核心技术板块
 */
+.core_contain{
+    .wh(750/@r, 570/@r);
+    .bgs(#f4f8ff);
+    .core_title{
+        padding: 50/@r 0 63/@r;
+        .wh(100%, auto);
+        h1{
+            margin-bottom: 18/@r;
+            .whh(100%, 32/@r);
+            .font(28/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        b{
+            display: block;
+            margin: auto;
+            .wh(90/@r, 7/@r);
+            border-radius: 3/@r;
+            .bgs(#249fdf);
+        }
+    }
+    .core_box{
+        position: relative;
+        margin: auto;
+        .wh(678/@r, 316/@r);
+    }
+    .core_center{
+        margin: auto;
+        .wh(344/@r, 316/@r);
+        text-align: center;
+        background: url(../img/digital/core.png) no-repeat;
+        background-size: 344/@r 316/@r;
+        .bgp(center, center);
+        h2{
+            padding-top: 134/@r;
+            margin-bottom: 8/@r;
+            .whh(100%, 26/@r);
+            .font(24/@r, @b);
+        }
+        p{
+            .whh(100%, 13/@r);
+            .font(11/@r, @b);
+        }
+    }
+    .core_both{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .wh(678/@r, 316/@r);
+        li{
+            position: absolute;
+            .wh(142/@r, 40/@r);
+            i{
+                float: left;
+                margin: 15/@r 0;
+                .wh(10/@r, 10/@r);
+                border-radius: 50%;
+                .bgs(#7dc6f1);
+            }
+            span{
+                float: left;
+                margin: 0 7/@r;
+                .whh(108/@r, 40/@r);
+                .font(18/@r, @b);
+                text-align: center;
+                border-radius: 20/@r;
+                .bgs(#249fdf);
+            }
+        }
+        li:nth-child(1){
+            top: 0;
+            left: 35/@r;
+        }
+        li:nth-child(2){
+            top: 0;
+            right: 35/@r;
+        }
+        li:nth-child(3){
+            top: 92/@r;
+            left: 0;
+        }
+        li:nth-child(4){
+            top: 92/@r;
+            right: 0;
+        }
+        li:nth-child(5){
+            bottom: 92/@r;
+            left: 0;
+        }
+        li:nth-child(6){
+            bottom: 92/@r;
+            right: 0;
+        }
+        li:nth-child(7){
+            bottom: 0;
+            left: 35/@r;
+        }
+        li:nth-child(8){
+            bottom: 0;
+            right: 35/@r;
+        }
+    }
+}
+/*
+* 系统生态板块
+*/
+.ecology_contain{
+    .wh(750/@r, auto);
+    .ecology_title{
+        padding: 65/@r 0 100/@r;
+        .wh(100%, auto);
+        h1{
+            margin-bottom: 18/@r;
+            .whh(100%, 32/@r);
+            .font(28/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        b{
+            display: block;
+            margin: auto;
+            .wh(90/@r, 7/@r);
+            border-radius: 3/@r;
+            .bgs(#249fdf);
+        }
+    }
+    .ecology_bg{
+        .wh(750/@r, 420/@r);
+        background: url(../img/digital/bg.png) no-repeat;
+        background-size: 750/@r 420/@r;
+        .bgp(center, center);
+    }
+    .ecology_box{
+        position: relative;
+        top: -50/@r;
+        margin: auto;
+        .wh(648/@r, 430/@r);
+	    border-radius: 20/@r;
+        .bgs(@b);
+        -webkit-box-shadow: 0 -10/@r 30/@r 0 #b8e2f7;
+        box-shadow: 0 -10/@r 30/@r 0 #b8e2f7;
+        li{
+            float: left;
+            padding-top: 45/@r;
+            .wh(216/@r, 170/@r);
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 15/@r;
+                .wh(66/@r, 70/@r);
+                background: url(../img/digital/elves.png) no-repeat;
+                background-size: 410/@r 290/@r;
+            }
+            p{
+                margin: auto;
+                .wh(108/@r, auto);
+                line-height: 32/@r;
+                .font(18/@r, @3);
+                text-align: center;
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(0, -145/@r);
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-66/@r, -145/@r);
+            }
+            p{
+                width: 144/@r;
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(-132/@r, -145/@r);
+            }
+        }
+        li:nth-child(4){
+            i{
+                .bgp(-198/@r, -145/@r);
+            }
+        }
+        li:nth-child(5){
+            i{
+                .bgp(-264/@r, -145/@r);
+            }
+            p{
+                width: 144/@r;
+            }
+        }
+        li:nth-child(6){
+            i{
+                .bgp(-330/@r, -145/@r);
+            }
+        }
+    }
+}
+/*
+* 系统优势板块
+*/
+.edge_contain{
+    .wh(750/@r, 1020/@r);
+    .bgs(#f6f6f6);
+    .edge_title{
+        padding: 50/@r 0 40/@r;
+        .wh(100%, auto);
+        h1{
+            margin-bottom: 18/@r;
+            .whh(100%, 32/@r);
+            .font(28/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        b{
+            display: block;
+            margin: auto;
+            .wh(90/@r, 7/@r);
+            border-radius: 3/@r;
+            .bgs(#249fdf);
+        }
+    }
+    .edge_box{
+        margin: auto;
+        .wh(730/@r, 820/@r);
+        li{
+            float: left;
+            margin: 10/@r;
+            padding-top: 34/@r;
+            .wh(345/@r, 356/@r);
+            .bgs(@b);
+            border-radius: 5/@r;
+            -webkit-box-shadow: 0 5/@r 15/@r 0 #e2e2e2;
+                    box-shadow: 0 5/@r 15/@r 0 #e2e2e2;
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 30/@r;
+                .wh(70/@r, 74/@r);
+                background: url(../img/digital/elves.png) no-repeat;
+                background-size: 410/@r 290/@r;
+            }
+            h2{
+                margin-bottom: 35/@r;
+                .whh(100%, 26/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                margin: auto;
+                .wh(288/@r, auto);
+                line-height: 32/@r;
+                .font(18/@r, @9);
+            }
+        }
+        li:nth-child(1){
+            i{
+                .bgp(0, -215/@r);
+            }
+        }
+        li:nth-child(2){
+            i{
+                .bgp(-72/@r, -215/@r);
+            }
+        }
+        li:nth-child(3){
+            i{
+                .bgp(-144/@r, -215/@r);
+            }
+        }
+        li:nth-child(4){
+            i{
+                .bgp(-216/@r, -215/@r);
+            }
+        }
+    }
+}
+/*
+* 数字货币交易系统板块
+*/
+.trade_contain{
+    .wh(750/@r, auto);
+    .trade_title{
+        padding: 50/@r 0 90/@r;
+        .wh(100%, auto);
+        h1{
+            margin-bottom: 18/@r;
+            .whh(100%, 32/@r);
+            .font(28/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        b{
+            display: block;
+            margin: auto;
+            .wh(90/@r, 7/@r);
+            border-radius: 3/@r;
+            .bgs(#249fdf);
+        }
+    }
+    .trade_box{
+        margin: auto;
+        .wh(720/@r, 650/@r);
+        overflow: hidden;
+        .trade_left{
+            float: left;
+            .wh(320/@r, 595/@r);
+        }
+        .trade_right{
+            float: right;
+            .wh(377/@r, 533/@r);
+        }
+    }
+}

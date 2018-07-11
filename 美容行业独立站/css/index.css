@@ -115,6 +115,7 @@ body {
   width: 299px;
   height: 250px;
   -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .products ul li div {
@@ -209,8 +210,8 @@ body {
   height: 20px;
 }
 .products ul li:hover {
-  -webkit-box-shadow: 0 0 10px #ea475b;
-  box-shadow: 0 0 10px #ea475b;
+  -webkit-box-shadow: 0 0 10px #eb6575;
+  box-shadow: 0 0 10px #eb6575;
 }
 /*
 * 是什么阻碍您的企业发展？
@@ -218,7 +219,7 @@ body {
 .develop {
   width: 100%;
   height: 740px;
-  background-color: #e94f40;
+  background-color: #f97acc;
 }
 .develop .develop_content {
   margin: auto;
@@ -368,8 +369,8 @@ body {
   margin-left: 0;
 }
 .operate .operate_choice li.on {
-  color: #e94f40;
-  border-bottom: solid 2px #e94055;
+  color: #ff76bd;
+  border-bottom: solid 2px #ff76bd;
 }
 .operate .operate_list {
   position: relative;
@@ -385,6 +386,7 @@ body {
   width: 6504px;
   height: 610px;
   -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .operate .operate_list ul li {
@@ -457,7 +459,7 @@ body {
   margin-left: 0;
 }
 .industry .industry_box li:hover h2 {
-  color: #e94f40;
+  color: #ff76bd;
 }
 /*
 * 服务流程
@@ -465,7 +467,7 @@ body {
 .flow {
   width: 100%;
   height: 670px;
-  background-color: #e94f40;
+  background-color: #ff76bd;
 }
 .flow .flow_content {
   margin: auto;
@@ -580,7 +582,7 @@ body {
   background-position: -140px -140px;
 }
 .standard .standard_list li:hover h2 {
-  color: #e94f40;
+  color: #ff76bd;
 }
 /*
 * 灰色板块
@@ -622,7 +624,7 @@ body {
   height: 24px;
   line-height: 24px;
   font-size: 20px;
-  color: #e94f40;
+  color: #ff76bd;
   font-weight: bold;
 }
 .gray .gray_content li p {
@@ -631,7 +633,7 @@ body {
   height: 57px;
   line-height: 19px;
   font-size: 14px;
-  color: #e94f40;
+  color: #ff76bd;
 }
 .gray .gray_content li p i {
   display: inline-block;
@@ -684,12 +686,6 @@ body {
   width: 47px;
   height: 47px;
   background: url(../img/index/elves-2.png) no-repeat;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
-}
-.blend .blend_list li i:hover {
-  -webkit-transform: scale(2);
-  transform: scale(2);
 }
 .blend .blend_list li h2 {
   float: left;
@@ -719,14 +715,14 @@ body {
   color: #666666;
 }
 .blend .blend_list li:nth-child(1) i {
-  background-position: -3px -282px;
+  background-position: -3px -284px;
 }
 .blend .blend_list li:nth-child(2) i {
-  background-position: -77px -282px;
+  background-position: -77px -284px;
 }
 .blend .blend_list li:nth-child(3) i {
-  background-position: -153px -282px;
+  background-position: -153px -284px;
 }
 .blend .blend_list li:nth-child(4) i {
-  background-position: -227px -282px;
+  background-position: -227px -284px;
 }

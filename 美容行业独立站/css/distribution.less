@@ -1,0 +1,646 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@w, @h){
+  background-position: @w @h;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, 695px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    .banner_img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* 微分销-企业的移动分销商城板块
+*/
+.mobile_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .mobile_title{
+    padding: 40px 0 90px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 25px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      margin: auto;
+      .wh(602px, auto);
+      line-height: 26px;
+      .font(18px, @6);
+    }
+  }
+  .mobile_box{
+    .wh(100%, 456px);
+    overflow: hidden;
+    .mobile_left{
+      float: left;
+      margin-left: 94px;
+      .wh(462px, 456px);
+      background: url(../img/distribution/mobile_bg.png) no-repeat;;
+      img{
+        position: relative;
+        top: 51px;
+        left: 166px;
+        .wh(230px, 405px);
+      }
+    }
+    .mobile_right{
+      float: right;
+      margin-right: 51px;
+      .wh(552px, 456px);
+      h2{
+        margin: 30px 0 25px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+      }
+      .mobile_switch{
+        .wh(100%, 115px);
+        li{
+          float: left;
+          margin-right: 66px;
+          .wh(72px, 100px);
+          cursor: pointer;
+          i{
+            display: block;
+            margin: auto;
+            margin-bottom: 12px;
+            .wh(68px, 68px);
+            border-radius: 50%;
+            background: url(../img/distribution/elves.png) no-repeat;
+            background-position-y: 0;
+          }
+          p{
+            .whh(72px, 20px);
+            .font(18px, @6);
+            text-align: center;
+          }
+        }
+        li.on{
+          i{
+            background-position-y: -70px; 
+          }
+          p{
+            color: #ff76bd;
+          }
+        }
+      }
+      .mobile_one{
+        li:nth-child(1){
+          i{
+            background-position-x: 0;
+          }
+        }
+        li:nth-child(2){
+          i{
+            background-position-x: -70px;
+          }
+        }
+        li:nth-child(3){
+          i{
+            background-position-x: -140px;
+          }
+        }
+        li:nth-child(4){
+          i{
+            background-position-x: -210px;
+          }
+        }
+      }
+      .mobile_two{
+        li:nth-child(1){
+          i{
+            background-position-x: -280px;
+          }
+        }
+        li:nth-child(2){
+          i{
+            background-position-x: -350px;
+          }
+        }
+        li:nth-child(3){
+          i{
+            background-position-x: -420px;
+          }
+        }
+        li:nth-child(4){
+          i{
+            background-position-x: -490px;
+          }
+        }
+      }
+    }
+  }
+}
+/*
+* 使用收益板块
+*/
+.profit_contain{
+  .wh(100%, 854px);
+  background: url(../img/distribution/profit-bg.png) no-repeat;
+  .profit_title{
+    margin: auto;
+    padding: 55px 0;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .profit_box{
+    margin: auto;
+    .wh(1200px, 690px);
+    li{
+      float: left;
+      .wh(312px, 345px);
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 23px;
+        .wh(109px, 109px);
+        border-radius: 50%;
+        background: url(../img/distribution/elves.png) no-repeat;
+      }
+      h2{
+        margin-bottom: 18px;
+        .whh(100%, 22px);
+        .font(18px, @3);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 26px;
+        .font(16px, @3);
+      }
+    }
+    li:nth-child(1){
+      margin-right: 132px;
+      i{
+        .bgp(0, -140px);
+      }
+    }
+    li:nth-child(2){
+      margin-right: 132px;
+      i{
+        .bgp(-110px, -140px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgp(-220px, -140px);
+      }
+    }
+    li:nth-child(4){
+      margin-left: 222px;
+      margin-right: 132px;
+      i{
+        .bgp(-330px, -140px);
+      }
+    }
+    li:nth-child(5){
+      i{
+        .bgp(-440px, -140px);
+      }
+    }
+  }
+}
+/*
+* 销门无限加盟分销体系板块
+*/
+.join_contain{
+  margin: auto;
+  margin-bottom: 62px;
+  .wh(1200px, auto);
+  text-align: center;
+  .join_title{
+    padding: 50px 0 20px;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .join_box{
+    .wh(100%, auto);
+    .join_top{
+      margin: auto;
+      .wh(632px, auto);
+      line-height: 30px;
+      .font(16px, @6);
+    }
+    h6{
+      margin: auto;
+      margin-bottom: 50px;
+      .whh(632px, 22px);
+      .font(18px, @3);
+      font-weight: bold;
+    }
+    .join_list{
+      position: relative;
+      margin: auto;
+      margin-bottom: 45px;
+      .wh(560px, 249px);
+      background: url(../img/distribution/center.jpg) no-repeat;
+      li{
+        position: absolute;
+        .whh(146px, 40px);
+        .font(20px, @b);
+        border-radius: 20px;
+      }
+      li:nth-child(1){
+        top: 93px;
+        left: 233px;
+        .wh(96px, auto);
+        line-height: 30px;
+        .font(24px, @b);
+        font-weight: bold;
+      }
+      li:nth-child(2){
+        top: 1px;
+        left: 41px;
+      }
+      li:nth-child(3){
+        top: 1px;
+        left: 372px;
+      }
+      li:nth-child(4){
+        top: 71px;
+        left: 2px;
+      }
+      li:nth-child(5){
+        top: 71px;
+        left: 412px;
+      }
+      li:nth-child(6){
+        top: 138px;
+        left: 1px;
+      }
+      li:nth-child(7){
+        top: 138px;
+        left: 413px;
+      }
+      li:nth-child(8){
+        top: 208px;
+        left: 41px;
+      }
+      li:nth-child(9){
+        top: 208px;
+        left: 381px;
+      }
+    }
+    .join_bottom{
+      margin: auto;
+      .whh(632px, 20px);
+      .font(18px, @6);
+    }
+  }
+}
+/*
+* “3+3”分销模式，开启传统渠道分销新模式板块
+*/
+.open_contain{
+  .wh(100%, 660px);
+  .bgs(#f9f8f8);
+  .open_title{
+    margin: auto;
+    padding: 50px 0 80px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .open_box{
+    margin: auto;
+    .wh(1200px, 442px);
+    .open_list{
+      position: relative;
+      margin-bottom: 81px;
+      .wh(384px, 320px);
+      li{
+        position: absolute;
+        .whh(80px, 18px);
+        .font(16px, @3);
+      }
+      li:nth-child(1){
+        bottom: 36px;
+        left: 109px;
+      }
+      li:nth-child(2){
+        bottom: 3px;
+        left: 209px;
+      }
+      li:nth-child(3){
+        bottom: -30px;
+        left: 305px;
+      }
+    }
+    h2{
+      margin: auto;
+      .whh(351px, 41px);
+      .font(24px, @b);
+      text-align: center;
+      border-radius: 10px;
+      .bgs(#ff5f81);
+    }
+    .open_left{
+      float: left;
+      margin-left: 165px;
+      .wh(384px, 442px);
+      .open_list{
+        background: url(../img/distribution/vender.jpg) no-repeat;
+      }
+    }
+    .open_right{
+      float: right;
+      margin-right: 165px;
+      .wh(384px, 442px);
+      .open_list{
+        background: url(../img/distribution/seller.jpg) no-repeat;
+      }
+    }
+    .open_center{
+      position: relative;
+      float: left;
+      margin: 130px 25px 0;
+      .wh(52px, 52px);
+      .open_across{
+        position: absolute;
+        top: 22px;
+        left: 0;
+        .wh(52px, 8px);
+        border-radius: 4px;
+        .bgs(@3);
+      }
+      .open_vertical{
+        position: absolute;
+        top: 0;
+        left: 22px;
+        .wh(8px, 52px);
+        border-radius: 4px;
+        .bgs(@3);
+      }
+    }
+  }
+}
+/*
+* 图文列表板块
+*/
+.blend_contain{
+  margin: auto;
+  padding: 20px 0 50px;
+  .wh(1200px, 1920px);
+  .blend_box{
+    .wh(100%, 480px);
+    .blend_text{
+      float: left;
+      margin: 22.5px 0;
+      .wh(648px, 435px);
+      h2{
+        margin-top: 148.5px;
+        margin-bottom: 28px;
+        .whh(100%, 38px);
+        .font(34px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 36px;
+        .font(20px, @6);
+      }
+    }
+    .blend_img{
+      float: left;
+      .wh(552px, 480px);
+      img{
+        display: block;
+        margin: 22.5px auto;
+        .wh(470px, 435px);
+      }
+    }
+  }
+  .blend_reverse{
+    .blend_text, .blend_img{
+      float: right;
+    }
+  }
+}
+/*
+* 左图右文列表板块
+*/
+.edge_contain{
+  .wh(100%, auto);
+  .edge_list{
+    .wh(100%, auto);
+    li{
+      .wh(100%, 180px);
+      .edge_box{
+        margin: auto;
+        .wh(1200px, 180px);
+        .edge_icon{
+          float: left;
+          .wh(190px, 180px);
+          i{
+            display: block;
+            margin: 16px 0;
+            .wh(148px, 148px);
+            border-radius: 50%;
+            background: url(../img/distribution/elves.png) no-repeat;
+          }
+        }
+        h2{
+          float: left;
+          padding: 42px 0 17px;
+          .whh(1010px, 32px);
+          .font(28px, @3);
+          font-weight: bold;
+        }
+        p{
+          float: left;
+          .wh(1010px, auto);
+          line-height: 34px;
+          .font(20px, @6);
+        }
+      }
+    }
+    li:nth-child(1){
+      .edge_box .edge_icon i{
+        .bgp(0, -250px);
+      }
+    }
+    li:nth-child(2){
+      .edge_box .edge_icon i{
+        .bgp(-149px, -250px);
+      }
+    }
+    li:nth-child(3){
+      .edge_box .edge_icon i{
+        .bgp(-298px, -250px);
+      }
+    }
+    li:nth-child(4){
+      .edge_box .edge_icon i{
+        .bgp(-447px, -250px);
+      }
+    }
+    li:nth-child(5){
+      .edge_box .edge_icon i{
+        .bgp(-596px, -250px);
+      }
+    }
+    li.edge_bg{
+      .bgs(#f7f7f7)
+    }
+  }
+}
+/*
+* 艾特微信分销系统的商业模式板块
+*/
+.model_contain{
+  margin: auto;
+  margin-bottom: 88px;
+  .wh(1200px, auto);
+  .model_title{
+    padding: 60px 0 45px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 20px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      margin: auto;
+      .wh(910px, auto);
+      line-height: 31px;
+      .font(18px, @6);
+    }
+  }
+  .model_box{
+    margin: auto;
+    .wh(828px, 344px);
+    .model_piece{
+      float: left;
+      .wh(218px, 342px);
+      border-width: 1px;
+      border-style: solid;
+      .model_icon{
+        position: relative;
+        margin: 38px auto 13px;
+        .wh(136px, 136px);
+        i{
+          display: block;
+          .wh(100%, 100%);
+          border-radius: 50%;
+          background: url(../img/distribution/elves.png) no-repeat;
+        }
+        h2{
+          position: absolute;
+          bottom: 18px;
+          left: 0;
+          .whh(100%, 26px);
+          .font(24px, @b);
+          text-align: center;
+        }
+      }
+      p{
+        margin: auto;
+        .wh(144px, 42px);
+        i{
+          float: left;
+          margin: 9px 0;
+          .wh(24px, 24px);
+          background: url(../img/distribution/elves.png) no-repeat;
+          .bgp(-528px, -452px);
+        }
+        span{
+          float: left;
+          .whh(120px, 42px);
+          .font(24px, @3);
+          text-align: center;
+        }
+      }
+    }
+    .model_one{
+      border-color: #f75959;
+      .bgs(#fedede);
+      .model_icon i{
+        .bgp(0, -400px);
+      }
+    }
+    .model_two{
+      border-color: #fdb749;
+      .bgs(#fef8de);
+      .model_icon i{
+        .bgp(-138px, -400px);
+      }
+    }
+    .model_three{
+      border-color: #fe8ad7;
+      .bgs(#ffe4f6);
+      .model_icon i{
+        .bgp(-276px, -400px);
+      }
+    }
+    .model_space{
+      position: relative;
+      float: left;
+      .wh(84px, 344px);
+      .model_front{
+        position: absolute;
+        top: 160px;
+        left: 14.5px;
+        .wh(55px, 32px);
+        background: url(../img/distribution/elves.png) no-repeat;
+        .bgp(-414px, -452px);
+      }
+      .model_back{
+        position: absolute;
+        top: 188px;
+        left: 14.5px;
+        .wh(55px, 32px);
+        background: url(../img/distribution/elves.png) no-repeat;
+        .bgp(-471px, -452px);
+      }
+    }
+  }
+}

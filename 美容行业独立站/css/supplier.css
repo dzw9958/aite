@@ -574,6 +574,7 @@ body {
 .services_contain .services_box {
   width: 1200px;
   height: 215px;
+  margin-bottom: 50px;
 }
 .services_contain .services_box li {
   float: left;

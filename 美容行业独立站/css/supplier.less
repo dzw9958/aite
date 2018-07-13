@@ -1,0 +1,587 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@w, @h){
+  background-position: @w @h;
+}
+.bgx(@x){
+  background-position-x: @x;
+}
+.bgy(@y){
+  background-position-y: @y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, 660px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    .banner_img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* 什么是产品供应商/厂商解决方案？板块
+*/
+.what_contain{
+  margin: auto;
+  margin-bottom: 50px;
+  .wh(1200px, auto);
+  .what_title{
+    padding: 50px 0 40px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 30px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 20px);
+      .font(18px, @6);
+    }
+  }
+  .what_box{
+    .wh(100%, 605px);
+    text-align: center;
+    .what_bit{
+      float: left;
+      .wh(244px, 146px);
+      border-radius: 10px;
+      border: 1px solid #ff5565;
+      h3{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        .whh(100%, 18px);
+        .font(16px, @3);
+      }
+      p{
+        margin: auto;
+        .wh(196px, auto);
+        line-height: 24px;
+        .font(14px, @6);
+      }
+    }
+    .what_bit.what_center{
+      border-color: #ffbe56;
+    }
+    .what_space{
+      float: left;
+      .wh(166px, 148px);
+      i{
+        display: block;
+        margin: 45px auto 54px;
+        .wh(49px, 49px);
+        background: url(../img/supplier/elves.png) no-repeat;
+        .bgp(-480px, -79px);
+      }
+    }
+    .what_seam{
+      float: left;
+      .wh(102px, 148px);
+      i{
+        display: block;
+        margin: 70px auto 10px;
+        .wh(47px, 9px);
+        background: url(../img/supplier/elves.png) no-repeat;
+        background-position-x: -531px;
+      }
+      span{
+        display: block;
+        .whh(100%, 18px);
+        .font(16px, @6);
+      }
+    }
+    .what_bulk{
+      float: left;
+      padding: 17px 21px;
+      .wh(396px, 112px);
+      border-radius: 10px;
+      border-width: 1px;
+      border-style: solid;
+      button{
+        float: left;
+        margin: 8px;
+        .wh(116px, 40px);
+        .font(14px, @b);
+        border-radius: 5px;
+        background: url(../img/supplier/elves.png) no-repeat;
+        background-position-y: -250px;
+      }
+    }
+    .what_head{
+      .wh(100%, 20px);
+      h2{
+        float: left;
+        .whh(246px, 20px);
+        .font(18px, #ff5465);
+      }
+      h2:nth-child(2){
+        float: right;
+        width: 788px;
+        color: #37c9fe;
+      }
+    }
+    .what_top{
+      margin-top: 47px;
+      .wh(1200px, 148px);
+      .what_seam i{
+        background-position-y: -89px;
+      }
+      .what_bulk{
+        border-color: #ff5465;
+        button{
+          background-position-x: 0;
+        }
+      }
+    }
+    .what_middle{
+      margin-top: 47px;
+      .wh(1200px, 148px);
+      .what_seam i{
+        background-position-y: -100px;
+      }
+      .what_bulk{
+        border-color: #ff7887;
+        button{
+          background-position-x: -118px;
+        }
+      }
+    }
+    .what_bottom{
+      margin-top: 47px;
+      .wh(1200px, 148px);
+      .what_seam i{
+        background-position-y: -111px;
+      }
+      .what_bulk{
+        border-color: #ff7ef2;
+        button{
+          background-position-x: -236px;
+        }
+      }
+    }
+  }
+}
+/*
+* 美业目前行业现状板块
+*/
+.status_contain{
+  .wh(100%, 463px);
+  min-width: 1200px;
+  background: url(../img/supplier/bg.png) no-repeat;
+  background-size: 100% 100%;
+  .status_title{
+    margin: auto;
+    padding: 36px 0 34px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .status_box{
+    margin: auto;
+    .wh(1200px, auto);
+    overflow: hidden;
+    .status_text{
+      float: left;
+      .wh(672px, auto);
+      p{
+        margin-top: 8px;
+        .wh(100%, auto);
+        line-height: 36px;
+        .font(16px, @3);
+        b{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+    .status_img{
+      float: right;
+      .wh(468px, 301px);
+      img{
+        .wh(100%, 100%);
+      }
+    }
+  }
+}
+/*
+* 美业供应商/厂家遇到的困难板块
+*/
+.hard_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .hard_title{
+    padding: 50px 0 46px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .hard_box{
+    .wh(100%, 418px);
+    li{
+      float: left;
+      margin-left: 52px;
+      .wh(261px, 418px);
+      i{
+        display: block;
+        margin: 24px auto 20px;
+        .wh(78px, 78px);
+        border-radius: 50%;
+        background: url(../img/supplier/elves.png) no-repeat;
+        .bgy(0);
+      }
+      h2{
+        margin-bottom: 20px;
+        .whh(100%, 24px);
+        .font(22px, @b);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(229px, auto);
+        line-height: 30px;
+        .font(16px, @b);
+        b{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+      .bgs(#7cb0fc);
+      i{
+        .bgx(0);
+      }
+    }
+    li:nth-child(2){
+      .bgs(#fc9926);
+      i{
+        .bgx(-80px);
+      }
+    }
+    li:nth-child(3){
+      .bgs(#16e5e1);
+      i{
+        .bgx(-160px);
+      }
+    }
+    li:nth-child(4){
+      .bgs(#ff76bd);
+      i{
+        .bgx(-240px);
+      }
+    }
+  }
+}
+/*
+* 美业供应商/厂商解决方案核心板块
+*/
+.core_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .core_title{
+    padding: 50px 0 45px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .core_box{
+    .wh(1200px, 500px);
+    li{
+      float: left;
+      margin-left: 64px;
+      .wh(252px, 250px);
+      text-align: center;
+      i{
+        display: block;
+        margin: 0 auto 30px;
+        .wh(58px, 58px);
+        background: url(../img/supplier/elves.png) no-repeat;
+        .bgy(-80px);
+      }
+      h2{
+        margin-bottom: 22px;
+        .whh(100%, 24px);
+        .font(22px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(252px, auto);
+        line-height: 24px;
+        .font(14px, @6);
+      }
+    }
+    li:nth-child(1){
+      margin-left: 0;
+      i{
+        .bgx(0);
+      }
+    }
+    li:nth-child(2){
+      i{
+        .bgx(-60px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgx(-120px);
+      }
+    }
+    li:nth-child(4){
+      i{
+        .bgx(-180px);
+      }
+    }
+    li:nth-child(5){
+      margin-left: 0;
+      i{
+        .bgx(-240px);
+      }
+    }
+    li:nth-child(6){
+      i{
+        .bgx(-300px);
+      }
+    }
+    li:nth-child(7){
+      i{
+        .bgx(-360px);
+      }
+    }
+    li:nth-child(8){
+      i{
+        .bgx(-420px);
+      }
+    }
+  }
+}
+/*
+* 能够获得的收益板块
+*/
+.profit_contain{
+  .wh(100%, 854px);
+  .bgs(#f1f1f1);
+  .profit_title{
+    margin: auto;
+    padding: 45px 0 65px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .profit_box{
+    margin: auto;
+    .wh(1200px, 690px);
+    li{
+      float: left;
+      .wh(312px, 345px);
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 23px;
+        .wh(109px, 109px);
+        border-radius: 50%;
+        background: url(../img/supplier/elves.png) no-repeat;
+        .bgy(-140px);
+      }
+      h2{
+        margin-bottom: 18px;
+        .whh(100%, 22px);
+        .font(18px, @3);
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 26px;
+        .font(16px, @3);
+      }
+    }
+    li:nth-child(1){
+      margin-right: 132px;
+      i{
+        .bgx(0);
+      }
+    }
+    li:nth-child(2){
+      margin-right: 132px;
+      i{
+        .bgx(-110px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgx(-220px);
+      }
+    }
+    li:nth-child(4){
+      margin-left: 222px;
+      margin-right: 132px;
+      i{
+        .bgx(-330px);
+      }
+    }
+    li:nth-child(5){
+      i{
+        .bgx(-440px);
+      }
+    }
+  }
+}
+/*
+* 保障服务板块
+*/
+.services_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow: hidden;
+  .services_title{
+    padding: 42px 0 15px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .services_line{
+    margin-bottom: 20px;
+    .wh(100%, 87px);
+    i{
+      display: block;
+    }
+    i.services_one{
+      margin: auto;
+      .wh(1px, 49px);
+      background-color: #c7c7c7;
+    }
+    i.services_two{
+      float: left;
+      .wh(500px, 1px);
+      background-color: #c7c7c7;
+    }
+    i.services_three{
+      float: left;
+      margin-left: 199px;
+      .wh(1px, 37px);
+      background-color: #c7c7c7;
+    }
+    i.fl{
+      margin-left: 100px;
+    }
+    i.fr{
+      margin-right: 100px;
+    }
+    i:nth-child(8){
+      margin-left: 198px;
+    }
+  }
+  .services_box{
+    .wh(1200px, 215px);
+    li{
+      float: left;
+      margin: 0 3px;
+      .wh(194px, 215px);
+      text-align: center;
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 19px;
+        .wh(46px, 46px);
+        background: url(../img/supplier/elves.png) no-repeat;
+        .bgy(-32px);
+      }
+      h2{
+        margin-bottom: 10px;
+        .whh(100%, 22px);
+        .font(18px, #222222);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 29px;
+        .font(14px, @6);
+      }
+      span{
+        display: block;
+        .whh(100%, 29px);
+        .font(14px, @6);
+      }
+    }
+    li:nth-child(1){
+      i{
+        .bgx(-320px);
+      }
+    }
+    li:nth-child(2){
+      i{
+        .bgx(-368px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgx(-416px);
+      }
+    }
+    li:nth-child(4){
+      i{
+        .bgx(-464px);
+      }
+    }
+    li:nth-child(5){
+      i{
+        .bgx(-512px);
+      }
+    }
+    li:nth-child(6){
+      i{
+        .bgx(-560px);
+      }
+    }
+  }
+}

@@ -1,0 +1,504 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgx(@x){
+  background-position-x: @x;
+}
+.bgy(@y){
+  background-position-y: @y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, 598px);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, 100%);
+    .banner_img{
+      .wh(100%, 100%);
+    }
+  }
+}
+/*
+* 管理APP简介板块
+*/
+.blurb_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .blurb_title{
+    padding: 55px 0 12px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .blurb_box{
+    margin-bottom: 30px;
+    .wh(100%, auto);
+    overflow: hidden;
+    .blurb_text{
+      float: left;
+      margin-top: 75px;
+      .wh(592px, auto);
+      h2{
+        margin-left: 32px;
+        margin-bottom: 20px;
+        .whh(560px, 22px);
+        .font(18px, @3);
+        font-weight: bold;
+      }
+      p{
+        margin-bottom: 24px;
+        .wh(100%, auto);
+        line-height: 24px;
+        .font(16px, @6);
+        b{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+    .blurb_img{
+      float: right;
+      .wh(415px, 410px);
+      img{
+        .wh(100%, 100%);
+      }
+    }
+  }
+}
+/*
+* 帮您解决四大难题板块
+*/
+.solve_contain{
+  .wh(100%, 616px);
+  min-width: 1200px;
+  background: url(../img/manage_app/bg-1.png) no-repeat;
+  .solve_title{
+    margin: auto;
+    padding: 60px 0 50px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 25px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 20px);
+      .font(18px, @6);
+    }
+  }
+  .solve_box{
+    margin: auto;
+    .wh(1200px, 360px);
+    li{
+      float: left;
+      margin: 0 65px;
+      .wh(470px, 180px);
+      .solve_icon{
+        float: left;
+        .wh(115px, 180px);
+        i{
+          display: block;
+          .wh(90px, 90px);
+          background: url(../img/manage_app/elves.png) no-repeat;
+          .bgy(-15px);
+        }
+      }
+      h2{
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        .whh(355px, 24px);
+        .font(20px, @3);
+        font-weight: bold;
+      }
+      p{
+        float: left;
+        .wh(355px, auto);
+        line-height: 25px;
+        .font(16px, @6);
+        b{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+    li:nth-child(1){
+      i{
+        .bgx(0);
+      }
+    }
+    li:nth-child(1){
+      i{
+        .bgx(-92px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgx(-184px);
+      }
+    }
+    li:nth-child(4){
+      i{
+        .bgx(-276px);
+      }
+    }
+  }
+}
+/*
+* 新零售 · 落地板块
+*/
+.new_contain{
+  .wh(100%, 865px);
+  min-width: 1200px;
+  .bgs(@b);
+  background: url(../img/manage_app/back2-samll.png) no-repeat;
+  .bgx(center);
+  .bgy(0);
+  .new_title{
+    margin: auto;
+    padding: 45px 0 35px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 25px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 20px);
+      .font(18px, @6);
+    }
+  }
+  .new_box{
+    margin: auto;
+    padding: 0 61px;
+    .wh(1078px, 582px); 
+  }
+  .new_center, .new_right{
+    margin-left: 50px;
+  }
+  .new_head{
+    margin-bottom: 25px;
+    .wh(100%, 22px);
+    h2{
+      float: left;
+      padding-left: 30px;
+      .whh(296px, 22px);
+      .font(20px, @3);
+    }
+  }
+  .new_body{
+    .wh(100%, 535px);
+    .new_list{
+      float: left;
+      .wh(326px, 535px);
+      li{
+        margin-bottom: 20px;
+        padding-left: 30px;
+        .wh(296px, 87px);
+        border-radius: 3px;
+        .bgs(@b);
+        .new_icon{
+          float: right;
+          padding-top: 12px;
+          .wh(58px, 87px);
+          i{
+            display: block;
+            .wh(46px, 45px);
+            background: url(../img/manage_app/elves.png) no-repeat;
+            .bgy(-107px);
+          }
+        }
+        h3{
+          float: left;
+          margin: 14px 0;
+          .whh(210px, 18px);
+          .font(16px, @3);
+        }
+        p{
+          float: left;
+          .wh(210px, auto);
+          line-height: 16px;
+          .font(14px, @9);
+        }
+      }
+      li:hover{
+        -webkit-box-shadow: 2px 3px 8px 0 #fde4e5;
+                box-shadow: 2px 3px 8px 0 #fde4e5;
+      }
+    }
+    .new_left{
+      li:nth-child(1) i{
+        .bgx(0);
+      }
+      li:nth-child(2) i{
+        .bgx(-47px);
+      }
+      li:nth-child(3) i{
+        .bgx(-96px);
+      }
+      li:nth-child(4) i{
+        .bgx(-144px);
+      }
+      li:nth-child(5) i{
+        .bgx(-192px);
+      }
+    }
+    .new_center{
+      li:nth-child(1) i{
+        .bgx(-240px);
+      }
+      li:nth-child(2) i{
+        .bgx(-288px);
+      }
+      li:nth-child(3) i{
+        .bgx(-336px);
+      }
+    }
+    .new_right{
+      li:nth-child(1) i{
+        .bgx(-384px);
+      }
+      li:nth-child(2) i{
+        .bgx(-432px);
+      }
+      li:nth-child(3) i{
+        .bgx(-480px);
+      }
+      li:nth-child(4) i{
+        .bgx(-528px);
+      }
+      li:nth-child(5) i{
+        .bgx(-576px);
+      }
+    }
+  }
+}
+/*
+* 智能采购/售后管理板块
+*/
+.intelligent_contain{
+  margin: auto;
+  padding-bottom: 60px;
+  .wh(1200px, auto);
+  .intelligent_switch{
+    margin: auto;
+    padding: 30px 0 125px;
+    .wh(400px, auto);
+    text-align: center;
+    li{
+      float: left;
+      margin: 0 28px;
+      padding-bottom: 13px;
+      .wh(144px, 36px);
+      h1{
+        .whh(100%, 36px);
+        .font(34px, @6);
+        cursor: pointer;
+      }
+    }
+    li.on{
+      padding-bottom: 10px;
+      border-bottom: 3px solid #ff76bd;
+      h1{
+        color: @3;
+        font-weight: bold;
+      }
+    }
+  }
+  .intelligent_window{
+    .wh(100%, 252px);
+    overflow: hidden;
+  }
+  .intelligent_list{
+    position: relative;
+    left: 0;
+    .wh(2400px, 252px);
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    li{
+      float: left;
+      margin: 0 79px;
+      .wh(242px, 252px);
+      .intelligent_icon{
+        margin: 0 54px 38px 34px;
+        .wh(154px, 154px);
+        border-radius: 50%;
+        .bgs(@b);
+        -webkit-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
+        i{
+          position: relative;
+          left: 13px;
+          display: block;
+          .wh(149px, 142px);
+          background: url(../img/manage_app/elves.png) no-repeat;
+          .bgy(-154px);
+        }
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 30px;
+        .font(22px, @3);
+        text-align: center;
+      }
+    }
+    li:hover .intelligent_icon{
+      .bgs(#fca7d3);
+    }
+    li:nth-child(1) i{
+      .bgx(0);
+    }
+    li:nth-child(2) i{
+      .bgx(-150px);
+    }
+    li:nth-child(3) i{
+      .bgx(-300px);
+    }
+    li:nth-child(4) i{
+      .bgx(-450px);
+    }
+    li:nth-child(5) i{
+      .bgx(-600px);
+    }
+    li:nth-child(6) i{
+      .bgx(-750px);
+    }
+  }
+}
+/*
+* 增值服务板块
+*/
+.service_contain{
+  .wh(100%, 364px);
+  min-width: 1200px;
+  background: url(../img/manage_app/bg-2.png) no-repeat;
+  background-size: 100% 100%;
+  .service_title{
+    margin: auto;
+    padding: 50px 0;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .service_box{
+    margin: auto;
+    .wh(1200px, 170px);
+    li{
+      float: left;
+      margin-right:104px;
+      .wh(166px, 166px);
+      border-radius: 10px;
+      border: 2px solid #d2d2d2;
+      .service_icon{
+        padding-top: 25px;
+        .wh(100%, 95px);
+        i{
+          display: block;
+          margin: auto;
+          .wh(61px, 75px);
+          background: url(../img/manage_app/elves.png) no-repeat;
+          .bgy(0);
+        }
+      }
+      p{
+        .whh(100%, 20px);
+        .font(18px, #d2d2d2);
+        text-align: center;
+      }
+    }
+    li:hover{
+      border-color: #ff76bd;
+      .service_icon i{
+        .bgy(-77px);
+      }
+      p{
+        color: #ff76bd;
+      }
+    }
+    li:nth-child(1){
+      margin-left: 104px;
+      i{
+        .bgx(-651px)
+      }
+    }
+    li:nth-child(2){
+      i{
+        .bgx(-713px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgx(-775px);
+      }
+    }
+    li:nth-child(4){
+      i{
+        .bgx(-837px);
+      }
+    }
+  }
+}
+/*
+* 管理APP功能简介板块
+*/
+.function_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .function_title{
+    padding: 50px 0 45px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .function_box{
+    padding-bottom: 60px;
+    .wh(100%, 611px);
+    img{
+      display: block;
+      margin: auto;
+      .wh(1059px, 611px);
+    }
+  }
+}

@@ -1,0 +1,548 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: 598px;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 管理APP简介板块
+*/
+.blurb_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.blurb_contain .blurb_title {
+  padding: 55px 0 12px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.blurb_contain .blurb_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.blurb_contain .blurb_box {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.blurb_contain .blurb_box .blurb_text {
+  float: left;
+  margin-top: 75px;
+  width: 592px;
+  height: auto;
+}
+.blurb_contain .blurb_box .blurb_text h2 {
+  margin-left: 32px;
+  margin-bottom: 20px;
+  width: 560px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+}
+.blurb_contain .blurb_box .blurb_text p {
+  margin-bottom: 24px;
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 16px;
+  color: #666666;
+}
+.blurb_contain .blurb_box .blurb_text p b {
+  display: inline-block;
+  width: 32px;
+}
+.blurb_contain .blurb_box .blurb_img {
+  float: right;
+  width: 415px;
+  height: 410px;
+}
+.blurb_contain .blurb_box .blurb_img img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 帮您解决四大难题板块
+*/
+.solve_contain {
+  width: 100%;
+  height: 616px;
+  min-width: 1200px;
+  background: url(../img/manage_app/bg-1.png) no-repeat;
+}
+.solve_contain .solve_title {
+  margin: auto;
+  padding: 60px 0 50px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.solve_contain .solve_title h1 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.solve_contain .solve_title p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666666;
+}
+.solve_contain .solve_box {
+  margin: auto;
+  width: 1200px;
+  height: 360px;
+}
+.solve_contain .solve_box li {
+  float: left;
+  margin: 0 65px;
+  width: 470px;
+  height: 180px;
+}
+.solve_contain .solve_box li .solve_icon {
+  float: left;
+  width: 115px;
+  height: 180px;
+}
+.solve_contain .solve_box li .solve_icon i {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-position-y: -15px;
+}
+.solve_contain .solve_box li h2 {
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 355px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.solve_contain .solve_box li p {
+  float: left;
+  width: 355px;
+  height: auto;
+  line-height: 25px;
+  font-size: 16px;
+  color: #666666;
+}
+.solve_contain .solve_box li p b {
+  display: inline-block;
+  width: 32px;
+}
+.solve_contain .solve_box li:nth-child(1) i {
+  background-position-x: 0;
+}
+.solve_contain .solve_box li:nth-child(1) i {
+  background-position-x: -92px;
+}
+.solve_contain .solve_box li:nth-child(3) i {
+  background-position-x: -184px;
+}
+.solve_contain .solve_box li:nth-child(4) i {
+  background-position-x: -276px;
+}
+/*
+* 新零售 · 落地板块
+*/
+.new_contain {
+  width: 100%;
+  height: 865px;
+  min-width: 1200px;
+  background-color: #ffffff;
+  background: url(../img/manage_app/back2-samll.png) no-repeat;
+  background-position-x: center;
+  background-position-y: 0;
+}
+.new_contain .new_title {
+  margin: auto;
+  padding: 45px 0 35px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.new_contain .new_title h1 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.new_contain .new_title p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666666;
+}
+.new_contain .new_box {
+  margin: auto;
+  padding: 0 61px;
+  width: 1078px;
+  height: 582px;
+}
+.new_contain .new_center,
+.new_contain .new_right {
+  margin-left: 50px;
+}
+.new_contain .new_head {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 22px;
+}
+.new_contain .new_head h2 {
+  float: left;
+  padding-left: 30px;
+  width: 296px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+}
+.new_contain .new_body {
+  width: 100%;
+  height: 535px;
+}
+.new_contain .new_body .new_list {
+  float: left;
+  width: 326px;
+  height: 535px;
+}
+.new_contain .new_body .new_list li {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  width: 296px;
+  height: 87px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.new_contain .new_body .new_list li .new_icon {
+  float: right;
+  padding-top: 12px;
+  width: 58px;
+  height: 87px;
+}
+.new_contain .new_body .new_list li .new_icon i {
+  display: block;
+  width: 46px;
+  height: 45px;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-position-y: -107px;
+}
+.new_contain .new_body .new_list li h3 {
+  float: left;
+  margin: 14px 0;
+  width: 210px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #333333;
+}
+.new_contain .new_body .new_list li p {
+  float: left;
+  width: 210px;
+  height: auto;
+  line-height: 16px;
+  font-size: 14px;
+  color: #999999;
+}
+.new_contain .new_body .new_list li:hover {
+  -webkit-box-shadow: 2px 3px 8px 0 #fde4e5;
+  box-shadow: 2px 3px 8px 0 #fde4e5;
+}
+.new_contain .new_body .new_left li:nth-child(1) i {
+  background-position-x: 0;
+}
+.new_contain .new_body .new_left li:nth-child(2) i {
+  background-position-x: -47px;
+}
+.new_contain .new_body .new_left li:nth-child(3) i {
+  background-position-x: -96px;
+}
+.new_contain .new_body .new_left li:nth-child(4) i {
+  background-position-x: -144px;
+}
+.new_contain .new_body .new_left li:nth-child(5) i {
+  background-position-x: -192px;
+}
+.new_contain .new_body .new_center li:nth-child(1) i {
+  background-position-x: -240px;
+}
+.new_contain .new_body .new_center li:nth-child(2) i {
+  background-position-x: -288px;
+}
+.new_contain .new_body .new_center li:nth-child(3) i {
+  background-position-x: -336px;
+}
+.new_contain .new_body .new_right li:nth-child(1) i {
+  background-position-x: -384px;
+}
+.new_contain .new_body .new_right li:nth-child(2) i {
+  background-position-x: -432px;
+}
+.new_contain .new_body .new_right li:nth-child(3) i {
+  background-position-x: -480px;
+}
+.new_contain .new_body .new_right li:nth-child(4) i {
+  background-position-x: -528px;
+}
+.new_contain .new_body .new_right li:nth-child(5) i {
+  background-position-x: -576px;
+}
+/*
+* 智能采购/售后管理板块
+*/
+.intelligent_contain {
+  margin: auto;
+  padding-bottom: 60px;
+  width: 1200px;
+  height: auto;
+}
+.intelligent_contain .intelligent_switch {
+  margin: auto;
+  padding: 30px 0 125px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+.intelligent_contain .intelligent_switch li {
+  float: left;
+  margin: 0 28px;
+  padding-bottom: 13px;
+  width: 144px;
+  height: 36px;
+}
+.intelligent_contain .intelligent_switch li h1 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 34px;
+  color: #666666;
+  cursor: pointer;
+}
+.intelligent_contain .intelligent_switch li.on {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ff76bd;
+}
+.intelligent_contain .intelligent_switch li.on h1 {
+  color: #333333;
+  font-weight: bold;
+}
+.intelligent_contain .intelligent_window {
+  width: 100%;
+  height: 252px;
+  overflow: hidden;
+}
+.intelligent_contain .intelligent_list {
+  position: relative;
+  left: 0;
+  width: 2400px;
+  height: 252px;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.intelligent_contain .intelligent_list li {
+  float: left;
+  margin: 0 79px;
+  width: 242px;
+  height: 252px;
+}
+.intelligent_contain .intelligent_list li .intelligent_icon {
+  margin: 0 54px 38px 34px;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.intelligent_contain .intelligent_list li .intelligent_icon i {
+  position: relative;
+  left: 13px;
+  display: block;
+  width: 149px;
+  height: 142px;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-position-y: -154px;
+}
+.intelligent_contain .intelligent_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+}
+.intelligent_contain .intelligent_list li:hover .intelligent_icon {
+  background-color: #fca7d3;
+}
+.intelligent_contain .intelligent_list li:nth-child(1) i {
+  background-position-x: 0;
+}
+.intelligent_contain .intelligent_list li:nth-child(2) i {
+  background-position-x: -150px;
+}
+.intelligent_contain .intelligent_list li:nth-child(3) i {
+  background-position-x: -300px;
+}
+.intelligent_contain .intelligent_list li:nth-child(4) i {
+  background-position-x: -450px;
+}
+.intelligent_contain .intelligent_list li:nth-child(5) i {
+  background-position-x: -600px;
+}
+.intelligent_contain .intelligent_list li:nth-child(6) i {
+  background-position-x: -750px;
+}
+/*
+* 增值服务板块
+*/
+.service_contain {
+  width: 100%;
+  height: 364px;
+  min-width: 1200px;
+  background: url(../img/manage_app/bg-2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.service_contain .service_title {
+  margin: auto;
+  padding: 50px 0;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.service_contain .service_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.service_contain .service_box {
+  margin: auto;
+  width: 1200px;
+  height: 170px;
+}
+.service_contain .service_box li {
+  float: left;
+  margin-right: 104px;
+  width: 166px;
+  height: 166px;
+  border-radius: 10px;
+  border: 2px solid #d2d2d2;
+}
+.service_contain .service_box li .service_icon {
+  padding-top: 25px;
+  width: 100%;
+  height: 95px;
+}
+.service_contain .service_box li .service_icon i {
+  display: block;
+  margin: auto;
+  width: 61px;
+  height: 75px;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.service_contain .service_box li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #d2d2d2;
+  text-align: center;
+}
+.service_contain .service_box li:hover {
+  border-color: #ff76bd;
+}
+.service_contain .service_box li:hover .service_icon i {
+  background-position-y: -77px;
+}
+.service_contain .service_box li:hover p {
+  color: #ff76bd;
+}
+.service_contain .service_box li:nth-child(1) {
+  margin-left: 104px;
+}
+.service_contain .service_box li:nth-child(1) i {
+  background-position-x: -651px;
+}
+.service_contain .service_box li:nth-child(2) i {
+  background-position-x: -713px;
+}
+.service_contain .service_box li:nth-child(3) i {
+  background-position-x: -775px;
+}
+.service_contain .service_box li:nth-child(4) i {
+  background-position-x: -837px;
+}
+/*
+* 管理APP功能简介板块
+*/
+.function_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.function_contain .function_title {
+  padding: 50px 0 45px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.function_contain .function_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.function_contain .function_box {
+  padding-bottom: 60px;
+  width: 100%;
+  height: 611px;
+}
+.function_contain .function_box img {
+  display: block;
+  margin: auto;
+  width: 1059px;
+  height: 611px;
+}

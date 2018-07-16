@@ -1,0 +1,646 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgx(@x){
+  background-position-x: @x;
+}
+.bgy(@y){
+  background-position-y: @y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 软件简介板块
+*/
+.software_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow: hidden;
+  .software_title{
+    padding: 40px 0 20px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 15px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 16px);
+      .font(14px, @9);
+    }
+  }
+  .software_box{
+    margin-bottom: 45px;
+    .wh(100%, auto);
+    overflow: hidden;
+    .software_text{
+      float: left;
+      padding-top: 35px;
+      .wh(688px, auto);
+      p{
+        margin-bottom: 30px;
+        .wh(100%, auto);
+        line-height: 30px;
+        .font(16px, @6);
+        b{
+          display: inline-block;
+          .wh(32px, 0);
+        }
+      }
+    }
+    .software_img{
+      float: right;
+      .wh(450px, 270px);
+      img{
+        display: block;
+        .wh(100%, 100%);
+      }
+    }
+  }
+}
+/*
+* 功能优势板块
+*/
+.edge_contain{
+  .wh(100%, 800px);
+  min-width: 1200px;
+  background: url(../img/manage_member/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  .edge_title{
+    margin: auto;
+    padding: 70px 0 40px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 15px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 16px);
+      .font(14px, @9);
+    }
+  }
+  .edge_box{
+    margin: auto;
+    padding: 0 100px;
+    .wh(1000px, 640px);
+    li{
+      position: relative;
+      float: left;
+      padding: 0 25px 0 110px;
+      .wh(365px, 160px);
+      i{
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background: url(../img/manage_member/elves.png) no-repeat;
+        .bgy(0);
+      }
+      h2{
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 26px;
+        .font(16px, #888);
+        b{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+    li:nth-child(1){
+      i{
+        .bgs(#329fd3);
+        .bgx(0);
+      }
+    }
+    li:nth-child(2){
+      i{
+        .bgs(#5ebac6);
+        .bgx(-80px);
+      }
+    }
+    li:nth-child(3){
+      i{
+        .bgs(#77b78c);
+        .bgx(-160px);
+      }
+    }
+    li:nth-child(4){
+      i{
+        .bgs(#b24975);
+        .bgx(-240px);
+      }
+    }
+    li:nth-child(5){
+      i{
+        .bgs(#ce8549);
+        .bgx(-320px);
+      }
+    }
+    li:nth-child(6){
+      i{
+        .bgs(#b7b349);
+        .bgx(-400px);
+      }
+    }
+    li:nth-child(7){
+      i{
+        .bgs(#ae7373);
+        .bgx(-480px);
+      }
+    }
+    li:nth-child(8){
+      i{
+        .bgs(#9cc983);
+        .bgx(-560px);
+      }
+    }
+  }
+}
+/*
+* 左文右图板块
+*/
+.blend_contain{
+  padding-top: 40px;
+  .wh(100%, auto);
+  overflow: hidden;
+  .blend_typeone{
+    margin: auto;
+    padding-bottom: 60px;
+    .wh(1200px, auto);
+    overflow: hidden;
+    .blend_text{
+      float: left;
+      .wh(705px, auto);
+      b{
+        display: inline-block;
+        .wh(32px, 0);
+      }
+      h2{
+        margin-bottom: 35px;
+        padding-left: 32px;
+        .whh(673px, 32px);
+        .font(30px, #ff76bd);
+        font-weight: bold;
+      }
+      h6{
+        margin-bottom: 23px;
+        .wh(100%, auto);
+        line-height: 36px;
+        .font(20px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 36px;
+        .font(16px, @6);
+      }
+    }
+    .blend_img{
+      float: right;
+      .wh(auto, auto);
+      max-width: 450px;
+      img{
+        display: inline-block;
+        .wh(auto, auto);
+        max-width: 450px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .blend_typetwo{
+    margin: auto;
+    padding-bottom: 60px;
+    .wh(1200px, auto);
+    overflow: hidden;
+    .blend_text{
+      float: left;
+      .wh(705px, auto);
+      h2{
+        margin-bottom: 20px;
+        padding-left: 32px;
+        .whh(673px, 32px);
+        .font(30px, #ff76bd);
+        font-weight: bold;
+      }
+      h6{
+        margin-bottom: 30px;
+        .wh(100%, auto);
+        line-height: 36px;
+        .font(20px, @3);
+        font-weight: bold;
+        b{
+          display: inline-block;
+          .wh(32px, auto);
+        }
+      }
+      h3{
+        margin-bottom: 20px;
+        padding-left: 5px;
+        .whh(690px, 24px);
+        .font(20px, @3);
+        font-weight: bold;
+        border-left: 10px solid #ff76bd;
+      }
+      p{
+        margin-bottom: 40px;
+        .wh(100%, auto);
+        line-height: 37px;
+        .font(18px, @6);
+        b{
+          display: inline-block;
+          .wh(36px, 0);
+        }
+      }
+      p:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .blend_img{
+      float: right;
+      .wh(auto, auto);
+      max-width: 450px;
+      img{
+        display: inline-block;
+        .wh(auto, auto);
+        max-width: 450px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .blend_bg{
+    .wh(100%, 450px);
+    min-width: 1200px;
+    background: url(../img/manage_member/bg.jpg) no-repeat;
+    background-size: 100% 178%;
+  }
+  .blend_one .blend_img{
+      height: 270px;
+      line-height: 270px;
+  }
+  .blend_two .blend_img{
+      height: 430px;
+      line-height: 430px;
+  }
+  .blend_three .blend_img{
+    height: 625px;
+    line-height: 625px;
+  }
+  .blend_four{
+    padding: 54px 0;
+    .blend_text{
+      width: 400px;
+      h2{
+        width: 368px;
+      }
+    }
+    .blend_img{
+      max-width: 755px;
+      height: 342px;
+      line-height: 342px;
+      img{
+        max-width: 755px;
+      }
+    }
+  }
+  .blend_five{
+    padding-top: 60px;
+    .blend_img{
+      height: 342px;
+      line-height: 342px;
+    }
+  }
+}
+/*
+* 粉色列表板块
+*/
+.list_contain{
+  padding: 40px 0;
+  .wh(100%, 350px);
+  min-width: 1200px;
+  .bgs(#ff76bd);
+  .list_box{
+    margin: auto;
+    padding: 20px 100px 0;
+    .wh(1200px, 330px);
+    overflow: hidden;
+    li{
+      float: left;
+      .wh(500px, 110px);
+      .list_icon{
+        .wh(135px, 110px);
+        i{
+          display: block;
+          margin: auto;
+          .wh(78px, 78px);
+          background: @b url(../img/manage_member/elves.png) no-repeat;
+          .bgy(-80px);
+        }
+      }
+      h2{
+        margin-bottom: 5px;
+        .whh(365px, 20px);
+        .font(18px, @b);
+        font-weight: bold;
+      }
+      p{
+        .wh(365px, auto);
+        line-height: 20px;
+        .font(16px, @b);
+        b{
+          display: inline-block;
+          .wh(32px, 0);
+        }
+      }
+    }
+    li:nth-child(1){
+      .list_icon, h2, p{
+        float: right;
+        text-align: right;
+      }
+      i{
+        .bgx(0);
+      }
+    }
+    li:nth-child(2){
+      .list_icon, h2, p{
+        float: left;
+        text-align: left;
+      }
+      i{
+        .bgx(-80px);
+      }
+    }
+    li:nth-child(3){
+      .list_icon, h2, p{
+        float: right;
+        text-align: right;
+      }
+      i{
+        .bgx(-160px);
+      }
+    }
+    li:nth-child(4){
+      .list_icon, h2, p{
+        float: left;
+        text-align: left;
+      }
+      i{
+        .bgx(-240px);
+      }
+    }
+    li:nth-child(5){
+      .list_icon, h2, p{
+        float: right;
+        text-align: right;
+      }
+      i{
+        .bgx(-320px);
+      }
+    }
+    li:nth-child(6){
+      .list_icon, h2, p{
+        float: left;
+        text-align: left;
+      }
+      i{
+        .bgx(-400px);
+      }
+    }
+  }
+}
+/*
+* 使用一年公司管理全面提升1板块
+*/
+.use_contain{
+  .wh(100%, 615px);
+  min-width: 1200px;
+  background: url(../img/manage_member/bg.jpg) no-repeat;
+  background-size: 100% 130%;
+  .use_title{
+    margin: auto;
+    padding: 60px 0 70px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+  }
+  .use_box{
+    margin: auto;
+    .wh(1200px, 355px);
+    li{
+      float: left;
+      margin: 0 40px;
+      .wh(220px, 355px);
+      text-align: center;
+      .use_icon{
+        .wh(100%, 200px);
+        i{
+          display: block;
+          margin: auto;
+          .wh(150px, 150px);
+          background: url(../img/manage_member/elves.png) no-repeat;
+          .bgy(-160px);
+        }
+      }
+      h2{
+        margin-bottom: 12px;
+        .whh(100%, 22px);
+        .font(20px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 22px;
+        .font(16px, #808080);
+      }
+    }
+    li:nth-child(1) i{
+      .bgx(0);
+    }
+    li:nth-child(2) i{
+      .bgx(-152px);
+    }
+    li:nth-child(3) i{
+      .bgx(-304px);
+    }
+    li:nth-child(4) i{
+      .bgx(-456px);
+    }
+  }
+}
+/*
+* 艾特，您可信赖的事业伙伴板块
+*/
+.partner_contain{
+  .wh(100%, 600px);
+  min-width: 1200px;
+  .bgs(#ff6b83);
+  .partner_title{
+    margin: auto;
+    padding: 60px 0 45px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 15px;
+      .whh(100%, 38px);
+      .font(34px, @b);
+      font-weight: bold;
+    }
+    p{
+      .whh(100%, 18px);
+      .font(16px, @b);
+    }
+  }
+  .partner_box{
+    margin: auto;
+    .wh(1200px, 335px);
+    li{
+      float: left;
+      margin: 0 80px;
+      .wh(240px, 335px);
+      text-align: center;
+      .partner_icon{
+        .wh(100%, 200px);
+        i{
+          display: block;
+          margin: auto;
+          .wh(150px, 150px);
+          background: url(../img/manage_member/elves.png) no-repeat;
+          .bgy(-312px);
+        }
+      }
+      h2{
+        margin-bottom: 12px;
+        .whh(100%, 22px);
+        .font(20px, @b);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 22px;
+        .font(16px, @b);
+      }
+    }
+    li:nth-child(1) i{
+      .bgx(0);
+    }
+    li:nth-child(2) i{
+      .bgx(-152px);
+    }
+    li:nth-child(3) i{
+      .bgx(-304px);
+    }
+  }
+}
+/*
+* 使用一年公司管理全面提升2板块
+*/
+.hoist_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  .hoist_title{
+    padding: 50px 0 45px;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 15px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      margin: auto;
+      .wh(480px, auto);
+      line-height: 22px;
+      .font(16px, #82939e);
+    }
+  }
+  .hoist_box{
+    padding-bottom: 40px;
+    .wh(100%, 56px);
+    li{
+      float: left;
+      .wh(400px, 56px);
+      a{
+        display: block;
+        .wh(100%, 100%);
+      }
+      .hoist_icon{
+        float: left;
+        .wh(80px, 56px);
+        i{
+          display: block;
+          margin: auto;
+          .wh(56px, 56px);
+          background: url(../img/manage_member/elves.png) no-repeat;
+          .bgy(-312px);
+        }
+      }
+      p{
+        float: left;
+        margin-top: 17px;
+        .whh(320px, 22px);
+        .font(20px, #505050);
+      }
+    }
+    li:nth-child(1) i{
+      .bgx(-456px);
+    }
+    li:nth-child(2) i{
+      .bgx(-512px);
+    }
+    li:nth-child(3) i{
+      .bgx(-568px);
+    }
+  }
+}

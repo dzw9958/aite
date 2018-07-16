@@ -1,0 +1,721 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 软件简介板块
+*/
+.software_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.software_contain .software_title {
+  padding: 40px 0 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.software_contain .software_title h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.software_contain .software_title p {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #999999;
+}
+.software_contain .software_box {
+  margin-bottom: 45px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.software_contain .software_box .software_text {
+  float: left;
+  padding-top: 35px;
+  width: 688px;
+  height: auto;
+}
+.software_contain .software_box .software_text p {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.software_contain .software_box .software_text p b {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+}
+.software_contain .software_box .software_img {
+  float: right;
+  width: 450px;
+  height: 270px;
+}
+.software_contain .software_box .software_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*
+* 功能优势板块
+*/
+.edge_contain {
+  width: 100%;
+  height: 800px;
+  min-width: 1200px;
+  background: url(../img/manage_member/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.edge_contain .edge_title {
+  margin: auto;
+  padding: 70px 0 40px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.edge_contain .edge_title h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.edge_contain .edge_title p {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #999999;
+}
+.edge_contain .edge_box {
+  margin: auto;
+  padding: 0 100px;
+  width: 1000px;
+  height: 640px;
+}
+.edge_contain .edge_box li {
+  position: relative;
+  float: left;
+  padding: 0 25px 0 110px;
+  width: 365px;
+  height: 160px;
+}
+.edge_contain .edge_box li i {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: url(../img/manage_member/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.edge_contain .edge_box li h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+.edge_contain .edge_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 26px;
+  font-size: 16px;
+  color: #888;
+}
+.edge_contain .edge_box li p b {
+  display: inline-block;
+  width: 32px;
+}
+.edge_contain .edge_box li:nth-child(1) i {
+  background-color: #329fd3;
+  background-position-x: 0;
+}
+.edge_contain .edge_box li:nth-child(2) i {
+  background-color: #5ebac6;
+  background-position-x: -80px;
+}
+.edge_contain .edge_box li:nth-child(3) i {
+  background-color: #77b78c;
+  background-position-x: -160px;
+}
+.edge_contain .edge_box li:nth-child(4) i {
+  background-color: #b24975;
+  background-position-x: -240px;
+}
+.edge_contain .edge_box li:nth-child(5) i {
+  background-color: #ce8549;
+  background-position-x: -320px;
+}
+.edge_contain .edge_box li:nth-child(6) i {
+  background-color: #b7b349;
+  background-position-x: -400px;
+}
+.edge_contain .edge_box li:nth-child(7) i {
+  background-color: #ae7373;
+  background-position-x: -480px;
+}
+.edge_contain .edge_box li:nth-child(8) i {
+  background-color: #9cc983;
+  background-position-x: -560px;
+}
+/*
+* 左文右图板块
+*/
+.blend_contain {
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.blend_contain .blend_typeone {
+  margin: auto;
+  padding-bottom: 60px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.blend_contain .blend_typeone .blend_text {
+  float: left;
+  width: 705px;
+  height: auto;
+}
+.blend_contain .blend_typeone .blend_text b {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+}
+.blend_contain .blend_typeone .blend_text h2 {
+  margin-bottom: 35px;
+  padding-left: 32px;
+  width: 673px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #ff76bd;
+  font-weight: bold;
+}
+.blend_contain .blend_typeone .blend_text h6 {
+  margin-bottom: 23px;
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.blend_contain .blend_typeone .blend_text p {
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 16px;
+  color: #666666;
+}
+.blend_contain .blend_typeone .blend_img {
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 450px;
+}
+.blend_contain .blend_typeone .blend_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  vertical-align: middle;
+}
+.blend_contain .blend_typetwo {
+  margin: auto;
+  padding-bottom: 60px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.blend_contain .blend_typetwo .blend_text {
+  float: left;
+  width: 705px;
+  height: auto;
+}
+.blend_contain .blend_typetwo .blend_text h2 {
+  margin-bottom: 20px;
+  padding-left: 32px;
+  width: 673px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #ff76bd;
+  font-weight: bold;
+}
+.blend_contain .blend_typetwo .blend_text h6 {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.blend_contain .blend_typetwo .blend_text h6 b {
+  display: inline-block;
+  width: 32px;
+  height: auto;
+}
+.blend_contain .blend_typetwo .blend_text h3 {
+  margin-bottom: 20px;
+  padding-left: 5px;
+  width: 690px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  border-left: 10px solid #ff76bd;
+}
+.blend_contain .blend_typetwo .blend_text p {
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+  line-height: 37px;
+  font-size: 18px;
+  color: #666666;
+}
+.blend_contain .blend_typetwo .blend_text p b {
+  display: inline-block;
+  width: 36px;
+  height: 0;
+}
+.blend_contain .blend_typetwo .blend_text p:last-child {
+  margin-bottom: 0;
+}
+.blend_contain .blend_typetwo .blend_img {
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 450px;
+}
+.blend_contain .blend_typetwo .blend_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  vertical-align: middle;
+}
+.blend_contain .blend_bg {
+  width: 100%;
+  height: 450px;
+  min-width: 1200px;
+  background: url(../img/manage_member/bg.jpg) no-repeat;
+  background-size: 100% 178%;
+}
+.blend_contain .blend_one .blend_img {
+  height: 270px;
+  line-height: 270px;
+}
+.blend_contain .blend_two .blend_img {
+  height: 430px;
+  line-height: 430px;
+}
+.blend_contain .blend_three .blend_img {
+  height: 625px;
+  line-height: 625px;
+}
+.blend_contain .blend_four {
+  padding: 54px 0;
+}
+.blend_contain .blend_four .blend_text {
+  width: 400px;
+}
+.blend_contain .blend_four .blend_text h2 {
+  width: 368px;
+}
+.blend_contain .blend_four .blend_img {
+  max-width: 755px;
+  height: 342px;
+  line-height: 342px;
+}
+.blend_contain .blend_four .blend_img img {
+  max-width: 755px;
+}
+.blend_contain .blend_five {
+  padding-top: 60px;
+}
+.blend_contain .blend_five .blend_img {
+  height: 342px;
+  line-height: 342px;
+}
+/*
+* 粉色列表板块
+*/
+.list_contain {
+  padding: 40px 0;
+  width: 100%;
+  height: 350px;
+  min-width: 1200px;
+  background-color: #ff76bd;
+}
+.list_contain .list_box {
+  margin: auto;
+  padding: 20px 100px 0;
+  width: 1200px;
+  height: 330px;
+  overflow: hidden;
+}
+.list_contain .list_box li {
+  float: left;
+  width: 500px;
+  height: 110px;
+}
+.list_contain .list_box li .list_icon {
+  width: 135px;
+  height: 110px;
+}
+.list_contain .list_box li .list_icon i {
+  display: block;
+  margin: auto;
+  width: 78px;
+  height: 78px;
+  background: #ffffff url(../img/manage_member/elves.png) no-repeat;
+  background-position-y: -80px;
+}
+.list_contain .list_box li h2 {
+  margin-bottom: 5px;
+  width: 365px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.list_contain .list_box li p {
+  width: 365px;
+  height: auto;
+  line-height: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.list_contain .list_box li p b {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+}
+.list_contain .list_box li:nth-child(1) .list_icon,
+.list_contain .list_box li:nth-child(1) h2,
+.list_contain .list_box li:nth-child(1) p {
+  float: right;
+  text-align: right;
+}
+.list_contain .list_box li:nth-child(1) i {
+  background-position-x: 0;
+}
+.list_contain .list_box li:nth-child(2) .list_icon,
+.list_contain .list_box li:nth-child(2) h2,
+.list_contain .list_box li:nth-child(2) p {
+  float: left;
+  text-align: left;
+}
+.list_contain .list_box li:nth-child(2) i {
+  background-position-x: -80px;
+}
+.list_contain .list_box li:nth-child(3) .list_icon,
+.list_contain .list_box li:nth-child(3) h2,
+.list_contain .list_box li:nth-child(3) p {
+  float: right;
+  text-align: right;
+}
+.list_contain .list_box li:nth-child(3) i {
+  background-position-x: -160px;
+}
+.list_contain .list_box li:nth-child(4) .list_icon,
+.list_contain .list_box li:nth-child(4) h2,
+.list_contain .list_box li:nth-child(4) p {
+  float: left;
+  text-align: left;
+}
+.list_contain .list_box li:nth-child(4) i {
+  background-position-x: -240px;
+}
+.list_contain .list_box li:nth-child(5) .list_icon,
+.list_contain .list_box li:nth-child(5) h2,
+.list_contain .list_box li:nth-child(5) p {
+  float: right;
+  text-align: right;
+}
+.list_contain .list_box li:nth-child(5) i {
+  background-position-x: -320px;
+}
+.list_contain .list_box li:nth-child(6) .list_icon,
+.list_contain .list_box li:nth-child(6) h2,
+.list_contain .list_box li:nth-child(6) p {
+  float: left;
+  text-align: left;
+}
+.list_contain .list_box li:nth-child(6) i {
+  background-position-x: -400px;
+}
+/*
+* 使用一年公司管理全面提升1板块
+*/
+.use_contain {
+  width: 100%;
+  height: 615px;
+  min-width: 1200px;
+  background: url(../img/manage_member/bg.jpg) no-repeat;
+  background-size: 100% 130%;
+}
+.use_contain .use_title {
+  margin: auto;
+  padding: 60px 0 70px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.use_contain .use_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.use_contain .use_box {
+  margin: auto;
+  width: 1200px;
+  height: 355px;
+}
+.use_contain .use_box li {
+  float: left;
+  margin: 0 40px;
+  width: 220px;
+  height: 355px;
+  text-align: center;
+}
+.use_contain .use_box li .use_icon {
+  width: 100%;
+  height: 200px;
+}
+.use_contain .use_box li .use_icon i {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background: url(../img/manage_member/elves.png) no-repeat;
+  background-position-y: -160px;
+}
+.use_contain .use_box li h2 {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.use_contain .use_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 22px;
+  font-size: 16px;
+  color: #808080;
+}
+.use_contain .use_box li:nth-child(1) i {
+  background-position-x: 0;
+}
+.use_contain .use_box li:nth-child(2) i {
+  background-position-x: -152px;
+}
+.use_contain .use_box li:nth-child(3) i {
+  background-position-x: -304px;
+}
+.use_contain .use_box li:nth-child(4) i {
+  background-position-x: -456px;
+}
+/*
+* 艾特，您可信赖的事业伙伴板块
+*/
+.partner_contain {
+  width: 100%;
+  height: 600px;
+  min-width: 1200px;
+  background-color: #ff6b83;
+}
+.partner_contain .partner_title {
+  margin: auto;
+  padding: 60px 0 45px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.partner_contain .partner_title h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.partner_contain .partner_title p {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.partner_contain .partner_box {
+  margin: auto;
+  width: 1200px;
+  height: 335px;
+}
+.partner_contain .partner_box li {
+  float: left;
+  margin: 0 80px;
+  width: 240px;
+  height: 335px;
+  text-align: center;
+}
+.partner_contain .partner_box li .partner_icon {
+  width: 100%;
+  height: 200px;
+}
+.partner_contain .partner_box li .partner_icon i {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background: url(../img/manage_member/elves.png) no-repeat;
+  background-position-y: -312px;
+}
+.partner_contain .partner_box li h2 {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.partner_contain .partner_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 22px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.partner_contain .partner_box li:nth-child(1) i {
+  background-position-x: 0;
+}
+.partner_contain .partner_box li:nth-child(2) i {
+  background-position-x: -152px;
+}
+.partner_contain .partner_box li:nth-child(3) i {
+  background-position-x: -304px;
+}
+/*
+* 使用一年公司管理全面提升2板块
+*/
+.hoist_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.hoist_contain .hoist_title {
+  padding: 50px 0 45px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.hoist_contain .hoist_title h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.hoist_contain .hoist_title p {
+  margin: auto;
+  width: 480px;
+  height: auto;
+  line-height: 22px;
+  font-size: 16px;
+  color: #82939e;
+}
+.hoist_contain .hoist_box {
+  padding-bottom: 40px;
+  width: 100%;
+  height: 56px;
+}
+.hoist_contain .hoist_box li {
+  float: left;
+  width: 400px;
+  height: 56px;
+}
+.hoist_contain .hoist_box li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hoist_contain .hoist_box li .hoist_icon {
+  float: left;
+  width: 80px;
+  height: 56px;
+}
+.hoist_contain .hoist_box li .hoist_icon i {
+  display: block;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  background: url(../img/manage_member/elves.png) no-repeat;
+  background-position-y: -312px;
+}
+.hoist_contain .hoist_box li p {
+  float: left;
+  margin-top: 17px;
+  width: 320px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #505050;
+}
+.hoist_contain .hoist_box li:nth-child(1) i {
+  background-position-x: -456px;
+}
+.hoist_contain .hoist_box li:nth-child(2) i {
+  background-position-x: -512px;
+}
+.hoist_contain .hoist_box li:nth-child(3) i {
+  background-position-x: -568px;
+}

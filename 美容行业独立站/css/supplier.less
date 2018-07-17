@@ -35,13 +35,13 @@ body{
 * banner板块
 */
 .banner_contain{
-  .wh(100%, 660px);
+  .wh(100%, auto);
   min-width: 1200px;
   a{
     display: block;
-    .wh(100%, 100%);
+    .wh(100%, auto);
     .banner_img{
-      .wh(100%, 100%);
+      .wh(100%, auto);
     }
   }
 }
@@ -142,7 +142,7 @@ body{
         .whh(246px, 20px);
         .font(18px, #ff5465);
       }
-      h2:nth-child(2){
+      h2.what_two{
         float: right;
         width: 788px;
         color: #37c9fe;
@@ -241,6 +241,7 @@ body{
 .hard_contain{
   margin: auto;
   .wh(1200px, auto);
+  overflow-x: hidden;
   .hard_title{
     padding: 50px 0 46px;
     .wh(100%, auto);
@@ -252,10 +253,10 @@ body{
     }
   }
   .hard_box{
-    .wh(100%, 418px);
+    .wh(1252px, 418px);
     li{
       float: left;
-      margin-left: 52px;
+      margin-right: 52px;
       .wh(261px, 418px);
       i{
         display: block;
@@ -283,26 +284,25 @@ body{
         }
       }
     }
-    li:nth-child(1){
-      margin-left: 0;
+    li.hard_a{
       .bgs(#7cb0fc);
       i{
         .bgx(0);
       }
     }
-    li:nth-child(2){
+    li.hard_b{
       .bgs(#fc9926);
       i{
         .bgx(-80px);
       }
     }
-    li:nth-child(3){
+    li.hard_c{
       .bgs(#16e5e1);
       i{
         .bgx(-160px);
       }
     }
-    li:nth-child(4){
+    li.hard_d{
       .bgs(#ff76bd);
       i{
         .bgx(-240px);
@@ -316,6 +316,7 @@ body{
 .core_contain{
   margin: auto;
   .wh(1200px, auto);
+  overflow-x: hidden;
   .core_title{
     padding: 50px 0 45px;
     .wh(100%, auto);
@@ -327,10 +328,10 @@ body{
     }
   }
   .core_box{
-    .wh(1200px, 500px);
+    .wh(1264px, 500px);
     li{
       float: left;
-      margin-left: 64px;
+      margin-right: 64px;
       .wh(252px, 250px);
       text-align: center;
       i{
@@ -339,6 +340,30 @@ body{
         .wh(58px, 58px);
         background: url(../img/supplier/elves.png) no-repeat;
         .bgy(-80px);
+      }
+      i.core_ia{
+        .bgx(0);
+      }
+      i.core_ib{
+        .bgx(-60px);
+      }
+      i.core_ic{
+        .bgx(-120px);
+      }
+      i.core_id{
+        .bgx(-180px);
+      }
+      i.core_ie{
+        .bgx(-240px);
+      }
+      i.core_if{
+        .bgx(-300px);
+      }
+      i.core_ig{
+        .bgx(-360px);
+      }
+      i.core_ih{
+        .bgx(-420px);
       }
       h2{
         margin-bottom: 22px;
@@ -350,48 +375,6 @@ body{
         .wh(252px, auto);
         line-height: 24px;
         .font(14px, @6);
-      }
-    }
-    li:nth-child(1){
-      margin-left: 0;
-      i{
-        .bgx(0);
-      }
-    }
-    li:nth-child(2){
-      i{
-        .bgx(-60px);
-      }
-    }
-    li:nth-child(3){
-      i{
-        .bgx(-120px);
-      }
-    }
-    li:nth-child(4){
-      i{
-        .bgx(-180px);
-      }
-    }
-    li:nth-child(5){
-      margin-left: 0;
-      i{
-        .bgx(-240px);
-      }
-    }
-    li:nth-child(6){
-      i{
-        .bgx(-300px);
-      }
-    }
-    li:nth-child(7){
-      i{
-        .bgx(-360px);
-      }
-    }
-    li:nth-child(8){
-      i{
-        .bgx(-420px);
       }
     }
   }
@@ -441,31 +424,31 @@ body{
         .font(16px, @3);
       }
     }
-    li:nth-child(1){
+    li.profit_a{
       margin-right: 132px;
       i{
         .bgx(0);
       }
     }
-    li:nth-child(2){
+    li.profit_b{
       margin-right: 132px;
       i{
         .bgx(-110px);
       }
     }
-    li:nth-child(3){
+    li.profit_c{
       i{
         .bgx(-220px);
       }
     }
-    li:nth-child(4){
+    li.profit_d{
       margin-left: 222px;
       margin-right: 132px;
       i{
         .bgx(-330px);
       }
     }
-    li:nth-child(5){
+    li.profit_e{
       i{
         .bgx(-440px);
       }
@@ -517,7 +500,7 @@ body{
     i.fr{
       margin-right: 100px;
     }
-    i:nth-child(8){
+    i.services_three.fr{
       margin-left: 198px;
     }
   }
@@ -537,6 +520,24 @@ body{
         background: url(../img/supplier/elves.png) no-repeat;
         .bgy(-32px);
       }
+      i.services_ia{
+        .bgx(-320px);
+      }
+      i.services_ib{
+        .bgx(-368px);
+      }
+      i.services_ic{
+        .bgx(-416px);
+      }
+      i.services_id{
+        .bgx(-464px);
+      }
+      i.services_ie{
+        .bgx(-512px);
+      }
+      i.services_if{
+        .bgx(-560px);
+      }
       h2{
         margin-bottom: 10px;
         .whh(100%, 22px);
@@ -552,36 +553,6 @@ body{
         display: block;
         .whh(100%, 29px);
         .font(14px, @6);
-      }
-    }
-    li:nth-child(1){
-      i{
-        .bgx(-320px);
-      }
-    }
-    li:nth-child(2){
-      i{
-        .bgx(-368px);
-      }
-    }
-    li:nth-child(3){
-      i{
-        .bgx(-416px);
-      }
-    }
-    li:nth-child(4){
-      i{
-        .bgx(-464px);
-      }
-    }
-    li:nth-child(5){
-      i{
-        .bgx(-512px);
-      }
-    }
-    li:nth-child(6){
-      i{
-        .bgx(-560px);
       }
     }
   }

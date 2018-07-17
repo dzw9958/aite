@@ -7,17 +7,17 @@ body {
 */
 .banner_contain {
   width: 100%;
-  height: 660px;
+  height: auto;
   min-width: 1200px;
 }
 .banner_contain a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .banner_contain a .banner_img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /*
 * 什么是产品供应商/厂商解决方案？板块
@@ -148,7 +148,7 @@ body {
   font-size: 18px;
   color: #ff5465;
 }
-.what_contain .what_box .what_head h2:nth-child(2) {
+.what_contain .what_box .what_head h2.what_two {
   float: right;
   width: 788px;
   color: #37c9fe;
@@ -259,6 +259,7 @@ body {
   margin: auto;
   width: 1200px;
   height: auto;
+  overflow-x: hidden;
 }
 .hard_contain .hard_title {
   padding: 50px 0 46px;
@@ -275,12 +276,12 @@ body {
   font-weight: bold;
 }
 .hard_contain .hard_box {
-  width: 100%;
+  width: 1252px;
   height: 418px;
 }
 .hard_contain .hard_box li {
   float: left;
-  margin-left: 52px;
+  margin-right: 52px;
   width: 261px;
   height: 418px;
 }
@@ -315,29 +316,28 @@ body {
   display: inline-block;
   width: 32px;
 }
-.hard_contain .hard_box li:nth-child(1) {
-  margin-left: 0;
+.hard_contain .hard_box li.hard_a {
   background-color: #7cb0fc;
 }
-.hard_contain .hard_box li:nth-child(1) i {
+.hard_contain .hard_box li.hard_a i {
   background-position-x: 0;
 }
-.hard_contain .hard_box li:nth-child(2) {
+.hard_contain .hard_box li.hard_b {
   background-color: #fc9926;
 }
-.hard_contain .hard_box li:nth-child(2) i {
+.hard_contain .hard_box li.hard_b i {
   background-position-x: -80px;
 }
-.hard_contain .hard_box li:nth-child(3) {
+.hard_contain .hard_box li.hard_c {
   background-color: #16e5e1;
 }
-.hard_contain .hard_box li:nth-child(3) i {
+.hard_contain .hard_box li.hard_c i {
   background-position-x: -160px;
 }
-.hard_contain .hard_box li:nth-child(4) {
+.hard_contain .hard_box li.hard_d {
   background-color: #ff76bd;
 }
-.hard_contain .hard_box li:nth-child(4) i {
+.hard_contain .hard_box li.hard_d i {
   background-position-x: -240px;
 }
 /*
@@ -347,6 +347,7 @@ body {
   margin: auto;
   width: 1200px;
   height: auto;
+  overflow-x: hidden;
 }
 .core_contain .core_title {
   padding: 50px 0 45px;
@@ -363,12 +364,12 @@ body {
   font-weight: bold;
 }
 .core_contain .core_box {
-  width: 1200px;
+  width: 1264px;
   height: 500px;
 }
 .core_contain .core_box li {
   float: left;
-  margin-left: 64px;
+  margin-right: 64px;
   width: 252px;
   height: 250px;
   text-align: center;
@@ -380,6 +381,30 @@ body {
   height: 58px;
   background: url(../img/supplier/elves.png) no-repeat;
   background-position-y: -80px;
+}
+.core_contain .core_box li i.core_ia {
+  background-position-x: 0;
+}
+.core_contain .core_box li i.core_ib {
+  background-position-x: -60px;
+}
+.core_contain .core_box li i.core_ic {
+  background-position-x: -120px;
+}
+.core_contain .core_box li i.core_id {
+  background-position-x: -180px;
+}
+.core_contain .core_box li i.core_ie {
+  background-position-x: -240px;
+}
+.core_contain .core_box li i.core_if {
+  background-position-x: -300px;
+}
+.core_contain .core_box li i.core_ig {
+  background-position-x: -360px;
+}
+.core_contain .core_box li i.core_ih {
+  background-position-x: -420px;
 }
 .core_contain .core_box li h2 {
   margin-bottom: 22px;
@@ -396,36 +421,6 @@ body {
   line-height: 24px;
   font-size: 14px;
   color: #666666;
-}
-.core_contain .core_box li:nth-child(1) {
-  margin-left: 0;
-}
-.core_contain .core_box li:nth-child(1) i {
-  background-position-x: 0;
-}
-.core_contain .core_box li:nth-child(2) i {
-  background-position-x: -60px;
-}
-.core_contain .core_box li:nth-child(3) i {
-  background-position-x: -120px;
-}
-.core_contain .core_box li:nth-child(4) i {
-  background-position-x: -180px;
-}
-.core_contain .core_box li:nth-child(5) {
-  margin-left: 0;
-}
-.core_contain .core_box li:nth-child(5) i {
-  background-position-x: -240px;
-}
-.core_contain .core_box li:nth-child(6) i {
-  background-position-x: -300px;
-}
-.core_contain .core_box li:nth-child(7) i {
-  background-position-x: -360px;
-}
-.core_contain .core_box li:nth-child(8) i {
-  background-position-x: -420px;
 }
 /*
 * 能够获得的收益板块
@@ -487,29 +482,29 @@ body {
   font-size: 16px;
   color: #333333;
 }
-.profit_contain .profit_box li:nth-child(1) {
+.profit_contain .profit_box li.profit_a {
   margin-right: 132px;
 }
-.profit_contain .profit_box li:nth-child(1) i {
+.profit_contain .profit_box li.profit_a i {
   background-position-x: 0;
 }
-.profit_contain .profit_box li:nth-child(2) {
+.profit_contain .profit_box li.profit_b {
   margin-right: 132px;
 }
-.profit_contain .profit_box li:nth-child(2) i {
+.profit_contain .profit_box li.profit_b i {
   background-position-x: -110px;
 }
-.profit_contain .profit_box li:nth-child(3) i {
+.profit_contain .profit_box li.profit_c i {
   background-position-x: -220px;
 }
-.profit_contain .profit_box li:nth-child(4) {
+.profit_contain .profit_box li.profit_d {
   margin-left: 222px;
   margin-right: 132px;
 }
-.profit_contain .profit_box li:nth-child(4) i {
+.profit_contain .profit_box li.profit_d i {
   background-position-x: -330px;
 }
-.profit_contain .profit_box li:nth-child(5) i {
+.profit_contain .profit_box li.profit_e i {
   background-position-x: -440px;
 }
 /*
@@ -568,7 +563,7 @@ body {
 .services_contain .services_line i.fr {
   margin-right: 100px;
 }
-.services_contain .services_line i:nth-child(8) {
+.services_contain .services_line i.services_three.fr {
   margin-left: 198px;
 }
 .services_contain .services_box {
@@ -591,6 +586,24 @@ body {
   height: 46px;
   background: url(../img/supplier/elves.png) no-repeat;
   background-position-y: -32px;
+}
+.services_contain .services_box li i.services_ia {
+  background-position-x: -320px;
+}
+.services_contain .services_box li i.services_ib {
+  background-position-x: -368px;
+}
+.services_contain .services_box li i.services_ic {
+  background-position-x: -416px;
+}
+.services_contain .services_box li i.services_id {
+  background-position-x: -464px;
+}
+.services_contain .services_box li i.services_ie {
+  background-position-x: -512px;
+}
+.services_contain .services_box li i.services_if {
+  background-position-x: -560px;
 }
 .services_contain .services_box li h2 {
   margin-bottom: 10px;
@@ -615,22 +628,4 @@ body {
   line-height: 29px;
   font-size: 14px;
   color: #666666;
-}
-.services_contain .services_box li:nth-child(1) i {
-  background-position-x: -320px;
-}
-.services_contain .services_box li:nth-child(2) i {
-  background-position-x: -368px;
-}
-.services_contain .services_box li:nth-child(3) i {
-  background-position-x: -416px;
-}
-.services_contain .services_box li:nth-child(4) i {
-  background-position-x: -464px;
-}
-.services_contain .services_box li:nth-child(5) i {
-  background-position-x: -512px;
-}
-.services_contain .services_box li:nth-child(6) i {
-  background-position-x: -560px;
 }

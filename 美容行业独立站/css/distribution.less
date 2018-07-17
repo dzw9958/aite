@@ -29,13 +29,13 @@ body{
 * banner板块
 */
 .banner_contain{
-  .wh(100%, 695px);
+  .wh(100%, auto);
   min-width: 1200px;
   a{
     display: block;
-    .wh(100%, 100%);
+    .wh(100%, auto);
     .banner_img{
-      .wh(100%, 100%);
+      .wh(100%, auto);
     }
   }
 }
@@ -107,6 +107,30 @@ body{
             .font(18px, @6);
             text-align: center;
           }
+          i.mobile_ia{
+            background-position-x: 0;
+          }
+          i.mobile_ib{
+            background-position-x: -70px;
+          }
+          i.mobile_ic{
+            background-position-x: -140px;
+          }
+          i.mobile_id{
+            background-position-x: -210px;
+          }
+          i.mobile_ie{
+            background-position-x: -280px;
+          }
+          i.mobile_if{
+            background-position-x: -350px;
+          }
+          i.mobile_ig{
+            background-position-x: -420px;
+          }
+          i.mobile_ih{
+            background-position-x: -490px;
+          }
         }
         li.on{
           i{
@@ -114,50 +138,6 @@ body{
           }
           p{
             color: #ff76bd;
-          }
-        }
-      }
-      .mobile_one{
-        li:nth-child(1){
-          i{
-            background-position-x: 0;
-          }
-        }
-        li:nth-child(2){
-          i{
-            background-position-x: -70px;
-          }
-        }
-        li:nth-child(3){
-          i{
-            background-position-x: -140px;
-          }
-        }
-        li:nth-child(4){
-          i{
-            background-position-x: -210px;
-          }
-        }
-      }
-      .mobile_two{
-        li:nth-child(1){
-          i{
-            background-position-x: -280px;
-          }
-        }
-        li:nth-child(2){
-          i{
-            background-position-x: -350px;
-          }
-        }
-        li:nth-child(3){
-          i{
-            background-position-x: -420px;
-          }
-        }
-        li:nth-child(4){
-          i{
-            background-position-x: -490px;
           }
         }
       }
@@ -208,31 +188,31 @@ body{
         .font(16px, @3);
       }
     }
-    li:nth-child(1){
+    li.profit_a{
       margin-right: 132px;
       i{
         .bgp(0, -140px);
       }
     }
-    li:nth-child(2){
+    li.profit_b{
       margin-right: 132px;
       i{
         .bgp(-110px, -140px);
       }
     }
-    li:nth-child(3){
+    li.profit_c{
       i{
         .bgp(-220px, -140px);
       }
     }
-    li:nth-child(4){
+    li.profit_d{
       margin-left: 222px;
       margin-right: 132px;
       i{
         .bgp(-330px, -140px);
       }
     }
-    li:nth-child(5){
+    li.profit_e{
       i{
         .bgp(-440px, -140px);
       }
@@ -283,7 +263,7 @@ body{
         .font(20px, @b);
         border-radius: 20px;
       }
-      li:nth-child(1){
+      li.join_center{
         top: 93px;
         left: 233px;
         .wh(96px, auto);
@@ -291,35 +271,35 @@ body{
         .font(24px, @b);
         font-weight: bold;
       }
-      li:nth-child(2){
+      li.join_a{
         top: 1px;
         left: 41px;
       }
-      li:nth-child(3){
+      li.join_b{
         top: 1px;
         left: 372px;
       }
-      li:nth-child(4){
+      li.join_c{
         top: 71px;
         left: 2px;
       }
-      li:nth-child(5){
+      li.join_d{
         top: 71px;
         left: 412px;
       }
-      li:nth-child(6){
+      li.join_e{
         top: 138px;
         left: 1px;
       }
-      li:nth-child(7){
+      li.join_f{
         top: 138px;
         left: 413px;
       }
-      li:nth-child(8){
+      li.join_g{
         top: 208px;
         left: 41px;
       }
-      li:nth-child(9){
+      li.join_h{
         top: 208px;
         left: 381px;
       }
@@ -360,15 +340,15 @@ body{
         .whh(80px, 18px);
         .font(16px, @3);
       }
-      li:nth-child(1){
+      li.open_a{
         bottom: 36px;
         left: 109px;
       }
-      li:nth-child(2){
+      li.open_b{
         bottom: 3px;
         left: 209px;
       }
-      li:nth-child(3){
+      li.open_c{
         bottom: -30px;
         left: 305px;
       }
@@ -486,6 +466,21 @@ body{
             background: url(../img/distribution/elves.png) no-repeat;
           }
         }
+        .edge_ia i{
+          .bgp(0, -250px);
+        }
+        .edge_ib i{
+          .bgp(-149px, -250px);
+        }
+        .edge_ic i{
+          .bgp(-298px, -250px);
+        }
+        .edge_id i{
+          .bgp(-447px, -250px);
+        }
+        .edge_ie i{
+          .bgp(-596px, -250px);
+        }
         h2{
           float: left;
           padding: 42px 0 17px;
@@ -499,31 +494,6 @@ body{
           line-height: 34px;
           .font(20px, @6);
         }
-      }
-    }
-    li:nth-child(1){
-      .edge_box .edge_icon i{
-        .bgp(0, -250px);
-      }
-    }
-    li:nth-child(2){
-      .edge_box .edge_icon i{
-        .bgp(-149px, -250px);
-      }
-    }
-    li:nth-child(3){
-      .edge_box .edge_icon i{
-        .bgp(-298px, -250px);
-      }
-    }
-    li:nth-child(4){
-      .edge_box .edge_icon i{
-        .bgp(-447px, -250px);
-      }
-    }
-    li:nth-child(5){
-      .edge_box .edge_icon i{
-        .bgp(-596px, -250px);
       }
     }
     li.edge_bg{

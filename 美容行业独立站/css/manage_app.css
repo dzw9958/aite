@@ -7,17 +7,17 @@ body {
 */
 .banner_contain {
   width: 100%;
-  height: 598px;
+  height: auto;
   min-width: 1200px;
 }
 .banner_contain a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .banner_contain a .banner_img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /*
 * 管理APP简介板块

@@ -49,3 +49,254 @@ body{
 /*
 * 下列板块通用
 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow-x: hidden;
+}
+.common_title{
+  margin: auto;
+  .wh(1200px, auto);
+  text-align: center;
+  h1{
+    .whh(100%, 38px);
+    .font(34px, @3);
+    font-weight: bold;
+  }
+  p{
+    margin-top: 20px;
+    .whh(100%, 20px);
+    .font(18px, @6);
+  }
+}
+/*
+* 传统美容行业连锁门店现状板块
+*/
+.status_contain{
+  .status_title{
+    padding: 50px 0;
+  }
+  .status_box{
+    padding-bottom: 50px;
+    .wh(100%, auto);
+    overflow: hidden;
+  }
+  .status_text{
+    margin-top: 55px;
+    .wh(628px, auto);
+    line-height: 36px;
+    .font(16px, @6);
+    b{
+      display: inline-block;
+      .wh(32px, 0);
+    }
+  }
+  .status_img{
+    .wh(540px, 350px);
+    text-align: right;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 540px;
+      max-height: 350px;
+    }
+  }
+}
+/*
+* 传统美容行业连锁门店痛点板块
+*/
+.pain_contain{
+  .wh(100%, 640px);
+  min-width: 1200px;
+  background: url(../img/store_chain/bg.png) no-repeat;
+  background-size: 100% 100%;
+  .pain_title{
+    padding: 100px 0 75px;
+    h1{
+      color: @b;
+    }
+  }
+  .pain_box{
+    margin: auto;
+    .wh(1200px, 345px);
+    overflow: hidden;
+  }
+  .pain_list{
+    .wh(400px, 490px);
+    li{
+      .wh(400px, 245px);
+      h2{
+        .whh(100%, 36px);
+        .font(24px, @b);
+        font-weight: bold;
+      }
+      p{
+        .whh(100%, 30px);
+        .font(20px, @b);
+      }
+    }
+  }
+  .pain_img{
+    .whh(400px, 345px);
+    text-align: center;
+    img{
+      .wh(auto, auto);
+      max-width: 400px;
+      max-height: 345px;
+    }
+  }
+  .pain_list.fl{
+    text-align: right;
+  }
+  .pain_list.fr{
+    text-align: left;
+  }
+}
+/*
+* 美容行业连锁门店运营模式板块
+*/
+.model_contain{
+  .model_title{
+    padding: 50px 0;
+  }
+  .model_box{
+    padding-bottom: 50px;
+    .wh(100%, 900px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 900px;
+    }
+  }
+}
+/*
+* 美容行业连锁门店解决方案核心价值板块
+*/
+.core_contain{
+  .wh(100%, 950px);
+  min-width: 1200px;
+  .bgs(#3b424c);
+  .core_title{
+    padding: 40px 0 60px;
+    h1,p{
+      color: @b;
+    }
+  }
+  .core_window{
+    margin: auto;
+    .wh(1200px, 765px);
+    overflow-x: hidden;
+  }
+  .core_list{
+    .wh(1260px, 765px);
+    li{
+      float: left;
+      margin-right: 60px;
+      .wh(255px, 255px);
+      text-align: center;
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+        .wh(52px, 52px);
+        background: url(../img/store_chain/elves.png) no-repeat;
+      }
+      h2{
+        margin-bottom: 25px;
+        .whh(100%, 20px);
+        .font(18px, @b);
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 24px;
+        .font(14px, @b);
+      }
+      i.core_ia{
+        .bgp(0, 0);
+      }
+      i.core_ib{
+        .bgp(52px, 0);
+      }
+      i.core_ic{
+        .bgp(104px, 0);
+      }
+      i.core_id{
+        .bgp(156px, 0);
+      }
+      i.core_ie{
+        .bgp(0, 52px);
+      }
+      i.core_if{
+        .bgp(52px, 52px);
+      }
+      i.core_ig{
+        .bgp(104px, 52px);
+      }
+      i.core_ih{
+        .bgp(156px, 52px);
+      }
+      i.core_ii{
+        .bgp(0, 104px);
+      }
+      i.core_ij{
+        .bgp(52px, 104px);
+      }
+      i.core_ik{
+        .bgp(104px, 104px);
+      }
+      i.core_il{
+        .bgp(156px, 104px);
+      }
+    }
+  }
+}
+/*
+* 一体化门店管理，引爆线下门店热度板块
+*/
+.heat_contain{
+  .heat_title{
+    padding: 40px 0 50px;
+  }
+  .heat_list{
+    padding-bottom: 50px;
+    .wh(1220px, 315px);
+    li{
+      float: left;
+      margin-right: 20px;
+      .wh(283px, 313px);
+      text-align: center;
+      border: 1px solid #dddddd;
+      img{
+        display: block;
+        margin: 50px auto 45px;
+        .wh(70px, 70px);
+      }
+      h2{
+        margin-bottom: 20px;
+        .whh(100%, 20px);
+        .font(18px, @3);
+      }
+      b{
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        .wh(18px, 3px);
+        .bgs(@3);
+      }
+      p{
+        margin: auto;
+        .wh(135px, auto);
+        line-height: 24px;
+        .font(12px, @6);
+      }
+    }
+  }
+}

@@ -7,17 +7,17 @@ body {
 */
 .banner {
   width: 100%;
-  height: 650px;
+  height: auto;
   min-width: 1200px;
 }
 .banner a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .banner a img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /*
 * banner板块下
@@ -69,7 +69,7 @@ body {
   color: #666666;
   text-align: center;
 }
-.banner_down ul li:nth-child(1) {
+.banner_down ul li.banner_downa {
   width: 298px;
   border-left: 0;
 }
@@ -268,44 +268,44 @@ body {
   font-size: 24px;
   color: #ffffff;
 }
-.develop .develop_content .develop_content_box p:nth-child(2),
-.develop .develop_content .develop_content_box p:nth-child(4),
-.develop .develop_content .develop_content_box p:nth-child(6),
-.develop .develop_content .develop_content_box p:nth-child(8),
-.develop .develop_content .develop_content_box p:nth-child(10) {
+.develop .develop_content .develop_content_box p.develop_a,
+.develop .develop_content .develop_content_box p.develop_c,
+.develop .develop_content .develop_content_box p.develop_e,
+.develop .develop_content .develop_content_box p.develop_g,
+.develop .develop_content .develop_content_box p.develop_i {
   left: 0;
   text-align: right;
 }
-.develop .develop_content .develop_content_box p:nth-child(3),
-.develop .develop_content .develop_content_box p:nth-child(5),
-.develop .develop_content .develop_content_box p:nth-child(7),
-.develop .develop_content .develop_content_box p:nth-child(9),
-.develop .develop_content .develop_content_box p:nth-child(11) {
+.develop .develop_content .develop_content_box p.develop_b,
+.develop .develop_content .develop_content_box p.develop_d,
+.develop .develop_content .develop_content_box p.develop_f,
+.develop .develop_content .develop_content_box p.develop_h,
+.develop .develop_content .develop_content_box p.develop_j {
   right: 0;
   text-align: left;
 }
-.develop .develop_content .develop_content_box p:nth-child(2),
-.develop .develop_content .develop_content_box p:nth-child(3) {
+.develop .develop_content .develop_content_box p.develop_a,
+.develop .develop_content .develop_content_box p.develop_b {
   top: 42px;
   width: 245px;
 }
-.develop .develop_content .develop_content_box p:nth-child(4),
-.develop .develop_content .develop_content_box p:nth-child(5) {
+.develop .develop_content .develop_content_box p.develop_c,
+.develop .develop_content .develop_content_box p.develop_d {
   top: 113px;
   width: 220px;
 }
-.develop .develop_content .develop_content_box p:nth-child(6),
-.develop .develop_content .develop_content_box p:nth-child(7) {
+.develop .develop_content .develop_content_box p.develop_e,
+.develop .develop_content .develop_content_box p.develop_f {
   top: 183px;
   width: 212px;
 }
-.develop .develop_content .develop_content_box p:nth-child(8),
-.develop .develop_content .develop_content_box p:nth-child(9) {
+.develop .develop_content .develop_content_box p.develop_g,
+.develop .develop_content .develop_content_box p.develop_h {
   top: 256px;
   width: 221px;
 }
-.develop .develop_content .develop_content_box p:nth-child(10),
-.develop .develop_content .develop_content_box p:nth-child(11) {
+.develop .develop_content .develop_content_box p.develop_i,
+.develop .develop_content .develop_content_box p.develop_j {
   top: 326px;
   width: 248px;
 }
@@ -335,6 +335,7 @@ body {
   margin-bottom: 40px;
   width: 1200px;
   height: auto;
+  overflow-x: hidden;
 }
 .operate .operate_title {
   margin-bottom: 25px;
@@ -351,12 +352,12 @@ body {
   font-weight: bold;
 }
 .operate .operate_choice {
-  width: 100%;
+  width: 1260px;
   height: 40px;
 }
 .operate .operate_choice li {
   float: left;
-  margin-left: 60px;
+  margin-right: 60px;
   width: 150px;
   height: 38px;
   line-height: 22px;
@@ -364,9 +365,6 @@ body {
   color: #333333;
   text-align: center;
   cursor: pointer;
-}
-.operate .operate_choice li:nth-child(1) {
-  margin-left: 0;
 }
 .operate .operate_choice li.on {
   color: #ff76bd;
@@ -406,6 +404,7 @@ body {
   margin-bottom: 40px;
   width: 1200px;
   height: auto;
+  overflow-x: hidden;
 }
 .industry .industry_title {
   margin-bottom: 45px;
@@ -422,12 +421,12 @@ body {
   font-weight: bold;
 }
 .industry .industry_box {
-  width: 1200px;
+  width: 1260px;
   height: 380px;
 }
 .industry .industry_box li {
   float: left;
-  margin-left: 60px;
+  margin-right: 60px;
   width: 360px;
   height: 380px;
 }
@@ -454,9 +453,6 @@ body {
   line-height: 24px;
   font-size: 16px;
   color: #666666;
-}
-.industry .industry_box li:nth-child(1) {
-  margin-left: 0;
 }
 .industry .industry_box li:hover h2 {
   color: #ff76bd;
@@ -516,6 +512,7 @@ body {
   margin-bottom: 45px;
   width: 1200px;
   height: auto;
+  overflow-x: hidden;
 }
 .standard .standard_title {
   margin-bottom: 42px;
@@ -532,12 +529,12 @@ body {
   font-weight: bold;
 }
 .standard .standard_list {
-  width: 1200px;
+  width: 1240px;
   height: 300px;
 }
 .standard .standard_list li {
   float: left;
-  margin-left: 40px;
+  margin-right: 40px;
   width: 270px;
   height: 300px;
 }
@@ -548,6 +545,18 @@ body {
   width: 140px;
   height: 140px;
   background: url(../img/index/elves-2.png) no-repeat;
+}
+.standard .standard_list li i.standard_ia {
+  background-position: 0 0;
+}
+.standard .standard_list li i.standard_ib {
+  background-position: -140px 0;
+}
+.standard .standard_list li i.standard_ic {
+  background-position: 0 -140px;
+}
+.standard .standard_list li i.standard_id {
+  background-position: -140px -140px;
 }
 .standard .standard_list li h2 {
   margin-bottom: 16px;
@@ -565,21 +574,6 @@ body {
   line-height: 24px;
   font-size: 16px;
   color: #666666;
-}
-.standard .standard_list li:nth-child(1) {
-  margin-left: 0;
-}
-.standard .standard_list li:nth-child(1) i {
-  background-position: 0 0;
-}
-.standard .standard_list li:nth-child(2) i {
-  background-position: -140px 0;
-}
-.standard .standard_list li:nth-child(3) i {
-  background-position: 0 -140px;
-}
-.standard .standard_list li:nth-child(4) i {
-  background-position: -140px -140px;
 }
 .standard .standard_list li:hover h2 {
   color: #ff76bd;
@@ -604,18 +598,27 @@ body {
   width: 320px;
   height: 100px;
 }
-.gray .gray_content li div {
+.gray .gray_content li .gray_icon {
   float: left;
   margin-right: 25px;
   width: 75px;
   height: 100px;
 }
-.gray .gray_content li div i {
+.gray .gray_content li .gray_icon i {
   display: block;
   margin-top: 5px;
   width: 75px;
   height: 75px;
   background: url(../img/index/elves-1.png) no-repeat;
+}
+.gray .gray_content li .gray_ia i {
+  background-position: 0 -200px;
+}
+.gray .gray_content li .gray_ib i {
+  background-position: 0 -275px;
+}
+.gray .gray_content li .gray_ic i {
+  background-position: 0 -350px;
 }
 .gray .gray_content li h2 {
   float: left;
@@ -638,15 +641,6 @@ body {
 .gray .gray_content li p i {
   display: inline-block;
   width: 28px;
-}
-.gray .gray_content li:nth-child(1) div i {
-  background-position: 0 -200px;
-}
-.gray .gray_content li:nth-child(2) div i {
-  background-position: 0 -275px;
-}
-.gray .gray_content li:nth-child(3) div i {
-  background-position: 0 -350px;
 }
 /*
 * 图文混合

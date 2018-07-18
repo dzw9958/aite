@@ -19,13 +19,13 @@ body{
 * banner板块
 */
 .banner{
-  .wh(100%, 650px);
+  .wh(100%, auto);
   min-width: 1200px;
   a{
     display: block;
-    .wh(100%, 100%);
+    .wh(100%, auto);
     img{
-      .wh(100%, 100%);
+      .wh(100%, auto);
     }
   }
 }
@@ -64,7 +64,7 @@ body{
         text-align: center;
       }
     }
-    li:nth-child(1){
+    li.banner_downa{
       width: 298px;
       border-left: 0;
     }
@@ -233,44 +233,44 @@ body{
         line-height: 26px;
         .font(24px, #ffffff);
       }
-      p:nth-child(2),
-      p:nth-child(4),
-      p:nth-child(6),
-      p:nth-child(8),
-      p:nth-child(10){
+      p.develop_a,
+      p.develop_c,
+      p.develop_e,
+      p.develop_g,
+      p.develop_i{
         left: 0;
         text-align: right;
       }
-      p:nth-child(3),
-      p:nth-child(5),
-      p:nth-child(7),
-      p:nth-child(9),
-      p:nth-child(11){
+      p.develop_b,
+      p.develop_d,
+      p.develop_f,
+      p.develop_h,
+      p.develop_j{
         right: 0;
         text-align: left;
       }
-      p:nth-child(2),
-      p:nth-child(3),{
+      p.develop_a,
+      p.develop_b{
         top: 42px;
         width: 245px;
       }
-      p:nth-child(4),
-      p:nth-child(5),{
+      p.develop_c,
+      p.develop_d{
         top: 113px;
         width: 220px;
       }
-      p:nth-child(6),
-      p:nth-child(7),{
+      p.develop_e,
+      p.develop_f{
         top: 183px;
         width: 212px;
       }
-      p:nth-child(8),
-      p:nth-child(9),{
+      p.develop_g,
+      p.develop_h{
         top: 256px;
         width: 221px;
       }
-      p:nth-child(10),
-      p:nth-child(11),{
+      p.develop_i,
+      p.develop_j{
         top: 326px;
         width: 248px;
       }
@@ -298,6 +298,7 @@ body{
   margin-top: 40px;
   margin-bottom: 40px;
   .wh(1200px, auto);
+  overflow-x: hidden;
   .operate_title{
     margin-bottom: 25px;
     .wh(100%, 40px);
@@ -309,18 +310,15 @@ body{
     }
   }
   .operate_choice{
-    .wh(100%, 40px);
+    .wh(1260px, 40px);
     li{
       float: left;
-      margin-left: 60px;
+      margin-right: 60px;
       .wh(150px, 38px);
       line-height: 22px;
       .font(20px, #333333);
       text-align: center;
       cursor: pointer;
-    }
-    li:nth-child(1){
-      margin-left: 0;
     }
     li.on{
       color: #ff76bd;
@@ -357,6 +355,7 @@ body{
   margin: auto;
   margin-bottom: 40px;
   .wh(1200px, auto);
+  overflow-x: hidden;
   .industry_title{
     margin-bottom: 45px;
     .wh(100%, 40px);
@@ -368,10 +367,10 @@ body{
     }
   }
   .industry_box{
-    .wh(1200px, 380px);
+    .wh(1260px, 380px);
     li{
       float: left;
-      margin-left: 60px;
+      margin-right: 60px;
       .wh(360px, 380px);
       img{
         display: block;
@@ -391,9 +390,6 @@ body{
         line-height: 24px;
         .font(16px, #666666);
       }
-    }
-    li:nth-child(1){
-      margin-left: 0;
     }
     li:hover{
       h2{
@@ -446,6 +442,7 @@ body{
   margin-top: 36px;
   margin-bottom: 45px;
   .wh(1200px, auto);
+  overflow-x: hidden;
   .standard_title{
     margin-bottom: 42px;
     .wh(100%, 40px);
@@ -457,10 +454,10 @@ body{
     }
   }
   .standard_list{
-    .wh(1200px, 300px);
+    .wh(1240px, 300px);
     li{
       float: left;
-      margin-left: 40px;
+      margin-right: 40px;
       .wh(270px, 300px);
       i{
         display: block;
@@ -468,6 +465,18 @@ body{
         margin-bottom: 22px;
         .wh(140px, 140px);
         background: url(../img/index/elves-2.png) no-repeat;
+      }
+      i.standard_ia{
+        background-position: 0 0;
+      }
+      i.standard_ib{
+        background-position: -140px 0;
+      }
+      i.standard_ic{
+        background-position: 0 -140px;
+      }
+      i.standard_id{
+        background-position: -140px -140px;
       }
       h2{
         margin-bottom: 16px;
@@ -480,27 +489,6 @@ body{
         .wh(100%, 96px);
         line-height: 24px;
         .font(16px, #666666);
-      }
-    }
-    li:nth-child(1){
-      margin-left: 0;
-      i{
-        background-position: 0 0;
-      }
-    }
-    li:nth-child(2){
-      i{
-        background-position: -140px 0;
-      }
-    }
-    li:nth-child(3){
-      i{
-        background-position: 0 -140px;
-      }
-    }
-    li:nth-child(4){
-      i{
-        background-position: -140px -140px;
       }
     }
     li:hover{
@@ -524,7 +512,7 @@ body{
       float: left;
       padding: 0 30px 0 50px;
       .wh(320px, 100px);
-      div{
+      .gray_icon{
         float: left;
         margin-right: 25px;
         .wh(75px, 100px);
@@ -534,6 +522,15 @@ body{
           .wh(75px, 75px);
           background: url(../img/index/elves-1.png) no-repeat;
         }
+      }
+      .gray_ia i{
+        background-position: 0 -200px;
+      }
+      .gray_ib i{
+        background-position: 0 -275px;
+      }
+      .gray_ic i{
+        background-position: 0 -350px;
       }
       h2{
         float: left;
@@ -550,27 +547,6 @@ body{
         i{
           display: inline-block;
           width: 28px;
-        }
-      }
-    }
-    li:nth-child(1){
-      div{
-        i{
-          background-position: 0 -200px;
-        }
-      }
-    }
-    li:nth-child(2){
-      div{
-        i{
-          background-position: 0 -275px;
-        }
-      }
-    }
-    li:nth-child(3){
-      div{
-        i{
-          background-position: 0 -350px;
         }
       }
     }

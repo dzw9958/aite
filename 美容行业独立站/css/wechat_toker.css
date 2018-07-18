@@ -1,0 +1,420 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.common_title {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin-top: 27px;
+  width: 100%;
+  height: auto;
+  line-height: 26px;
+  font-size: 18px;
+  color: #666666;
+}
+/*
+* 营销内容传播方式多种多样板块
+*/
+.marketing_contain .marketing_title {
+  padding: 45px 0 75px;
+}
+.marketing_contain .marketing_list {
+  width: 1248px;
+  height: 420px;
+}
+.marketing_contain .marketing_list li {
+  position: relative;
+  float: left;
+  margin-right: 48px;
+  padding-left: 70px;
+  width: 194px;
+  height: 140px;
+}
+.marketing_contain .marketing_list li h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+.marketing_contain .marketing_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 16px;
+  color: #666666;
+}
+.marketing_contain .marketing_list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: url(../img/wechat_toker/elves.png) no-repeat;
+}
+.marketing_contain .marketing_list li i.marketing_ia {
+  background-position: 0 0;
+}
+.marketing_contain .marketing_list li i.marketing_ib {
+  background-position: -50px 0;
+}
+.marketing_contain .marketing_list li i.marketing_ic {
+  background-position: -100px 0;
+}
+.marketing_contain .marketing_list li i.marketing_id {
+  background-position: -150px 0;
+}
+.marketing_contain .marketing_list li i.marketing_ie {
+  background-position: 0 -50px;
+}
+.marketing_contain .marketing_list li i.marketing_if {
+  background-position: -50px -50px;
+}
+.marketing_contain .marketing_list li i.marketing_ig {
+  background-position: -100px -50px;
+}
+.marketing_contain .marketing_list li i.marketing_ih {
+  background-position: -150px -50px;
+}
+.marketing_contain .marketing_list li i.marketing_ii {
+  background-position: 0 -100px;
+}
+.marketing_contain .marketing_list li i.marketing_ij {
+  background-position: -50px -100px;
+}
+.marketing_contain .marketing_list li i.marketing_ik {
+  background-position: -100px -100px;
+}
+.marketing_contain .marketing_list li i.marketing_il {
+  background-position: -150px -100px;
+}
+/*
+* 解决线下门店无法找客户的困扰板块
+*/
+.solve_contain {
+  width: 100%;
+  height: 605px;
+  min-width: 1200px;
+  background-color: #f3f3f3;
+}
+.solve_contain .solve_title {
+  padding: 50px 0 65px;
+}
+.solve_contain .solve_box {
+  margin: auto;
+  width: 1200px;
+  height: 370px;
+  text-align: center;
+}
+.solve_contain .solve_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 370px;
+}
+/*
+* 功能预览板块
+*/
+.function_contain {
+  width: 100%;
+  height: 330px;
+  min-width: 1200px;
+  background-color: #ff76bd;
+}
+.function_contain .function_title {
+  padding: 35px 0 55px;
+}
+.function_contain .function_title h1 {
+  color: #ffffff;
+}
+.function_contain .function_list {
+  margin: auto;
+  width: 1200px;
+  height: 180px;
+}
+.function_contain .function_list li {
+  position: relative;
+  float: left;
+  padding-left: 30px;
+  width: 370px;
+  height: 60px;
+}
+.function_contain .function_list li i.function_icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url(../img/wechat_toker/elves.png) no-repeat;
+  background-position: -128px -150px;
+}
+.function_contain .function_list li p {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #ffffff;
+}
+/*
+* 让客户帮您找客户板块
+*/
+.help_contain .help_title {
+  padding: 50px 0 90px;
+}
+.help_contain .help_title p {
+  width: 1142px;
+}
+.help_contain .help_box {
+  width: 1200px;
+  height: 290px;
+  line-height: 290px;
+  text-align: center;
+}
+.help_contain .help_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 290px;
+  vertical-align: bottom;
+}
+/*
+* “让” 一切变得多姿多彩板块
+*/
+.colorful_contain {
+  width: 100%;
+  height: 630px;
+  min-width: 1200px;
+  background: url(../img/wechat_toker/info-colors.png) no-repeat;
+  background-size: 100% 100%;
+}
+.colorful_contain .colorful_title {
+  padding: 55px 0 75px;
+}
+.colorful_contain .colorful_list {
+  margin: auto;
+  width: 1200px;
+  height: 325px;
+  background: url(../img/wechat_toker/color.png) repeat-y;
+}
+.colorful_contain .colorful_list li {
+  float: left;
+  width: 240px;
+  height: 325px;
+}
+.colorful_contain .colorful_list li h2 {
+  margin-bottom: 15px;
+  width: 240px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+.colorful_contain .colorful_list li p {
+  margin: auto;
+  width: 210px;
+  height: auto;
+  line-height: 34px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.colorful_contain .colorful_list li h2.colorful_a {
+  background-color: #fe4b92;
+}
+.colorful_contain .colorful_list li h2.colorful_b {
+  background-color: #ff7536;
+}
+.colorful_contain .colorful_list li h2.colorful_c {
+  background-color: #fba345;
+}
+.colorful_contain .colorful_list li h2.colorful_d {
+  background-color: #fb8d5c;
+}
+.colorful_contain .colorful_list li h2.colorful_e {
+  background-color: #ff5e84;
+}
+/*
+* 我们的优势板块
+*/
+.edge_contain .edge_title {
+  padding: 50px 0 40px;
+}
+.edge_contain .edge_list {
+  padding-bottom: 50px;
+  width: 1209px;
+  height: 228px;
+}
+.edge_contain .edge_list li {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 394px;
+  height: 105px;
+}
+.edge_contain .edge_list li .edge_img {
+  float: left;
+  width: 114px;
+  height: 105px;
+  line-height: 105px;
+  text-align: center;
+}
+.edge_contain .edge_list li .edge_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 114px;
+  max-height: 105px;
+  vertical-align: middle;
+}
+.edge_contain .edge_list li h2 {
+  float: left;
+  margin-top: 29.5px;
+  margin-bottom: 10px;
+  width: 280px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.edge_contain .edge_list li p {
+  float: left;
+  width: 280px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+/*
+* 大数据分析潜在客户画像板块
+*/
+.portrait_contain .portrait_title {
+  padding: 55px 0 30px;
+}
+.portrait_contain .portrait_box {
+  padding-bottom: 50px;
+  width: 1200px;
+  height: 670px;
+  overflow: hidden;
+}
+.portrait_contain .portrait_list {
+  margin-top: 23px;
+  margin-bottom: 54px;
+  width: 1200px;
+  height: 3px;
+  background-color: #f14d38;
+}
+.portrait_contain .portrait_list li {
+  position: relative;
+  top: -23px;
+  left: 0;
+  float: left;
+  margin: 0 57px;
+  padding-left: 66px;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 16px 1px #e7e7e7;
+  box-shadow: 0 2px 16px 1px #e7e7e7;
+  cursor: pointer;
+}
+.portrait_contain .portrait_list li i {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/wechat_toker/elves.png) no-repeat;
+  background-position-y: -182px;
+}
+.portrait_contain .portrait_list li p {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #333333;
+}
+.portrait_contain .portrait_list li i.portrait_ia {
+  background-position-x: 0;
+}
+.portrait_contain .portrait_list li i.portrait_ib {
+  background-position-x: -32px;
+}
+.portrait_contain .portrait_list li i.portrait_ic {
+  background-position-x: -64px;
+}
+.portrait_contain .portrait_list li i.portrait_id {
+  background-position-x: -96px;
+}
+.portrait_contain .portrait_list li.on {
+  background-color: #ff76bd;
+}
+.portrait_contain .portrait_list li.on i {
+  background-position-y: -150px;
+}
+.portrait_contain .portrait_list li.on p {
+  color: #ffffff;
+}
+.portrait_contain .portrait_window {
+  width: 1200px;
+  height: 590px;
+  line-height: 590px;
+  text-align: center;
+}
+.portrait_contain .portrait_window img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 590px;
+  vertical-align: middle;
+}

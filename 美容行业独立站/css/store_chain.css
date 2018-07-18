@@ -23,3 +23,297 @@ body {
 /*
 * 下列板块通用
 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.common_title {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666666;
+}
+/*
+* 传统美容行业连锁门店现状板块
+*/
+.status_contain .status_title {
+  padding: 50px 0;
+}
+.status_contain .status_box {
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.status_contain .status_text {
+  margin-top: 55px;
+  width: 628px;
+  height: auto;
+  line-height: 36px;
+  font-size: 16px;
+  color: #666666;
+}
+.status_contain .status_text b {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+}
+.status_contain .status_img {
+  width: 540px;
+  height: 350px;
+  text-align: right;
+}
+.status_contain .status_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 540px;
+  max-height: 350px;
+}
+/*
+* 传统美容行业连锁门店痛点板块
+*/
+.pain_contain {
+  width: 100%;
+  height: 640px;
+  min-width: 1200px;
+  background: url(../img/store_chain/bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.pain_contain .pain_title {
+  padding: 100px 0 75px;
+}
+.pain_contain .pain_title h1 {
+  color: #ffffff;
+}
+.pain_contain .pain_box {
+  margin: auto;
+  width: 1200px;
+  height: 345px;
+  overflow: hidden;
+}
+.pain_contain .pain_list {
+  width: 400px;
+  height: 490px;
+}
+.pain_contain .pain_list li {
+  width: 400px;
+  height: 245px;
+}
+.pain_contain .pain_list li h2 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pain_contain .pain_list li p {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.pain_contain .pain_img {
+  width: 400px;
+  height: 345px;
+  line-height: 345px;
+  text-align: center;
+}
+.pain_contain .pain_img img {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 345px;
+}
+.pain_contain .pain_list.fl {
+  text-align: right;
+}
+.pain_contain .pain_list.fr {
+  text-align: left;
+}
+/*
+* 美容行业连锁门店运营模式板块
+*/
+.model_contain .model_title {
+  padding: 50px 0;
+}
+.model_contain .model_box {
+  padding-bottom: 50px;
+  width: 100%;
+  height: 900px;
+  text-align: center;
+}
+.model_contain .model_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 900px;
+}
+/*
+* 美容行业连锁门店解决方案核心价值板块
+*/
+.core_contain {
+  width: 100%;
+  height: 950px;
+  min-width: 1200px;
+  background-color: #3b424c;
+}
+.core_contain .core_title {
+  padding: 40px 0 60px;
+}
+.core_contain .core_title h1,
+.core_contain .core_title p {
+  color: #ffffff;
+}
+.core_contain .core_window {
+  margin: auto;
+  width: 1200px;
+  height: 765px;
+  overflow-x: hidden;
+}
+.core_contain .core_list {
+  width: 1260px;
+  height: 765px;
+}
+.core_contain .core_list li {
+  float: left;
+  margin-right: 60px;
+  width: 255px;
+  height: 255px;
+  text-align: center;
+}
+.core_contain .core_list li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 52px;
+  height: 52px;
+  background: url(../img/store_chain/elves.png) no-repeat;
+}
+.core_contain .core_list li h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.core_contain .core_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.core_contain .core_list li i.core_ia {
+  background-position: 0 0;
+}
+.core_contain .core_list li i.core_ib {
+  background-position: -52px 0;
+}
+.core_contain .core_list li i.core_ic {
+  background-position: -104px 0;
+}
+.core_contain .core_list li i.core_id {
+  background-position: -156px 0;
+}
+.core_contain .core_list li i.core_ie {
+  background-position: 0 -52px;
+}
+.core_contain .core_list li i.core_if {
+  background-position: -52px -52px;
+}
+.core_contain .core_list li i.core_ig {
+  background-position: -104px -52px;
+}
+.core_contain .core_list li i.core_ih {
+  background-position: -156px -52px;
+}
+.core_contain .core_list li i.core_ii {
+  background-position: 0 -104px;
+}
+.core_contain .core_list li i.core_ij {
+  background-position: -52px -104px;
+}
+.core_contain .core_list li i.core_ik {
+  background-position: -104px -104px;
+}
+.core_contain .core_list li i.core_il {
+  background-position: -156px -104px;
+}
+/*
+* 一体化门店管理，引爆线下门店热度板块
+*/
+.heat_contain .heat_title {
+  padding: 40px 0 50px;
+}
+.heat_contain .heat_list {
+  padding-bottom: 50px;
+  width: 1220px;
+  height: 315px;
+}
+.heat_contain .heat_list li {
+  float: left;
+  margin-right: 20px;
+  width: 283px;
+  height: 313px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+.heat_contain .heat_list li img {
+  display: block;
+  margin: 50px auto 45px;
+  width: 70px;
+  height: 70px;
+}
+.heat_contain .heat_list li h2 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.heat_contain .heat_list li b {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 18px;
+  height: 3px;
+  background-color: #333333;
+}
+.heat_contain .heat_list li p {
+  margin: auto;
+  width: 135px;
+  height: auto;
+  line-height: 24px;
+  font-size: 12px;
+  color: #666666;
+}

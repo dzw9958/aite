@@ -1,0 +1,397 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 下列板块通用
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow-x: hidden;
+}
+.common_title{
+  margin: auto;
+  .wh(1200px, auto);
+  text-align: center;
+  h1{
+    .whh(100%, 38px);
+    .font(34px, @3);
+    font-weight: bold;
+  }
+  p{
+    margin-top: 27px;
+    .wh(100%, auto);
+    line-height: 26px;
+    .font(18px, @6);
+  }
+}
+/*
+* 营销内容传播方式多种多样板块
+*/
+.marketing_contain{
+  .marketing_title{
+    padding: 45px 0 75px;
+  }
+  .marketing_list{
+    .wh(1248px, 420px);
+    li{
+      position: relative;
+      float: left;
+      margin-right: 48px;
+      padding-left: 70px;
+      .wh(194px, 140px);
+      h2{
+        margin-bottom: 10px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 24px;
+        .font(16px, @6);
+      }
+      i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .wh(48px, 48px);
+        background: url(../img/wechat_toker/elves.png) no-repeat;
+      }
+      i.marketing_ia{
+        .bgp(0, 0);
+      }
+      i.marketing_ib{
+        .bgp(50px, 0);
+      }
+      i.marketing_ic{
+        .bgp(100px, 0);
+      }
+      i.marketing_id{
+        .bgp(150px, 0);
+      }
+      i.marketing_ie{
+        .bgp(0, 50px);
+      }
+      i.marketing_if{
+        .bgp(50px, 50px);
+      }
+      i.marketing_ig{
+        .bgp(100px, 50px);
+      }
+      i.marketing_ih{
+        .bgp(150px, 50px);
+      }
+      i.marketing_ii{
+        .bgp(0, 100px);
+      }
+      i.marketing_ij{
+        .bgp(50px, 100px);
+      }
+      i.marketing_ik{
+        .bgp(100px, 100px);
+      }
+      i.marketing_il{
+        .bgp(150px, 100px);
+      }
+    }
+  }
+}
+/*
+* 解决线下门店无法找客户的困扰板块
+*/
+.solve_contain{
+  .wh(100%, 605px);
+  min-width: 1200px;
+  .bgs(#f3f3f3);
+  .solve_title{
+    padding: 50px 0 65px;
+  }
+  .solve_box{
+    margin: auto;
+    .wh(1200px, 370px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 370px;
+    }
+  }
+}
+/*
+* 功能预览板块
+*/
+.function_contain{
+  .wh(100%, 330px);
+  min-width: 1200px;
+  .bgs(#ff76bd);
+  .function_title{
+    padding: 35px 0 55px;
+    h1{
+      color: @b;
+    }
+  }
+  .function_list{
+    margin: auto;
+    .wh(1200px, 180px);
+    li{
+      position: relative;
+      float: left;
+      padding-left: 30px;
+      .wh(370px, 60px);
+      i.function_icon{
+        position: absolute;
+        top: 2px;
+        left: 0;
+        .wh(21px, 21px);
+        background: url(../img/wechat_toker/elves.png) no-repeat;
+        .bgp(128px, 150px);
+      }
+      p{
+        .whh(100%, 24px);
+        .font(22px, @b);
+      }
+    }
+  }
+}
+/*
+* 让客户帮您找客户板块
+*/
+.help_contain{
+  .help_title{
+    padding: 50px 0 90px;
+    p{
+      width: 1142px;
+    }
+  }
+  .help_box{
+    .whh(1200px, 290px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 290px;
+      vertical-align: bottom;
+    }
+  }
+}
+/*
+* “让” 一切变得多姿多彩板块
+*/
+.colorful_contain{
+  .wh(100%, 630px);
+  min-width: 1200px;
+  background: url(../img/wechat_toker/info-colors.png) no-repeat;
+  background-size: 100% 100%;
+  .colorful_title{
+    padding: 55px 0 75px;
+  }
+  .colorful_list{
+    margin: auto;
+    .wh(1200px, 325px);
+    background: url(../img/wechat_toker/color.png) repeat-y;
+    li{
+      float: left;
+      .wh(240px, 325px);
+      h2{
+        margin-bottom: 15px;
+        .whh(240px, 65px);
+        .font(18px, @b);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(210px, auto);
+        line-height: 34px;
+        .font(16px, @b);
+      }
+      h2.colorful_a{
+        .bgs(#fe4b92);
+      }
+      h2.colorful_b{
+        .bgs(#ff7536);
+      }
+      h2.colorful_c{
+        .bgs(#fba345);
+      }
+      h2.colorful_d{
+        .bgs(#fb8d5c);
+      }
+      h2.colorful_e{
+        .bgs(#ff5e84);
+      }
+    } 
+  }
+}
+/*
+* 我们的优势板块
+*/
+.edge_contain{
+  .edge_title{
+    padding: 50px 0 40px;
+  }
+  .edge_list{
+    padding-bottom: 50px;
+    .wh(1209px, 228px);
+    li{
+      float: left;
+      margin-right: 9px;
+      margin-bottom: 9px;
+      .wh(394px, 105px);
+      .edge_img{
+        float: left;
+        .whh(114px, 105px);
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          max-width: 114px;
+          max-height: 105px;
+          vertical-align: middle;
+        }
+      }
+      h2{
+        float: left;
+        margin-top: 29.5px;
+        margin-bottom: 10px;
+        .whh(280px, 20px);
+        .font(18px, @3);
+      }
+      p{
+        float: left;
+        .whh(280px, 16px);
+        .font(14px, @3);
+      }
+    }
+  }
+}
+/*
+* 大数据分析潜在客户画像板块
+*/
+.portrait_contain{
+  .portrait_title{
+    padding: 55px 0 30px;
+  }
+  .portrait_box{
+    padding-bottom: 50px;
+    .wh(1200px, 670px);
+    overflow: hidden;
+  }
+  .portrait_list{
+    margin-top: 23px;
+    margin-bottom: 54px;
+    .wh(1200px, 3px);
+    .bgs(#f14d38);
+    li{
+      position: relative;
+      top: -23px;
+      left: 0;
+      float: left;
+      margin: 0 57px;
+      padding-left: 66px;
+      .wh(120px, 50px);
+      border-radius: 5px;
+      .bgs(@b);
+      -webkit-box-shadow: 0 2px 16px 1px #e7e7e7;
+              box-shadow: 0 2px 16px 1px #e7e7e7;
+      cursor: pointer;
+      i{
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        .wh(30px, 30px);
+        background: url(../img/wechat_toker/elves.png) no-repeat;
+        .bgy(182px);
+      }
+      p{
+        .whh(100%, 50px);
+        .font(18px, @3);
+      }
+      i.portrait_ia{
+        .bgx(0);
+      }
+      i.portrait_ib{
+        .bgx(32px);
+      }
+      i.portrait_ic{
+        .bgx(64px);
+      }
+      i.portrait_id{
+        .bgx(96px);
+      }
+    }
+    li.on{
+      .bgs(#ff76bd);
+      i{
+        .bgy(150px);
+      }
+      p{
+        color: @b;
+      }
+    }
+  }
+  .portrait_window{
+    .whh(1200px, 590px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 590px;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,422 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 475/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 下列板块通用
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_title{
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+        .whh(100%, 38/@r);
+        .font(34/@r, @3);
+        font-weight: bold;
+    }
+    p{
+        margin-top: 18/@r;
+        .whh(100%, 22/@r);
+        .font(20/@r, @6);
+    }
+}
+/*
+* 管理APP简介板块
+*/
+.blurb_contain{
+    .wh(750/@r, auto);
+    .blurb_title{
+        padding: 50/@r 0 35/@r;
+    }
+    .blurb_box{
+        padding: 0 20/@r 50/@r;
+        .wh(710/@r, auto);
+        h2{
+            margin-bottom: 15/@r;
+            padding-left: 40/@r;
+            .wh(670/@r, 26/@r);
+            .font(24/@r, @3);
+            font-weight: bold;
+        }
+        p{
+            margin-bottom: 15/@r;
+            .wh(100%, auto);
+            line-height: 30/@r;
+            .font(20/@r, @6);
+        }
+        b{
+            display: inline-block;
+            .wh(40/@r, 0);
+        }
+        img{
+            display: block;
+            margin: auto;
+            .wh(415/@r, 410/@r);
+        }
+    }
+}
+/*
+* 帮您解决四大难题板块
+*/
+.solve_contain{
+    .wh(750/@r, auto);
+    .bgs(#f5f5f5);
+    .solve_title{
+        padding: 40/@r 0 30/@r;
+    }
+    .solve_list{
+        margin: auto;
+        .wh(710/@r, auto);
+        overflow: hidden;
+        li{
+            position: relative;
+            margin-bottom: 10/@r;
+            .wh(575/@r, auto);
+            border-radius: 5/@r;
+            .bgs(@b);
+            overflow: hidden;
+            i{
+                position: absolute;
+                top: 50%;
+                margin-top: -45/@r;
+                .wh(90/@r, 90/@r);
+                background: url(../img/manage_app/elves.png) no-repeat;
+                background-size: 445/@r 549/@r;
+                .bgy(0);
+            }
+            h2{
+                margin-bottom: 10/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+            i.solve_ia{
+                .bgx(0);
+            }
+            i.solve_ib{
+                .bgx(92/@r);
+            }
+            i.solve_ic{
+                .bgx(184/@r);
+            }
+            i.solve_id{
+                .bgx(276/@r);
+            }
+        }
+        .solve_left{
+            padding: 15/@r 10/@r 15/@r 125/@r;
+            i{
+                left: 15/@r;
+            }
+            h2{
+                text-align: left;
+            }
+        }
+        .solve_right{
+            padding: 15/@r 125/@r 15/@r 10/@r;
+            i{
+                right: 15/@r;
+            }
+            h2{
+                text-align: right;
+            }
+        }
+    }
+}
+/*
+* 新零售 · 落地板块
+*/
+.new_contain{
+    .wh(750/@r, 910/@r);
+    background: url(../img/manage_app/bg.png) no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    .new_title{
+        padding: 55/@r 0 30/@r;
+    }
+    .new_switch{
+        margin: auto;
+        margin-bottom: 15/@r;
+        .wh(720/@r, 50/@r);
+        li{
+            float: left;
+            margin: 0 57/@r;
+            .whh(126/@r, 50/@r);
+            .font(24/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        li.on{
+            color: #fffefe;
+            border-radius: 10/@r;
+            .bgs(#fd91e0);
+        }
+    }
+    .new_box{
+        position: relative;
+        left: 0;
+        margin-bottom: 35/@r;
+        .wh(2250/@r, 550/@r);
+        transition: left .5s linear;
+    }
+    .new_list{
+        float: left;
+        margin: 0 20/@r;
+        .wh(710/@r, 550/@r);
+        li{
+            position: relative;
+            margin-bottom: 20/@r;
+            padding-left: 95/@r;
+            .wh(615/@r, 90/@r);
+            border-radius: 3/@r;
+            .bgs(@b);
+            box-shadow: 2/@r 3/@r 6/@r 0 #febac6;
+            i{
+                position: absolute;
+                top: 50/@r;
+                left: 25/@r;
+                margin-top: -22.5/@r;
+                .wh(46/@r, 45/@r);
+                background: url(../img/manage_app/elves.png) no-repeat;
+                background-size: 445/@r 549/@r;
+            }
+            h2{
+                padding-top: 15/@r;
+                padding-bottom: 15/@r;
+                .whh(100%, 24/@r);
+                .font(22/@r, @3); 
+            }
+            p{
+                .whh(100%, 22/@r);
+                .font(20/@r, @9);
+            }
+            i.new_ia, i.new_ib, i.new_ic,i.new_id,
+            i.new_ie, i.new_if, i.new_ig{
+                .bgy(92/@r);
+            }
+            i.new_ih, i.new_ii, i.new_ij,
+            i.new_ik, i.new_il, i.new_im{
+                .bgy(139/@r);
+            }
+            i.new_ia, i.new_ih{
+                .bgx(0);
+            }
+            i.new_ib, i.new_ii{
+                .bgx(48/@r);
+            }
+            i.new_ic, i.new_ij{
+                .bgx(96/@r);
+            }
+            i.new_id, i.new_ik{
+                .bgx(144/@r);
+            }
+            i.new_ie, i.new_il{
+                .bgx(192/@r);
+            }
+            i.new_if, i.new_im{
+                .bgx(240/@r);
+            }
+            i.new_ig{
+                .bgx(288/@r);
+            }
+        }
+    }
+    .new_sub{
+        margin: auto;
+        .wh(90/@r, 15/@r);
+        li{
+            float: left;
+            margin: 0 7.5/@r;
+            .wh(15/@r, 15/@r);
+            border-radius: 50%;
+            .bgs(@b);
+        }
+        li.on{
+            .bgs(#fd91e0);
+        }
+    }
+}
+/*
+* 智能采购/售后管理板块
+*/
+.intelligent_contain{
+    .wh(750/@r, 380/@r);
+    overflow-x: hidden;
+    .intelligent_switch{
+        margin: auto;
+        padding-bottom: 60/@r;
+        .wh(340/@r, 50/@r);
+        li{
+            float: left;
+            margin: 0 10/@r;
+            padding-bottom: 12/@r;
+            .wh(150/@r, 38/@r);
+            h1{
+                .whh(100%, 38/@r);
+                .font(34/@r, @6);
+                text-align: center;
+            }
+        }
+        li.on{
+            padding-bottom: 9/@r;
+            border-bottom: 3/@r solid #ff76bd;
+            h1{
+                color: @3;
+                font-weight: bold;
+            }
+        }
+    }
+    .intelligent_list{
+        position: relative;
+        left: 0;
+        .wh(1500/@r, 160/@r);
+        transition: left .5s linear;
+        li{
+            float: left;
+            .wh(250/@r, 270/@r);
+            .intelligent_icon{
+                margin: auto;
+                margin-bottom: 30/@r;
+                padding-top: 6/@r;
+                .wh(154/@r, 148/@r);
+                border-radius: 50%;
+                .bgs(#fca7d3);
+                i{
+                    display: block;
+                    margin: auto;
+                    .wh(149/@r, 142/@r);
+                    background: url(../img/manage_app/elves.png) no-repeat;
+                    background-size: 445/@r 549/@r;
+                }
+            }
+            p{
+                margin: auto;
+                .wh(198/@r, auto);
+                line-height: 30/@r;
+                .font(22/@r, @3);
+                text-align: center;
+            }
+            .intelligent_ia i, .intelligent_ib i, .intelligent_ic i{
+                .bgy(186/@r);
+            }
+            .intelligent_id i, .intelligent_ie i, .intelligent_if i{
+                .bgy(330/@r);
+            }
+            .intelligent_ia i, .intelligent_id i{
+                .bgx(0);
+            }
+            .intelligent_ib i, .intelligent_ie i{
+                .bgx(150/@r);
+            }
+            .intelligent_ic i, .intelligent_if i{
+                .bgx(300/@r);
+            }
+        }
+    }
+}
+/*
+* 增值服务板块
+*/
+.service_contain{
+    .wh(750/@r, 365/@r);
+    background: url(../img/manage_app/bg2.png) no-repeat;
+    background-size: 100% 100%;
+    .service_title{
+        padding: 45/@r 0 50/@r;
+    }
+    .service_list{
+        margin: auto;
+        .wh(724/@r, 170/@r);
+        li{
+            float: left;
+            margin: 0 7/@r;
+            padding-top: 25/@r;
+            .wh(163/@r, 138/@r);
+            border: solid 2/@r #ff76bd;
+            border-radius: 10/@r;
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 20/@r;
+                .wh(61/@r, 75/@r);
+                background: url(../img/manage_app/elves.png) no-repeat;
+                background-size: 445/@r 549/@r;
+                .bgy(474/@r);
+            }
+            p{
+                .whh(100%, 22/@r);
+                .font(20/@r, #ff76bd);
+                text-align: center;
+            }
+            i.service_ia{
+                .bgx(0);
+            }
+            i.service_ib{
+                .bgx(62/@r);
+            }
+            i.service_ic{
+                .bgx(124/@r);
+            }
+            i.service_id{
+                .bgx(186/@r);
+            }
+        }
+    }
+}

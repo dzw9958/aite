@@ -1,0 +1,481 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 7.13333333rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+/*
+* 什么是产品供应商/厂商解决方案？板块
+*/
+.what_contain {
+  width: 10rem;
+  height: auto;
+}
+.what_contain .what_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+}
+.what_contain .what_title h1 {
+  margin-bottom: 0.2rem;
+}
+.what_contain .what_title p {
+  margin: auto;
+  width: 8.93333333rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.what_contain .what_box {
+  padding: 0 0.26666667rem 0.6rem 0.25333333rem;
+  width: 9.48rem;
+  height: auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+.what_contain .what_box h2 {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #fe6bc2;
+}
+.what_contain .what_box h2.what_two {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  color: #43cafb;
+}
+.what_contain .what_bit {
+  float: left;
+  margin-right: 0.22666667rem;
+  width: 2.97333333rem;
+  height: 1.97333333rem;
+  border-radius: 0.26666667rem;
+  border: solid 0.01333333rem #fdc4e6;
+}
+.what_contain .what_bit h3 {
+  margin: 0.33333333rem 0 0.2rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+}
+.what_contain .what_bit p {
+  margin: auto;
+  width: 2.88rem;
+  height: auto;
+  line-height: 0.33333333rem;
+  font-size: 0.24rem;
+  color: #666666;
+}
+.what_contain .what_seam {
+  position: relative;
+  float: left;
+  margin-right: 0.22666667rem;
+  width: 3rem;
+  height: 1.46666667rem;
+}
+.what_contain .what_seam i.what_idown {
+  position: absolute;
+  top: 0.17333333rem;
+  left: 1.37333333rem;
+  width: 0.25333333rem;
+  height: 0.8rem;
+  background: url(../img/supplier/elves.png) no-repeat;
+  background-size: 3.17333333rem 2.4rem;
+  background-position: -0.64rem 0;
+}
+.what_contain .what_seam span {
+  position: absolute;
+  top: 0.32rem;
+  left: 1.73333333rem;
+  width: 0.29333333rem;
+  height: auto;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #d7d7d7;
+}
+.what_contain .what_bulk {
+  float: left;
+  margin-right: 0.22666667rem;
+  padding-top: 0.16rem;
+  width: 2.97333333rem;
+  height: 5.73333333rem;
+  border-radius: 0.26666667rem;
+  border: solid 0.01333333rem #ff5465;
+}
+.what_contain .what_bulk button {
+  float: left;
+  margin: 0.13333333rem 0.42666667rem 0.13333333rem 0.41333333rem;
+  width: 2.13333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.10666667rem;
+  background-color: #ff5465;
+}
+.what_contain .what_space {
+  position: relative;
+  width: 9.68rem;
+  height: 1.46666667rem;
+}
+.what_contain .what_space i.what_iround {
+  position: absolute;
+  top: 0.42666667rem;
+  left: 4.42666667rem;
+  width: 0.61333333rem;
+  height: 0.61333333rem;
+  background: url(../img/supplier/elves.png) no-repeat;
+  background-size: 3.17333333rem 2.4rem;
+  background-position: 0 -0.18666667rem;
+}
+.what_contain .what_top {
+  width: 9.68rem;
+  height: 2rem;
+}
+.what_contain .what_middle {
+  width: 9.68rem;
+  height: 2rem;
+}
+.what_contain .what_middle .what_bit {
+  border-color: #ffd48f;
+}
+.what_contain .what_bottom {
+  width: 9.68rem;
+  height: 5.92rem;
+}
+.what_contain .what_bottom .what_center {
+  border-color: #ff7887;
+}
+.what_contain .what_bottom .what_center button {
+  background-color: #ff7887;
+}
+.what_contain .what_bottom .what_right {
+  border-color: #ff7ef2;
+}
+.what_contain .what_bottom .what_right button {
+  background-color: #ff7ef2;
+}
+/*
+* 美业目前行业现状板块
+*/
+.status_contain {
+  width: 10rem;
+  height: 13.53333333rem;
+  background-color: #f2f2f2;
+}
+.status_contain .status_title {
+  padding: 0.66666667rem 0 0.46666667rem;
+}
+.status_contain .status_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+}
+.status_contain .status_img {
+  margin-bottom: 0.33333333rem;
+  width: 9.46666667rem;
+  height: 6.13333333rem;
+}
+.status_contain .status_img img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 9.46666667rem;
+  max-height: 6.13333333rem;
+}
+.status_contain .status_text {
+  padding: 0.13333333rem;
+  width: 9.2rem;
+  height: auto;
+  background-color: #ffffff;
+}
+.status_contain .status_text p {
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #333333;
+}
+.status_contain .status_text b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: auto;
+}
+/*
+* 美业供应商/厂家遇到的困难板块
+*/
+.hard_contain {
+  width: 10rem;
+  height: auto;
+}
+.hard_contain .hard_title {
+  padding: 0.66666667rem 0 0.33333333rem;
+}
+.hard_contain .hard_list {
+  padding: 0 0.13333333rem;
+  width: 9.73333333rem;
+  height: 10.4rem;
+}
+.hard_contain .hard_list li {
+  float: left;
+  margin: 0.13333333rem;
+  width: 4.6rem;
+  height: 4.93333333rem;
+}
+.hard_contain .hard_list li .hard_img {
+  padding-top: 0.26666667rem;
+  width: 100%;
+  height: 1.33333333rem;
+}
+.hard_contain .hard_list li .hard_img img {
+  display: block;
+  margin: 0 auto 0.24rem;
+  width: 1.04rem;
+  height: 1.04rem;
+}
+.hard_contain .hard_list li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.hard_contain .hard_list li p {
+  margin: auto;
+  width: 4.13333333rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.hard_contain .hard_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.hard_contain .hard_list li.hard_a {
+  background-color: #7cb0fc;
+}
+.hard_contain .hard_list li.hard_b {
+  background-color: #fc9926;
+}
+.hard_contain .hard_list li.hard_c {
+  background-color: #48d2cf;
+}
+.hard_contain .hard_list li.hard_d {
+  background-color: #ff76bd;
+}
+/*
+* 美业供应商/厂商解决方案核心板块
+*/
+.core_contain {
+  width: 10rem;
+  height: auto;
+}
+.core_contain .core_title {
+  padding: 0.66666667rem 0 0.4rem;
+}
+.core_contain .core_window {
+  margin: auto;
+  width: 9.73333333rem;
+  height: 9.33333333rem;
+  overflow: hidden;
+}
+.core_contain .core_list {
+  position: relative;
+  left: 0;
+  width: 19.46666667rem;
+  height: 8.53333333rem;
+  transition: all .5s linear;
+}
+.core_contain .core_list li {
+  position: relative;
+  float: left;
+  margin: 0.13333333rem;
+  padding-top: 1.46666667rem;
+  width: 4.6rem;
+  height: 2.53333333rem;
+  text-align: center;
+}
+.core_contain .core_list li i {
+  position: absolute;
+  top: 0.34666667rem;
+  left: 1.91333333rem;
+  width: 0.77333333rem;
+  height: 0.77333333rem;
+  background: url(../img/supplier/elves.png) no-repeat;
+  background-size: 3.17333333rem 2.4rem;
+}
+.core_contain .core_list li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.core_contain .core_list li p {
+  margin: auto;
+  width: 4rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.core_contain .core_list li i.core_ia,
+.core_contain .core_list li i.core_ib,
+.core_contain .core_list li i.core_ic,
+.core_contain .core_list li i.core_id {
+  background-position-y: -0.82666667rem;
+}
+.core_contain .core_list li i.core_ie,
+.core_contain .core_list li i.core_if,
+.core_contain .core_list li i.core_ig,
+.core_contain .core_list li i.core_ih {
+  background-position-y: -1.62666667rem;
+}
+.core_contain .core_list li i.core_ia,
+.core_contain .core_list li i.core_ie {
+  background-position-x: 0;
+}
+.core_contain .core_list li i.core_ib,
+.core_contain .core_list li i.core_if {
+  background-position-x: -0.8rem;
+}
+.core_contain .core_list li i.core_ic,
+.core_contain .core_list li i.core_ig {
+  background-position-x: -1.6rem;
+}
+.core_contain .core_list li i.core_id,
+.core_contain .core_list li i.core_ih {
+  background-position-x: -2.4rem;
+}
+.core_contain .core_sub {
+  margin: auto;
+  width: 0.72rem;
+  height: 0.13333333rem;
+}
+.core_contain .core_sub li {
+  float: left;
+  margin: 0 0.06666667rem;
+  width: 0.13333333rem;
+  height: 0.13333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #feb2df;
+  transition: all .5s linear;
+}
+.core_contain .core_sub li.on {
+  width: 0.32rem;
+  background-color: #fe6bc2;
+}
+/*
+* 使用收益板块
+*/
+.profit_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #f4f4f4;
+}
+.profit_contain .profit_title {
+  padding: 0.46666667rem 0 0.4rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.profit_contain .profit_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.profit_contain .profit_list {
+  padding: 0 0.26666667rem;
+  width: 9.46666667rem;
+  height: auto;
+  overflow: hidden;
+}
+.profit_contain .profit_list li {
+  position: relative;
+  margin-bottom: 0.33333333rem;
+  padding: 0.26666667rem 0.33333333rem 0.2rem 2.33333333rem;
+  width: 6.8rem;
+  height: auto;
+  border-radius: 0.13333333rem;
+  background-color: #ffffff;
+}
+.profit_contain .profit_list li h2 {
+  margin-bottom: 0.16rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.profit_contain .profit_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.38666667rem;
+  font-size: 0.26666667rem;
+  color: #333333;
+}
+.profit_contain .profit_img {
+  position: absolute;
+  top: 50%;
+  left: 0.44rem;
+  margin-top: -0.72666667rem;
+  width: 1.45333333rem;
+  height: 1.45333333rem;
+}
+.profit_contain .profit_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

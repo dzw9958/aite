@@ -1,0 +1,548 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 550/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 下列板块通用
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*
+* 微分销-企业的移动分销商城板块
+*/
+.mobile_contain{
+    .wh(750/@r, auto);
+    overflow-x: hidden;
+    .mobile_title{
+        padding-top: 50/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            margin-bottom: 15/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+        p{
+            margin: auto;
+            .wh(660/@r, auto);
+            line-height: 30/@r;
+            .font(20/@r, @6);
+        }
+    }
+    .mobile_box{
+        padding-top: 25/@r;
+        .wh(760/@r, 165/@r);
+        h2{
+            float: left;
+            margin-top: 8/@r;
+            margin-left: 20/@r;
+            .wh(30/@r, 120/@r);
+            line-height: 30/@r;
+            .font(28/@r, @3);
+        }
+    }
+    .mobile_list{
+        float: right;
+        .wh(704/@r, 130/@r);
+        li{
+            float: left;
+            margin: 0 43/@r;
+            .wh(90/@r, 130/@r);
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: 15/@r;
+                .wh(90/@r, 90/@r);
+            }
+            p{
+                .whh(100%, 24/@r);
+                .font(22/@r, @6);
+                text-align: center;
+            }
+        }
+    }
+}
+/*
+* 使用收益板块
+*/
+.profit_contain{
+    .wh(750/@r, auto);
+    .bgs(#f4f4f4);
+    .profit_title{
+        padding: 35/@r 0 30/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .profit_list{
+        padding: 0 20/@r;
+        .wh(710/@r, auto);
+        overflow: hidden;
+        li{
+            position: relative;
+            margin-bottom: 25/@r;
+            padding: 20/@r 25/@r 15/@r 175/@r;
+            .wh(510/@r, auto);
+            border-radius: 10/@r;
+            .bgs(@b);
+            h2{
+                margin-bottom: 12/@r;
+                .whh(100%, 26/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 29/@r;
+                .font(20/@r, @3);
+            }
+        }
+    }
+    .profit_img{
+        position: absolute;
+        top: 50%;
+        left: 33/@r;
+        margin-top: -54.5/@r;
+        .wh(109/@r, 109/@r);
+        img{
+            display: block;
+            .wh(100%, 100%)
+        }
+    }
+}
+/*
+* 销门无限加盟分销体系板块
+*/
+.join_contain{
+    .wh(750/@r, auto);
+    .join_title{
+        padding: 50/@r 0 20/@r;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .join_box{
+        .wh(100%, auto);
+        text-align: center;
+        overflow: hidden;
+        .join_top{
+            margin: auto;
+            .wh(703/@r, auto);
+            line-height: 36/@r;
+            .font(20/@r, @6);
+            text-align: left;
+        }
+        b{
+            display: inline-block;
+            .wh(40/@r, 0);
+        }
+        h6{
+            margin-bottom: 40/@r;
+            .whh(100%, 26/@r);
+            .font(24/@r, @3);
+            font-weight: bold;
+        }
+        .join_bottom{
+            margin-bottom: 30/@r;
+            .whh(100%, 24/@r);
+            .font(22/@r, @6);
+        }
+    }
+    .join_list{
+        position: relative;
+        margin: auto;
+        margin-bottom: 45/@r;
+        .wh(712/@r, 316/@r);
+        background: url(../img/distribution/center.jpg) no-repeat;
+        background-size: 100% 100%;
+        li{
+            position: absolute;
+            .whh(186/@r, 51/@r);
+            .font(20/@r, @b);
+            border-radius: 20/@r;
+        }
+        li.join_center{
+            top: 126/@r;
+            left: 308/@r;
+            .wh(100/@r, auto);
+            line-height: 30/@r;
+            .font(24/@r, @b);
+            font-weight: bold;
+        }
+        li.join_a{
+            top: 1/@r;
+            left: 51/@r;
+        }
+        li.join_b{
+            top: 1/@r;
+            left: 471/@r;
+        }
+        li.join_c{
+            top: 90/@r;
+            left: 2/@r;
+        }
+        li.join_d{
+            top: 90/@r;
+            left: 523/@r;
+        }
+        li.join_e{
+            top: 175/@r;
+            left: 1/@r;
+        }
+        li.join_f{
+            top: 175/@r;
+            left: 524/@r;
+        }
+        li.join_g{
+            top: 264/@r;
+            left: 51/@r;
+        }
+        li.join_h{
+            top: 264/@r;
+            left: 482/@r;
+        }
+    }
+}
+/*
+* “3+3”分销模式，开启传统渠道分销新模式板块
+*/
+.open_contain{
+    .wh(750/@r, auto);
+    .bgs(#f6f6f6);
+    overflow: hidden;
+    .open_title{
+        padding: 50/@r 0;
+        .wh(100%, auto);
+        text-align: center;
+        h1{
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+        }
+    }
+    .open_top, .open_bottom{
+        margin: auto;
+        .wh(540/@r, 585/@r);
+        .open_list{
+            position: relative;
+            margin-bottom: 73/@r;
+            .wh(540/@r, 450/@r);
+            li{
+                position: absolute;
+                .whh(120/@r, 24/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            li.open_a{
+                top: 375/@r;
+                left: 160/@r;
+            }
+            li.open_b{
+                top: 420/@r;
+                left: 300/@r;
+            }
+            li.open_c{
+                top: 466/@r;
+                left: 434/@r;
+            }
+        }
+        h2{
+            margin: auto;
+            .whh(534/@r, 62/@r);
+            .font(28/@r, @b);
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10/@r;
+            .bgs(#ff5f81);
+        }
+    }
+    .open_middle{
+        position: relative;
+        margin: 24/@r auto;
+        .wh(52/@r, 52/@r);
+        .open_across{
+            position: absolute;
+            top: 22/@r;
+            left: 0;
+            .wh(52/@r, 8/@r);
+            border-radius: 4/@r;
+            .bgs(#333333);
+        }
+        .open_vertical{
+            position: absolute;
+            top: 0;
+            left: 22/@r;
+            .wh(8/@r, 52/@r);
+            border-radius: 4/@r;
+            .bgs(#333333);
+        }
+    } 
+    .open_top{
+        .open_list{
+            background: url(../img/distribution/img1.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .open_bottom{
+        margin-bottom: 40/@r;
+        .open_list{
+            background: url(../img/distribution/img2.png) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+/*
+* 图文列表板块
+*/
+.blend_contain{
+    margin: 30/@r auto 0;
+    .wh(710/@r, auto);
+    h2{
+        margin-bottom: 25/@r;
+        .whh(100%, 38/@r);
+        .font(34/@r, @3);
+        font-weight: bold;
+    }
+    p{
+        margin-bottom: 20/@r;
+        .wh(100%, auto);
+        line-height: 38/@r;
+        .font(22/@r, @6);
+    }
+    img{
+        display: block;
+        margin-bottom: 30/@r;
+        .wh(100%, auto);
+    }
+}
+/*
+* 斑马列表板块
+*/
+.edge_contain{
+    .wh(750/@r, 750/@r);
+    .edge_list{
+        .wh(100%, 750/@r);
+        li{
+            .wh(750/@r, 150/@r);
+            .edge_img{
+                float: right;
+                .wh(150/@r, 150/@r);
+                img{
+                    display: block;
+                    margin: 25/@r;
+                    .wh(100/@r, 100/@r);
+                }
+            }
+            .edge_text{
+                float: right;
+                .wh(600/@r, 150/@r);
+                h2{
+                    margin-top: 30/@r;
+                    margin-bottom: 10/@r;
+                    .whh(100%, 26/@r);
+                    .font(22/@r, @3);
+                    font-weight: bold;
+                    text-align: right;
+                }
+                p{
+                    margin-left: 25/@r;
+                    .wh(575/@r, auto);
+                    line-height: 34/@r;
+                    .font(20/@r, @6);
+                }
+            }
+        }
+        li.edge_gray{
+            .bgs(#f6f6f6);
+            .edge_img, .edge_text{
+                float: left;
+            }
+            .edge_text{
+                h2{
+                    text-align: left;
+                }
+                p{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+/*
+* 艾特微信分销系统的商业模式板块
+*/
+.model_contain{
+    margin-bottom: 35/@r;
+    .wh(750/@r, auto);
+    .model_title{
+        padding: 50/@r 0;
+        .wh(100%, auto);
+        h1{
+            margin-bottom: 15/@r;
+            .whh(100%, 38/@r);
+            .font(34/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            margin: auto;
+            .wh(700/@r, auto);
+            line-height: 36/@r;
+            .font(20/@r, @6);
+        }
+        b{
+            display: inline-block;
+            .wh(40/@r, 0);
+        }
+    }
+    .model_box{
+        margin: auto;
+        .wh(700/@r, 295/@r);
+        .model_piece{
+            float: left;
+            .wh(186/@r, 293/@r);
+            border-width: 1/@r;
+            border-style: solid;
+            .model_icon{
+                position: relative;
+                margin: 32/@r auto 18/@r;
+                .wh(117/@r, 117/@r);
+                i{
+                    display: block;
+                    .wh(100%, 100%);
+                    border-radius: 50%;
+                }
+                h2{
+                    position: absolute;
+                    bottom: 15/@r;
+                    left: 0;
+                    .whh(100%, 22/@r);
+                    .font(20/@r, @b);
+                    text-align: center;
+                }
+            }
+            p{
+                margin: auto;
+                .wh(120/@r, 36/@r);
+                i{
+                    float: left;
+                    margin: 7.5/@r 0;
+                    .wh(20/@r, 21/@r);
+                    background: url(../img/distribution/elves.png) no-repeat;
+                    background-size: 47/@r 79/@r;
+                    .bgp(0, 58/@r);
+                }
+                span{
+                    float: left;
+                    .whh(100/@r, 36/@r);
+                    .font(20/@r, @3);
+                    text-align: center;
+                }
+            }
+        }
+        .model_one{
+            border-color: #f75959;
+            .bgs(#fedede);
+            .model_icon i{
+                background: url(../img/distribution/fl5_1.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .model_two{
+            border-color: #fdb749;
+            .bgs(#fef8de);
+            .model_icon i{
+                background: url(../img/distribution/fl5_2.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .model_three{
+            border-color: #fe8ad7;
+            .bgs(#ffe4f6);
+            .model_icon i{
+                background: url(../img/distribution/fl5_3.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .model_space{
+            position: relative;
+            float: left;
+            .wh(68/@r, 295/@r);
+            .model_front{
+                position: absolute;
+                top: 137/@r;
+                left: 10.5/@r;
+                .wh(47/@r, 27/@r);
+                background: url(../img/distribution/elves.png) no-repeat;
+                background-size: 47/@r 79/@r;
+                .bgp(0, 0);
+            }
+            .model_back{
+                position: absolute;
+                top: 161/@r;
+                left: 10.5/@r;
+                .wh(47/@r, 27/@r);
+                background: url(../img/distribution/elves.png) no-repeat;
+                background-size: 47/@r 79/@r;
+                .bgp(0, 29/@r);
+            }
+        }
+    }
+}

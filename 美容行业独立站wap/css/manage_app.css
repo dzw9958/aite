@@ -1,0 +1,478 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 6.33333333rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin-top: 0.24rem;
+  width: 100%;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 管理APP简介板块
+*/
+.blurb_contain {
+  width: 10rem;
+  height: auto;
+}
+.blurb_contain .blurb_title {
+  padding: 0.66666667rem 0 0.46666667rem;
+}
+.blurb_contain .blurb_box {
+  padding: 0 0.26666667rem 0.66666667rem;
+  width: 9.46666667rem;
+  height: auto;
+}
+.blurb_contain .blurb_box h2 {
+  margin-bottom: 0.2rem;
+  padding-left: 0.53333333rem;
+  width: 8.93333333rem;
+  height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+  font-weight: bold;
+}
+.blurb_contain .blurb_box p {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.blurb_contain .blurb_box b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.blurb_contain .blurb_box img {
+  display: block;
+  margin: auto;
+  width: 5.53333333rem;
+  height: 5.46666667rem;
+}
+/*
+* 帮您解决四大难题板块
+*/
+.solve_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.solve_contain .solve_title {
+  padding: 0.53333333rem 0 0.4rem;
+}
+.solve_contain .solve_list {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+  overflow: hidden;
+}
+.solve_contain .solve_list li {
+  position: relative;
+  margin-bottom: 0.13333333rem;
+  width: 7.66666667rem;
+  height: auto;
+  border-radius: 0.06666667rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.solve_contain .solve_list li i {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-size: 5.93333333rem 7.32rem;
+  background-position-y: 0;
+}
+.solve_contain .solve_list li h2 {
+  margin-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+  font-weight: bold;
+}
+.solve_contain .solve_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.solve_contain .solve_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.solve_contain .solve_list li i.solve_ia {
+  background-position-x: 0;
+}
+.solve_contain .solve_list li i.solve_ib {
+  background-position-x: -1.22666667rem;
+}
+.solve_contain .solve_list li i.solve_ic {
+  background-position-x: -2.45333333rem;
+}
+.solve_contain .solve_list li i.solve_id {
+  background-position-x: -3.68rem;
+}
+.solve_contain .solve_list .solve_left {
+  padding: 0.2rem 0.13333333rem 0.2rem 1.66666667rem;
+}
+.solve_contain .solve_list .solve_left i {
+  left: 0.2rem;
+}
+.solve_contain .solve_list .solve_left h2 {
+  text-align: left;
+}
+.solve_contain .solve_list .solve_right {
+  padding: 0.2rem 1.66666667rem 0.2rem 0.13333333rem;
+}
+.solve_contain .solve_list .solve_right i {
+  right: 0.2rem;
+}
+.solve_contain .solve_list .solve_right h2 {
+  text-align: right;
+}
+/*
+* 新零售 · 落地板块
+*/
+.new_contain {
+  width: 10rem;
+  height: 12.13333333rem;
+  background: url(../img/manage_app/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+.new_contain .new_title {
+  padding: 0.73333333rem 0 0.4rem;
+}
+.new_contain .new_switch {
+  margin: auto;
+  margin-bottom: 0.2rem;
+  width: 9.6rem;
+  height: 0.66666667rem;
+}
+.new_contain .new_switch li {
+  float: left;
+  margin: 0 0.76rem;
+  width: 1.68rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.new_contain .new_switch li.on {
+  color: #fffefe;
+  border-radius: 0.13333333rem;
+  background-color: #fd91e0;
+}
+.new_contain .new_box {
+  position: relative;
+  left: 0;
+  margin-bottom: 0.46666667rem;
+  width: 30rem;
+  height: 7.33333333rem;
+  transition: left .5s linear;
+}
+.new_contain .new_list {
+  float: left;
+  margin: 0 0.26666667rem;
+  width: 9.46666667rem;
+  height: 7.33333333rem;
+}
+.new_contain .new_list li {
+  position: relative;
+  margin-bottom: 0.26666667rem;
+  padding-left: 1.26666667rem;
+  width: 8.2rem;
+  height: 1.2rem;
+  border-radius: 0.04rem;
+  background-color: #ffffff;
+  box-shadow: 0.02666667rem 0.04rem 0.08rem 0 #febac6;
+}
+.new_contain .new_list li i {
+  position: absolute;
+  top: 0.66666667rem;
+  left: 0.33333333rem;
+  margin-top: -0.3rem;
+  width: 0.61333333rem;
+  height: 0.6rem;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-size: 5.93333333rem 7.32rem;
+}
+.new_contain .new_list li h2 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+}
+.new_contain .new_list li p {
+  width: 100%;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #999999;
+}
+.new_contain .new_list li i.new_ia,
+.new_contain .new_list li i.new_ib,
+.new_contain .new_list li i.new_ic,
+.new_contain .new_list li i.new_id,
+.new_contain .new_list li i.new_ie,
+.new_contain .new_list li i.new_if,
+.new_contain .new_list li i.new_ig {
+  background-position-y: -1.22666667rem;
+}
+.new_contain .new_list li i.new_ih,
+.new_contain .new_list li i.new_ii,
+.new_contain .new_list li i.new_ij,
+.new_contain .new_list li i.new_ik,
+.new_contain .new_list li i.new_il,
+.new_contain .new_list li i.new_im {
+  background-position-y: -1.85333333rem;
+}
+.new_contain .new_list li i.new_ia,
+.new_contain .new_list li i.new_ih {
+  background-position-x: 0;
+}
+.new_contain .new_list li i.new_ib,
+.new_contain .new_list li i.new_ii {
+  background-position-x: -0.64rem;
+}
+.new_contain .new_list li i.new_ic,
+.new_contain .new_list li i.new_ij {
+  background-position-x: -1.28rem;
+}
+.new_contain .new_list li i.new_id,
+.new_contain .new_list li i.new_ik {
+  background-position-x: -1.92rem;
+}
+.new_contain .new_list li i.new_ie,
+.new_contain .new_list li i.new_il {
+  background-position-x: -2.56rem;
+}
+.new_contain .new_list li i.new_if,
+.new_contain .new_list li i.new_im {
+  background-position-x: -3.2rem;
+}
+.new_contain .new_list li i.new_ig {
+  background-position-x: -3.84rem;
+}
+.new_contain .new_sub {
+  margin: auto;
+  width: 1.2rem;
+  height: 0.2rem;
+}
+.new_contain .new_sub li {
+  float: left;
+  margin: 0 0.1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.new_contain .new_sub li.on {
+  background-color: #fd91e0;
+}
+/*
+* 智能采购/售后管理板块
+*/
+.intelligent_contain {
+  width: 10rem;
+  height: 5.06666667rem;
+  overflow-x: hidden;
+}
+.intelligent_contain .intelligent_switch {
+  margin: auto;
+  padding-bottom: 0.8rem;
+  width: 4.53333333rem;
+  height: 0.66666667rem;
+}
+.intelligent_contain .intelligent_switch li {
+  float: left;
+  margin: 0 0.13333333rem;
+  padding-bottom: 0.16rem;
+  width: 2rem;
+  height: 0.50666667rem;
+}
+.intelligent_contain .intelligent_switch li h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #666666;
+  text-align: center;
+}
+.intelligent_contain .intelligent_switch li.on {
+  padding-bottom: 0.12rem;
+  border-bottom: 0.04rem solid #ff76bd;
+}
+.intelligent_contain .intelligent_switch li.on h1 {
+  color: #333333;
+  font-weight: bold;
+}
+.intelligent_contain .intelligent_list {
+  position: relative;
+  left: 0;
+  width: 20rem;
+  height: 2.13333333rem;
+  transition: left .5s linear;
+}
+.intelligent_contain .intelligent_list li {
+  float: left;
+  width: 3.33333333rem;
+  height: 3.6rem;
+}
+.intelligent_contain .intelligent_list li .intelligent_icon {
+  margin: auto;
+  margin-bottom: 0.4rem;
+  padding-top: 0.08rem;
+  width: 2.05333333rem;
+  height: 1.97333333rem;
+  border-radius: 50%;
+  background-color: #fca7d3;
+}
+.intelligent_contain .intelligent_list li .intelligent_icon i {
+  display: block;
+  margin: auto;
+  width: 1.98666667rem;
+  height: 1.89333333rem;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-size: 5.93333333rem 7.32rem;
+}
+.intelligent_contain .intelligent_list li p {
+  margin: auto;
+  width: 2.64rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  text-align: center;
+}
+.intelligent_contain .intelligent_list li .intelligent_ia i,
+.intelligent_contain .intelligent_list li .intelligent_ib i,
+.intelligent_contain .intelligent_list li .intelligent_ic i {
+  background-position-y: -2.48rem;
+}
+.intelligent_contain .intelligent_list li .intelligent_id i,
+.intelligent_contain .intelligent_list li .intelligent_ie i,
+.intelligent_contain .intelligent_list li .intelligent_if i {
+  background-position-y: -4.4rem;
+}
+.intelligent_contain .intelligent_list li .intelligent_ia i,
+.intelligent_contain .intelligent_list li .intelligent_id i {
+  background-position-x: 0;
+}
+.intelligent_contain .intelligent_list li .intelligent_ib i,
+.intelligent_contain .intelligent_list li .intelligent_ie i {
+  background-position-x: -2rem;
+}
+.intelligent_contain .intelligent_list li .intelligent_ic i,
+.intelligent_contain .intelligent_list li .intelligent_if i {
+  background-position-x: -4rem;
+}
+/*
+* 增值服务板块
+*/
+.service_contain {
+  width: 10rem;
+  height: 4.86666667rem;
+  background: url(../img/manage_app/bg2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.service_contain .service_title {
+  padding: 0.6rem 0 0.66666667rem;
+}
+.service_contain .service_list {
+  margin: auto;
+  width: 9.65333333rem;
+  height: 2.26666667rem;
+}
+.service_contain .service_list li {
+  float: left;
+  margin: 0 0.09333333rem;
+  padding-top: 0.33333333rem;
+  width: 2.17333333rem;
+  height: 1.84rem;
+  border: solid 0.02666667rem #ff76bd;
+  border-radius: 0.13333333rem;
+}
+.service_contain .service_list li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.26666667rem;
+  width: 0.81333333rem;
+  height: 1rem;
+  background: url(../img/manage_app/elves.png) no-repeat;
+  background-size: 5.93333333rem 7.32rem;
+  background-position-y: -6.32rem;
+}
+.service_contain .service_list li p {
+  width: 100%;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  font-size: 0.26666667rem;
+  color: #ff76bd;
+  text-align: center;
+}
+.service_contain .service_list li i.service_ia {
+  background-position-x: 0;
+}
+.service_contain .service_list li i.service_ib {
+  background-position-x: -0.82666667rem;
+}
+.service_contain .service_list li i.service_ic {
+  background-position-x: -1.65333333rem;
+}
+.service_contain .service_list li i.service_id {
+  background-position-x: -2.48rem;
+}

@@ -1,0 +1,565 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.common_title {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.common_title p {
+  margin: auto;
+  margin-top: 25px;
+  width: 995px;
+  height: auto;
+  line-height: 32px;
+  font-size: 18px;
+  color: #666666;
+}
+.common_title b {
+  display: inline-block;
+  width: 36px;
+  height: 0;
+}
+/*
+* 专为医美打造，从线索到售后全流程管理系统板块
+*/
+.system_contain .system_title {
+  padding: 50px 0 30px;
+}
+.system_contain .system_box {
+  padding-bottom: 40px;
+  width: 1200px;
+  height: 420px;
+  text-align: center;
+}
+.system_contain .system_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 420px;
+}
+/*
+* 艾特医美管理系统为您解决板块
+*/
+.solve_contain {
+  width: 100%;
+  height: 600px;
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.solve_contain .solve_title {
+  padding: 50px 0;
+}
+.solve_contain .solve_list {
+  margin: auto;
+  padding: 0 100px;
+  width: 1000px;
+  height: 320px;
+}
+.solve_contain .solve_list li {
+  position: relative;
+  float: left;
+  margin: 15px 24px;
+  padding-left: 92px;
+  width: 360px;
+  height: 130px;
+}
+.solve_contain .solve_list li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 24px;
+  color: #f7f7f7;
+  font-weight: bold;
+  text-align: center;
+}
+.solve_contain .solve_list li h2 {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.solve_contain .solve_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  font-size: 16px;
+  color: #666666;
+}
+.solve_contain .solve_list li b {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+}
+.solve_contain .solve_list li span.solve_bga {
+  background: url(../img/cosmetic/round1.png) no-repeat;
+}
+.solve_contain .solve_list li span.solve_bgb {
+  background: url(../img/cosmetic/round2.png) no-repeat;
+}
+.solve_contain .solve_list li span.solve_bgc {
+  background: url(../img/cosmetic/round3.png) no-repeat;
+}
+.solve_contain .solve_list li span.solve_bgd {
+  background: url(../img/cosmetic/round4.png) no-repeat;
+}
+/*
+* 艾特专为医美打造的全流程管理系统板块
+*/
+.make_contain .make_title {
+  padding: 50px 0 40px;
+}
+.make_contain .make_box {
+  padding-bottom: 50px;
+  width: 1200px;
+  height: 200px;
+}
+.make_contain .make_top {
+  margin: auto;
+  width: 1197px;
+  height: 180px;
+}
+.make_contain .make_top img {
+  float: left;
+  width: 153px;
+  height: 153px;
+}
+.make_contain .make_top span {
+  float: left;
+  margin: 76px 0;
+  width: 108px;
+  height: 0;
+  border-top: 1px dashed #bcd3f2;
+}
+.make_contain .make_bottom {
+  margin-left: 1.5px;
+  width: 1305px;
+  height: 20px;
+}
+.make_contain .make_bottom li {
+  float: left;
+  margin-right: 108px;
+  width: 153px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+/*
+* 艾特全面强大管理功能板块
+*/
+.manage_contain {
+  width: 100%;
+  height: 600px;
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.manage_contain .manage_title {
+  padding: 50px 0 65px;
+}
+.manage_contain .manage_title h1,
+.manage_contain .manage_title p {
+  color: #ffffff;
+}
+.manage_contain .manage_list {
+  margin: auto;
+  width: 1200px;
+  height: 350px;
+}
+.manage_contain .manage_list li {
+  float: left;
+  width: 200px;
+  height: 175px;
+}
+.manage_contain .manage_list li .manage_img {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.manage_contain .manage_list li .manage_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 80px;
+  vertical-align: middle;
+}
+.manage_contain .manage_list li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+/*
+* 了解我们的产品板块
+*/
+.know_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  overflow: hidden;
+}
+.know_contain .know_title {
+  padding: 50px 0 65px;
+}
+.know_contain .know_box {
+  padding-bottom: 40px;
+  width: 100%;
+}
+.know_contain .know_btn {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+.know_contain .know_btn li {
+  position: relative;
+  float: left;
+  margin: 0 100px;
+  padding-top: 80px;
+  width: 100px;
+  height: 55px;
+  cursor: pointer;
+}
+.know_contain .know_btn li p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #0d0f39;
+}
+.know_contain .know_btn li i {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 66px;
+  height: 66px;
+  margin-left: -33px;
+  background: url(../img/cosmetic/elves.png) no-repeat;
+}
+.know_contain .know_btn li .know_ia,
+.know_contain .know_btn li .know_ib,
+.know_contain .know_btn li .know_ic,
+.know_contain .know_btn li .know_id {
+  background-position-y: 0;
+}
+.know_contain .know_btn li .know_ie,
+.know_contain .know_btn li .know_if,
+.know_contain .know_btn li .know_ig,
+.know_contain .know_btn li .know_ih {
+  background-position-y: -136px;
+}
+.know_contain .know_btn li .know_ii,
+.know_contain .know_btn li .know_ij,
+.know_contain .know_btn li .know_ik,
+.know_contain .know_btn li .know_il {
+  background-position-y: -272px;
+}
+.know_contain .know_btn li .know_ia,
+.know_contain .know_btn li .know_ie,
+.know_contain .know_btn li .know_ii {
+  background-position-x: 0;
+}
+.know_contain .know_btn li .know_ib,
+.know_contain .know_btn li .know_if,
+.know_contain .know_btn li .know_ij {
+  background-position-x: -68px;
+}
+.know_contain .know_btn li .know_ic,
+.know_contain .know_btn li .know_ig,
+.know_contain .know_btn li .know_ik {
+  background-position-x: -136px;
+}
+.know_contain .know_btn li .know_id,
+.know_contain .know_btn li .know_ih,
+.know_contain .know_btn li .know_il {
+  background-position-x: -204px;
+}
+.know_contain .know_btn li:after {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 26px;
+  height: 7px;
+  margin-left: -13px;
+  background: url(../img/cosmetic/top.png) 50% no-repeat;
+}
+.know_contain .know_btn li.active_btn p {
+  color: #ff76bd;
+}
+.know_contain .know_btn li.active_btn .know_ia,
+.know_contain .know_btn li.active_btn .know_ib,
+.know_contain .know_btn li.active_btn .know_ic,
+.know_contain .know_btn li.active_btn .know_id {
+  background-position-y: -68px;
+}
+.know_contain .know_btn li.active_btn .know_ie,
+.know_contain .know_btn li.active_btn .know_if,
+.know_contain .know_btn li.active_btn .know_ig,
+.know_contain .know_btn li.active_btn .know_ih {
+  background-position-y: -204px;
+}
+.know_contain .know_btn li.active_btn .know_ii,
+.know_contain .know_btn li.active_btn .know_ij,
+.know_contain .know_btn li.active_btn .know_ik,
+.know_contain .know_btn li.active_btn .know_il {
+  background-position-y: -340px;
+}
+.know_contain .know_btn li.active_btn:after {
+  display: block;
+}
+.know_contain .know_switch {
+  display: none;
+  width: 100%;
+  min-width: 1200px;
+  height: 300px;
+  background: #f5f5f9;
+}
+.know_contain .know_box.active .know_switch {
+  display: block;
+}
+.know_contain .know_list {
+  display: none;
+  overflow: hidden;
+  width: 1200px;
+  margin: auto;
+}
+.know_contain .know_list li {
+  float: left;
+  padding: 25px 60px;
+  width: 280px;
+  height: 100px;
+}
+.know_contain .know_list li h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0d0f39;
+}
+.know_contain .know_list li p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d0f39;
+  opacity: .7;
+}
+.know_contain .know_list.active_list {
+  display: block;
+}
+/*
+* 了解我们的产品2板块
+*/
+.products_contain {
+  width: 100%;
+  height: 760px;
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg3.png) no-repeat;
+  background-size: 100% 100%;
+}
+.products_contain .products_title {
+  padding: 50px 0 60px;
+}
+.products_contain .products_title h1,
+.products_contain .products_title p {
+  color: #ffffff;
+  text-align: center;
+}
+.products_contain .products_list {
+  margin: auto;
+  padding: 0 100px;
+  width: 1000px;
+  height: 480px;
+}
+.products_contain .products_list li {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: 220px;
+  height: 480px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.products_contain .products_list li i {
+  display: block;
+  margin: 50px auto 14px;
+  width: 66px;
+  height: 66px;
+  background: url(../img/cosmetic/elves.png) no-repeat;
+  background-position-y: -408px;
+}
+.products_contain .products_list li i.products_ia {
+  background-position-x: 0;
+}
+.products_contain .products_list li i.products_ib {
+  background-position-x: -68px;
+}
+.products_contain .products_list li i.products_ic {
+  background-position-x: -136px;
+}
+.products_contain .products_list li i.products_id {
+  background-position-x: -204px;
+}
+.products_contain .products_list li h2 {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  font-size: 24px;
+  color: #0d0f39;
+}
+.products_contain .products_list li .products_box {
+  position: relative;
+  height: 250px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+.products_contain .products_list li .products_box div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 170px;
+  height: 100%;
+  padding: 0 25px;
+  color: #0d0f39;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.products_contain .products_list li .products_up {
+  z-index: 2;
+}
+.products_contain .products_list li .products_up p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.products_contain .products_list li .products_down {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.products_contain .products_list li .products_down p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: .7;
+}
+.products_contain .products_list li:hover i {
+  background-position-y: -476px;
+}
+.products_contain .products_list li:hover .products_box {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/*
+* 即刻定制，打破数据孤岛板块
+*/
+.promptly_contain {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.promptly_contain .promptly_text {
+  float: left;
+  width: 468px;
+  height: 585px;
+}
+.promptly_contain .promptly_text h1 {
+  margin: 115px 0 35px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 34px;
+  color: #333333;
+  font-weight: bold;
+}
+.promptly_contain .promptly_text p {
+  margin-bottom: 120px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.promptly_contain .promptly_text button {
+  display: block;
+  margin: auto;
+  width: 223px;
+  height: 62px;
+  line-height: 62px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  background: url(../img/cosmetic/button.png) no-repeat;
+  background-size: 100% 100%;
+}
+.promptly_contain .promptly_img {
+  float: right;
+  width: 732px;
+  height: 585px;
+}
+.promptly_contain .promptly_img img {
+  width: auto;
+  height: auto;
+  max-width: 732px;
+  max-height: 585px;
+}

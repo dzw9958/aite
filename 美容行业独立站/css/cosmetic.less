@@ -1,0 +1,512 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 下列板块通用
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow-x: hidden;
+}
+.common_title{
+  margin: auto;
+  .wh(1200px, auto);
+  h1{
+    .whh(100%, 38px);
+    .font(34px, @3);
+    font-weight: bold;
+    text-align: center;
+  }
+  p{
+    margin: auto;
+    margin-top: 25px;
+    .wh(995px, auto);
+    line-height: 32px;
+    .font(18px, @6);
+  }
+  b{
+    display: inline-block;
+    .wh(36px, 0);
+  }
+}
+/*
+* 专为医美打造，从线索到售后全流程管理系统板块
+*/
+.system_contain{
+  .system_title{
+    padding: 50px 0 30px;
+  }
+  .system_box{
+    padding-bottom: 40px;
+    .wh(1200px, 420px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 420px;
+    }
+  }
+}
+/*
+* 艾特医美管理系统为您解决板块
+*/
+.solve_contain{
+  .wh(100%, 600px);
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg.png) no-repeat;
+  background-size: 100% 100%;
+  .solve_title{
+    padding: 50px 0;
+  }
+  .solve_list{
+    margin: auto;
+    padding: 0 100px;
+    .wh(1000px, 320px);
+    li{
+      position: relative;
+      float: left;
+      margin: 15px 24px;
+      padding-left: 92px;
+      .wh(360px, 130px);
+      span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .whh(80px, 80px);
+        .font(24px, #f7f7f7);
+        font-weight: bold;
+        text-align: center;
+      }
+      h2{
+        margin-bottom: 12px;
+        .whh(100%, 24px);
+        .font(20px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 25px;
+        .font(16px, @6);
+      }
+      b{
+        display: inline-block;
+        .wh(32px, 0);
+      }
+      span.solve_bga{
+        background: url(../img/cosmetic/round1.png) no-repeat;
+      }
+      span.solve_bgb{
+        background: url(../img/cosmetic/round2.png) no-repeat;
+      }
+      span.solve_bgc{
+        background: url(../img/cosmetic/round3.png) no-repeat;
+      }
+      span.solve_bgd{
+        background: url(../img/cosmetic/round4.png) no-repeat;
+      }
+    }
+  }
+}
+/*
+* 艾特专为医美打造的全流程管理系统板块
+*/
+.make_contain{
+  .make_title{
+    padding: 50px 0 40px;
+  }
+  .make_box{
+    padding-bottom: 50px;
+    .wh(1200px, 200px);
+  }
+  .make_top{
+    margin: auto;
+    .wh(1197px, 180px);
+    img{
+      float: left;
+      .wh(153px, 153px);
+    }
+    span{
+      float: left;
+      margin: 76px 0;
+      .wh(108px, 0);
+      border-top: 1px dashed #bcd3f2;
+    }
+  }
+  .make_bottom{
+    margin-left: 1.5px;
+    .wh(1305px, 20px);
+    li{
+      float: left;
+      margin-right: 108px;
+      .whh(153px, 20px);
+      .font(18px, @3);
+      text-align: center;
+    }
+  }
+}
+/*
+* 艾特全面强大管理功能板块
+*/
+.manage_contain{
+  .wh(100%, 600px);
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg2.png) no-repeat;
+  background-size: 100% 100%;
+  .manage_title{
+    padding: 50px 0 65px;
+    h1,p{
+      color: @b;
+    }
+  }
+  .manage_list{
+    margin: auto;
+    .wh(1200px, 350px);
+    li{
+      float: left;
+      .wh(200px, 175px);
+      .manage_img{
+        margin-bottom: 25px;
+        .whh(100%, 70px);
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          max-width: 200px;
+          max-height: 80px;
+          vertical-align: middle;
+        }
+      }
+      p{
+        .whh(100%, 20px);
+        .font(18px, @b);
+        text-align: center;
+      }
+    }
+  }
+}
+/*
+* 了解我们的产品板块
+*/
+.know_contain{
+  .wh(100%, auto);
+  min-width: 1200px;
+  overflow: hidden;
+  .know_title{
+    padding: 50px 0 65px;
+  }
+  .know_box{
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .know_btn{
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+    li{
+      position: relative;
+      float: left;
+      margin: 0 100px;
+      padding-top: 80px;
+      width: 100px;
+      height: 55px;
+      cursor: pointer;
+      p{
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #0d0f39;
+      }
+      i{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 66px;
+        height: 66px;
+        margin-left: -33px;
+        background: url(../img/cosmetic/elves.png) no-repeat;
+      }
+      .know_ia, .know_ib, .know_ic, .know_id{
+        .bgy(0);
+      }
+      .know_ie, .know_if, .know_ig, .know_ih{
+        .bgy(136px);
+      }
+      .know_ii, .know_ij, .know_ik, .know_il{
+        .bgy(272px);
+      }
+      .know_ia, .know_ie, .know_ii{
+        .bgx(0);
+      }
+      .know_ib, .know_if, .know_ij{
+        .bgx(68px);
+      }
+      .know_ic, .know_ig, .know_ik{
+        .bgx(136px);
+      }
+      .know_id, .know_ih, .know_il{
+        .bgx(204px);
+      }
+    }
+    li:after{
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: "";
+      width: 26px;
+      height: 7px;
+      margin-left: -13px;
+      background: url(../img/cosmetic/top.png) 50% no-repeat;
+    }
+    li.active_btn{
+      p{
+        color: #ff76bd;
+      }
+      .know_ia, .know_ib, .know_ic, .know_id{
+        .bgy(68px);
+      }
+      .know_ie, .know_if, .know_ig, .know_ih{
+        .bgy(204px);
+      }
+      .know_ii, .know_ij, .know_ik, .know_il{
+        .bgy(340px);
+      }
+    }
+    li.active_btn:after{
+      display: block;
+    }
+  }
+  .know_switch{
+    display: none;
+    width: 100%;
+    min-width: 1200px;
+    height: 300px;
+    background: #f5f5f9;
+  }
+  .know_box.active .know_switch{
+    display: block;
+  }
+  .know_list{
+    display: none;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+    li{
+      float: left;
+      padding: 25px 60px;
+      width: 280px;
+      height: 100px;
+      h3{
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 28px;
+        color: #0d0f39;
+      }
+      p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #0d0f39;
+        opacity: .7;
+      }
+    }
+  }
+  .know_list.active_list{
+    display: block;
+  }
+}
+/*
+* 了解我们的产品2板块
+*/
+.products_contain{
+  .wh(100%, 760px);
+  min-width: 1200px;
+  background: url(../img/cosmetic/bg3.png) no-repeat;
+  background-size: 100% 100%;
+  .products_title{
+    padding: 50px 0 60px;
+    h1,p{
+      color: @b;
+      text-align: center;
+    }
+  }
+  .products_list{
+    margin: auto;
+    padding: 0 100px;
+    .wh(1000px, 480px);
+    li{
+      position: relative;
+      float: left;
+      margin: 0 15px;
+      .wh(220px, 480px);
+      text-align: center;
+      border-radius: 4px;
+      .bgs(@b);
+      i{
+        display: block;
+        margin: 50px auto 14px;
+        .wh(66px, 66px);
+        background: url(../img/cosmetic/elves.png) no-repeat;
+        .bgy(408px);
+      }
+      i.products_ia{
+        .bgx(0);
+      }
+      i.products_ib{
+        .bgx(68px);
+      }
+      i.products_ic{
+        .bgx(136px);
+      }
+      i.products_id{
+        .bgx(204px);
+      }
+      h2{
+        margin-bottom: 60px;
+        .whh(100%, 33px);
+        .font(24px, #0d0f39);
+      }
+      .products_box{
+        position: relative;
+        height: 250px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+        div{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 170px;
+          height: 100%;
+          padding: 0 25px;
+          color: #0d0f39;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+      }
+      .products_up{
+        z-index: 2;
+        p{
+          margin-bottom: 20px;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      .products_down{
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        p{
+          margin-bottom: 20px;
+          font-size: 14px;
+          line-height: 20px;
+          opacity: .7;
+        }
+      }
+    }
+    li:hover{
+      i{
+        .bgy(476px);
+      }
+      .products_box{
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+/*
+* 即刻定制，打破数据孤岛板块
+*/
+.promptly_contain{
+  padding: 50px 0;
+  overflow: hidden;
+  .promptly_text{
+    float: left;
+    .wh(468px, 585px);
+    h1{
+      margin: 115px 0 35px;
+      .whh(100%, 38px);
+      .font(34px, @3);
+      font-weight: bold;
+    }
+    p{
+      margin-bottom: 120px;
+      .whh(100%, 20px);
+      .font(18px, @3);
+    }
+    button{
+      display: block;
+      margin: auto;
+      .whh(223px, 62px);
+      .font(24px, @b);
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      background: url(../img/cosmetic/button.png) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .promptly_img{
+    float: right;
+    .wh(732px, 585px);
+    img{
+      .wh(auto, auto);
+      max-width: 732px;
+      max-height: 585px;
+    }
+  }
+}

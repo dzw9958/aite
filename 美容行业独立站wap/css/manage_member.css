@@ -1,0 +1,414 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 6.26666667rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+/*
+* 软件简介板块
+*/
+.software_contain {
+  width: 10rem;
+  height: auto;
+}
+.software_contain .software_title {
+  padding: 0.6rem 0 0.26666667rem;
+}
+.software_contain .software_box {
+  margin: auto;
+  padding-bottom: 0.46666667rem;
+  width: 9.46666667rem;
+  height: auto;
+}
+.software_contain .software_box p {
+  margin-bottom: 0.46666667rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.software_contain .software_box b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.software_contain .software_box img {
+  display: block;
+  margin: auto;
+  width: 6rem;
+  height: 3.6rem;
+}
+/*
+* 功能优势板块
+*/
+.edge_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.edge_contain .edge_title {
+  padding: 0.6rem 0;
+}
+.edge_contain .edge_window {
+  margin: auto;
+  width: 9.6rem;
+  height: 11.86666667rem;
+  overflow-x: hidden;
+}
+.edge_contain .edge_list {
+  position: relative;
+  left: 0;
+  margin-bottom: 0.4rem;
+  width: 19.2rem;
+  height: 10.8rem;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
+  transition: left .5s linear;
+}
+.edge_contain .edge_list li {
+  float: left;
+  margin: 0.06666667rem;
+  padding-top: 0.4rem;
+  width: 4.66666667rem;
+  height: 4.86666667rem;
+  border-radius: 0.13333333rem;
+  background-color: #ffffff;
+}
+.edge_contain .edge_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.26666667rem;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+}
+.edge_contain .edge_list li h2 {
+  margin-bottom: 0.24rem;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+  text-align: center;
+}
+.edge_contain .edge_list li p {
+  margin: auto;
+  width: 4.28rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.edge_contain .edge_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.edge_contain .edge_sub {
+  margin: auto;
+  width: 0.8rem;
+  height: 0.2rem;
+}
+.edge_contain .edge_sub li {
+  float: left;
+  margin: 0 0.1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.edge_contain .edge_sub li.on {
+  background-color: #ff76bd;
+}
+/*
+* 图文混合板块
+*/
+.blend_contain {
+  width: 10rem;
+  height: auto;
+}
+.blend_contain .blend_gray {
+  background-color: #f6f6f6;
+}
+.blend_contain h2 {
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.37333333rem;
+  color: #ff76bd;
+  font-weight: bold;
+  text-align: center;
+}
+.blend_contain h3 {
+  padding-left: 0.06666667rem;
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.26666667rem;
+  color: #333333;
+  font-weight: bold;
+  border-left: 0.13333333rem solid #ff76bd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.blend_contain h6 {
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.blend_contain p {
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.24rem;
+  color: #666666;
+}
+.blend_contain b {
+  display: inline-block;
+  width: 0.48rem;
+  height: 0;
+}
+.blend_contain .blend_one,
+.blend_contain .blend_two,
+.blend_contain .blend_three,
+.blend_contain .blend_four,
+.blend_contain .blend_five {
+  padding: 0 0.26666667rem;
+  width: 9.46666667rem;
+  height: auto;
+}
+.blend_contain .blend_one {
+  padding-bottom: 0.33333333rem;
+}
+.blend_contain .blend_one h2 {
+  padding: 0.46666667rem 0 0.26666667rem;
+}
+.blend_contain .blend_one h6 {
+  margin-bottom: 0.13333333rem;
+}
+.blend_contain .blend_one img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.2rem;
+  width: 3.30666667rem;
+  height: 2.84rem;
+}
+.blend_contain .blend_two {
+  padding-bottom: 0.2rem;
+  overflow: hidden;
+}
+.blend_contain .blend_two h2 {
+  padding: 0.53333333rem 0 0.26666667rem;
+}
+.blend_contain .blend_two h6 {
+  margin-bottom: 0.4rem;
+}
+.blend_contain .blend_two .blend_text {
+  float: left;
+  width: 5.76rem;
+  height: auto;
+}
+.blend_contain .blend_two .blend_text h3,
+.blend_contain .blend_two .blend_text p {
+  margin-bottom: 0.33333333rem;
+}
+.blend_contain .blend_two .blend_img {
+  float: right;
+  width: 3.62666667rem;
+  height: 4.52rem;
+  line-height: 4.52rem;
+}
+.blend_contain .blend_two .blend_img img {
+  display: inline-block;
+  width: 3.62666667rem;
+  height: 3.77333333rem;
+  vertical-align: middle;
+}
+.blend_contain .blend_three {
+  padding-bottom: 0.4rem;
+}
+.blend_contain .blend_three h2 {
+  padding: 0.53333333rem 0 0.33333333rem;
+}
+.blend_contain .blend_three h6 {
+  padding-bottom: 0.46666667rem;
+}
+.blend_contain .blend_three img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.2rem;
+  width: 7.66666667rem;
+  height: 4.69333333rem;
+}
+.blend_contain .blend_three h3,
+.blend_contain .blend_three p {
+  margin-bottom: 0.26666667rem;
+}
+.blend_contain .blend_four {
+  padding-bottom: 0.2rem;
+}
+.blend_contain .blend_four h2 {
+  padding: 0.53333333rem 0 0.33333333rem;
+}
+.blend_contain .blend_four .blend_box {
+  padding: 0.18666667rem;
+  width: 9.09333333rem;
+  height: auto;
+  background-color: #ffffff;
+}
+.blend_contain .blend_four .blend_box h6 {
+  margin-bottom: 0.13333333rem;
+}
+.blend_contain .blend_four .blend_box p {
+  margin-bottom: 0.26666667rem;
+}
+.blend_contain .blend_four .blend_box img {
+  display: block;
+  margin: auto;
+  width: 9.06666667rem;
+  height: 4.53333333rem;
+}
+.blend_contain .blend_five {
+  padding-bottom: 0.26666667rem;
+}
+.blend_contain .blend_five h2 {
+  padding: 0.26666667rem 0 0.13333333rem;
+}
+.blend_contain .blend_five h6 {
+  margin-bottom: 0.13333333rem;
+  text-align: center;
+}
+.blend_contain .blend_five p {
+  margin-bottom: 0.13333333rem;
+}
+.blend_contain .blend_five img {
+  display: block;
+  margin: auto;
+  width: 5.88rem;
+  height: 4.53333333rem;
+}
+/*
+* 粉色列表板块
+*/
+.pink_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #ff76bd;
+}
+.pink_contain .pink_list {
+  padding: 0.66666667rem 0.26666667rem 0;
+  width: 9.46666667rem;
+  height: 11.6rem;
+}
+.pink_contain .pink_list li {
+  position: relative;
+  padding-left: 1.4rem;
+  width: 8.06666667rem;
+  height: 1.93333333rem;
+}
+.pink_contain .pink_list li img {
+  position: absolute;
+  top: 0.10666667rem;
+  left: 0;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+}
+.pink_contain .pink_list li h2 {
+  margin-bottom: 0.16rem;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.37333333rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pink_contain .pink_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+/*
+* 使用一年公司管理全面提升板块
+*/
+.hoist_contain {
+  width: 10rem;
+  height: auto;
+}
+.hoist_contain .hoist_title {
+  padding: 0.66666667rem 0 0.93333333rem;
+}
+.hoist_contain .hoist_list {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.62666667rem;
+  height: 9.62666667rem;
+}
+.hoist_contain .hoist_list li {
+  float: left;
+  padding: 0 0.24rem;
+  width: 4.33333333rem;
+  height: 4.81333333rem;
+}
+.hoist_contain .hoist_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 2.26666667rem;
+  height: 2.26666667rem;
+}
+.hoist_contain .hoist_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+  text-align: center;
+}
+.hoist_contain .hoist_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.hoist_contain .hoist_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}

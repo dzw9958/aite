@@ -1,0 +1,682 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 475/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 下列板块通用
+*/
+.common_title{
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+        .whh(100%, 38/@r);
+        .font(34/@r, @3);
+        font-weight: bold;
+    }
+    p{
+        margin: auto;
+        margin-top: 20/@r;
+        .wh(auto, auto);
+        line-height: 30/@r;
+        .font(20/@r, @6);
+    }
+}
+/*
+* 更高效、灵活的店务管理板块
+*/
+.shop_contain{
+    .wh(750/@r, auto);
+    .bgs(#fff8fb);
+    .shop_title{
+        padding: 45/@r 0 40/@r;
+        p{
+            width: 594/@r;
+        }
+    }
+    .shop_box{
+        margin: auto;
+        padding-bottom: 20/@r;
+        .wh(710/@r, 420/@r);
+    }
+    .shop_text{
+        float: left;
+        .wh(400/@r, 420/@r);
+        overflow: hidden;
+    }
+    .shop_list{
+        padding-right: 50/@r;
+        .wh(400/@r, 420/@r);
+        overflow-y: scroll;
+        li{
+            position: relative;
+            margin-bottom: 15/@r;
+            padding: 18/@r;
+            padding-left: 52/@r;
+            .wh(330/@r, auto);
+            .bgs(@b);
+            i{
+                position: absolute;
+                top: 16/@r;
+                left: 10/@r;
+                .wh(32/@r, 30/@r);
+                background: url(../img/manage_chain/elves.png) no-repeat;
+                background-size: 134/@r 130/@r;
+            }
+            h2{
+                margin-bottom: 10/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @3);
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            i.shop_ia, i.shop_ib, i.shop_ic, i.shop_id{
+                .bgy(0);
+            }
+            i.shop_ie, i.shop_if, i.shop_ig{
+                .bgy(32/@r);
+            }
+            i.shop_ia, i.shop_ie{
+                .bgx(0);
+            }
+            i.shop_ib, i.shop_if{
+                .bgx(34/@r);
+            }
+            i.shop_ic, i.shop_ig{
+                .bgx(68/@r);
+            }
+            i.shop_id{
+                .bgx(102/@r);
+            }
+        }
+    }
+    .shop_img{
+        float: right;
+        .whh(283/@r, 420/@r);
+        img{
+            display: inline-block;
+            .wh(283/@r, 288/@r);
+            vertical-align: middle;
+        }
+    }
+}
+/*
+* 更简单、快捷的前台收银板块
+*/
+.cashier_contain{
+    .wh(750/@r, auto);
+    .cashier_title{
+        padding: 50/@r 0 15/@r;
+        p{
+            width: 600/@r;
+        }
+    }
+    .cashier_list{
+        margin: auto;
+        padding-bottom: 30/@r;
+        .wh(740/@r, 740/@r);
+        li{
+            float: left;
+            margin: 15/@r;
+            padding-top: 20/@r;
+            .wh(340/@r, 320/@r);
+            border-radius: 10/@r;
+            .bgs(@b);
+            -webkit-box-shadow: 0 4/@r 32/@r 3/@r #ffeff8;
+                    box-shadow: 0 4/@r 32/@r 3/@r #ffeff8;
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: 20/@r;
+                .wh(85/@r, 85/@r);
+            }
+            h2{
+                margin-bottom: 15/@r;
+                .whh(100%, 28/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                margin: auto;
+                .wh(280/@r, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+    }
+}
+/*
+* 更智能、自动化的预警、提醒系统板块
+*/
+.remind_contain{
+    .wh(750/@r, auto);
+    .remind_title{
+        padding: 30/@r 0;
+        p{
+            width: 680/@r;
+        }
+    }
+    .remind_box{
+        margin: auto;
+        .wh(710/@r, auto);
+        overflow: hidden;
+    }
+    .remind_list{
+        .wh(100%, auto);
+        li{
+            margin-bottom: 15/@r;
+            padding: 15/@r;
+            .wh(680/@r, auto);
+            border-radius: 10/@r;
+            .bgs(#fff8fb);
+            overflow: hidden;
+            i.remind_icon{
+                float: left;
+                margin-right: 5/@r;
+                .wh(30/@r, 32/@r);
+                background: url(../img/manage_chain/elves.png) no-repeat;
+                background-size: 134/@r 130/@r;
+                background-position: -103/@r -31/@r;
+            }
+            h2{
+                float: left;
+                .whh(645/@r, 32/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                margin-top: 18/@r;
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+    }
+    .remind_img{
+        margin: 15/@r 0;
+        .wh(100%, 470/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(455/@r, 470/@r);
+        }
+    }
+}
+/*
+* 多种营销拓客方案，提高20%门店业绩板块
+*/
+.hoist_contain{
+    .wh(750/@r, auto);
+    .hoist_title{
+        padding: 35/@r 0 15/@r;
+        p{
+            width: 682/@r;
+        }
+    }
+    .hoist_list{
+        margin: auto;
+        padding-bottom: 30/@r;
+        .wh(730/@r, 790/@r);
+        li{
+            float: left;
+            margin: 10/@r;
+            padding-top: 30/@r;
+            .wh(345/@r, 345/@r);
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: 25/@r;
+                .wh(104/@r, 104/@r);
+            }
+            h2{
+                margin-bottom: 20/@r;
+                .whh(100%, 28/@r);
+                .font(26/@r, @b);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                margin: auto;
+                .wh(310/@r, auto);
+                line-height: 30/@r;
+                .font(20/@r, @b);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+        li.hoist_a{
+            .bgs(#52a8ea);
+        }
+        li.hoist_b{
+            .bgs(#fc9926);
+        }
+        li.hoist_c{
+            .bgs(#16e5e1);
+        }
+        li.hoist_d{
+            .bgs(#f97996);
+        }
+    }
+}
+/*
+* 完整的业绩体系，员工考核、工资计算不用愁板块
+*/
+.performance_contain{
+    .wh(750/@r, auto);
+    .performance_title{
+        padding: 30/@r 0;
+        p{
+            width: 623/@r;
+        }
+    }
+    .performance_box{
+        margin: auto;
+        .wh(710/@r, auto);
+        overflow: hidden;
+    }
+    .performance_list{
+        .wh(100%, auto);
+        li{
+            margin-bottom: 15/@r;
+            padding: 15/@r;
+            .wh(680/@r, auto);
+            border-radius: 10/@r;
+            .bgs(#fff8fb);
+            overflow: hidden;
+            i{
+                float: left;
+                margin-right: 6/@r;
+                .wh(34/@r, 34/@r);
+                background: url(../img/manage_chain/elves.png) no-repeat;
+                background-size: 134/@r 130/@r;
+                .bgy(64/@r);
+            }
+            i.performance_ia{
+                .bgx(0);
+            }
+            i.performance_ic{
+                .bgx(34/@r);
+            }
+            i.performance_ib{
+                .bgx(68/@r);
+            }
+            i.performance_id{
+                .bgx(102/@r);
+            }
+            h2{
+                float: left;
+                .whh(640/@r, 34/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                margin-top: 10/@r;
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+    }
+    .performance_img{
+        margin: 15/@r 0;
+        .wh(100%, 305/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(475/@r, 305/@r);
+        }
+    }
+}
+/*
+* 更全面、灵活的会员卡体系板块
+*/
+.member_contain{
+    .wh(750/@r, auto);
+    .member_title{
+        padding: 30/@r 0 40/@r;
+        p{
+            width: 600/@r;
+        }
+    }
+    .member_list{
+        margin: auto;
+        padding-bottom: 30/@r;
+        .wh(720/@r, 170/@r);
+        li{
+            float: left;
+            margin: 5/@r;
+            .whh(170/@r, 75/@r);
+            .font(24/@r, @b);
+            text-align: center;
+            .bgs(#ff76bd);
+        }
+        li.member_opacity{
+            .bgs(#fda0d0);
+        }
+    }
+}
+/*
+* 更准确、详细的报表分析，财务管理更轻松板块
+*/
+.reports_contain{
+    .wh(750/@r, auto);
+    .reports_title{
+        padding: 30/@r 0;
+        p{
+            width: 664/@r;
+        }
+    }
+    .reports_box{
+        margin: auto;
+        .wh(710/@r, auto);
+        overflow: hidden;
+    }
+    .reports_list{
+        .wh(100%, auto);
+        li{
+            margin-bottom: 15/@r;
+            padding: 15/@r;
+            .wh(680/@r, auto);
+            border-radius: 10/@r;
+            .bgs(#fff8fb);
+            overflow: hidden;
+            i{
+                float: left;
+                margin-right: 5/@r;
+                .wh(30/@r, 30/@r);
+                background: url(../img/manage_chain/elves.png) no-repeat;
+                background-size: 134/@r 130/@r;
+                .bgy(100/@r);
+            }
+            i.reports_ia{
+                .bgx(0);
+            }
+            i.reports_ic{
+                .bgx(34/@r);
+            }
+            i.reports_ib{
+                .bgx(68/@r);
+            }
+            i.reports_id{
+                .bgx(102/@r);
+            }
+            h2{
+                float: left;
+                .whh(645/@r, 30/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                float: left;
+                margin-top: 10/@r;
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+    }
+    .reports_img{
+        margin: 15/@r 0;
+        .wh(100%, 340/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(340/@r, 340/@r);
+        }
+    }
+}
+/*
+* 艾特连锁管控，成就您的连锁蓝图板块
+*/
+.achieve_contain{
+    .wh(750/@r, auto);
+    .bgs(#fff8fb);
+    .achieve_title{
+        padding: 40/@r 0 25/@r;
+        p{
+            width: 684/@r;
+        }
+    }
+    .achieve_box{
+        margin: auto;
+        .wh(710/@r, auto);
+    }
+    .achieve_imga{
+        margin-bottom: 20/@r;
+        .wh(100%, 405/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(383/@r, 402/@r);
+        }
+    }
+    .achieve_text{
+        margin-bottom: 20/@r;
+        padding: 20/@r;
+        padding-bottom: 0;
+        .wh(670/@r, auto);
+        border-radius: 10/@r;
+        .bgs(@b);
+        overflow: hidden;
+        h2{
+            margin-bottom: 12/@r;
+            .whh(100%, 28/@r);
+            .font(26/@r, #ff68ab);
+            font-weight: bold;
+        }
+        p{
+            margin-bottom: 20/@r;
+            .wh(100%, auto);
+            .font(20/@r, @6);
+        }
+    }
+    .achieve_imgb{
+        margin-bottom: 20/@r;
+        .wh(100%, 290/@r);
+        img{
+            display: block;
+            margin: auto;
+            .wh(585/@r, 287/@r);
+        }
+    }
+}
+/*
+* 功能展示板块
+*/
+.function_contain{
+    .wh(750/@r, auto);
+    .function_title{
+        padding: 50/@r 0 30/@r;
+        p{
+            width: 621/@r;
+        }
+    }
+    .function_window{
+        margin: auto;
+        padding-bottom: 30/@r;
+        .wh(625/@r, 475/@r);
+        overflow: hidden;
+    }
+    .function_list{
+        position: relative;
+        left: 0;
+        .wh(2500/@r, 475/@r);
+        -webkit-transition: left .5s linear;
+        -o-transition: left .5s linear;
+        transition: left .5s linear;
+        li{
+            float: left;
+            .wh(625/@r, 475/@r);
+            img{
+                display: block;
+                margin-bottom: 30/@r;
+                .wh(625/@r, 345/@r);
+            }
+            h2{
+                margin-bottom: 10/@r;
+                .whh(100%, 28/@r);
+                .font(26/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r,@6);
+            }
+        }
+    }
+}
+/*
+* 手机APP——随时随地，移动管控板块
+*/
+.move_contain{
+    .wh(750/@r, auto);
+    .bgs(#f5f5f5);
+    .move_title{
+        padding: 35/@r 0 20/@r;
+        p{
+            width: 644/@r;
+        }
+    }
+    .move_box{
+        margin: auto;
+        padding-bottom: 20/@r;
+        .wh(710/@r, 345/@r);
+    }
+    .move_img{
+        float: left;
+        .whh(203/@r, 345/@r);
+        img{
+            display: inline-block;
+            .wh(203/@r, 314/@r);
+            vertical-align: middle;
+        }
+    }
+    .move_text{
+        float: right;
+        .wh(475/@r, 345/@r);
+        overflow: hidden;
+    }
+    .move_list{
+        padding-right: 50/@r;
+        .wh(475/@r, 345/@r);
+        overflow-y: scroll;
+        li{
+            padding: 18/@r 0;
+            .wh(475/@r, auto);
+            h2{
+                margin-bottom: 15/@r;
+                .whh(100%, 28/@r);
+                .font(26/@r, #ff68ab);
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @6);
+            }
+        }
+    }
+}
+/*
+* 多重保障，保护数据安全板块
+*/
+.safety_contain{
+    .wh(750/@r, auto);
+    .safety_title{
+        padding: 45/@r 0 25/@r;
+    }
+    .safety_box{
+        margin: auto;
+        .wh(730/@r, 200/@r);
+    }
+    .safety_text{
+        float: left;
+        .wh(330/@r, auto);
+        h2{
+            padding-top: 30/@r;
+            margin-bottom: 15/@r;
+            .whh(100%, 28/@r);
+            .font(26/@r, #ff68ab);
+            font-weight: bold;
+        }
+        p{
+            .wh(100%, auto);
+            line-height: 36/@r;
+            .font(20/@r, @6);
+        }
+    }
+    .safety_img{
+        float: right;
+        .wh(385/@r, 200/@r);
+        img{
+            display: block;
+            .wh(385/@r, 200/@r);
+        }
+    }
+}

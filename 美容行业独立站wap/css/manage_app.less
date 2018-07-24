@@ -214,6 +214,8 @@ body{
         left: 0;
         margin-bottom: 35/@r;
         .wh(2250/@r, 550/@r);
+        -webkit-transition: left .5s linear;
+        -o-transition: left .5s linear;
         transition: left .5s linear;
     }
     .new_list{
@@ -227,7 +229,8 @@ body{
             .wh(615/@r, 90/@r);
             border-radius: 3/@r;
             .bgs(@b);
-            box-shadow: 2/@r 3/@r 6/@r 0 #febac6;
+            -webkit-box-shadow: 2/@r 3/@r 6/@r 0 #febac6;
+                    box-shadow: 2/@r 3/@r 6/@r 0 #febac6;
             i{
                 position: absolute;
                 top: 50/@r;
@@ -327,6 +330,8 @@ body{
         position: relative;
         left: 0;
         .wh(1500/@r, 160/@r);
+        -webkit-transition: left .5s linear;
+        -o-transition: left .5s linear;
         transition: left .5s linear;
         li{
             float: left;

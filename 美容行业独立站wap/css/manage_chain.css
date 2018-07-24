@@ -1,0 +1,792 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 6.33333333rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin: auto;
+  margin-top: 0.26666667rem;
+  width: auto;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 更高效、灵活的店务管理板块
+*/
+.shop_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #fff8fb;
+}
+.shop_contain .shop_title {
+  padding: 0.6rem 0 0.53333333rem;
+}
+.shop_contain .shop_title p {
+  width: 7.92rem;
+}
+.shop_contain .shop_box {
+  margin: auto;
+  padding-bottom: 0.26666667rem;
+  width: 9.46666667rem;
+  height: 5.6rem;
+}
+.shop_contain .shop_text {
+  float: left;
+  width: 5.33333333rem;
+  height: 5.6rem;
+  overflow: hidden;
+}
+.shop_contain .shop_list {
+  padding-right: 0.66666667rem;
+  width: 5.33333333rem;
+  height: 5.6rem;
+  overflow-y: scroll;
+}
+.shop_contain .shop_list li {
+  position: relative;
+  margin-bottom: 0.2rem;
+  padding: 0.24rem;
+  padding-left: 0.69333333rem;
+  width: 4.4rem;
+  height: auto;
+  background-color: #ffffff;
+}
+.shop_contain .shop_list li i {
+  position: absolute;
+  top: 0.21333333rem;
+  left: 0.13333333rem;
+  width: 0.42666667rem;
+  height: 0.4rem;
+  background: url(../img/manage_chain/elves.png) no-repeat;
+  background-size: 1.78666667rem 1.73333333rem;
+}
+.shop_contain .shop_list li h2 {
+  margin-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+}
+.shop_contain .shop_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.shop_contain .shop_list li i.shop_ia,
+.shop_contain .shop_list li i.shop_ib,
+.shop_contain .shop_list li i.shop_ic,
+.shop_contain .shop_list li i.shop_id {
+  background-position-y: 0;
+}
+.shop_contain .shop_list li i.shop_ie,
+.shop_contain .shop_list li i.shop_if,
+.shop_contain .shop_list li i.shop_ig {
+  background-position-y: -0.42666667rem;
+}
+.shop_contain .shop_list li i.shop_ia,
+.shop_contain .shop_list li i.shop_ie {
+  background-position-x: 0;
+}
+.shop_contain .shop_list li i.shop_ib,
+.shop_contain .shop_list li i.shop_if {
+  background-position-x: -0.45333333rem;
+}
+.shop_contain .shop_list li i.shop_ic,
+.shop_contain .shop_list li i.shop_ig {
+  background-position-x: -0.90666667rem;
+}
+.shop_contain .shop_list li i.shop_id {
+  background-position-x: -1.36rem;
+}
+.shop_contain .shop_img {
+  float: right;
+  width: 3.77333333rem;
+  height: 5.6rem;
+  line-height: 5.6rem;
+}
+.shop_contain .shop_img img {
+  display: inline-block;
+  width: 3.77333333rem;
+  height: 3.84rem;
+  vertical-align: middle;
+}
+/*
+* 更简单、快捷的前台收银板块
+*/
+.cashier_contain {
+  width: 10rem;
+  height: auto;
+}
+.cashier_contain .cashier_title {
+  padding: 0.66666667rem 0 0.2rem;
+}
+.cashier_contain .cashier_title p {
+  width: 8rem;
+}
+.cashier_contain .cashier_list {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.86666667rem;
+  height: 9.86666667rem;
+}
+.cashier_contain .cashier_list li {
+  float: left;
+  margin: 0.2rem;
+  padding-top: 0.26666667rem;
+  width: 4.53333333rem;
+  height: 4.26666667rem;
+  border-radius: 0.13333333rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0.05333333rem 0.42666667rem 0.04rem #ffeff8;
+  box-shadow: 0 0.05333333rem 0.42666667rem 0.04rem #ffeff8;
+}
+.cashier_contain .cashier_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.26666667rem;
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+}
+.cashier_contain .cashier_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.cashier_contain .cashier_list li p {
+  margin: auto;
+  width: 3.73333333rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.cashier_contain .cashier_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+/*
+* 更智能、自动化的预警、提醒系统板块
+*/
+.remind_contain {
+  width: 10rem;
+  height: auto;
+}
+.remind_contain .remind_title {
+  padding: 0.4rem 0;
+}
+.remind_contain .remind_title p {
+  width: 9.06666667rem;
+}
+.remind_contain .remind_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+  overflow: hidden;
+}
+.remind_contain .remind_list {
+  width: 100%;
+  height: auto;
+}
+.remind_contain .remind_list li {
+  margin-bottom: 0.2rem;
+  padding: 0.2rem;
+  width: 9.06666667rem;
+  height: auto;
+  border-radius: 0.13333333rem;
+  background-color: #fff8fb;
+  overflow: hidden;
+}
+.remind_contain .remind_list li i.remind_icon {
+  float: left;
+  margin-right: 0.06666667rem;
+  width: 0.4rem;
+  height: 0.42666667rem;
+  background: url(../img/manage_chain/elves.png) no-repeat;
+  background-size: 1.78666667rem 1.73333333rem;
+  background-position: -1.37333333rem -0.41333333rem;
+}
+.remind_contain .remind_list li h2 {
+  float: left;
+  width: 8.6rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.remind_contain .remind_list li p {
+  float: left;
+  margin-top: 0.24rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.remind_contain .remind_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.remind_contain .remind_img {
+  margin: 0.2rem 0;
+  width: 100%;
+  height: 6.26666667rem;
+}
+.remind_contain .remind_img img {
+  display: block;
+  margin: auto;
+  width: 6.06666667rem;
+  height: 6.26666667rem;
+}
+/*
+* 多种营销拓客方案，提高20%门店业绩板块
+*/
+.hoist_contain {
+  width: 10rem;
+  height: auto;
+}
+.hoist_contain .hoist_title {
+  padding: 0.46666667rem 0 0.2rem;
+}
+.hoist_contain .hoist_title p {
+  width: 9.09333333rem;
+}
+.hoist_contain .hoist_list {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.73333333rem;
+  height: 10.53333333rem;
+}
+.hoist_contain .hoist_list li {
+  float: left;
+  margin: 0.13333333rem;
+  padding-top: 0.4rem;
+  width: 4.6rem;
+  height: 4.6rem;
+}
+.hoist_contain .hoist_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 1.38666667rem;
+  height: 1.38666667rem;
+}
+.hoist_contain .hoist_list li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.hoist_contain .hoist_list li p {
+  margin: auto;
+  width: 4.13333333rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.hoist_contain .hoist_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.hoist_contain .hoist_list li.hoist_a {
+  background-color: #52a8ea;
+}
+.hoist_contain .hoist_list li.hoist_b {
+  background-color: #fc9926;
+}
+.hoist_contain .hoist_list li.hoist_c {
+  background-color: #16e5e1;
+}
+.hoist_contain .hoist_list li.hoist_d {
+  background-color: #f97996;
+}
+/*
+* 完整的业绩体系，员工考核、工资计算不用愁板块
+*/
+.performance_contain {
+  width: 10rem;
+  height: auto;
+}
+.performance_contain .performance_title {
+  padding: 0.4rem 0;
+}
+.performance_contain .performance_title p {
+  width: 8.30666667rem;
+}
+.performance_contain .performance_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+  overflow: hidden;
+}
+.performance_contain .performance_list {
+  width: 100%;
+  height: auto;
+}
+.performance_contain .performance_list li {
+  margin-bottom: 0.2rem;
+  padding: 0.2rem;
+  width: 9.06666667rem;
+  height: auto;
+  border-radius: 0.13333333rem;
+  background-color: #fff8fb;
+  overflow: hidden;
+}
+.performance_contain .performance_list li i {
+  float: left;
+  margin-right: 0.08rem;
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  background: url(../img/manage_chain/elves.png) no-repeat;
+  background-size: 1.78666667rem 1.73333333rem;
+  background-position-y: -0.85333333rem;
+}
+.performance_contain .performance_list li i.performance_ia {
+  background-position-x: 0;
+}
+.performance_contain .performance_list li i.performance_ic {
+  background-position-x: -0.45333333rem;
+}
+.performance_contain .performance_list li i.performance_ib {
+  background-position-x: -0.90666667rem;
+}
+.performance_contain .performance_list li i.performance_id {
+  background-position-x: -1.36rem;
+}
+.performance_contain .performance_list li h2 {
+  float: left;
+  width: 8.53333333rem;
+  height: 0.45333333rem;
+  line-height: 0.45333333rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.performance_contain .performance_list li p {
+  float: left;
+  margin-top: 0.13333333rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.performance_contain .performance_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.performance_contain .performance_img {
+  margin: 0.2rem 0;
+  width: 100%;
+  height: 4.06666667rem;
+}
+.performance_contain .performance_img img {
+  display: block;
+  margin: auto;
+  width: 6.33333333rem;
+  height: 4.06666667rem;
+}
+/*
+* 更全面、灵活的会员卡体系板块
+*/
+.member_contain {
+  width: 10rem;
+  height: auto;
+}
+.member_contain .member_title {
+  padding: 0.4rem 0 0.53333333rem;
+}
+.member_contain .member_title p {
+  width: 8rem;
+}
+.member_contain .member_list {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.6rem;
+  height: 2.26666667rem;
+}
+.member_contain .member_list li {
+  float: left;
+  margin: 0.06666667rem;
+  width: 2.26666667rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ff76bd;
+}
+.member_contain .member_list li.member_opacity {
+  background-color: #fda0d0;
+}
+/*
+* 更准确、详细的报表分析，财务管理更轻松板块
+*/
+.reports_contain {
+  width: 10rem;
+  height: auto;
+}
+.reports_contain .reports_title {
+  padding: 0.4rem 0;
+}
+.reports_contain .reports_title p {
+  width: 8.85333333rem;
+}
+.reports_contain .reports_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+  overflow: hidden;
+}
+.reports_contain .reports_list {
+  width: 100%;
+  height: auto;
+}
+.reports_contain .reports_list li {
+  margin-bottom: 0.2rem;
+  padding: 0.2rem;
+  width: 9.06666667rem;
+  height: auto;
+  border-radius: 0.13333333rem;
+  background-color: #fff8fb;
+  overflow: hidden;
+}
+.reports_contain .reports_list li i {
+  float: left;
+  margin-right: 0.06666667rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../img/manage_chain/elves.png) no-repeat;
+  background-size: 1.78666667rem 1.73333333rem;
+  background-position-y: -1.33333333rem;
+}
+.reports_contain .reports_list li i.reports_ia {
+  background-position-x: 0;
+}
+.reports_contain .reports_list li i.reports_ic {
+  background-position-x: -0.45333333rem;
+}
+.reports_contain .reports_list li i.reports_ib {
+  background-position-x: -0.90666667rem;
+}
+.reports_contain .reports_list li i.reports_id {
+  background-position-x: -1.36rem;
+}
+.reports_contain .reports_list li h2 {
+  float: left;
+  width: 8.6rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.reports_contain .reports_list li p {
+  float: left;
+  margin-top: 0.13333333rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.reports_contain .reports_list li b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.reports_contain .reports_img {
+  margin: 0.2rem 0;
+  width: 100%;
+  height: 4.53333333rem;
+}
+.reports_contain .reports_img img {
+  display: block;
+  margin: auto;
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+}
+/*
+* 艾特连锁管控，成就您的连锁蓝图板块
+*/
+.achieve_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #fff8fb;
+}
+.achieve_contain .achieve_title {
+  padding: 0.53333333rem 0 0.33333333rem;
+}
+.achieve_contain .achieve_title p {
+  width: 9.12rem;
+}
+.achieve_contain .achieve_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: auto;
+}
+.achieve_contain .achieve_imga {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 5.4rem;
+}
+.achieve_contain .achieve_imga img {
+  display: block;
+  margin: auto;
+  width: 5.10666667rem;
+  height: 5.36rem;
+}
+.achieve_contain .achieve_text {
+  margin-bottom: 0.26666667rem;
+  padding: 0.26666667rem;
+  padding-bottom: 0;
+  width: 8.93333333rem;
+  height: auto;
+  border-radius: 0.13333333rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.achieve_contain .achieve_text h2 {
+  margin-bottom: 0.16rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ff68ab;
+  font-weight: bold;
+}
+.achieve_contain .achieve_text p {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: auto;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.achieve_contain .achieve_imgb {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 3.86666667rem;
+}
+.achieve_contain .achieve_imgb img {
+  display: block;
+  margin: auto;
+  width: 7.8rem;
+  height: 3.82666667rem;
+}
+/*
+* 功能展示板块
+*/
+.function_contain {
+  width: 10rem;
+  height: auto;
+}
+.function_contain .function_title {
+  padding: 0.66666667rem 0 0.4rem;
+}
+.function_contain .function_title p {
+  width: 8.28rem;
+}
+.function_contain .function_window {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 8.33333333rem;
+  height: 6.33333333rem;
+  overflow: hidden;
+}
+.function_contain .function_list {
+  position: relative;
+  left: 0;
+  width: 33.33333333rem;
+  height: 6.33333333rem;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
+  transition: left .5s linear;
+}
+.function_contain .function_list li {
+  float: left;
+  width: 8.33333333rem;
+  height: 6.33333333rem;
+}
+.function_contain .function_list li img {
+  display: block;
+  margin-bottom: 0.4rem;
+  width: 8.33333333rem;
+  height: 4.6rem;
+}
+.function_contain .function_list li h2 {
+  margin-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.function_contain .function_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 手机APP——随时随地，移动管控板块
+*/
+.move_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.move_contain .move_title {
+  padding: 0.46666667rem 0 0.26666667rem;
+}
+.move_contain .move_title p {
+  width: 8.58666667rem;
+}
+.move_contain .move_box {
+  margin: auto;
+  padding-bottom: 0.26666667rem;
+  width: 9.46666667rem;
+  height: 4.6rem;
+}
+.move_contain .move_img {
+  float: left;
+  width: 2.70666667rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+}
+.move_contain .move_img img {
+  display: inline-block;
+  width: 2.70666667rem;
+  height: 4.18666667rem;
+  vertical-align: middle;
+}
+.move_contain .move_text {
+  float: right;
+  width: 6.33333333rem;
+  height: 4.6rem;
+  overflow: hidden;
+}
+.move_contain .move_list {
+  padding-right: 0.66666667rem;
+  width: 6.33333333rem;
+  height: 4.6rem;
+  overflow-y: scroll;
+}
+.move_contain .move_list li {
+  padding: 0.24rem 0;
+  width: 6.33333333rem;
+  height: auto;
+}
+.move_contain .move_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ff68ab;
+}
+.move_contain .move_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 多重保障，保护数据安全板块
+*/
+.safety_contain {
+  width: 10rem;
+  height: auto;
+}
+.safety_contain .safety_title {
+  padding: 0.6rem 0 0.33333333rem;
+}
+.safety_contain .safety_box {
+  margin: auto;
+  width: 9.73333333rem;
+  height: 2.66666667rem;
+}
+.safety_contain .safety_text {
+  float: left;
+  width: 4.4rem;
+  height: auto;
+}
+.safety_contain .safety_text h2 {
+  padding-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ff68ab;
+  font-weight: bold;
+}
+.safety_contain .safety_text p {
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.safety_contain .safety_img {
+  float: right;
+  width: 5.13333333rem;
+  height: 2.66666667rem;
+}
+.safety_contain .safety_img img {
+  display: block;
+  width: 5.13333333rem;
+  height: 2.66666667rem;
+}

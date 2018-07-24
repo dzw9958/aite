@@ -330,6 +330,8 @@ body {
   left: 0;
   width: 19.46666667rem;
   height: 8.53333333rem;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .core_contain .core_list li {
@@ -407,6 +409,8 @@ body {
   height: 0.13333333rem;
   border-radius: 0.06666667rem;
   background-color: #feb2df;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .core_contain .core_sub li.on {

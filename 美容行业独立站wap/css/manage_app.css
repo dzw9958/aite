@@ -219,6 +219,8 @@ body {
   margin-bottom: 0.46666667rem;
   width: 30rem;
   height: 7.33333333rem;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
   transition: left .5s linear;
 }
 .new_contain .new_list {
@@ -235,6 +237,7 @@ body {
   height: 1.2rem;
   border-radius: 0.04rem;
   background-color: #ffffff;
+  -webkit-box-shadow: 0.02666667rem 0.04rem 0.08rem 0 #febac6;
   box-shadow: 0.02666667rem 0.04rem 0.08rem 0 #febac6;
 }
 .new_contain .new_list li i {
@@ -365,6 +368,8 @@ body {
   left: 0;
   width: 20rem;
   height: 2.13333333rem;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
   transition: left .5s linear;
 }
 .intelligent_contain .intelligent_list li {

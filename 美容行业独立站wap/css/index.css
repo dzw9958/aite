@@ -118,6 +118,8 @@ body {
   left: 0;
   width: 20rem;
   height: 10.66666667rem;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .products_contain .products_box li {
@@ -126,6 +128,7 @@ body {
   padding: 0.46666667rem 0.26666667rem 0;
   width: 3.93333333rem;
   height: 4.41333333rem;
+  -webkit-box-shadow: 0 0 0.2rem 0.13333333rem #fef6f6;
   box-shadow: 0 0 0.2rem 0.13333333rem #fef6f6;
 }
 .products_contain .products_box li i {
@@ -374,6 +377,8 @@ body {
   left: 0;
   width: 58.32rem;
   height: 5.46666667rem;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .operate_contain .operate_list li {

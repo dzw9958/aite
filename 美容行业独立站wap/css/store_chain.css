@@ -1,0 +1,279 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 7.33333333rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.45333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin: auto;
+  margin-top: 0.2rem;
+  width: auto;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 传统美容行业连锁门店现状板块
+*/
+.status_contain {
+  width: 10rem;
+  height: auto;
+}
+.status_contain .status_title {
+  padding: 0.66666667rem 0 0.33333333rem;
+}
+.status_contain .status_box {
+  margin: auto;
+  width: 9.44rem;
+  height: auto;
+  padding-bottom: 0.53333333rem;
+}
+.status_contain .status_box .status_text {
+  margin-bottom: 0.53333333rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.status_contain .status_box .status_text b {
+  display: inline-block;
+  width: 0.53333333rem;
+  height: 0;
+}
+.status_contain .status_box .status_img {
+  display: block;
+  margin: auto;
+  width: 5.81333333rem;
+  height: 3.73333333rem;
+}
+/*
+* 传统美容行业连锁门店痛点板块
+*/
+.pain_contain {
+  width: 10rem;
+  height: 6.93333333rem;
+  background: url(../img/store_chain/bg.png) no-repeat;
+  background-size: 10rem 6.93333333rem;
+}
+.pain_contain .pain_title {
+  padding: 0.66666667rem 0;
+}
+.pain_contain .pain_title h1 {
+  color: #ffffff;
+}
+.pain_contain .pain_box {
+  position: relative;
+  margin: auto;
+  width: 9.46666667rem;
+  height: 4.53333333rem;
+  overflow: hidden;
+}
+.pain_contain .pain_box li {
+  position: absolute;
+  width: 2.66666667rem;
+  height: 2.06666667rem;
+}
+.pain_contain .pain_box li h2 {
+  margin-bottom: 0.06666667rem;
+  width: 100%;
+  height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pain_contain .pain_box li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+}
+.pain_contain .pain_box .pain_img {
+  top: 0.4rem;
+  left: 2.86666667rem;
+  width: 3.73333333rem;
+  height: 3.73333333rem;
+}
+.pain_contain .pain_box .pain_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pain_contain .pain_box .pain_top {
+  top: 0;
+}
+.pain_contain .pain_box .pain_bottom {
+  top: 2.4rem;
+}
+.pain_contain .pain_box .pain_left {
+  left: 0.13333333rem;
+  text-align: right;
+}
+.pain_contain .pain_box .pain_right {
+  right: 0.13333333rem;
+  text-align: left;
+}
+/*
+* 美容行业连锁门店运营模式板块
+*/
+.model_contain {
+  width: 10rem;
+  height: auto;
+}
+.model_contain .model_title {
+  padding: 0.66666667rem 0;
+}
+.model_contain .model_box {
+  width: 100%;
+  height: 8rem;
+  padding-bottom: 0.66666667rem;
+}
+.model_contain .model_box img {
+  display: block;
+  width: 10rem;
+  height: 8rem;
+}
+/*
+* 美容行业连锁门店解决方案核心价值板块
+*/
+.core_contain {
+  width: 10rem;
+  height: 12.73333333rem;
+  background: url(../img/store_chain/bg2.png) no-repeat;
+  background-size: 10rem 12.73333333rem;
+  overflow-x: hidden;
+}
+.core_contain .core_title {
+  padding: 0.66666667rem 0;
+}
+.core_contain .core_title h1,
+.core_contain .core_title p {
+  color: #ffffff;
+}
+.core_contain .core_list {
+  position: relative;
+  left: 0;
+  width: 20rem;
+  height: 9.6rem;
+  transition: left .5s linear;
+}
+.core_contain .core_list li {
+  float: left;
+  margin: 0 0.49333333rem;
+  width: 4.01333333rem;
+  height: 3.2rem;
+}
+.core_contain .core_list li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 0.69333333rem;
+  height: 0.69333333rem;
+  background: url(../img/store_chain/elves.png) no-repeat;
+  background-size: 2.77333333rem 2.08rem;
+}
+.core_contain .core_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.core_contain .core_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.core_contain .core_list li .core_ia,
+.core_contain .core_list li .core_ib,
+.core_contain .core_list li .core_ic,
+.core_contain .core_list li .core_id {
+  background-position-y: 0;
+}
+.core_contain .core_list li .core_ie,
+.core_contain .core_list li .core_if,
+.core_contain .core_list li .core_ig,
+.core_contain .core_list li .core_ih {
+  background-position-y: -0.69333333rem;
+}
+.core_contain .core_list li .core_ii,
+.core_contain .core_list li .core_ij,
+.core_contain .core_list li .core_ik,
+.core_contain .core_list li .core_il {
+  background-position-y: -1.38666667rem;
+}
+.core_contain .core_list li .core_ia,
+.core_contain .core_list li .core_ie,
+.core_contain .core_list li .core_ii {
+  background-position-x: 0;
+}
+.core_contain .core_list li .core_ib,
+.core_contain .core_list li .core_if,
+.core_contain .core_list li .core_ij {
+  background-position-x: -0.69333333rem;
+}
+.core_contain .core_list li .core_ic,
+.core_contain .core_list li .core_ig,
+.core_contain .core_list li .core_ik {
+  background-position-x: -1.38666667rem;
+}
+.core_contain .core_list li .core_id,
+.core_contain .core_list li .core_ih,
+.core_contain .core_list li .core_il {
+  background-position-x: -2.08rem;
+}
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/

@@ -1,0 +1,255 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgs(@c){
+    background-color: @c;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 550/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 下列板块通用
+*/
+.common_title{
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+        .whh(100%, 38/@r);
+        .font(34/@r, @3);
+        font-weight: bold;
+    }
+    p{
+        margin: auto;
+        margin-top: 15/@r;
+        .wh(auto, auto);
+        line-height: 30/@r;
+        .font(20/@r, @6);
+    }
+}
+/*
+* 传统美容行业连锁门店现状板块
+*/
+.status_contain{
+    .wh(750/@r, auto);
+    .status_title{
+        padding: 50/@r 0 25/@r;
+    }
+    .status_box{
+        margin: auto;
+        .wh(708/@r, auto);
+        padding-bottom: 40/@r;
+        .status_text{
+            margin-bottom: 40/@r;
+            .wh(100%, auto);
+            line-height: 36/@r;
+            .font(20/@r, @6);
+            b{
+                display: inline-block;
+                .wh(40/@r, 0);
+            }
+        }
+        .status_img{
+            display: block;
+            margin: auto;
+            .wh(436/@r, 280/@r);
+        }
+    }
+}
+/*
+* 传统美容行业连锁门店痛点板块
+*/
+.pain_contain{
+    .wh(750/@r, 520/@r);
+    background: url(../img/store_chain/bg.png) no-repeat;
+    background-size: 750/@r 520/@r;
+    .pain_title{
+        padding: 50/@r 0;
+        h1{
+            color: @b;
+        }
+    }
+    .pain_box{
+        position: relative;
+        margin: auto;
+        .wh(710/@r, 340/@r);
+        overflow: hidden;
+        li{
+            position: absolute;
+            .wh(200/@r, 155/@r);
+            h2{
+                margin-bottom: 5/@r;
+                .wh(100%, 26/@r);
+                .font(24/@r, @b);
+                font-weight: bold;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(18/@r, @b);
+            }
+        }
+        .pain_img{
+            top: 30/@r;
+            left: 215/@r;
+            .wh(280/@r, 280/@r);
+            img{
+                display: block;
+                .wh(100%, 100%);
+            }
+        }
+        .pain_top{
+            top: 0;
+        }
+        .pain_bottom{
+            top: 180/@r;
+        }
+        .pain_left{
+            left: 10/@r;
+            text-align: right;
+        }
+        .pain_right{
+            right: 10/@r;
+            text-align: left;
+        }
+    }
+}
+/*
+* 美容行业连锁门店运营模式板块
+*/
+.model_contain{
+    .wh(750/@r, auto);
+    .model_title{
+        padding: 50/@r 0;
+    }
+    .model_box{
+        .wh(100%, 600/@r);
+        padding-bottom: 50/@r;
+        img{
+            display: block;
+            .wh(750/@r, 600/@r);
+        }
+    }
+}
+/*
+* 美容行业连锁门店解决方案核心价值板块
+*/
+.core_contain{
+    .wh(750/@r, 955/@r);
+    background: url(../img/store_chain/bg2.png) no-repeat;
+    background-size: 750/@r 955/@r;
+    overflow-x: hidden;
+    .core_title{
+        padding: 50/@r 0;
+        h1, p{
+            color: @b;
+        }
+    }
+    .core_list{
+        position: relative;
+        left: 0;
+        .wh(1500/@r, 720/@r);
+        transition: left .5s linear;
+        li{
+            float: left;
+            margin: 0 37/@r;
+            .wh(301/@r, 240/@r);
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 25/@r;
+                .wh(52/@r, 52/@r);
+                background: url(../img/store_chain/elves.png) no-repeat;
+                background-size: 208/@r 156/@r;
+            }
+            h2{
+                margin-bottom: 15/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @b);
+                font-weight: bold;
+                text-align: center;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 30/@r;
+                .font(20/@r, @b);
+            }
+            .core_ia, .core_ib, .core_ic, .core_id{
+                .bgy(0);
+            }
+            .core_ie, .core_if, .core_ig, .core_ih{
+                .bgy(52/@r);
+            }
+            .core_ii, .core_ij, .core_ik, .core_il{
+                .bgy(104/@r);
+            }
+            .core_ia, .core_ie, .core_ii{
+                .bgx(0);
+            }
+            .core_ib, .core_if, .core_ij{
+                .bgx(52/@r);
+            }
+            .core_ic, .core_ig, .core_ik{
+                .bgx(104/@r);
+            }
+            .core_id, .core_ih, .core_il{
+                .bgx(156/@r);
+            }
+        }
+    }
+}
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/

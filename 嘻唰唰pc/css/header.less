@@ -1,0 +1,136 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* 头顶
+*/
+.top_contain{
+  .wh(100%, 35px);
+  border-bottom: 1px solid #e5e5e5;
+  .top_box{
+    position: relative;
+    margin: auto;
+    .wh(1200px, 35px);
+  }
+  .icon_phone{
+    display: inline-block;
+    .wh(10px, 16px);
+    vertical-align: middle;
+    background: url(../img/index/phone.png) no-repeat;
+  }
+  .top_left{
+    .whh(auto, 35px);
+    p{
+      .font(14px, @6);
+    }
+  }
+  .top_right{
+    .whh(auto, 35px);
+    p, span{
+      float: right;
+      .font(14px, @6);
+    }
+    span{
+      margin: 0 10px 0 15px;
+    }
+    .icon_phone{
+      margin: 0 5px;
+    }
+  }
+  .top_hide{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    padding: 5px;
+    .wh(88px, 88px);
+    border: 1px solid #e5e5e5;
+    .bgs(@b);
+    img{
+      display: block;
+      .wh(88px, 88px);
+    }
+  }
+}
+
+/*
+* 头部
+*/
+.header_contain{
+  margin: auto;
+  .wh(1200px, 120px);
+  .header_logo{
+    .whh(255px, 120px);
+    a{
+      display: block;
+      margin: 17.5px 0;
+      .wh(255px, 85px);
+    }
+    img{
+      display: block;
+      .wh(100%, 100%);
+    }
+  }
+  .header_list{
+    .wh(auto, 120px);
+    li{
+      float: left;
+      .wh(148px, 120px);
+      border-left: 1px solid #eeeeee;
+      a{
+        display: block;
+        .wh(100%, 100%);
+        text-align: center;
+      }
+      .header_chi{
+        padding-top: 42px;
+        margin-bottom: 10px;
+        .whh(100%,18px);
+        .font(16px, @3);
+      }
+      .header_eng{
+        .whh(100%, 14px);
+        .font(12px, @3);
+      }
+    }
+    li.on{
+      .bgs(#ededed);
+      p{
+        color: #054309;
+      }
+    }
+    li.header_first{
+      border-left: 0;
+    }
+  }
+}

@@ -1,0 +1,516 @@
+@charset "utf-8";
+/*
+* banner
+*/
+.banner_contain {
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .bd {
+  height: 700px;
+}
+.banner_contain .bd ul {
+  margin: auto;
+}
+.banner_contain .bd ul img {
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .hd ul {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  z-index: 100;
+}
+.banner_contain .hd ul li {
+  background: #fcfcfe;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.banner_contain .hd ul li.on {
+  background: #144620;
+}
+/*
+* 产品加列表
+*/
+.blend_contain {
+  margin: 50px auto 120px;
+  width: 1200px;
+  height: auto;
+}
+.blend_contain .blend_goods {
+  margin-bottom: 75px;
+  width: 100%;
+  height: 410px;
+}
+.blend_contain .blend_img {
+  width: 560px;
+  height: 410px;
+  overflow: hidden;
+}
+.blend_contain .blend_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 3s ease 0s;
+  -moz-transition: all 3s ease 0s;
+  -ms-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.blend_contain .blend_img:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.blend_contain .blend_text {
+  width: 600px;
+  height: 410px;
+}
+.blend_contain .blend_text h2 {
+  padding-top: 35px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.blend_contain .blend_text h2 span {
+  display: inline-block;
+  margin-left: 12px;
+}
+.blend_contain .blend_text b {
+  display: block;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 3px;
+  background-color: #00851f;
+}
+.blend_contain .blend_text h6 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.blend_contain .blend_text p {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.blend_contain .blend_text a {
+  display: block;
+  width: 91px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  border: 1px solid #757575;
+}
+.blend_contain .blend_list {
+  width: 1200px;
+  height: 240px;
+}
+.blend_contain .blend_list li {
+  float: left;
+  margin: 0 56px;
+  width: 188px;
+  height: 240px;
+}
+.blend_contain .blend_list li p {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+.blend_contain .blend_list li:hover .blend_bg {
+  background-color: #144620;
+}
+.blend_contain .blend_list li:hover .blend_bg i {
+  background-position-y: -93px;
+}
+.blend_contain .blend_bg {
+  margin: 0 auto 30px;
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.blend_contain .blend_bg i {
+  display: block;
+  margin: 48.5px 45.5px;
+  width: 97px;
+  height: 91px;
+  background: url(../img/index/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.blend_contain .blend_bg i.blend_ia {
+  background-position-x: 0;
+}
+.blend_contain .blend_bg i.blend_ib {
+  background-position-x: -99px;
+}
+.blend_contain .blend_bg i.blend_ic {
+  background-position-x: -198px;
+}
+.blend_contain .blend_bg i.blend_id {
+  background-position-x: -297px;
+}
+/*
+* 健康并非奢想
+*/
+.health_contain {
+  min-width: 1200px;
+  width: 100%;
+  height: 750px;
+  background: url(../img/index/bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.health_contain .health_title {
+  margin: 0 auto;
+  padding: 55px 0 15px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.health_contain .health_title h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.health_contain .health_title b {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 80px;
+  height: 3px;
+  background-color: #00851f;
+}
+.health_contain .health_title p {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #666666;
+}
+.health_contain .health_wheel {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  overflow: hidden;
+}
+.health_contain .health_wheel .bd {
+  width: 100%;
+}
+.health_contain .health_wheel .bd ul {
+  zoom: 1;
+  overflow: hidden;
+}
+.health_contain .health_wheel .bd ul li {
+  float: left;
+  margin: 10px 15px;
+  width: 370px;
+  height: 480px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 7px 1px #909090;
+}
+.health_contain .health_wheel .bd ul li .health_img {
+  margin-bottom: 30px;
+  width: 370px;
+  height: 280px;
+  overflow: hidden;
+}
+.health_contain .health_wheel .bd ul li .health_img img {
+  display: block;
+  width: 370px;
+  height: 280px;
+  -webkit-transition: all 3s ease 0s;
+  -moz-transition: all 3s ease 0s;
+  -ms-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.health_contain .health_wheel .bd ul li .health_img:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.health_contain .health_wheel .bd ul li .health_text {
+  padding: 0 40px;
+  width: 290px;
+  height: auto;
+}
+.health_contain .health_wheel .bd ul li .health_text h2 {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.health_contain .health_wheel .bd ul li .health_text p {
+  margin-bottom: 28px;
+  width: 100%;
+  height: auto;
+  line-height: 23px;
+  font-size: 14px;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.health_contain .health_wheel .bd ul li .health_text a {
+  display: block;
+  width: 288px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  border: 1px solid #d6d6d6;
+}
+.health_contain .health_wheel a.next {
+  position: absolute;
+  top: 212px;
+  left: 0;
+  width: 76px;
+  height: 76px;
+  background: url(../img/index/arrow_left.png);
+  background-position: -7px -3px;
+  z-index: 99;
+}
+.health_contain .health_wheel a.prev {
+  position: absolute;
+  top: 212px;
+  right: 0;
+  width: 76px;
+  height: 76px;
+  background: url(../img/index/arrow_right.png);
+  background-position: -7px -3px;
+  z-index: 99;
+}
+/*
+* 故事及其他
+*/
+.story_contain {
+  margin: 20px auto 30px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.story_contain .story_left,
+.story_contain .story_center,
+.story_contain .story_right {
+  float: left;
+  margin: 30px;
+  width: 340px;
+  height: 660px;
+  overflow: hidden;
+}
+.story_contain .story_header {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+}
+.story_contain .story_header .story_icon {
+  float: left;
+  width: 65px;
+  height: 50px;
+  line-height: 50px;
+}
+.story_contain .story_header .story_icon img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 65px;
+  max-height: 50px;
+  vertical-align: middle;
+}
+.story_contain .story_header h2 {
+  float: left;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  width: 275px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+}
+.story_contain .story_header p {
+  float: left;
+  width: 275px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #999999;
+}
+.story_contain .story_img {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+  width: 340px;
+  height: 270px;
+  overflow: hidden;
+}
+.story_contain .story_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 3s ease 0s;
+  -moz-transition: all 3s ease 0s;
+  -ms-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.story_contain .story_img i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 270px;
+  background: url(../img/index/vedio_start.png) center center no-repeat;
+}
+.story_contain .story_middle {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #eb0000;
+}
+.story_contain p {
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  font-size: 12px;
+  color: #868f98;
+}
+.story_contain .story_list {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 156px;
+  overflow: hidden;
+}
+.story_contain .story_list li {
+  position: relative;
+  padding-left: 10px;
+  width: 330px;
+  height: 30px;
+  line-height: 30px;
+}
+.story_contain .story_list li a {
+  font-size: 14px;
+  color: #677889;
+}
+.story_contain .story_list li:before {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background-color: #40ba3a;
+}
+.story_contain .story_more {
+  display: block;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+}
+.story_contain .story_more .story_line {
+  float: left;
+  width: 10px;
+  height: 30px;
+  border-left: 1px solid #000;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.story_contain .story_more span {
+  float: left;
+  font-size: 14px;
+  color: #f58080;
+}
+.story_contain .story_more .story_arrow {
+  float: left;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(../img/index/elves.png) no-repeat;
+  background-position-x: -396px;
+  background-position-y: 0;
+}
+.story_contain .story_img:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.story_contain .story_more:hover .story_line {
+  -webkit-transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  border-color: #eb0000;
+}
+.story_contain .story_more:hover .story_arrow {
+  background-position-y: -32px;
+}
+/*
+* 两张图片
+*/
+.picture_contain {
+  margin: 0 auto 50px;
+  width: 1200px;
+  height: 310px;
+  overflow: hidden;
+}
+.picture_contain .picture_one,
+.picture_contain .picture_two {
+  float: left;
+  width: 580px;
+  height: 310px;
+}
+.picture_contain .picture_one img,
+.picture_contain .picture_two img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.picture_contain .picture_one {
+  margin-right: 40px;
+}

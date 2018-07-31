@@ -1,0 +1,459 @@
+@charset "utf-8";
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+.tr(){
+  -webkit-transition: all 3s ease 0s;
+  -moz-transition: all 3s ease 0s;
+  -ms-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.img(){
+  -webkit-transform: scale(1.05,1.05);
+  -moz-transform: scale(1.05,1.05);
+  -ms-transform: scale(1.05,1.05);
+  -o-transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
+}
+/*
+* banner
+*/
+.banner_contain{
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  height: 700px;
+  .bd{
+    height: 700px;
+    ul{
+      margin: auto;
+      img{
+        width: 100%;
+        height: 700px;
+      }
+    }
+  }
+  .hd{
+    ul{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      font-size: 0;
+      text-align: center;
+      z-index: 100;
+      li{
+        background: #fcfcfe;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 6px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      li.on{
+        background: #144620;
+      }
+    }
+  }
+}
+/*
+* 产品加列表
+*/
+.blend_contain{
+  margin: 50px auto 120px;
+  .wh(1200px, auto);
+  .blend_goods{
+    margin-bottom: 75px;
+    .wh(100%, 410px);
+  }
+  .blend_img{
+    .wh(560px, 410px);
+    overflow: hidden;
+    img{
+      display: block;
+      .wh(100%, 100%);
+      .tr();
+    }
+  }
+  .blend_img:hover img{
+    .img();
+  }
+  .blend_text{
+    .wh(600px, 410px);
+    h2{
+      padding-top: 35px;
+      margin-bottom: 20px;
+      .whh(100%, 32px);
+      .font(30px, @3);
+      span{
+        display: inline-block;
+        margin-left: 12px;
+      }
+    }
+    b{
+      display: block;
+      margin-bottom: 20px;
+      .wh(80px, 3px);
+      .bgs(#00851f);
+    }
+    h6{
+      margin-bottom: 25px;
+      .whh(100%, 20px);
+      .font(18px, @3);
+    }
+    p{
+      margin-bottom: 30px;
+      .wh(100%, auto);
+      line-height: 30px;
+      .font(16px, @6);
+    }
+    a{
+      display: block;
+      .whh(91px, 33px);
+      .font(14px, @6);
+      text-align: center;
+      border: 1px solid #757575;
+    }
+  }
+  .blend_list{
+    .wh(1200px, 240px);
+    li{
+      float: left;
+      margin: 0 56px;
+      .wh(188px, 240px);
+      p{
+        .whh(100%, 22px);
+        .font(20px, @3);
+        text-align: center;
+      }
+    }
+    li:hover .blend_bg{
+      .bgs(#144620);
+      i{
+        .bgy(93px);
+      }
+    }
+  }
+  .blend_bg{
+    margin: 0 auto 30px;
+    .wh(188px, 188px);
+    border-radius: 50%;
+    .bgs(@b);
+    overflow: hidden;
+    i{
+      display: block;
+      margin: 48.5px 45.5px;
+      .wh(97px, 91px);
+      background: url(../img/index/elves.png) no-repeat;
+      .bgy(0);
+    }
+    i.blend_ia{
+      .bgx(0);
+    }
+    i.blend_ib{
+      .bgx(99px);
+    }
+    i.blend_ic{
+      .bgx(198px);
+    }
+    i.blend_id{
+      .bgx(297px);
+    }
+  }
+}
+/*
+* 健康并非奢想
+*/
+.health_contain{
+  min-width: 1200px;
+  .wh(100%, 750px);
+  background: url(../img/index/bg.png) no-repeat;
+  background-size: 100% 100%;
+  .health_title{
+    margin: 0 auto;
+    padding: 55px 0 15px;
+    .wh(1200px, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 15px;
+      .whh(100%, 32px);
+      .font(30px, @3);
+    }
+    b{
+      display: block;
+      margin: auto;
+      margin-bottom: 25px;
+      .wh(80px, 3px);
+      .bgs(#00851f);
+    }
+    p{
+      .whh(100%, 16px);
+      .font(14px, @6);
+    }
+  }
+  .health_wheel{
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    overflow: hidden;
+    .bd{
+      width: 100%;
+      ul{
+        zoom: 1;
+        overflow: hidden;
+        li{
+          float: left;
+          margin: 10px 15px;
+          width: 370px;
+          height: 480px;
+          .bgs(@b);
+          box-shadow: 0 3px 7px 1px #909090;
+          .health_img{
+            margin-bottom: 30px;
+            .wh(370px, 280px);
+            overflow: hidden;
+            img{
+              display: block;
+              .wh(370px, 280px);
+              .tr();
+            }
+          }
+          .health_img:hover img{
+            .img();
+          }
+          .health_text{
+            padding: 0 40px;
+            .wh(290px, auto);
+            h2{
+              margin-bottom: 12px;
+              .whh(100%, 20px);
+              .font(18px, @3);
+            }
+            p{
+              margin-bottom: 28px;
+              .wh(100%, auto);
+              line-height: 23px;
+              .font(14px, @6);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+            a{
+              display: block;
+              .whh(288px, 45px);
+              .font(14px, @3);
+              text-align: center;
+              border: 1px solid #d6d6d6;
+            }
+          }
+        }
+      }
+    }
+    a.next{
+      position: absolute;
+      top: 212px;
+      left: 0;
+      width: 76px;
+      height: 76px;
+      background: url(../img/index/arrow_left.png);
+      .bgp(7px, 3px);
+      z-index: 99;
+    }
+    a.prev{
+      position: absolute;
+      top: 212px;
+      right: 0;
+      width: 76px;
+      height: 76px;
+      background: url(../img/index/arrow_right.png);
+      .bgp(7px, 3px);
+      z-index: 99;
+    }
+  }
+}
+/*
+* 故事及其他
+*/
+.story_contain{
+  margin: 20px auto 30px;
+  .wh(1200px, auto);
+  overflow: hidden;
+  .story_left, .story_center, .story_right{
+    float: left;
+    margin: 30px;
+    .wh(340px, 660px);
+    overflow: hidden;
+  }
+  .story_header{
+    margin-bottom: 20px;
+    .wh(100%, 50px);
+    .story_icon{
+      float: left;
+      .whh(65px, 50px);
+      img{
+        display: inline-block;
+        .wh(auto, auto);
+        max-width: 65px;
+        max-height: 50px;
+        vertical-align: middle;
+      }
+    }
+    h2{
+      float: left;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      .whh(275px, 22px);
+      .font(20px, @3);
+    }
+    p{
+      float: left;
+      .whh(275px, 14px);
+      .font(12px, @9);
+    }
+  }
+  .story_img{
+    position: relative;
+    display: block;
+    margin-bottom: 18px;
+    .wh(340px, 270px);
+    overflow: hidden;
+    img{
+      display: block;
+      .wh(100%, 100%);
+      .tr();
+    }
+    i{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 340px;
+      height: 270px;
+      background: url(../img/index/vedio_start.png) center center no-repeat;
+    }
+  }
+  .story_middle{
+    display: block;
+    margin-bottom: 25px;
+    .whh(100%, 16px);
+    .font(14px, #eb0000);
+  }
+  p{
+    margin-bottom: 15px;
+    .wh(100%, auto);
+    line-height: 25px;
+    .font(12px, #868f98);
+  }
+  .story_list{
+    margin-bottom: 10px;
+    .wh(100%, 156px);
+    overflow: hidden;
+    li{
+      position: relative;
+      padding-left: 10px;
+      .whh(330px, 30px);
+      a{
+        .font(14px, #677889);
+      }
+    }
+    li:before{
+      position: absolute;
+      top: 13px;
+      left: 0;
+      .wh(4px, 4px);
+      content: "";
+      .bgs(#40ba3a);
+    }
+  }
+  .story_more{
+    display: block;
+    .whh(110px, 30px);
+    .story_line{
+      float: left;
+      .wh(10px, 30px);
+      border-left: 1px solid #000;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+      transition: all 0.5s ease 0s;
+    }
+    span{
+      float: left;
+      .font(14px, #f58080);
+    }
+    .story_arrow{
+      float: left;
+      margin-left: 10px;
+      .wh(30px, 30px);
+      border-radius: 50%;
+      background: url(../img/index/elves.png) no-repeat;
+      .bgx(396px);
+      .bgy(0);
+    }
+  }
+  .story_img:hover img{
+    .img();
+  }
+  .story_more:hover{
+    .story_line{
+      -webkit-transform: scaleY(0.5);
+      -moz-transform: scaleY(0.5);
+      -o-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      border-color: #eb0000;
+    }
+    .story_arrow{
+      .bgy(32px);
+    }
+  }
+}
+/*
+* 两张图片
+*/
+.picture_contain{
+  margin: 0 auto 50px;
+  .wh(1200px, 310px);
+  overflow: hidden;
+  .picture_one, .picture_two{
+    float: left;
+    .wh(580px, 310px);
+    img{
+      display: block;
+      .wh(100%, 100%);
+    }
+  }
+  .picture_one{
+    margin-right: 40px;
+  }
+}

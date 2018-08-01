@@ -1,0 +1,235 @@
+@charset "utf-8";
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgs(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+.tr(){
+  -webkit-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.img(){
+  -webkit-transform: scale(1.05,1.05);
+  -ms-transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
+}
+/*
+* banner
+*/
+.banner_contain{
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  height: 700px;
+  .bd{
+    height: 700px;
+    ul{
+      margin: auto;
+      img{
+        width: 100%;
+        height: 700px;
+      }
+    }
+  }
+  .hd{
+    ul{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      font-size: 0;
+      text-align: center;
+      z-index: 100;
+      li{
+        background: #fcfcfe;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 6px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      li.on{
+        background: #144620;
+      }
+    }
+  }
+}
+/*
+* 团队活动
+*/
+.activity_contain{
+  margin: 40px auto 25px;
+  .wh(1200px, auto);
+  overflow-x: hidden;
+  .activity_title{
+    padding-bottom: 35px;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, 32px);
+      .font(30px, @3);
+      text-align: center;
+    }
+  }
+  .activity_list{
+    .wh(1215px, 660px);
+    li{
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      .wh(390px, 315px);
+      overflow: hidden;
+      img{
+        display: block;
+        .wh(100%, 100%);
+        .tr();
+      }
+    }
+    li:hover img{
+      .img();
+    }
+  }
+}
+/*
+* 授权查询
+*/
+.query_contain{
+  margin: 0 auto 50px;
+  .wh(1200px, auto);
+  .query_title{
+    padding-bottom: 15px;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, 32px);
+      .font(30px, @3);
+      text-align: center;
+    }
+  }
+  .query_box{
+    margin: auto;
+    .wh(1000px, 460px);
+    overflow: hidden;
+    .bgs(#fafafa);
+  }
+  .query_left{
+    margin-top: 50px;
+    margin-left: 80px;
+    .wh(470px, 300px);
+    border-right: 1px solid #ccc;
+  }
+  .query_text{
+    margin-bottom: 20px;
+    .wh(430px, auto);
+    h6{
+      margin-bottom: 12px;
+      .whh(100%, 14px);
+      .font(12px, red);
+      text-align: center;
+    }
+    p{
+      .wh(100%, auto);
+      line-height: 24px;
+      .font(12px, @3);
+      text-align: center;
+    }
+  }
+  .query_form{
+    .wh(430px, auto);
+    overflow: hidden;
+  }
+  .query_select{
+    float: left;
+    .wh(90px, auto);
+    span{
+      display: block;
+      padding-left: 10px;
+      .whh(78px, 34px);
+      .font(14px, #22a5df);
+      border: 1px solid #28afdc;
+      border-radius: 3px;
+      background: #e0e0e0 url(../img/agent/select.png) no-repeat 68px center;
+      cursor: pointer;
+    }
+    .query_list{
+      display: none;
+      .wh(88px, auto);
+      border: 1px solid #28afdc;
+      border-radius: 3px;
+      li{
+        padding-left: 10px;
+        .whh(78px, 34px);
+        .font(14px, #22a5df);
+        .bgs(@b);
+        cursor: pointer;
+      }
+      li:hover{
+        .bgs(#e0e0e0);
+      }
+    }
+  }
+  .query_input{
+    float: right;
+    .wh(310px, auto);
+    #query_num{
+      margin-bottom: 10px;
+      padding-left: 30px;
+      .wh(278px, 34px);
+      border: 1px solid #e4e2dc;
+      font-size: 14px;
+    }
+    p{
+      margin-bottom: 20px;
+      .whh(100%, 14px);
+      .font(12px, #7c7c7c);
+      text-align: center;
+    }
+    .query_btn{
+      .whh(100px, 38px);
+      .font(14px, @b);
+      text-align: center;
+      border: none;
+      .bgs(#78cee4);
+      cursor: pointer;
+    }
+    .query_submit{
+      width: 140px;
+      margin-left: 10px;
+    }
+    .query_report{
+      margin-right: 10px;
+    }
+  }
+  .query_right{
+    margin-top: 50px;
+    margin-left: 60px;
+    .wh(300px, 300px);
+    img{
+      .wh(100%, 100%);
+    }
+  }
+}

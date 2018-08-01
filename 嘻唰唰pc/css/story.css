@@ -1,0 +1,132 @@
+@charset "utf-8";
+/*
+* banner
+*/
+.banner_contain {
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .bd {
+  height: 700px;
+}
+.banner_contain .bd ul {
+  margin: auto;
+}
+.banner_contain .bd ul img {
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .hd ul {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  z-index: 100;
+}
+.banner_contain .hd ul li {
+  background: #fcfcfe;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.banner_contain .hd ul li.on {
+  background: #144620;
+}
+/*
+* 切换故事列表
+*/
+.story_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.story_contain .story_btn {
+  margin: 50px auto 30px;
+  width: 945px;
+  height: 50px;
+}
+.story_contain .story_btn li {
+  float: left;
+  margin: 0 25px;
+  width: 261px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  color: #054309;
+  background-color: #ffffff;
+  text-align: center;
+  border: 2px solid #054309;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.story_contain .story_btn li.on {
+  color: #ffffff;
+  background-color: #054309;
+}
+.story_contain .story_box {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+}
+.story_contain .story_list {
+  width: 788px;
+  height: 700px;
+  overflow: hidden;
+}
+.story_contain .story_list li {
+  margin-bottom: 20px;
+  padding: 0 18px 0 10px;
+  width: 760px;
+  height: 119px;
+  border-bottom: 1px dotted #054309;
+}
+.story_contain .story_list li h2 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #054309;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.story_contain .story_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.story_contain .story_img {
+  position: relative;
+  margin-top: 135px;
+  width: 341px;
+  height: 426px;
+  border: 2px solid #757575;
+}
+.story_contain .story_img img {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 345px;
+  height: 430px;
+}
+.page-number-wrapper {
+  clear: both;
+  margin: auto;
+  padding: 23px 0 43px;
+  width: 1200px;
+}

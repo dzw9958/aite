@@ -1,0 +1,429 @@
+@charset "utf-8";
+/*
+* banner
+*/
+.banner_contain {
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .bd {
+  height: 700px;
+}
+.banner_contain .bd ul {
+  margin: auto;
+}
+.banner_contain .bd ul img {
+  width: 100%;
+  height: 700px;
+}
+.banner_contain .hd ul {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  z-index: 100;
+}
+.banner_contain .hd ul li {
+  background: #fcfcfe;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.banner_contain .hd ul li.on {
+  background: #144620;
+}
+/*
+* 主体标题
+*/
+.title_contain {
+  width: 100%;
+  height: 60px;
+  min-width: 1200px;
+  background-color: #eeeeee;
+}
+.title_contain .title_box {
+  margin: auto;
+  width: 1200px;
+  height: 60px;
+}
+.title_contain h1 {
+  float: left;
+  margin-right: 100px;
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+  font-size: 26px;
+  color: #333333;
+}
+.title_contain .title_list {
+  float: left;
+  width: auto;
+  height: 60px;
+}
+.title_contain .title_list li {
+  float: left;
+  margin-right: 30px;
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+.title_contain .title_list li.on {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #054309;
+  border-bottom: 2px solid #054309;
+}
+/*
+* 产品加列表
+*/
+.blend_contain {
+  margin: 50px auto 60px;
+  width: 1200px;
+  height: auto;
+}
+.blend_contain .blend_goods {
+  width: 100%;
+  height: 410px;
+}
+.blend_contain .blend_img {
+  width: 560px;
+  height: 410px;
+  overflow: hidden;
+}
+.blend_contain .blend_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 3s ease 0s;
+  -o-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
+}
+.blend_contain .blend_img:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.blend_contain .blend_text {
+  width: 600px;
+  height: 410px;
+}
+.blend_contain .blend_text h2 {
+  padding-top: 35px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #333333;
+}
+.blend_contain .blend_text b {
+  display: block;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 3px;
+  background-color: #00851f;
+}
+.blend_contain .blend_text h6 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.blend_contain .blend_text p {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.blend_contain .blend_text a {
+  display: block;
+  width: 91px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  border: 1px solid #757575;
+}
+/*
+* 公司新闻
+*/
+.news_contain {
+  width: 100%;
+  height: 800px;
+  min-width: 1200px;
+  background: url(../img/about/bg.png) no-repeat center;
+}
+.news_contain .news_title {
+  margin: auto;
+  padding: 60px 0 50px;
+  width: 1200px;
+  height: auto;
+}
+.news_contain .news_title h1 {
+  padding-bottom: 25px;
+  width: 146px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #ffffff;
+  border-bottom: 3px solid #054309;
+}
+.news_contain .news_box {
+  margin: auto;
+  width: 1200px;
+  height: 560px;
+  background: url(../img/about/opacity.png);
+}
+.news_contain .news_list {
+  padding: 20px 40px 0;
+  width: 1120px;
+  height: 440px;
+}
+.news_contain .news_list li {
+  position: relative;
+  width: 520px;
+  height: 130px;
+}
+.news_contain .news_list li a {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.news_contain .news_list li h2 {
+  margin-bottom: 10px;
+  width: 390px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news_contain .news_list li p {
+  width: 390px;
+  height: 40px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.news_contain .news_list li img {
+  margin-top: 4px;
+  width: 96px;
+  height: 64px;
+}
+.news_contain .news_list li span {
+  position: absolute;
+  top: 27px;
+  width: 138px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.news_contain .news_list li s {
+  position: absolute;
+  top: 25px;
+  width: 26px;
+  height: 21px;
+  background: url(../img/about/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.news_contain .news_list li i {
+  display: block;
+  margin-top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #2a5368;
+}
+.news_contain .news_list li b {
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 45px;
+  background-color: #ffffff;
+}
+.news_contain .news_list li h2,
+.news_contain .news_list li img,
+.news_contain .news_list li span,
+.news_contain .news_list li i {
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.news_contain .news_list li.fl h2,
+.news_contain .news_list li.fl p {
+  float: left;
+}
+.news_contain .news_list li.fl img {
+  float: right;
+}
+.news_contain .news_list li.fl span {
+  right: -217px;
+  text-align: left;
+}
+.news_contain .news_list li.fl s {
+  right: -51px;
+  background-position-x: 0;
+}
+.news_contain .news_list li.fl i {
+  margin-left: 10px;
+}
+.news_contain .news_list li.fl b {
+  right: -41px;
+}
+.news_contain .news_list li.fr h2,
+.news_contain .news_list li.fr p {
+  float: right;
+}
+.news_contain .news_list li.fr img {
+  float: left;
+}
+.news_contain .news_list li.fr span {
+  left: -217px;
+  text-align: right;
+}
+.news_contain .news_list li.fr s {
+  left: -51px;
+  background-position-x: -28px;
+}
+.news_contain .news_list li.fr i {
+  margin-left: 5px;
+}
+.news_contain .news_list li.fr b {
+  left: -41px;
+}
+.news_contain .news_list li.news_special {
+  margin-top: 66px;
+}
+.news_contain .news_list li:hover h2 {
+  color: #054309;
+}
+.news_contain .news_list li:hover span {
+  font-size: 16px;
+}
+.news_contain .news_list li:hover i {
+  background-color: #ffa341;
+}
+.news_contain .news_list li:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.news_contain .news_button {
+  padding: 0 40px;
+  width: 1120px;
+  height: auto;
+}
+.news_contain .news_button button {
+  display: block;
+  margin-left: 452.5px;
+  width: 213px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.news_contain .news_button button:focus {
+  outline: 0;
+}
+/*
+* 联系我们
+*/
+.store_contain {
+  margin: 0 auto 50px;
+  width: 1200px;
+  height: auto;
+}
+.store_contain .store_title {
+  padding: 40px 0 50px;
+  width: 1200px;
+  height: auto;
+}
+.store_contain .store_title h1 {
+  padding-bottom: 25px;
+  width: 146px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  border-bottom: 3px solid #174f1b;
+}
+.store_contain .store_box {
+  width: 1200px;
+  height: 530px;
+  overflow: hidden;
+}
+.store_contain .store_left {
+  width: 495px;
+  height: 530px;
+}
+.store_contain .store_img {
+  width: 100%;
+  height: 210px;
+}
+.store_contain .store_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.store_contain .store_text {
+  padding: 30px 30px 0;
+  width: 435px;
+  height: 290px;
+  background-color: #118b48;
+}
+.store_contain .store_text p {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 35px;
+  width: 400px;
+  height: 40px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.store_contain .store_text i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 20px;
+  background: url(../img/about/elves.png) no-repeat;
+  background-position: -56px 0;
+}
+.store_contain .store_map {
+  width: 705px;
+  height: 530px;
+}

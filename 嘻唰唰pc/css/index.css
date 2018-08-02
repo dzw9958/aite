@@ -331,7 +331,7 @@
   float: left;
   margin: 30px;
   width: 340px;
-  height: 660px;
+  height: auto;
   overflow: hidden;
 }
 .story_contain .story_header {
@@ -374,7 +374,6 @@
 .story_contain .story_img {
   position: relative;
   display: block;
-  margin-bottom: 18px;
   width: 340px;
   height: 270px;
   overflow: hidden;
@@ -399,7 +398,8 @@
 }
 .story_contain .story_middle {
   display: block;
-  margin-bottom: 25px;
+  margin-top: 48px;
+  margin-bottom: 15px;
   width: 100%;
   height: 16px;
   line-height: 16px;

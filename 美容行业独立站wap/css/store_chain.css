@@ -173,7 +173,6 @@ body {
   height: 12.73333333rem;
   background: url(../img/store_chain/bg2.png) no-repeat;
   background-size: 10rem 12.73333333rem;
-  overflow-x: hidden;
 }
 .core_contain .core_title {
   padding: 0.66666667rem 0;
@@ -182,11 +181,18 @@ body {
 .core_contain .core_title p {
   color: #ffffff;
 }
+.core_contain .core_box {
+  width: 10rem;
+  height: 9.73333333rem;
+  overflow: hidden;
+}
 .core_contain .core_list {
   position: relative;
   left: 0;
   width: 20rem;
   height: 9.6rem;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
   transition: left .5s linear;
 }
 .core_contain .core_list li {
@@ -259,21 +265,80 @@ body {
 .core_contain .core_list li .core_il {
   background-position-x: -2.08rem;
 }
+.core_contain .core_sub {
+  margin: auto;
+  width: 0.88rem;
+  height: 0.13333333rem;
+}
+.core_contain .core_sub li {
+  float: left;
+  margin: 0 0.10666667rem;
+  width: 0.13333333rem;
+  height: 0.13333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #ffffff;
+  -webkit-transition: width .5s linear;
+  -o-transition: width .5s linear;
+  transition: width .5s linear;
+}
+.core_contain .core_sub li.on {
+  width: 0.32rem;
+}
 /*
-* 板块
+* 一体化门店管理，引爆线下门店热度板块
 */
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
+.heat_contain {
+  width: 10rem;
+  height: auto;
+}
+.heat_contain .heat_title {
+  padding: 0.66666667rem 0 0.4rem;
+}
+.heat_contain .heat_title p {
+  width: 9.09333333rem;
+}
+.heat_contain .heat_list {
+  margin: 0 0.13333333rem 0.53333333rem;
+  width: 9.73333333rem;
+  height: 10.66666667rem;
+}
+.heat_contain .heat_list li {
+  float: left;
+  margin: 0.13333333rem;
+  padding-top: 0.8rem;
+  width: 4.57333333rem;
+  height: 4.24rem;
+  text-align: center;
+  border: 0.01333333rem solid #dddddd;
+}
+.heat_contain .heat_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.73333333rem;
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+}
+.heat_contain .heat_list li h2 {
+  margin-bottom: 0.33333333rem;
+  width: 100%;
+  height: 0.33333333rem;
+  line-height: 0.33333333rem;
+  font-size: 0.30666667rem;
+  color: #333333;
+}
+.heat_contain .heat_list li b {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.26666667rem;
+  width: 0.33333333rem;
+  height: 0.06666667rem;
+  background-color: #333333;
+}
+.heat_contain .heat_list li p {
+  margin: auto;
+  width: 2.26666667rem;
+  height: auto;
+  line-height: 0.34666667rem;
+  font-size: 0.2rem;
+  color: #666666;
+}

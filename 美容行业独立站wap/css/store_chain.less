@@ -175,17 +175,22 @@ body{
     .wh(750/@r, 955/@r);
     background: url(../img/store_chain/bg2.png) no-repeat;
     background-size: 750/@r 955/@r;
-    overflow-x: hidden;
     .core_title{
         padding: 50/@r 0;
         h1, p{
             color: @b;
         }
     }
+    .core_box{
+        .wh(750/@r, 730/@r);
+        overflow: hidden;
+    }
     .core_list{
         position: relative;
         left: 0;
         .wh(1500/@r, 720/@r);
+        -webkit-transition: left .5s linear;
+        -o-transition: left .5s linear;
         transition: left .5s linear;
         li{
             float: left;
@@ -234,22 +239,69 @@ body{
             }
         }
     }
+    .core_sub{
+        margin: auto;
+        .wh(66/@r, 10/@r);
+        li{
+            float: left;
+            margin: 0 8/@r;
+            .wh(10/@r, 10/@r);
+            border-radius: 5/@r;
+            .bgs(@b);
+            -webkit-transition: width .5s linear;
+            -o-transition: width .5s linear;
+            transition: width .5s linear;
+        }
+        li.on{
+            width: 24/@r;
+        }
+    }
 }
 /*
-* 板块
+* 一体化门店管理，引爆线下门店热度板块
 */
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
-/*
-* 板块
-*/
+.heat_contain{
+    .wh(750/@r, auto);
+    .heat_title{
+        padding: 50/@r 0 30/@r;
+        p{
+            width: 682/@r;
+        }
+    }
+    .heat_list{
+        margin: 0 10/@r 40/@r;
+        .wh(730/@r, 800/@r);
+        li{
+            float: left;
+            margin: 10/@r;
+            padding-top: 60/@r;
+            .wh(343/@r, 318/@r);
+            text-align: center;
+            border: 1/@r solid #dddddd;
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: 55/@r;
+                .wh(85/@r, 85/@r);
+            }
+            h2{
+                margin-bottom: 25/@r;
+                .whh(100%, 25/@r);
+                .font(23/@r, @3);
+            }
+            b{
+                display: block;
+                margin: auto;
+                margin-bottom: 20/@r;
+                .wh(25/@r, 5/@r);
+                .bgs(@3);
+            }
+            p{
+                margin: auto;
+                .wh(170/@r, auto);
+                line-height: 26/@r;
+                .font(15/@r, @6);
+            }
+        }
+    }
+}

@@ -228,8 +228,23 @@
     margin-top: 50px;
     margin-left: 60px;
     .wh(300px, 300px);
-    img{
-      .wh(100%, 100%);
+    overflow: hidden;
+    // img{
+    //   .wh(100%, 100%);
+    // }
+    .query_one, .query_two, .query_three{
+      margin: 10px;
+      .wh(280px, 280px);
+      p{
+        .wh(100%, auto);
+        line-height: 30px;
+        .font(20px, @3);
+      }
+    }
+    .query_three{
+      p{
+        color: red;
+      }
     }
   }
 }

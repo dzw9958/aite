@@ -233,22 +233,35 @@
   height: 300px;
   overflow: hidden;
 }
-.query_contain .query_right .query_one,
-.query_contain .query_right .query_two,
-.query_contain .query_right .query_three {
-  margin: 10px;
-  width: 280px;
-  height: 280px;
+.query_contain .query_one {
+  width: 300px;
+  height: 300px;
 }
-.query_contain .query_right .query_one p,
-.query_contain .query_right .query_two p,
-.query_contain .query_right .query_three p {
+.query_contain .query_one .query_type {
+  width: 120px;
+  height: 300px;
+  text-align: center;
+}
+.query_contain .query_one .query_data {
+  width: 180px;
+  height: 300px;
+}
+.query_contain .query_one p {
   width: 100%;
-  height: auto;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   font-size: 20px;
   color: #333333;
 }
-.query_contain .query_right .query_three p {
+.query_contain .query_two {
+  width: 300px;
+  height: 300px;
+}
+.query_contain .query_two p {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  font-size: 20px;
   color: red;
+  text-align: center;
 }

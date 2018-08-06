@@ -232,19 +232,27 @@
     // img{
     //   .wh(100%, 100%);
     // }
-    .query_one, .query_two, .query_three{
-      margin: 10px;
-      .wh(280px, 280px);
-      p{
-        .wh(100%, auto);
-        line-height: 30px;
-        .font(20px, @3);
-      }
+  }
+  .query_one{
+    .wh(300px, 300px);
+    .query_type{
+      .wh(120px, 300px);
+      text-align: center;
     }
-    .query_three{
-      p{
-        color: red;
-      }
+    .query_data{
+      .wh(180px, 300px);
+    }
+    p{
+      .whh(100%, 50px);
+      .font(20px, @3);
+    }
+  }
+  .query_two{
+    .wh(300px, 300px);
+    p{
+      .whh(300px, 300px);
+      .font(20px, red);
+      text-align: center;
     }
   }
 }

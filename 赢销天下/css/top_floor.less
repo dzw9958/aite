@@ -1,0 +1,661 @@
+@charset "utf-8";
+body{
+  background-color: #ffffff;
+}
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.font(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgc(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* banner板块
+*/
+.banner_contain{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 下列板块通用
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+  margin: auto;
+  .wh(1200px, auto);
+  overflow-x: hidden;
+}
+.common_title{
+  margin: auto;
+  .wh(1200px, auto);
+  text-align: center;
+  h1{
+    .whh(100%, 42px);
+    .font(40px, @3);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p{
+    margin: auto;
+    .wh(1200px, auto);
+    line-height: 30px;
+    .font(18px, @6);
+  }
+  b{
+    display: inline-block;
+    .wh(36px, 0);
+  }
+}
+/*
+* 您管理企业是否遇到这些“痛”？板块
+*/
+.pain_contain{
+  .wh(100%, auto);
+  .bgc(#fffbf4);
+  overflow: hidden;
+  .pain_title{
+    margin: auto;
+    padding: 50px 0;
+    .wh(1200px, auto);
+    h1{
+      .whh(100%, 56px);
+      .font(40px, @3);
+      font-weight: bold;
+      text-align: center;
+    }
+    span{
+      color: #ff6c00;
+    }
+    b{
+      font-size: 54px;
+    }
+  }
+  .pain_box{
+    margin: auto;
+    margin-bottom: 20px;
+    .wh(1200px, 520px);
+    .bgc(#fcf7ef);
+    box-shadow: 0px 8px 22px 2px #fde0ce;
+  }
+  .pain_list{
+    .wh(100%, 520px);
+    li{
+      float: left;
+      .wh(400px, 260px);
+      text-align: center;
+      .pain_img{
+        padding-top: 50px;
+        .wh(100%, 90px);
+        img{
+          display: block;
+          margin: auto;
+          .wh(auto, auto);
+          max-width: 400px;
+          max-height: 90px;
+        }
+      }
+      h2{
+        margin-bottom: 5px;
+        .whh(100%, 24px);
+        .font(22px, @3);
+        font-weight: bold;
+      }
+      p{
+        .whh(100%, 24px);
+        .font(16px, @6);
+      }
+    }
+  }
+}
+/*
+* 成功定律板块
+*/
+.success_contain{
+  .wh(100%, auto);
+  .bgc(#fffbf4);
+  .success_title{
+    padding: 50px 0;
+  }
+  .success_box{
+    margin: auto;
+    .wh(1200px, 200px);
+    overflow: hidden;
+  }
+  .success_list{
+    .wh(1212px, 180px);
+    li{
+      position: relative;
+      float: left;
+      margin-right: 13px;
+      .wh(290px, 180px);
+      .bgc(#cfcfcf);
+      transition: all .5s linear;
+      h2{
+        position: absolute;
+        top: 15px;
+        left: 12.5px;
+        .whh(265px, 24px);
+        .font(22px, @3);
+        transition: all .5s linear;
+      }
+      p{
+        position: absolute;
+        top: 55px;
+        left: 12.5px;
+        .wh(265px, auto);
+        line-height: 30px;
+        .font(16px, @3);
+        transition: all .5s linear;
+        z-index: 10;
+      }
+      i{
+        position: absolute;
+        top: 113px;
+        left: 207px;
+        .wh(91px, 100px);
+        background: url(../img/top_floor/elves.png) no-repeat;
+        .bgy(0);
+      }
+      i.success_ia{
+        .bgx(0);
+      }
+      i.success_ib{
+        .bgx(93px);
+      }
+      i.success_ic{
+        .bgx(186px);
+      }
+      i.success_id{
+        .bgx(279px);
+      }
+    }
+    li:hover{
+      .bgc(#ff6c00);
+      h2, p{
+        color: @b;
+      }
+    }
+  }
+}
+/*
+* 创新商业模式与互联网深度整合顶层设计者板块
+*/
+.innovate_contain{
+  .wh(100%, auto);
+  .bgc(#fffbf4);
+  .innovate_title{
+    padding: 50px 0;
+  }
+  .innovate_box{
+    margin: auto;
+    .wh(1200px, 260px);
+    overflow: hidden;
+  }
+  .innovate_list{
+    .wh(1242px, 210px);
+    li{
+      position: relative;
+      float: left;
+      margin-right: 37.5px;
+      .wh(210px, 210px);
+      img{
+        display: block;
+        .wh(210px, 210px);
+      }
+      p{
+        position: absolute;
+        top: 155px;
+        left: 0;
+        .whh(100%, 16px);
+        .font(14px, @3);
+        text-align: center;
+      }
+    }
+  }
+}
+/*
+* 敏锐的洞察力+商业模式创新板块
+*/
+.keen_contain{
+  .wh(100%, 670px);
+  min-width: 1200px;
+  background: url(../img/top_floor/bg2.png) center no-repeat;
+  .keen_title{
+    padding: 70px 0 45px;
+    h1, p{
+      color: @b;
+    }
+  }
+  .keen_box{
+    margin: auto;
+    .wh(1200px, auto);
+    overflow-x: hidden;
+  }
+  .keen_btn{
+    margin-bottom: 30px;
+    .wh(1212px, 125px);
+    li{
+      position: relative;
+      float: left;
+      padding: 8px 10px;
+      margin-right: 7.5px;
+      .wh(145px, 109px);
+      border-radius: 5px;
+      .bgc(#383838);
+      h2{
+        margin-bottom: 4px;
+        .wh(100%, auto);
+        line-height: 30px;
+        .font(24px, #fcfcfc);
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 24px;
+        .font(16px, #fcfcfc);
+      }
+    }
+    li:after{
+      display: none;
+      position: absolute;
+      bottom: -33px;
+      left: 50%;
+      margin-left: -7.5px;
+      content: "";
+      .wh(15px, 8px);
+      background: url(../img/top_floor/elves.png) no-repeat;
+      .bgp(371px, 0);
+    }
+    li.on{
+      padding: 5px 7px;
+      border: 3px solid #ff6c00;
+    }
+    li.on:after{
+      display: block;
+    }
+  }
+  .keen_switch{
+    padding: 20px 0;
+    .wh(1200px, 200px);
+    text-align: center;
+    border-radius: 6px;
+    .bgc(#f7f7f7);
+    li{
+      display: none;
+      .wh(100%, 200px);
+      h2{
+        margin-bottom: 20px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+      }
+      p{
+        margin: auto;
+        .wh(800px, auto);
+        line-height: 30px;
+        .font(18px, @6);
+      }
+    }
+    li.on{
+      display: block;
+    }
+  }
+}
+/*
+* 传统行业+互联网，从何开始？板块
+*/
+.start_contain{
+  .start_title{
+    padding: 50px 0;
+  }
+  .start_list{
+    position: relative;
+    padding-bottom: 50px;
+    .wh(1200px, 385px);
+    background: url(../img/top_floor/img.png) no-repeat;
+  }
+  .start_a, .start_b, .start_c{
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    .whh(180px, 70px);
+    .font(25px, @b);
+    text-align: center;
+  }
+  .start_a{
+    top: 9px;
+  }
+  .start_b{
+    top: 161px;
+    h2{
+      margin: 5px 0;
+      .whh(100%, 30px);
+    }
+    p{
+      .whh(100%, 20px);
+      .font(18px, @b);
+    }
+  }
+  .start_c{
+    top: 310px;
+  }
+  .start_d, .start_e, .start_f, .start_g,
+  .start_h, .start_i, .start_j, .start_k{
+    position: absolute;
+    .whh(182px, 60px);
+    .font(20px, @3);
+    text-align: center;
+  }
+  .start_d, .start_f, .start_h, .start_j{
+    left: 2px;
+  }
+  .start_e, .start_g, .start_i, .start_k{
+    right: 2px;
+  }
+  .start_d, .start_e{
+    top: 3px;
+  }
+  .start_f, .start_g{
+    top: 109px;
+  }
+  .start_h, .start_i{
+    top: 216px;
+  }
+  .start_j, .start_k{
+    top: 322px;
+  }
+}
+/*
+* 为企业量身定制的实战课程板块
+*/
+.made_contain{
+  .wh(100%, 940px);
+  min-width: 1200px;
+  background: url(../img/top_floor/bg.png) center no-repeat;
+  .made_title{
+    padding: 65px 0;
+  }
+  .made_box{
+    margin: auto;
+    .wh(1200px, auto);
+    overflow-x: hidden;
+  }
+  .made_list{
+    .wh(1230px, 625px);
+    li{
+      float: left;
+      margin-right: 30px;
+      padding: 0 40px;
+      .wh(300px, 625px);
+      .bgc(@b);
+      b{
+        display: block;
+        padding-top: 55px;
+        margin-bottom: 30px;
+        .whh(100%, 98px);
+        .font(96px, @9);
+        text-align: center;
+      }
+      h2{
+        padding-bottom: 28px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid @9;
+      }
+      h3{
+        margin: 28px 0 5px;
+        .whh(100%, 20px);
+        .font(18px, @3);
+        font-weight: bold;
+      }
+      p{
+        position: relative;
+        padding-left: 30px;
+        .wh(270px, auto);
+        line-height: 30px;
+        .font(16px, @6);
+      }
+      p:before{
+        position: absolute;
+        top: 12.5px;
+        left: 0;
+        content: "";
+        .wh(5px, 5px);
+        border-radius: 50%;
+        .bgc(#5e5e5e);
+      }
+    }
+    li:hover{
+      .bgc(#ff6c00);
+      b, h2, h3, p{
+        color: @b;
+        border-bottom-color: @b;
+      }
+      p:before{
+        .bgc(@b);
+      }
+    }
+  }
+}
+/*
+* 全方位为您打造商业模式板块
+*/
+.make_contain{
+  .make_title{
+    padding: 50px 0 20px;
+    p{
+      width: 1076px;
+    }
+  }
+  .make_box{
+    .whh(1200px, 460px);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(auto, auto);
+      max-width: 1200px;
+      max-height: 460px;
+      vertical-align: middle;
+    }
+  }
+}
+/*
+* 我们提供的服务板块
+*/
+.provide_contain{
+  margin-bottom: 30px;
+  .provide_title{
+    padding: 50px 0;
+  }
+  .provide_list{
+    margin-bottom: 50px;
+    .wh(1248px, 230px);
+    li{
+      float: left;
+      margin-right: 48px;
+      .wh(368px, 200px);
+      img{
+        display: block;
+        margin-bottom: 20px;
+        .wh(368px, 139px);
+      }
+      h2{
+        margin-bottom: 15px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+        font-weight: bold;
+      }
+      p{
+        .whh(100%, 22px);
+        .font(20px, @6);
+        span{
+          color: #ff6c00;
+        }
+        b{
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  a{
+    display: block;
+    margin: auto;
+    .whh(405px, 75px);
+    .font(36px, @b);
+    text-align: center;
+    border-radius: 5px;
+    .bgc(#ff700c);
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
+/*
+* 我们的服务模式板块
+*/
+.mode_contain{
+  .wh(100%, 465px);
+  min-width: 1200px;
+  .bgc(#f1f1f1);
+  .mode_title{
+    padding: 55px 0 65px;
+  }
+  .mode_box{
+    margin: auto;
+    .wh(1200px, auto);
+    overflow-x: hidden;
+  }
+  .mode_list{
+    .wh(1215px, 210px);
+    li{
+      float: left;
+      margin-right: 12.5px;
+      padding-top: 50px;
+      .wh(230px, 160px);
+      .bgc(@b);
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        .wh(83px, 80px);
+        background: url(../img/top_floor/elves.png) no-repeat;
+        .bgy(101px);
+      }
+      p{
+        .whh(100%, 20px);
+        .font(18px, @3);
+        text-align: center;
+      }
+      i.mode_ia{
+        .bgx(0);
+      }
+      i.mode_ib{
+        .bgx(85px);
+      }
+      i.mode_ic{
+        .bgx(170px);
+      }
+      i.mode_id{
+        .bgx(255px);
+      }
+      i.mode_ie{
+        .bgx(340px);
+      }
+    }
+  }
+}
+/*
+* 我们的优势板块
+*/
+.edge_contain{
+  .edge_title{
+    padding: 50px 0;
+  }
+  .edge_list{
+    padding-bottom: 10px;
+    .wh(1200px, 530px);
+    li{
+      float: left;
+      margin: 0 50px 40px;
+      .wh(300px, 225px);
+      text-align: center;
+      i{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        .whh(100px, 100px);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: url(../img/top_floor/elves.png) no-repeat;
+        .bgy(184px);
+      }
+      h2{
+        margin-bottom: 10px;
+        .whh(100%, 26px);
+        .font(24px, @3);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 20px;
+        .font(13px, @9);
+      }
+      i.edge_ia{
+        .bgx(0);
+      }
+      i.edge_ib{
+        .bgx(102px);
+      }
+      i.edge_ic{
+        .bgx(204px);
+      }
+      i.edge_id{
+        .bgx(306px);
+      }
+      i.edge_ie{
+        .bgx(408px);
+      }
+      i.edge_if{
+        .bgx(510px);
+      }
+    }
+    li:hover i{
+      .bgy(286px);
+    }
+  }
+}

@@ -1,0 +1,770 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.common_title {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.common_title p {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  line-height: 30px;
+  font-size: 18px;
+  color: #666666;
+}
+.common_title b {
+  display: inline-block;
+  width: 36px;
+  height: 0;
+}
+/*
+* 您管理企业是否遇到这些“痛”？板块
+*/
+.pain_contain {
+  width: 100%;
+  height: auto;
+  background-color: #fffbf4;
+  overflow: hidden;
+}
+.pain_contain .pain_title {
+  margin: auto;
+  padding: 50px 0;
+  width: 1200px;
+  height: auto;
+}
+.pain_contain .pain_title h1 {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.pain_contain .pain_title span {
+  color: #ff6c00;
+}
+.pain_contain .pain_title b {
+  font-size: 54px;
+}
+.pain_contain .pain_box {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 1200px;
+  height: 520px;
+  background-color: #fcf7ef;
+  box-shadow: 0px 8px 22px 2px #fde0ce;
+}
+.pain_contain .pain_list {
+  width: 100%;
+  height: 520px;
+}
+.pain_contain .pain_list li {
+  float: left;
+  width: 400px;
+  height: 260px;
+  text-align: center;
+}
+.pain_contain .pain_list li .pain_img {
+  padding-top: 50px;
+  width: 100%;
+  height: 90px;
+}
+.pain_contain .pain_list li .pain_img img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 90px;
+}
+.pain_contain .pain_list li h2 {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #333333;
+  font-weight: bold;
+}
+.pain_contain .pain_list li p {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #666666;
+}
+/*
+* 成功定律板块
+*/
+.success_contain {
+  width: 100%;
+  height: auto;
+  background-color: #fffbf4;
+}
+.success_contain .success_title {
+  padding: 50px 0;
+}
+.success_contain .success_box {
+  margin: auto;
+  width: 1200px;
+  height: 200px;
+  overflow: hidden;
+}
+.success_contain .success_list {
+  width: 1212px;
+  height: 180px;
+}
+.success_contain .success_list li {
+  position: relative;
+  float: left;
+  margin-right: 13px;
+  width: 290px;
+  height: 180px;
+  background-color: #cfcfcf;
+  transition: all .5s linear;
+}
+.success_contain .success_list li h2 {
+  position: absolute;
+  top: 15px;
+  left: 12.5px;
+  width: 265px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #333333;
+  transition: all .5s linear;
+}
+.success_contain .success_list li p {
+  position: absolute;
+  top: 55px;
+  left: 12.5px;
+  width: 265px;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333333;
+  transition: all .5s linear;
+  z-index: 10;
+}
+.success_contain .success_list li i {
+  position: absolute;
+  top: 113px;
+  left: 207px;
+  width: 91px;
+  height: 100px;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.success_contain .success_list li i.success_ia {
+  background-position-x: 0;
+}
+.success_contain .success_list li i.success_ib {
+  background-position-x: -93px;
+}
+.success_contain .success_list li i.success_ic {
+  background-position-x: -186px;
+}
+.success_contain .success_list li i.success_id {
+  background-position-x: -279px;
+}
+.success_contain .success_list li:hover {
+  background-color: #ff6c00;
+}
+.success_contain .success_list li:hover h2,
+.success_contain .success_list li:hover p {
+  color: #ffffff;
+}
+/*
+* 创新商业模式与互联网深度整合顶层设计者板块
+*/
+.innovate_contain {
+  width: 100%;
+  height: auto;
+  background-color: #fffbf4;
+}
+.innovate_contain .innovate_title {
+  padding: 50px 0;
+}
+.innovate_contain .innovate_box {
+  margin: auto;
+  width: 1200px;
+  height: 260px;
+  overflow: hidden;
+}
+.innovate_contain .innovate_list {
+  width: 1242px;
+  height: 210px;
+}
+.innovate_contain .innovate_list li {
+  position: relative;
+  float: left;
+  margin-right: 37.5px;
+  width: 210px;
+  height: 210px;
+}
+.innovate_contain .innovate_list li img {
+  display: block;
+  width: 210px;
+  height: 210px;
+}
+.innovate_contain .innovate_list li p {
+  position: absolute;
+  top: 155px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+/*
+* 敏锐的洞察力+商业模式创新板块
+*/
+.keen_contain {
+  width: 100%;
+  height: 670px;
+  min-width: 1200px;
+  background: url(../img/top_floor/bg2.png) center no-repeat;
+}
+.keen_contain .keen_title {
+  padding: 70px 0 45px;
+}
+.keen_contain .keen_title h1,
+.keen_contain .keen_title p {
+  color: #ffffff;
+}
+.keen_contain .keen_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.keen_contain .keen_btn {
+  margin-bottom: 30px;
+  width: 1212px;
+  height: 125px;
+}
+.keen_contain .keen_btn li {
+  position: relative;
+  float: left;
+  padding: 8px 10px;
+  margin-right: 7.5px;
+  width: 145px;
+  height: 109px;
+  border-radius: 5px;
+  background-color: #383838;
+}
+.keen_contain .keen_btn li h2 {
+  margin-bottom: 4px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 24px;
+  color: #fcfcfc;
+}
+.keen_contain .keen_btn li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 16px;
+  color: #fcfcfc;
+}
+.keen_contain .keen_btn li:after {
+  display: none;
+  position: absolute;
+  bottom: -33px;
+  left: 50%;
+  margin-left: -7.5px;
+  content: "";
+  width: 15px;
+  height: 8px;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-position: -371px 0;
+}
+.keen_contain .keen_btn li.on {
+  padding: 5px 7px;
+  border: 3px solid #ff6c00;
+}
+.keen_contain .keen_btn li.on:after {
+  display: block;
+}
+.keen_contain .keen_switch {
+  padding: 20px 0;
+  width: 1200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+.keen_contain .keen_switch li {
+  display: none;
+  width: 100%;
+  height: 200px;
+}
+.keen_contain .keen_switch li h2 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+}
+.keen_contain .keen_switch li p {
+  margin: auto;
+  width: 800px;
+  height: auto;
+  line-height: 30px;
+  font-size: 18px;
+  color: #666666;
+}
+.keen_contain .keen_switch li.on {
+  display: block;
+}
+/*
+* 传统行业+互联网，从何开始？板块
+*/
+.start_contain .start_title {
+  padding: 50px 0;
+}
+.start_contain .start_list {
+  position: relative;
+  padding-bottom: 50px;
+  width: 1200px;
+  height: 385px;
+  background: url(../img/top_floor/img.png) no-repeat;
+}
+.start_contain .start_a,
+.start_contain .start_b,
+.start_contain .start_c {
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+}
+.start_contain .start_a {
+  top: 9px;
+}
+.start_contain .start_b {
+  top: 161px;
+}
+.start_contain .start_b h2 {
+  margin: 5px 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.start_contain .start_b p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.start_contain .start_c {
+  top: 310px;
+}
+.start_contain .start_d,
+.start_contain .start_e,
+.start_contain .start_f,
+.start_contain .start_g,
+.start_contain .start_h,
+.start_contain .start_i,
+.start_contain .start_j,
+.start_contain .start_k {
+  position: absolute;
+  width: 182px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+.start_contain .start_d,
+.start_contain .start_f,
+.start_contain .start_h,
+.start_contain .start_j {
+  left: 2px;
+}
+.start_contain .start_e,
+.start_contain .start_g,
+.start_contain .start_i,
+.start_contain .start_k {
+  right: 2px;
+}
+.start_contain .start_d,
+.start_contain .start_e {
+  top: 3px;
+}
+.start_contain .start_f,
+.start_contain .start_g {
+  top: 109px;
+}
+.start_contain .start_h,
+.start_contain .start_i {
+  top: 216px;
+}
+.start_contain .start_j,
+.start_contain .start_k {
+  top: 322px;
+}
+/*
+* 为企业量身定制的实战课程板块
+*/
+.made_contain {
+  width: 100%;
+  height: 940px;
+  min-width: 1200px;
+  background: url(../img/top_floor/bg.png) center no-repeat;
+}
+.made_contain .made_title {
+  padding: 65px 0;
+}
+.made_contain .made_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.made_contain .made_list {
+  width: 1230px;
+  height: 625px;
+}
+.made_contain .made_list li {
+  float: left;
+  margin-right: 30px;
+  padding: 0 40px;
+  width: 300px;
+  height: 625px;
+  background-color: #ffffff;
+}
+.made_contain .made_list li b {
+  display: block;
+  padding-top: 55px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 98px;
+  line-height: 98px;
+  font-size: 96px;
+  color: #999999;
+  text-align: center;
+}
+.made_contain .made_list li h2 {
+  padding-bottom: 28px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #999999;
+}
+.made_contain .made_list li h3 {
+  margin: 28px 0 5px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+}
+.made_contain .made_list li p {
+  position: relative;
+  padding-left: 30px;
+  width: 270px;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.made_contain .made_list li p:before {
+  position: absolute;
+  top: 12.5px;
+  left: 0;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #5e5e5e;
+}
+.made_contain .made_list li:hover {
+  background-color: #ff6c00;
+}
+.made_contain .made_list li:hover b,
+.made_contain .made_list li:hover h2,
+.made_contain .made_list li:hover h3,
+.made_contain .made_list li:hover p {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.made_contain .made_list li:hover p:before {
+  background-color: #ffffff;
+}
+/*
+* 全方位为您打造商业模式板块
+*/
+.make_contain .make_title {
+  padding: 50px 0 20px;
+}
+.make_contain .make_title p {
+  width: 1076px;
+}
+.make_contain .make_box {
+  width: 1200px;
+  height: 460px;
+  line-height: 460px;
+  text-align: center;
+}
+.make_contain .make_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 460px;
+  vertical-align: middle;
+}
+/*
+* 我们提供的服务板块
+*/
+.provide_contain {
+  margin-bottom: 30px;
+}
+.provide_contain .provide_title {
+  padding: 50px 0;
+}
+.provide_contain .provide_list {
+  margin-bottom: 50px;
+  width: 1248px;
+  height: 230px;
+}
+.provide_contain .provide_list li {
+  float: left;
+  margin-right: 48px;
+  width: 368px;
+  height: 200px;
+}
+.provide_contain .provide_list li img {
+  display: block;
+  margin-bottom: 20px;
+  width: 368px;
+  height: 139px;
+}
+.provide_contain .provide_list li h2 {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+.provide_contain .provide_list li p {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #666666;
+}
+.provide_contain .provide_list li p span {
+  color: #ff6c00;
+}
+.provide_contain .provide_list li p b {
+  margin: 0 5px;
+}
+.provide_contain a {
+  display: block;
+  margin: auto;
+  width: 405px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff700c;
+}
+.provide_contain a:hover {
+  text-decoration: none;
+}
+/*
+* 我们的服务模式板块
+*/
+.mode_contain {
+  width: 100%;
+  height: 465px;
+  min-width: 1200px;
+  background-color: #f1f1f1;
+}
+.mode_contain .mode_title {
+  padding: 55px 0 65px;
+}
+.mode_contain .mode_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow-x: hidden;
+}
+.mode_contain .mode_list {
+  width: 1215px;
+  height: 210px;
+}
+.mode_contain .mode_list li {
+  float: left;
+  margin-right: 12.5px;
+  padding-top: 50px;
+  width: 230px;
+  height: 160px;
+  background-color: #ffffff;
+}
+.mode_contain .mode_list li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 83px;
+  height: 80px;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-position-y: -101px;
+}
+.mode_contain .mode_list li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.mode_contain .mode_list li i.mode_ia {
+  background-position-x: 0;
+}
+.mode_contain .mode_list li i.mode_ib {
+  background-position-x: -85px;
+}
+.mode_contain .mode_list li i.mode_ic {
+  background-position-x: -170px;
+}
+.mode_contain .mode_list li i.mode_id {
+  background-position-x: -255px;
+}
+.mode_contain .mode_list li i.mode_ie {
+  background-position-x: -340px;
+}
+/*
+* 我们的优势板块
+*/
+.edge_contain .edge_title {
+  padding: 50px 0;
+}
+.edge_contain .edge_list {
+  padding-bottom: 10px;
+  width: 1200px;
+  height: 530px;
+}
+.edge_contain .edge_list li {
+  float: left;
+  margin: 0 50px 40px;
+  width: 300px;
+  height: 225px;
+  text-align: center;
+}
+.edge_contain .edge_list li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-position-y: -184px;
+}
+.edge_contain .edge_list li h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+.edge_contain .edge_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  font-size: 13px;
+  color: #999999;
+}
+.edge_contain .edge_list li i.edge_ia {
+  background-position-x: 0;
+}
+.edge_contain .edge_list li i.edge_ib {
+  background-position-x: -102px;
+}
+.edge_contain .edge_list li i.edge_ic {
+  background-position-x: -204px;
+}
+.edge_contain .edge_list li i.edge_id {
+  background-position-x: -306px;
+}
+.edge_contain .edge_list li i.edge_ie {
+  background-position-x: -408px;
+}
+.edge_contain .edge_list li i.edge_if {
+  background-position-x: -510px;
+}
+.edge_contain .edge_list li:hover i {
+  background-position-y: -286px;
+}

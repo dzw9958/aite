@@ -1,0 +1,386 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 10rem;
+  height: 7.26666667rem;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_contain a .banner_img {
+  width: 100%;
+  height: 100%;
+}
+/*
+* 下列板块通用
+*/
+.common_title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.50666667rem;
+  color: #333333;
+  font-weight: bold;
+}
+.common_title p {
+  margin: auto;
+  margin-top: 0.26666667rem;
+  width: auto;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+/*
+* 您管理企业是否遇到这些“痛”？板块
+*/
+.pain_contain {
+  padding-bottom: 0.2rem;
+  width: 10rem;
+  height: auto;
+  background-color: #fffbf4;
+}
+.pain_contain .pain_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.pain_contain .pain_title h1 {
+  width: 100%;
+  height: 0.74666667rem;
+  line-height: 0.74666667rem;
+  font-size: 0.53333333rem;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.pain_contain .pain_title span {
+  color: #ff6c00;
+}
+.pain_contain .pain_title b {
+  font-size: 0.72rem;
+}
+.pain_contain .pain_list {
+  margin: auto;
+  width: 9.46666667rem;
+  height: 10.4rem;
+  box-shadow: 0 0.10666667rem 0.29333333rem 0.02666667rem #fde0ce;
+}
+.pain_contain .pain_list li {
+  float: left;
+  width: 4.73333333rem;
+  height: 3.46666667rem;
+  text-align: center;
+  background-color: #fffdfa;
+}
+.pain_contain .pain_list li .pain_img {
+  width: 100%;
+  height: 1.66666667rem;
+  line-height: 1.66666667rem;
+  text-align: center;
+}
+.pain_contain .pain_list li .pain_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.pain_contain .pain_list li h2 {
+  margin-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.29333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.pain_contain .pain_list li p {
+  width: 100%;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.pain_contain .pain_list li .pain_a img {
+  width: 1.02666667rem;
+  height: 0.85333333rem;
+}
+.pain_contain .pain_list li .pain_b img {
+  width: 1.01333333rem;
+  height: 0.82666667rem;
+}
+.pain_contain .pain_list li .pain_c img {
+  width: 1.01333333rem;
+  height: 0.82666667rem;
+}
+.pain_contain .pain_list li .pain_d img {
+  width: 1.04rem;
+  height: 0.82666667rem;
+}
+.pain_contain .pain_list li .pain_e img {
+  width: 1.04rem;
+  height: 0.81333333rem;
+}
+.pain_contain .pain_list li .pain_f img {
+  width: 1.12rem;
+  height: 0.81333333rem;
+}
+/*
+* 成功定律板块
+*/
+.success_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #fffbf4;
+}
+.success_contain .success_title {
+  padding: 0.66666667rem 0 0.4rem;
+}
+.success_contain .success_title p {
+  width: 9.17333333rem;
+}
+.success_contain .success_list {
+  margin: auto;
+  width: 9.73333333rem;
+  height: 6.26666667rem;
+}
+.success_contain .success_list li {
+  position: relative;
+  float: left;
+  margin: 0.13333333rem;
+  width: 4.6rem;
+  height: 2.86666667rem;
+  background-color: #ff6c00;
+}
+.success_contain .success_list h2 {
+  position: absolute;
+  top: 0.26666667rem;
+  left: 0.2rem;
+  width: 4.2rem;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #ffffff;
+}
+.success_contain .success_list p {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.2rem;
+  width: 4.2rem;
+  height: auto;
+  line-height: 0.46666667rem;
+  font-size: 0.25333333rem;
+  color: #ffffff;
+}
+.success_contain .success_list i {
+  position: absolute;
+  top: 1.93333333rem;
+  left: 3.46666667rem;
+  width: 1.21333333rem;
+  height: 1.33333333rem;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-size: 8.13333333rem 5.14666667rem;
+  background-position-y: 0;
+}
+.success_contain .success_list i.success_ia {
+  background-position-x: 0;
+}
+.success_contain .success_list i.success_ib {
+  background-position-x: -1.24rem;
+}
+.success_contain .success_list i.success_ic {
+  background-position-x: -2.48rem;
+}
+.success_contain .success_list i.success_id {
+  background-position-x: -3.72rem;
+}
+/*
+* 创新商业模式与互联网深度整合顶层设计者板块
+*/
+.innovate_contain {
+  width: 10rem;
+  height: auto;
+  background-color: #fffbf4;
+}
+.innovate_contain .innovate_title {
+  padding: 0.66666667rem 0 0.4rem;
+}
+.innovate_contain .innovate_title h1 {
+  width: 100%;
+  height: auto;
+  line-height: 0.64rem;
+}
+.innovate_contain .innovate_title p {
+  width: 9.37333333rem;
+}
+.innovate_contain .innovate_list {
+  margin: auto;
+  padding-bottom: 0.33333333rem;
+  width: 9.6rem;
+  height: 6.26666667rem;
+}
+.innovate_contain .innovate_list li {
+  position: relative;
+  float: left;
+  margin: 0 0.2rem 0.33333333rem;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.innovate_contain .innovate_list li img {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.innovate_contain .innovate_list li p {
+  position: absolute;
+  top: 2.06666667rem;
+  left: 0;
+  width: 100%;
+  height: 0.21333333rem;
+  line-height: 0.21333333rem;
+  font-size: 0.18666667rem;
+  color: #333333;
+  text-align: center;
+}
+.innovate_contain .innovate_list li.innovate_special {
+  margin-left: 1.8rem;
+}
+/*
+* 敏锐的洞察力+商业模式创新板块
+*/
+.keen_contain {
+  width: 10rem;
+  height: 9.53333333rem;
+  background: url(../img/top_floor/bg.png) no-repeat;
+  background-size: 10rem 9.53333333rem;
+}
+.keen_contain .keen_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+}
+.keen_contain .keen_title h1,
+.keen_contain .keen_title p {
+  color: #ffffff;
+}
+.keen_contain .keen_window {
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 9.46666667rem;
+  height: 1.66666667rem;
+  overflow: hidden;
+}
+.keen_contain .keen_box {
+  padding-bottom: 0.66666667rem;
+  width: 9.46666667rem;
+  height: 1.66666667rem;
+  overflow-x: scroll;
+}
+.keen_contain .keen_btn {
+  width: 16.14666667rem;
+  height: 1.66666667rem;
+}
+.keen_contain .keen_btn li {
+  position: relative;
+  float: left;
+  margin-right: 0.1rem;
+  padding: 0.10666667rem 0.13333333rem;
+  width: 1.93333333rem;
+  height: 1.45333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #383838;
+}
+.keen_contain .keen_btn li h2 {
+  margin-bottom: 0.05333333rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.32rem;
+  color: #fcfcfc;
+}
+.keen_contain .keen_btn li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.32rem;
+  font-size: 0.21333333rem;
+  color: #fcfcfc;
+}
+.keen_contain .keen_btn li.on {
+  padding: 0.06666667rem 0.09333333rem;
+  border: 0.04rem solid #ff6c00;
+}
+.keen_contain .keen_switch {
+  position: relative;
+  margin: auto;
+  padding: 0.26666667rem;
+  width: 8.93333333rem;
+  height: auto;
+  border-radius: 0.08rem;
+  background-color: #f7f7f7;
+}
+.keen_contain .keen_switch li {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.keen_contain .keen_switch li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+  text-align: center;
+}
+.keen_contain .keen_switch li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.26666667rem;
+  color: #666666;
+}
+.keen_contain .keen_switch li.on {
+  display: block;
+}
+.keen_contain .keen_switch:before {
+  position: absolute;
+  top: -0.09333333rem;
+  left: 1rem;
+  content: "";
+  width: 0.2rem;
+  height: 0.10666667rem;
+  background: url(../img/top_floor/elves.png) no-repeat;
+  background-size: 8.13333333rem 5.14666667rem;
+  background-position: -4.94666667rem 0;
+}
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/

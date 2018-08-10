@@ -320,7 +320,7 @@ body {
 .keen_contain .keen_btn li:after {
   display: none;
   position: absolute;
-  bottom: -33px;
+  bottom: -34px;
   left: 50%;
   margin-left: -7.5px;
   content: "";

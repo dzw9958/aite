@@ -1,0 +1,366 @@
+@charset "utf-8";
+body{
+    background-color: #ffffff;
+}
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgc(@c){
+    background-color: @c;
+}
+.bgs(@x, @y){
+    background-size: @x @y;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* banner板块
+*/
+.banner_contain{
+    .wh(750/@r, 545/@r);
+    a{
+        display: block;
+        .wh(100%, 100%);
+        .banner_img{
+            .wh(100%, 100%);
+        }
+    }
+}
+/*
+* 下列板块通用
+*/
+.common_title{
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+        .whh(100%, 42/@r);
+        .font(38/@r, @3);
+        font-weight: bold;
+    }
+    p{
+        margin: auto;
+        margin-top: 20/@r;
+        .wh(auto, auto);
+        line-height: 30/@r;
+        .font(20/@r, @6);
+    }
+}
+/*
+* 您管理企业是否遇到这些“痛”？板块
+*/
+.pain_contain{
+    padding-bottom: 15/@r;
+    .wh(750/@r, auto);
+    .bgc(#fffbf4);
+    .pain_title{
+        padding: 50/@r 0 40/@r;
+        .wh(100%, auto);
+        h1{
+            .whh(100%, 56/@r);
+            .font(40/@r, @3);
+            font-weight: bold;
+            text-align: center;
+        }
+        span{
+            color: #ff6c00;
+        }
+        b{
+            font-size: 54/@r;
+        }
+    }
+    .pain_list{
+        margin: auto;
+        .wh(710/@r, 780/@r);
+        box-shadow: 0 8/@r 22/@r 2/@r #fde0ce;
+        li{
+            float: left; 
+            .wh(355/@r, 260/@r);
+            text-align: center;
+            .bgc(#fffdfa);
+            .pain_img{
+                .whh(100%, 125/@r);
+                text-align: center;
+                img{
+                    display: inline-block;
+                    .wh(auto, auto);
+                    vertical-align: middle;
+                }
+            }
+            h2{
+                margin-bottom: 10/@r;
+                .whh(100%, 24/@r);
+                .font(22/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .whh(100%, 36/@r);
+                .font(20/@r, @6);
+            }
+            .pain_a img{
+                .wh(77/@r, 64/@r);
+            }
+            .pain_b img{
+                .wh(76/@r, 62/@r);
+            }
+            .pain_c img{
+                .wh(76/@r, 62/@r);
+            }
+            .pain_d img{
+                .wh(78/@r, 62/@r);
+            }
+            .pain_e img{
+                .wh(78/@r, 61/@r);
+            }
+            .pain_f img{
+                .wh(84/@r, 61/@r);
+            }
+        }
+    }
+}
+/*
+* 成功定律板块
+*/
+.success_contain{
+    .wh(750/@r, auto);
+    .bgc(#fffbf4);
+    .success_title{
+        padding: 50/@r 0 30/@r;
+        p{
+            width: 688/@r;
+        }
+    }
+    .success_list{
+        margin: auto;
+        .wh(730/@r, 470/@r);
+        li{
+            position: relative;
+            float: left;
+            margin: 10/@r;
+            .wh(345/@r, 215/@r);
+            .bgc(#ff6c00);
+        }
+        h2{
+            position: absolute;
+            top: 20/@r;
+            left: 15/@r;
+            .whh(315/@r, 28/@r);
+            .font(26/@r, @b);
+        }
+        p{
+            position: absolute;
+            top: 60/@r;
+            left: 15/@r;
+            .wh(315/@r, auto);
+            line-height: 35/@r;
+            .font(19/@r, @b);
+        }
+        i{
+            position: absolute;
+            top: 145/@r;
+            left: 260/@r;
+            .wh(91/@r, 100/@r);
+            background: url(../img/top_floor/elves.png) no-repeat;
+            .bgs(610/@r, 386/@r);
+            background-position-y: 0;
+        }
+        i.success_ia{
+            .bgx(0);
+        }
+        i.success_ib{
+            .bgx(93/@r);
+        }
+        i.success_ic{
+            .bgx(186/@r);
+        }
+        i.success_id{
+            .bgx(279/@r);
+        }
+    }
+}
+/*
+* 创新商业模式与互联网深度整合顶层设计者板块
+*/
+.innovate_contain{
+    .wh(750/@r, auto);
+    .bgc(#fffbf4);
+    .innovate_title{
+        padding: 50/@r 0 30/@r;
+        h1{
+            .wh(100%, auto);
+            line-height: 48/@r;
+        }
+        p{
+            width: 703/@r;
+        }
+    }
+    .innovate_list{
+        margin: auto;
+        padding-bottom: 25/@r;
+        .wh(720/@r, 470/@r);
+        li{
+            position: relative;
+            float: left;
+            margin: 0 15/@r 25/@r;
+            .wh(210/@r, 210/@r);
+            img{
+                display: block;
+                .wh(210/@r, 210/@r);
+            }
+            p{
+                position: absolute;
+                top: 155/@r;
+                left: 0;
+                width: 100%;
+                height: 16/@r;
+                line-height: 16/@r;
+                font-size: 14/@r;
+                color: #333333;
+                text-align: center;
+            }
+        }
+        li.innovate_special{
+            margin-left: 135/@r;
+        }
+    }
+}
+/*
+* 敏锐的洞察力+商业模式创新板块
+*/
+.keen_contain{
+    .wh(750/@r, 715/@r);
+    background: url(../img/top_floor/bg.png) no-repeat;
+    .bgs(750/@r, 715/@r);
+    .keen_title{
+        padding: 50/@r 0 40/@r;
+        h1, p{
+            color: @b;
+        }
+    }
+    .keen_window{
+        margin: auto;
+        margin-bottom: 25/@r;
+        .wh(710/@r, 125/@r);
+        overflow: hidden;
+    }
+    .keen_box{
+        padding-bottom: 50/@r;
+        .wh(710/@r, 125/@r);
+        overflow-x: scroll;
+    }
+    .keen_btn{
+        .wh(1211/@r, 125/@r);
+        li{
+            position: relative;
+            float: left;
+            margin-right: 7.5/@r;
+            padding: 8/@r 10/@r;
+            .wh(145/@r, 109/@r);
+            border-radius: 5/@r;
+            background-color: #383838;
+            h2{
+                margin-bottom: 4/@r;
+                width: 100%;
+                height: auto;
+                line-height: 30/@r;
+                font-size: 24/@r;
+                color: #fcfcfc;
+            }
+            p{
+                width: 100%;
+                height: auto;
+                line-height: 24/@r;
+                font-size: 16/@r;
+                color: #fcfcfc;
+            }
+        }
+        li.on{
+            padding: 5/@r 7/@r;
+            border: 3/@r solid #ff6c00;
+        }
+    }
+    .keen_switch{
+        position: relative;
+        margin: auto;
+        padding: 20/@r;
+        .wh(670/@r, auto);
+        border-radius: 6/@r;
+        background-color: #f7f7f7;
+        li{
+            display: none;
+            .wh(100%, auto);
+            h2{
+                margin-bottom: 20/@r;
+                width: 100%;
+                height: 26/@r;
+                line-height: 26/@r;
+                font-size: 24/@r;
+                color: #333333;
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                height: auto;
+                line-height: 30/@r;
+                font-size: 20/@r;
+                color: #666666;
+            }
+        }
+        li.on{
+            display: block
+        }
+    }
+    .keen_switch:before{
+        position: absolute;
+        top: -7/@r;
+        left: 75/@r;
+        content: "";
+        width: 15/@r;
+        height: 8/@r;
+        background: url(../img/top_floor/elves.png) no-repeat;
+        .bgs(610/@r, 386/@r);
+        background-position: -371/@r 0;
+    }
+}
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/
+/*
+* 板块
+*/

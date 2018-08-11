@@ -26,13 +26,13 @@ body{
 * banner板块
 */
 .banner_contain{
-  .wh(100%, 565px);
+  .wh(100%, auto);
   min-width: 1200px;
   a{
     display: block;
-    .wh(100%, 100%);
+    .wh(100%, auto);
     img{
-      .wh(100%, 100%);
+      .wh(100%, auto);
     }
   }
 }
@@ -87,19 +87,13 @@ body{
         -o-transition: all .5s linear;
         transition: all .5s linear;
       }
-    }
-    li:nth-child(1){
-      i{
+      i.introduce_ia{
         background-position: 0 0;
       }
-    }
-    li:nth-child(2){
-      i{
+      i.introduce_ib{
         background-position: -140px 0;
       }
-    }
-    li:nth-child(3){
-      i{
+      i.introduce_ic{
         background-position: -280px 0;
       }
     }
@@ -180,35 +174,35 @@ body{
           background-color: #249fdf;
         }
       }
-      li:nth-child(1){
+      li.core_a{
         top: 0;
         left: 35px;
       }
-      li:nth-child(2){
+      li.core_b{
         top: 0;
         right: 35px;
       }
-      li:nth-child(3){
+      li.core_c{
         top: 92px;
         left: 0;
       }
-      li:nth-child(4){
+      li.core_d{
         top: 92px;
         right: 0;
       }
-      li:nth-child(5){
+      li.core_e{
         top: 184px;
         left: 0;
       }
-      li:nth-child(6){
+      li.core_f{
         top: 184px;
         right: 0;
       }
-      li:nth-child(7){
+      li.core_g{
         top: 276px;
         left: 35px;
       }
-      li:nth-child(8){
+      li.core_h{
         top: 276px;
         right: 35px;
       }
@@ -267,34 +261,22 @@ body{
         .font(22px, @3);
         text-align: center;
       }
-    }
-    li:nth-child(1){
-      i{
+      i.ecology_ia{
         background-position: 1px -151px;
       }
-    }
-    li:nth-child(2){
-      i{
+      i.ecology_ib{
         background-position: -99px -151px;
       }
-    }
-    li:nth-child(3){
-      i{
+      i.ecology_ic{
         background-position: -194px -151px;
       }
-    }
-    li:nth-child(4){
-      i{
+      i.ecology_id{
         background-position: -290px -151px;
       }
-    }
-    li:nth-child(5){
-      i{
+      i.ecology_ie{
         background-position: -386px -151px;
       }
-    }
-    li:nth-child(6){
-      i{
+      i.ecology_if{
         background-position: -476px -151px;
       }
     }
@@ -329,7 +311,7 @@ body{
     .wh(1200px, 390px);
     li{
       float: left;
-      margin-left: 26.5px;
+      margin: 0 10px;
       padding: 60px 40px 0;
       .wh(200px, 330px);
       border-radius: 5px;
@@ -356,24 +338,16 @@ body{
         line-height: 24px;
         .font(14px, @9);
       }
-    }
-    li:nth-child(1){
-      margin-left: 0;
-      i{
+      i.edge_ia{
         background-position: -419px 0;
       }
-    }
-    li:nth-child(2){
-      i{
+      i.edge_ib{
         background-position: -489px 0;
       }
-    }:nth-child(3){
-      i{
+      i.edge_ic{
         background-position: -419px -74px;
       }
-    }
-    li:nth-child(4){
-      i{
+      i.edge_id{
         background-position: -489px -74px;
       }
     }

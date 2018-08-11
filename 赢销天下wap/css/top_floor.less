@@ -344,23 +344,327 @@ body{
     }
 }
 /*
-* 板块
+* 传统行业+互联网，从何开始？板块
 */
+.start_contain{
+    .wh(750/@r, auto);
+    .start_title{
+        padding: 50/@r 0 40/@r;
+        p{
+            width: 710/@r;
+        }
+    }
+    .start_list{
+        padding-bottom: 50/@r;
+        position: relative;
+        margin: auto;
+        .wh(710/@r, 228/@r);
+        background: url(../img/top_floor/img.png) no-repeat;
+        .bgs(710/@r, 228/@r);
+        .start_a, .start_b, .start_c{
+            position: absolute;
+            left: 50%;
+            margin-left: -60/@r;
+            .whh(120/@r, 42/@r);
+            .font(15/@r, @b);
+            text-align: center;
+        }
+        .start_a{
+            top: 5/@r;
+        }
+        .start_b{
+            top: 95/@r;
+            h2{
+                .whh(100%, 26/@r);
+                .font(15/@r, @b);
+            }
+            p{
+                .whh(100%, 14/@r);
+                .font(12/@r, @b);
+            }
+        }
+        .start_c{
+            top: 184/@r;
+        }
+        .start_d, .start_e, .start_f, .start_g,
+        .start_h, .start_i, .start_j, .start_k{
+            position: absolute;
+            .whh(106/@r, 34/@r);
+            .font(12/@r, @3);
+            text-align: center;
+        }
+        .start_d, .start_f, .start_h, .start_j{
+            left: 2/@r;
+        }
+        .start_e, .start_g, .start_i, .start_k{
+            right: 2/@r;
+        }
+        .start_d, .start_e{
+            top: 2/@r;
+        }
+        .start_f, .start_g{
+            top: 66/@r;
+        }
+        .start_h, .start_i{
+            top: 128/@r;
+        }
+        .start_j, .start_k{
+            top: 192/@r;
+        }
+    }
+}
 /*
-* 板块
+* 为企业量身定制的实战课程板块
 */
+.made_contain{
+    .wh(750/@r, 980/@r);
+    background: url(../img/top_floor/bg2.png) no-repeat;
+    .bgs(750/@r, 980/@r);
+    .made_title{
+        padding: 40/@r 0 30/@r;
+    }
+    .made_list{
+        margin: auto;
+        .wh(710/@r, auto);
+        li{
+            position: relative;
+            margin-bottom: 20/@r;
+            padding: 20/@r 0 20/@r 155/@r;
+            .wh(555/@r, auto);
+            .bgc(#ff6c00);
+            b{
+                position: absolute;
+                top: 70/@r;
+                left: 23/@r;
+                .whh(auto, 98/@r);
+                .font(96/@r, @b);
+            }
+            h2{
+                padding-bottom: 17/@r;
+                .whh(305/@r, 26/@r);
+                .font(24/@r, @b);
+                border-bottom: 2/@r solid @b;
+            }
+            h3{
+                margin-top: 20/@r;
+                margin-bottom: 10/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @b);
+            }
+            p{
+                position: relative;
+                padding-left: 30/@r;
+                .whh(auto, 38/@r);
+                .font(20/@r, @b);
+            }
+            p:before{
+                position: absolute;
+                top: 14/@r;
+                left: 0;
+                content: "";
+                .wh(10/@r, 10/@r);
+                border-radius: 5/@r;
+                .bgc(@b);
+            }
+        }
+    }
+}
 /*
-* 板块
+* 全方位为您打造商业模式板块
 */
+.make_contain{
+    .wh(750/@r, auto);
+    .make_title{
+        padding: 50/@r 0 20/@r;
+        p{
+            width: 710/@r;
+        }
+    }
+    .make_box{
+        margin: auto;
+        .wh(726/@r, 316/@r);
+        img{
+            display: block;
+            .wh(100%, 100%);
+        }
+    }
+}
 /*
-* 板块
+* 我们提供的服务板块
 */
+.provide_contain{
+    .wh(750/@r, auto);
+    .provide_title{
+        padding: 50/@r 0; 
+    }
+    .provide_window{
+        margin: auto;
+        margin-bottom: 50/@r;
+        .wh(710/@r, 225/@r);
+        overflow: hidden;
+    }
+    .provide_box{
+        padding-bottom: 50/@r;
+        .wh(720/@r, 225/@r);
+        overflow-x: scroll;
+    }
+    .provide_list{
+        .wh(1140/@r, 225/@r);
+        li{
+            float: left; 
+            margin-right: 10/@r;
+            .wh(370/@r, 225/@r);
+            img{
+                display: block;
+                margin-bottom: 20/@r;
+                .wh(370/@r, 140/@r);
+            }
+            h2{
+                margin-bottom: 15/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .whh(100%, 22/@r);
+                .font(20/@r, @6);
+            }
+            span{
+                color: #ff6c00;
+            }
+            b{
+                margin: 0 5/@r;
+            }
+        }
+    }
+    a{
+        display: block;
+        margin: auto;
+        margin-bottom: 30/@r;
+        .whh(290/@r, 63/@r);
+        .font(24/@r, @b);
+        text-align: center;
+        border-radius: 5/@r;
+        .bgc(#ff700c);
+    }
+}
 /*
-* 板块
+* 我们的服务模式板块
 */
+.mode_contain{
+    .wh(750/@r, auto);
+    .bgc(#f1f1f1);
+    .mode_title{
+        padding: 40/@r 0;
+    }
+    .mode_list{
+        margin: auto;
+        padding-bottom: 20/@r;
+        .wh(720/@r, 440/@r);
+        li{
+            float: left;
+            margin: 5/@r;
+            padding-top: 50/@r;
+            .wh(230/@r, 160/@r);
+            .bgc(#fdfdfd);
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 20/@r;
+                width: 83/@r;
+                height: 80/@r;
+                background: url(../img/top_floor/elves.png) no-repeat;
+                .bgs(610/@r, 386/@r);
+                background-position-y: -101/@r;
+            }
+            p{
+                width: 100%;
+                height: 20/@r;
+                line-height: 20/@r;
+                font-size: 18/@r;
+                color: #333333;
+                text-align: center;
+            }
+            i.mode_ia{
+                .bgx(0);
+            }
+            i.mode_ib{
+                .bgx(85/@r);
+            }
+            i.mode_ic{
+                .bgx(170/@r);
+            }
+            i.mode_id{
+                .bgx(255/@r);
+            }
+            i.mode_ie{
+                .bgx(340/@r);
+            }
+        }
+        li.mode_special{
+            margin-left: 125/@r;
+        }
+    }
+}
 /*
-* 板块
+* 我们的优势板块
 */
-/*
-* 板块
-*/
+.edge_contain{
+    .wh(750/@r, auto);
+    .edge_title{
+        padding: 45/@r 0 30/@r;
+    }
+    .edge_list{
+        margin: auto;
+        padding-bottom: 30/@r;
+        .wh(700/@r, 795/@r);
+        li{
+            float: left;
+            margin: 0 25/@r 40/@r;
+            .wh(300/@r, 225/@r);
+            text-align: center;
+            i{
+                display: block;
+                margin: auto;
+                margin-bottom: 20/@r;
+                width: 100/@r;
+                height: 100/@r;
+                line-height: 100/@r;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background: url(../img/top_floor/elves.png) no-repeat;
+                .bgs(610/@r, 386/@r);
+                background-position-y: -184/@r;
+            }
+            h2{
+                margin-bottom: 10/@r;
+                .whh(100%, 26/@r);
+                .font(24/@r, @3);
+                font-weight: bold;
+            }
+            p{
+                .wh(100%, auto);
+                line-height: 20/@r;
+                .font(13/@r, @9);
+            }
+            i.edge_ia{
+                .bgx(0);
+            }
+            i.edge_ib{
+                .bgx(102/@r);
+            }
+            i.edge_ic{
+                .bgx(204/@r);
+            }
+            i.edge_id{
+                .bgx(306/@r);
+            }
+            i.edge_ie{
+                .bgx(408/@r);
+            }
+            i.edge_if{
+                .bgx(510/@r);
+            }
+        }
+    }
+}

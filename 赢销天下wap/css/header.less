@@ -1,0 +1,69 @@
+@charset "utf-8";
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgc(@c){
+    background-color: @c;
+}
+.bgs(@x, @y){
+    background-size: @x @y;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* logo板块
+*/
+.top_contain{
+    .wh(750/@r, 130/@r);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 25/@r;
+    .wh(700/@r, 130/@r);
+    .bgc(@b);
+    z-index: 999;
+    .logo_img{
+        float: left;
+        margin-top: 38/@r;
+        .wh(316/@r, 54/@r);
+    }
+    a{
+        float: right;
+        margin-top: 47.5/@r;
+        .wh(auto, 35/@r);
+        .log_tel{
+            float: left;
+            margin-right: 5/@r;
+            .wh(35/@r, 35/@r);
+        }
+        span{
+            float: left;
+            .whh(auto, 35/@r);
+            .font(32/@r, #f60);
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+.wh(@w, @h){
+    width: @w;
+    height: @h;
+}
+.whh(@w, @h){
+    width: @w;
+    height: @h;
+    line-height: @h;
+}
+.font(@s, @c){
+    font-size: @s;
+    color: @c;
+}
+.bgc(@c){
+    background-color: @c;
+}
+.bgs(@x, @y){
+    background-size: @x @y;
+}
+.bgp(@x, @y){
+    background-position: -@x -@y;
+}
+.bgx(@x){
+    background-position-x: -@x;
+}
+.bgy(@y){
+    background-position-y: -@y;
+}
+@r: 75rem;
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+/*
+* 尾部板块
+*/
+.footer{
+    padding: 45/@r 0 170/@r;
+    .wh(750/@r, auto);
+    .bgc(#383838);
+    text-align: center;
+    h1{
+        position: relative;
+        padding-top: 20/@r;
+        margin-bottom: 45/@r;
+        .whh(750/@r, 33/@r);
+        .font(30/@r, #7e7e7e);
+        font-weight: bold;
+    }
+    h1:before, h1:after{
+        position: absolute;
+        top: 35/@r;
+        content: "";
+        .wh(260/@r, 3/@r);
+        .bgc(#757575);
+    }
+    h1:before{
+        left: 30/@r;
+    }
+    h1:after{
+        right: 30/@r;
+    }
+    .footer_wechat{
+        margin-bottom: 45/@r;
+        img{
+            display: block;
+            margin: auto;
+            margin-bottom: 25/@r;
+            .wh(234/@r, 234/@r);
+        }
+        p{
+            .whh(100%, 25/@r);
+            .font(22/@r, #7e7e7e);
+        }
+    }
+    .footer_copy{
+        .wh(100%, auto);
+        p{
+            margin-bottom: 25/@r;
+            .whh(100%, 28/@r);
+            .font(22/@r, #7e7e7e);
+        }
+    }
+}
+/*
+* 尾部固定导航条板块
+*/
+.footer_nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .wh(750/@r, 125/@r);
+    border-top: 1/@r solid #ccc;
+    .bgc(@b);
+    z-index: 999;
+    li{
+        float: left;
+        padding-top: 20/@r;
+        .wh(150/@r, 105/@r);
+        a{
+            display: block;
+            margin: auto;
+            margin-bottom: 18/@r;
+            .wh(47/@r, 47/@r);
+            img{
+                display: block;
+                .wh(47/@r, 47/@r);
+            }
+        }
+        p{
+            .whh(100%, 30/@r);
+            .font(26/@r, #6d6d6d);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*
+* 尾部板块
+*/
+.footer {
+  padding: 0.6rem 0 2.26666667rem;
+  width: 10rem;
+  height: auto;
+  background-color: #383838;
+  text-align: center;
+}
+.footer h1 {
+  position: relative;
+  padding-top: 0.26666667rem;
+  margin-bottom: 0.6rem;
+  width: 10rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  font-size: 0.4rem;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+.footer h1:before,
+.footer h1:after {
+  position: absolute;
+  top: 0.46666667rem;
+  content: "";
+  width: 3.46666667rem;
+  height: 0.04rem;
+  background-color: #757575;
+}
+.footer h1:before {
+  left: 0.4rem;
+}
+.footer h1:after {
+  right: 0.4rem;
+}
+.footer .footer_wechat {
+  margin-bottom: 0.6rem;
+}
+.footer .footer_wechat img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 3.12rem;
+  height: 3.12rem;
+}
+.footer .footer_wechat p {
+  width: 100%;
+  height: 0.33333333rem;
+  line-height: 0.33333333rem;
+  font-size: 0.29333333rem;
+  color: #7e7e7e;
+}
+.footer .footer_copy {
+  width: 100%;
+  height: auto;
+}
+.footer .footer_copy p {
+  margin-bottom: 0.33333333rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.29333333rem;
+  color: #7e7e7e;
+}
+/*
+* 尾部固定导航条板块
+*/
+.footer_nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 1.66666667rem;
+  border-top: 0.01333333rem solid #ccc;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.footer_nav li {
+  float: left;
+  padding-top: 0.26666667rem;
+  width: 2rem;
+  height: 1.4rem;
+}
+.footer_nav li a {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.24rem;
+  width: 0.62666667rem;
+  height: 0.62666667rem;
+}
+.footer_nav li a img {
+  display: block;
+  width: 0.62666667rem;
+  height: 0.62666667rem;
+}
+.footer_nav li p {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.34666667rem;
+  color: #6d6d6d;
+  text-align: center;
+}

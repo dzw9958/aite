@@ -80,66 +80,197 @@ body{
 * 特色功能板块
 */
 .character_contain{
-    .character_title{
-        padding: 65px 0 100px;
-    }
-    .character_list{
-        .wh(1200px, 245px);
-        margin-bottom: 100px;
-        li{
-            position: relative;
-            float: left;
-            margin: 0 15px;
-            padding-top: 80px;
-            .wh(270px, 165px);
-            border-radius: 5px;
-            box-shadow: 0 0 15px 0 #dbf0fa;
-            .character_img{
-                position: absolute;
-                top: -49px;
-                left: 50%;
-                margin-left: -49px;
-                .whh(98px, 98px);
-                text-align: center;
-                border-radius: 50%;
-                .bgc(@b);
-                box-shadow: 0 0 15px 0 #ddf1fa;
-                img{
-                    display: inline-block;
-                    .wh(auto, auto);
-                    max-width: 98px;
-                    max-height: 98px;
-                    vertical-align: middle;
-                }
-            }
-            b{
-                display: block;
-                margin: auto;
-                margin-bottom: 25px;
-                .wh(26px, 2px);
-                .bgc(#13a4ec);
-            }
-            h2{
-                margin-bottom: 20px;
-                .whh(100%, 20px);
-                .font(18px, @6);
-                text-align: center;
-            }
-            p{
-                margin: auto;
-                .wh(210px, auto);
-                line-height: 22px;
-                .font(14px, @9);
-            }
+  .character_title{
+    padding: 65px 0 100px;
+  }
+  .character_list{
+    .wh(1200px, 245px);
+    margin-bottom: 100px;
+    li{
+      position: relative;
+      float: left;
+      margin: 0 15px;
+      padding-top: 80px;
+      .wh(270px, 165px);
+      border-radius: 5px;
+      box-shadow: 0 0 15px 0 #dbf0fa;
+      .character_img{
+        position: absolute;
+        top: -49px;
+        left: 50%;
+        margin-left: -49px;
+        .whh(98px, 98px);
+        text-align: center;
+        border-radius: 50%;
+        .bgc(@b);
+        box-shadow: 0 0 15px 0 #ddf1fa;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          max-width: 98px;
+          max-height: 98px;
+          vertical-align: middle;
         }
+      }
+      b{
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+        .wh(26px, 2px);
+        .bgc(#13a4ec);
+      }
+      h2{
+        margin-bottom: 20px;
+        .whh(100%, 20px);
+        .font(18px, @6);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(210px, auto);
+        line-height: 22px;
+        .font(14px, @9);
+      }
     }
+  }
 }
 /*
-* 板块
+* 功能介绍板块
 */
+.function_contain{
+  .wh(100%, 670px);
+  min-width: 1200px;
+  background: url(../img/market_robot/func-img.png) center no-repeat;
+  .function_title{
+    padding-top: 65px;
+    h1, p{
+      color: @b;
+    }
+  }
+}
 /*
-* 板块
+* 操作说明板块
 */
+.handle_contain{
+  .handle_title{
+    padding: 65px 0 60px;
+  }
+  .handle_box{
+    margin-bottom: 50px;
+    .wh(1200px, 550px);
+  }
+  .handle_list{
+    padding: 5px 0;
+    .wh(675px, 540px);
+    li{
+      position: relative;
+      margin-bottom: 15px;
+      margin-left: 63px;
+      padding: 0 35px;
+      .wh(542px, 75px);
+      i{
+        position: absolute;
+        top: 17px;
+        left: -63px;
+        .wh(32px, 41px);
+        background: url(../img/market_robot/number.png) no-repeat;
+        .bgy(0);
+      }
+      p{
+        .font(16px, @b);
+      }
+      .handle_one{
+        .whh(100%, 75px);
+      }
+      .handle_two{
+        padding-top: 11.5px;
+        .wh(100%, auto);
+        line-height: 26px;
+      }
+    }
+    li.handle_a{
+      .bgc(#5b74c6);
+      i{
+        .bgx(0);
+      }
+    }
+    li.handle_b{
+      .bgc(#9ba8bc);
+      i{
+        .bgx(34px);
+      }
+    }
+    li.handle_c{
+      .bgc(#78a9e1);
+      i{
+        .bgx(68px);
+      }
+    }
+    li.handle_d{
+      .bgc(#5a71bd);
+      i{
+        .bgx(102px);
+      }
+    }
+    li.handle_e{
+      .bgc(#6397d1);
+      i{
+        .bgx(136px);
+      }
+    }
+    li.handle_f{
+      .bgc(#9ba8dc);
+      i{
+        .bgx(170px);
+      }
+    }
+  }
+  .handle_img{
+    .wh(500px, 550px);
+    img{
+      display: block;
+      .wh(100%, 100%);
+    }
+  }
+}
 /*
-* 板块
+* 快人一步，链上区块板块
 */
+.tail_contain{
+  .wh(100%, 400px);
+  .bgc(#4c859f);
+  .tail_box{
+    margin: auto;
+    padding-top: 55px;
+    .wh(1200px, auto);
+    text-align: center;
+    i.tail_icon{
+      display: block;
+      margin: auto;
+      margin-bottom: 38px;
+      .wh(72px, 72px);
+      background: url(../img/market_robot/icon.png) no-repeat;
+    }
+    h1{
+      margin-bottom: 20px;
+      .whh(100%, 32px);
+      .font(30px, @b);
+    }
+    p{
+      margin-bottom: 50px;
+      .whh(100%, 22px);
+      .font(20px, #cbddf0);
+    }
+    button{
+      width: 240px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      color: #cbddf0;
+      border-radius: 25px;
+      border: solid 1px #ffffff;
+      background-color: #4c859f;
+      cursor: pointer;
+    }
+  }
+}

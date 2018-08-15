@@ -11,58 +11,65 @@
 /*
 * 页面导航栏
 */
+
 .nav{
-	position: fixed;
-	top: 0;
-	left: -190px;
-	.wh(230px, 100%);
-	.bgc(@h);
-	z-index: 999;
-	.trs(left, .5s);
-	.logo{
-		position: absolute;
-		top: 55px;
-		left: 50px;
-		.wh(88px, 70px);
-		img{
-			display: block;
-			.wh(100%, 100%);
-		}
+	.nav_wap{
+		display: none;
 	}
-	.nav_list{
-		position: absolute;
-		top: 175px;
+	.nav_pc.active{
 		left: 0;
-		.wh(190px, auto);
-		li{
-			.wh(190px, 48px);
-			.bgc(@h);
-			.trs(background-color, .3s);
-			a{
+	}
+	.nav_pc{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -190px;
+		.wh(230px, 100%);
+		.bgc(@h);
+		z-index: 999;
+		.trs(left, .5s);
+		.logo{
+			position: absolute;
+			top: 55px;
+			left: 50px;
+			.wh(88px, 70px);
+			img{
 				display: block;
-				.whh(190px, 48px);
-				.fc(16px, @b);
-				text-align: center;
+				.wh(100%, 100%);
 			}
 		}
-		li.active, li:hover{
-			.bgc(@009c43);
+		.nav_list{
+			position: absolute;
+			top: 175px;
+			left: 0;
+			.wh(190px, auto);
+			li{
+				.wh(190px, 48px);
+				.bgc(@h);
+				.trs(background-color, .3s);
+				a{
+					display: block;
+					.whh(190px, 48px);
+					.fc(16px, @b);
+					text-align: center;
+				}
+			}
+			li.active, li:hover{
+				.bgc(@009c43);
+			}
+		}
+		.nav_btn{
+			position: absolute;
+			top: 0;
+			right: 0;
+			.wh(40px, 100%);
+			line-height: 40px;
+			.fc(25px, @009c43);
+			text-align: center;
+			.bgc(@h);
+			cursor: pointer;
 		}
 	}
-	.nav_btn{
-		position: absolute;
-		top: 0;
-		right: 0;
-		.wh(40px, 100%);
-		line-height: 40px;
-		.fc(25px, @009c43);
-		text-align: center;
-		.bgc(@h);
-		cursor: pointer;
-	}
-}
-.nav.active{
-	left: 0;
 }
 /*
 * 页面主体部分
@@ -390,7 +397,8 @@
 		}
 	}
 	&_top{
-		height: 175px;
+		height: 180px;
+		overflow: hidden;
 		h2{
 			width: 150px;
 		}
@@ -399,6 +407,8 @@
 		}
 	}
 	&_bottom{
+		height: 280px;
+		overflow: hidden;
 		h2{
 			width: 210px;
 		}
@@ -406,4 +416,200 @@
 			width: 970/3px;
 		}
 	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* 页面导航栏
+*/
+.nav{
+	.nav_pc{
+		display: none;
+	}
+	.nav_wap{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		.wh(100%, 100px);
+		.bgc(@h);
+		z-index: 999;
+		.logo{
+			position: absolute;
+			top: 30px;
+			left: 20px;
+			.wh(218px, 40px);
+			img{
+				display: block;
+				.wh(100%, 100%);
+			}
+		}
+		.nav_btn{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			.wh(60px, 60px);
+			z-index: 9999;
+			i.line{
+				position: absolute;
+				left: 0;
+				.wh(100%, 6px);
+				border-radius: 3px;
+				.bgc(@b);
+				.trs(all, .3s);
+				transform: translate(0, 0);
+			}
+			i.line_one{
+				top: 10.5px;
+			}
+			i.line_two{
+				top: 27px;
+			}
+			i.line_three{
+				top: 43.5px;
+			}
+		}
+		.nav_btn.active{
+			i.line_one{
+				top: 27px;
+				transform: rotate(-45deg);
+				transform-origin: center center;;
+			}
+			i.line_two{
+				height: 0;
+			}
+			i.line_three{
+				top: 27px;
+				transform: rotate(45deg);
+				transform-origin: center center;;
+			}
+		}
+		.nav_hide{
+			position: fixed;
+			top: 100px;
+			left: 0;
+			.wh(100%, 0);
+			background: url(../img/index/000-8.png);
+			overflow: hidden;
+			.trs(height, .5s);
+			li{
+				.wh(100%, 100px);
+				a{
+					display: block;
+					.whh(100%, 100px);
+					.fc(30px, @b);
+					text-align: center;
+				}
+			}
+			li.active{
+				.bgc(@009c43);
+			}
+		}
+		.nav_hide.active{
+			height: 100%;
+		}
+	}
+}
+/*
+* 页面主体部分
+*/
+#navBar{
+	display: none;
+}
+.page{
+	&_text{
+		top: 12%;
+		p{
+			padding-top: 0;
+			line-height: 32px;
+			font-size: 24px;
+		}
+	}
+	&_img{
+		margin-left: -1088/4px;
+		.wh(1040/2px, 530px);
+	}
+	&_big{
+		display: none;
+	}
+}
+
+// 第六页
+.page6 {
+	&_left{
+		left: 8%;
+		.wh(324*1.2px, 364*1.2px);
+	}
+}
+
+// 第七页
+.page7 {
+	&_top{
+		margin: 150px auto 100px;
+	}
+	&_inf{
+		.wh(100%, auto);
+		border-top: 1px solid @d2d2d2;
+		>div{
+			margin: 15px 0;
+			.wh(100%, 60px);
+			.dan();
+		}
+		.page7_img{
+			float: left;
+			margin-right: 15px;
+			.whh(60px, 60px);
+			img{
+				max-width: 60px;
+				max-height: 60px;
+			}
+		}
+		p{
+			float: left;
+			.whh(auto, 60px);
+			.fc(24px, @9);
+		}
+		.page7_phone p{
+			margin-right: 20px;
+		}
+	}
+	&_code{
+		width: 100%;
+		img{
+			margin: 0 auto 18px;
+		}
+		p{
+			.whh(100%, 26px);
+			.fc(24px, @b);
+		}
+	}
+}
+
+// 第八页
+.page8 {
+	.page_img{
+		margin-top: -300px;
+		height: 800px;
+	}
+	&_text{
+		.wh(450px, 730px);
+		p{
+			width: 100%;
+		}
+	}
+	&_top{
+		height: 290px;
+		overflow: hidden;
+	}
+	&_bottom{
+		height: 440px;
+		overflow: hidden;
+	}
+}
+
 }

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+@h: #000000;
+@009c43: #009c43;
+@5d275d: #5d275d;
+@009c43: #009c43;
+@6c304f: #6c304f;
+@d2d2d2: #d2d2d2;
+/*
+* 通用函数
+*/
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.square(@s){
+  width: @s;
+  height: @s;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.fc(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgc(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+.trs(@x, @s){
+  -webkit-transition: @x @s linear;
+  -moz-transition: @x @s linear;
+  -o-transition: @x @s linear;
+  transition: @x @s linear;
+}
+.dan(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

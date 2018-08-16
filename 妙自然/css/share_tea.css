@@ -1,0 +1,645 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+body {
+  background-color: #f2f2f2;
+}
+/*
+* banner
+*/
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  min-width: 1200px;
+}
+.swiper-container .swiper-slide {
+  width: 100%;
+  height: 750px;
+}
+.swiper-container .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 750px;
+}
+.swiper-container .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .pagination {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  z-index: 20px;
+}
+.swiper-container .swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0 6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-container .swiper-visible-switch {
+  background: #009c43;
+}
+.swiper-container .swiper-active-switch {
+  background: #009c43;
+}
+/*
+* 茶园认领概述
+*/
+.summary {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.summary_title {
+  padding: 80px 0 60px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.summary_title h1 {
+  margin-bottom: 45px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+}
+.summary_title p {
+  margin: auto;
+  width: 854px;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999999;
+}
+.summary_list {
+  padding-bottom: 60px;
+  width: 1230px;
+  height: 440px;
+}
+.summary_list li {
+  float: left;
+  margin-right: 30px;
+  width: 380px;
+  height: 440px;
+  background-color: #ffffff;
+}
+.summary_list li .summary_img {
+  margin-bottom: 30px;
+  width: 380px;
+  height: 260px;
+  overflow: hidden;
+}
+.summary_list li .summary_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.summary_list li .summary_img img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.summary_list li b {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 115px;
+  width: 57px;
+  height: 7px;
+  background-color: #2aca1c;
+}
+.summary_list li p {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  font-size: 30px;
+  color: #009c43;
+  text-align: center;
+}
+/*
+* 茶园认领流程
+*/
+.flow {
+  width: 100%;
+  height: 585px;
+  min-width: 1200px;
+  background: url(../img/share_tea/bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.flow_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.flow_title {
+  padding: 70px 0 50px;
+  width: 100%;
+  height: auto;
+}
+.flow_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+.flow_list {
+  width: 1240px;
+  height: 160px;
+}
+.flow_list li {
+  float: left;
+  margin-right: 40px;
+  width: 115px;
+  height: 160px;
+}
+.flow_list li img {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 115px;
+  height: 115px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.flow_list li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+.flow_list li:hover img {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.flow_btn {
+  padding-top: 90px;
+  width: 100%;
+  height: 52px;
+}
+.flow_btn a {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #009c43;
+  background-color: #009c43;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.flow_btn a:hover {
+  color: #009c43;
+  background-color: #ffffff;
+}
+/*
+* ”庄主“尊享权益
+*/
+.rights {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.rights_title {
+  padding: 120px 0 70px;
+  width: 100%;
+  height: auto;
+}
+.rights_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.rights_list {
+  padding-bottom: 50px;
+  width: 1276px;
+  height: 315px;
+}
+.rights_list li {
+  float: left;
+  margin-right: 76px;
+  width: 243px;
+  height: 315px;
+}
+.rights_list li .rights_img {
+  margin-bottom: 45px;
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.rights_list li .rights_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.rights_list li .rights_img img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.rights_list li p {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+/*
+* 当地特色品茶
+*/
+.feature {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.feature_title {
+  padding: 70px 0 40px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.feature_title h1 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+}
+.feature_title p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #999999;
+}
+.feature_box {
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.feature_box .feature_big {
+  float: left;
+  margin-right: 20px;
+  width: 800px;
+  height: 540px;
+}
+.feature_box .feature_small {
+  float: left;
+  margin-bottom: 20px;
+  width: 380px;
+  height: 260px;
+}
+/*
+* 五指山雨林茶园规划
+*/
+.map {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.map_title {
+  padding: 70px 0 50px;
+  width: 100%;
+  height: auto;
+}
+.map_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.map_small {
+  float: left;
+  width: 235px;
+  height: 940px;
+  overflow: hidden;
+}
+.map_small li {
+  margin-bottom: 20px;
+  width: 235px;
+  height: 140px;
+  overflow: hidden;
+}
+.map_small li img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.map_small li img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.map_small li.map_special {
+  width: 235px;
+  height: 300px;
+}
+.map_big {
+  float: left;
+  margin: 0 20px;
+  width: 690px;
+  height: 940px;
+}
+.map_big img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  border-top: 1px solid #dcdcdc;
+}
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px) {
+  /*
+* banner
+*/
+  .swiper-container {
+    width: 100%;
+    height: 292.96875px;
+    min-width: 750px;
+  }
+  .swiper-container .swiper-slide {
+    width: 100%;
+    height: 292.96875px;
+  }
+  .swiper-container .swiper-slide a {
+    width: 100%;
+    height: 292.96875px;
+  }
+  .swiper-container .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+  }
+  /*
+* 茶园认领概述
+*/
+  .summary {
+    width: 100%;
+    height: auto;
+  }
+  .summary_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .summary_title p {
+    width: 710px;
+    height: auto;
+    line-height: 36px;
+    font-size: 21px;
+    color: #999999;
+  }
+  .summary_list {
+    width: 765px;
+    height: 277.89473684px;
+  }
+  .summary_list li {
+    margin-right: 15px;
+    width: 240px;
+    height: 277.89473684px;
+  }
+  .summary_list li .summary_img {
+    margin-bottom: 10px;
+    width: 240px;
+    height: 164.21052632px;
+  }
+  .summary_list p {
+    width: 100%;
+    height: 29.05263158px;
+    line-height: 29.05263158px;
+    font-size: 18.94736842px;
+    color: #009c43;
+  }
+  /*
+* 茶园认领流程
+*/
+  .flow {
+    width: 100%;
+    height: 877.5px;
+    min-width: 750px;
+  }
+  .flow_contain {
+    width: 100%;
+    height: auto;
+  }
+  .flow_title {
+    padding: 80px 0 60px;
+  }
+  .flow_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #ffffff;
+  }
+  .flow_list {
+    width: 100%;
+    height: 480px;
+  }
+  .flow_list li {
+    margin-right: 0;
+    width: 25%;
+    height: 240px;
+  }
+  .flow_list li img {
+    margin-bottom: 22.5px;
+    width: 146px;
+    height: 146px;
+  }
+  .flow_list li p {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 27px;
+    color: #ffffff;
+  }
+  .flow_btn {
+    padding-top: 50px;
+    width: 100%;
+    height: 78px;
+  }
+  .flow_btn a {
+    width: 300px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 27px;
+    color: #ffffff;
+    border-radius: 37.5px;
+  }
+  /*
+* ”庄主“尊享权益
+*/
+  .rights {
+    width: 100%;
+    height: auto;
+  }
+  .rights_title {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .rights_list {
+    width: 100%;
+    height: 630px;
+  }
+  .rights_list li {
+    margin-right: 0;
+    width: 375px;
+    height: 315px;
+  }
+  .rights_list li .rights_img {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .rights_list li p {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    font-size: 36px;
+    color: #333333;
+  }
+  /*
+* 当地特色品茶
+*/
+  .feature {
+    width: 100%;
+    height: auto;
+  }
+  .feature_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .feature_title p {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 27px;
+    color: #999999;
+  }
+  .feature_box {
+    width: 760px;
+    height: auto;
+  }
+  .feature_box .feature_big {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 750px;
+    height: 506.25px;
+  }
+  .feature_box .feature_small {
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 370px;
+    height: 253.15789474px;
+  }
+  /*
+* 五指山雨林茶园规划
+*/
+  .map {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .map_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .map_small {
+    width: 760px;
+    height: auto;
+  }
+  .map_small li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 243.33333333px;
+    height: 144.96453901px;
+  }
+  .map_big {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 750px;
+    height: 1021.73913043px;
+  }
+}

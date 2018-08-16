@@ -143,6 +143,12 @@
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
+.basic_box li .basic_img img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .basic_box li h2 {
   margin-bottom: 11px;
   width: 100%;
@@ -160,12 +166,6 @@
   line-height: 36px;
   font-size: 18px;
   color: #666666;
-}
-.basic_box li:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
 }
 /*
 * 花园式茶叶生产车间

@@ -1,0 +1,260 @@
+@import "lib.less";
+/*
+* banner
+*/
+.swiper-container{
+	position: relative;
+	.wh(100%, 750px);
+	min-width: 1200px;
+	.swiper-slide{
+		.wh(100%, 750px);
+		a{
+			display: block;
+			.wh(100%, 750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+	.pagination{
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		.whh(100%, 15px);
+		text-align: center;
+		z-index: 20px;
+	}
+	.swiper-pagination-switch {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: @b;
+		margin: 0 6px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.swiper-visible-switch {
+		background: @009c43;
+	}
+	.swiper-active-switch {
+		background: @009c43;
+	}
+}
+/*
+* 紫鹃基地基本介绍
+*/
+.basic{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 70px 0 50px;
+		.wh(100%, auto);
+		h1{
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	&_list{
+		.wh(100%, auto);
+		overflow: hidden;
+		li{
+			float: left;
+			padding: 0 38px;
+			.wh(224px, 285px);
+			h2{
+				padding: 35px 0;
+				.whh(100%, 65px);
+				text-align: center;
+				img{
+					display: inline-block;
+					margin-bottom: -18px;
+					.wh(70px, 65px);
+				}
+				span{
+					display: inline-block;
+					margin-left: 10px;
+					.fc(38px, @00753c);
+				}
+			}
+			p{
+				.wh(100%, auto);
+				line-height: 30px;
+				.fc(16px, @6);
+			}
+		}
+	}
+	&_line li{
+		border-bottom: 5px solid @00753c;
+	}
+	&_box{
+		padding-top: 60px;
+		.wh(1350px, auto);
+		overflow: hidden;
+		li{
+			float: left;
+			margin-right: 150px;
+			.wh(525px, 620px);
+			.basic_img{
+				margin-bottom: 20px;
+				.wh(525px, 370px);
+				overflow: hidden;
+				img{
+					display: block;
+					.wh(100%, 100%);
+					.trs(all, .5s);
+				}
+			}
+			h2{
+				margin-bottom: 11px;
+				.whh(100%, 26px);
+				.fc(24px, @3);
+				font-weight: bold;
+				text-align: center;
+			}
+			p{
+				margin: auto;
+				.wh(492px, auto);
+				line-height: 36px;
+				.fc(18px, @6);
+			}
+		}
+		li:hover img{
+			.trd(1.1);
+		}
+	}
+}
+/*
+* 花园式茶叶生产车间
+*/
+.workshop{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 70px 0;
+		.wh(100%, auto);
+		h1{
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	&_list{
+		padding-bottom: 25px;
+		.wh(1230px, auto);
+		overflow: hidden;
+		li{
+			float: left;
+			margin-bottom: 40px;
+			margin-right: 30px;
+			.wh(380px, 255px);
+			overflow: hidden;
+			img{
+				display: block;
+				.wh(100%, 100%);
+			}
+		}
+	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* banner
+*/
+.swiper-container{
+	.wh(100%, 750/1920*750px);
+	min-width: 750px;
+	.swiper-slide{
+		.wh(100%, 750/1920*750px);
+		a{
+			.wh(100%, 750/1920*750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+}
+/*
+* 紫鹃基地基本介绍
+*/
+.basic{
+	.wh(100%, auto);
+	&_title h1{
+		.whh(100%, 38*1.5px);
+		.fc(36*1.5px, @3);
+	}
+	&_list li{
+		padding: 0 20px 0 19px;
+		.wh(336px, 285*1.5px);
+		h2{
+			padding: 35*1.5px 0;
+			.whh(100%, 64*1.5px);
+			img{
+				margin-bottom: -18*1.5px;
+				.wh(70*1.5px, 65*1.5px);
+			}
+			span{
+				margin-left: 10*1.5px;
+				.fc(38*1.5px, @00753c);
+			}
+		}
+		p{
+			line-height: 30*1.5px;
+			.fc(16*1.5px, @6);
+		}
+	}
+	&_line li{
+		border-bottom: 0;
+	}
+	&_box{
+		.wh(770px, auto);
+		li{
+			margin-right: 20px;
+			.wh(365px, 700px);
+			.basic_img{
+				margin-bottom: 20*1.5px;
+				.wh(365px, 365/525*370px);
+			}
+			h2{
+				margin-bottom: 11*1.5px;
+				.whh(100%, 26*1.5px);
+				.fc(24*1.5px, @3);
+				.dan();
+			}
+			p{
+				.wh(325px, auto);
+				line-height: 36*1.2px;
+				.fc(18*1.2px, @6);
+			}
+		}
+	}
+}
+/*
+* 花园式茶叶生产车间
+*/
+.workshop{
+	.wh(100%, auto);
+	&_title h1{
+		.whh(100%, 38*1.5px);
+		.fc(36*1.5px, @3);
+	}
+	&_list{
+		.wh(770px, auto);
+		li{
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(365px, 365/380*255px);
+		}
+	}
+}
+}

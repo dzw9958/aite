@@ -9,9 +9,13 @@
 @h: #000000;
 @009c43: #009c43;
 @5d275d: #5d275d;
-@009c43: #009c43;
 @6c304f: #6c304f;
 @d2d2d2: #d2d2d2;
+@04d05c: #04d05c;
+@f2f2f2: #f2f2f2;
+@e5e5e5: #e5e5e5;
+@3f853f: #3f853f;
+@00753c: #00753c;
 /*
 * 通用函数
 */
@@ -49,6 +53,12 @@
   -moz-transition: @x @s linear;
   -o-transition: @x @s linear;
   transition: @x @s linear;
+}
+.trd(@x){
+  -webkit-transform: scale(@x);
+  -moz-transform: scale(@x);
+  -o-transform: scale(@x);
+  transform: scale(@x);
 }
 .dan(){
   overflow:hidden;

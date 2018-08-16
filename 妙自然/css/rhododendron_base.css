@@ -1,0 +1,335 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* banner
+*/
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  min-width: 1200px;
+}
+.swiper-container .swiper-slide {
+  width: 100%;
+  height: 750px;
+}
+.swiper-container .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 750px;
+}
+.swiper-container .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .pagination {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  z-index: 20px;
+}
+.swiper-container .swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0 6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-container .swiper-visible-switch {
+  background: #009c43;
+}
+.swiper-container .swiper-active-switch {
+  background: #009c43;
+}
+/*
+* 紫鹃基地基本介绍
+*/
+.basic {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.basic_title {
+  padding: 70px 0 50px;
+  width: 100%;
+  height: auto;
+}
+.basic_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.basic_list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.basic_list li {
+  float: left;
+  padding: 0 38px;
+  width: 224px;
+  height: 285px;
+}
+.basic_list li h2 {
+  padding: 35px 0;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+}
+.basic_list li h2 img {
+  display: inline-block;
+  margin-bottom: -18px;
+  width: 70px;
+  height: 65px;
+}
+.basic_list li h2 span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 38px;
+  color: #00753c;
+}
+.basic_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.basic_line li {
+  border-bottom: 5px solid #00753c;
+}
+.basic_box {
+  padding-top: 60px;
+  width: 1350px;
+  height: auto;
+  overflow: hidden;
+}
+.basic_box li {
+  float: left;
+  margin-right: 150px;
+  width: 525px;
+  height: 620px;
+}
+.basic_box li .basic_img {
+  margin-bottom: 20px;
+  width: 525px;
+  height: 370px;
+  overflow: hidden;
+}
+.basic_box li .basic_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.basic_box li h2 {
+  margin-bottom: 11px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.basic_box li p {
+  margin: auto;
+  width: 492px;
+  height: auto;
+  line-height: 36px;
+  font-size: 18px;
+  color: #666666;
+}
+.basic_box li:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*
+* 花园式茶叶生产车间
+*/
+.workshop {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.workshop_title {
+  padding: 70px 0;
+  width: 100%;
+  height: auto;
+}
+.workshop_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.workshop_list {
+  padding-bottom: 25px;
+  width: 1230px;
+  height: auto;
+  overflow: hidden;
+}
+.workshop_list li {
+  float: left;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  width: 380px;
+  height: 255px;
+  overflow: hidden;
+}
+.workshop_list li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px) {
+  /*
+* banner
+*/
+  .swiper-container {
+    width: 100%;
+    height: 292.96875px;
+    min-width: 750px;
+  }
+  .swiper-container .swiper-slide {
+    width: 100%;
+    height: 292.96875px;
+  }
+  .swiper-container .swiper-slide a {
+    width: 100%;
+    height: 292.96875px;
+  }
+  .swiper-container .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+  }
+  /*
+* 紫鹃基地基本介绍
+*/
+  .basic {
+    width: 100%;
+    height: auto;
+  }
+  .basic_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .basic_list li {
+    padding: 0 20px 0 19px;
+    width: 336px;
+    height: 427.5px;
+  }
+  .basic_list li h2 {
+    padding: 52.5px 0;
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+  }
+  .basic_list li h2 img {
+    margin-bottom: -27px;
+    width: 105px;
+    height: 97.5px;
+  }
+  .basic_list li h2 span {
+    margin-left: 15px;
+    font-size: 57px;
+    color: #00753c;
+  }
+  .basic_list li p {
+    line-height: 45px;
+    font-size: 24px;
+    color: #666666;
+  }
+  .basic_line li {
+    border-bottom: 0;
+  }
+  .basic_box {
+    width: 770px;
+    height: auto;
+  }
+  .basic_box li {
+    margin-right: 20px;
+    width: 365px;
+    height: 700px;
+  }
+  .basic_box li .basic_img {
+    margin-bottom: 30px;
+    width: 365px;
+    height: 257.23809524px;
+  }
+  .basic_box li h2 {
+    margin-bottom: 16.5px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    font-size: 36px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .basic_box li p {
+    width: 325px;
+    height: auto;
+    line-height: 43.2px;
+    font-size: 21.6px;
+    color: #666666;
+  }
+  /*
+* 花园式茶叶生产车间
+*/
+  .workshop {
+    width: 100%;
+    height: auto;
+  }
+  .workshop_title h1 {
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 54px;
+    color: #333333;
+  }
+  .workshop_list {
+    width: 770px;
+    height: auto;
+  }
+  .workshop_list li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 365px;
+    height: 244.93421053px;
+  }
+}

@@ -532,7 +532,6 @@
     right: 20px;
     width: 60px;
     height: 60px;
-    z-index: 9999;
   }
   .nav .nav_wap .nav_btn i.line {
     position: absolute;
@@ -545,6 +544,10 @@
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   .nav .nav_wap .nav_btn i.line_one {
@@ -558,7 +561,15 @@
   }
   .nav .nav_wap .nav_btn.active i.line_one {
     top: 27px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
     transform-origin: center center;
   }
   .nav .nav_wap .nav_btn.active i.line_two {
@@ -566,7 +577,15 @@
   }
   .nav .nav_wap .nav_btn.active i.line_three {
     top: 27px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
     transform-origin: center center;
   }
   .nav .nav_wap .nav_hide {

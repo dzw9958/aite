@@ -1,0 +1,421 @@
+@import "lib.less";
+/*
+* banner
+*/
+.swiper-container{
+	position: relative;
+	.wh(100%, 750px);
+	min-width: 1200px;
+	.swiper-slide{
+		.wh(100%, 750px);
+		a{
+			display: block;
+			.wh(100%, 750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+	.pagination{
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		.whh(100%, 15px);
+		text-align: center;
+		z-index: 20px;
+	}
+	.swiper-pagination-switch {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: @b;
+		margin: 0 6px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.swiper-visible-switch {
+		background: @009c43;
+	}
+	.swiper-active-switch {
+		background: @009c43;
+	}
+}
+/*
+* 穿黎服，做茶农，非凡体验，返璞归真
+*/
+.dress{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 100px 0 50px;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 25px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+		}
+		p{
+			.whh(100%, 26px);
+			.fc(24px, @9);
+		}
+	}
+	&_list{
+		padding-bottom: 50px;
+		.wh(1230px, 550px);
+		overflow: hidden;
+		li{
+			float: left;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			.wh(380px, 260px);
+			overflow: hidden;
+			img{
+				display: block;
+				.square(100%);
+				.trs(all, .5s);
+			}
+			img:hover{
+				.trd(1.1);
+			}
+		}
+	}
+}
+/*
+* 对山歌，住民宿
+*/
+.live{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 50px 0;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 25px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+		}
+		p{
+			.whh(100%, 26px);
+			.fc(24px, @9);
+		}
+	}
+	&_list{
+		padding-bottom: 50px;
+		.wh(1230px, 435px);
+		overflow: hidden;
+		li{
+			float: left;
+			margin-right: 30px;
+			.wh(380px, 435px);
+			.bgc(@f2f2f2);
+			.live_img{
+				margin-bottom: 25px;
+				.wh(380px, 265px);
+				overflow: hidden;
+				img{
+					display: block;
+					.square(100%);
+					.trs(all, .5s);
+				}
+				img:hover{
+					.trd(1.1);
+				}
+			}
+			h2{
+				margin: auto;
+				margin-bottom: 35px;
+				.whh(320px, 38px);
+				.fc(36px, @6c304f);
+				.dan();
+			}
+			p{
+				margin: auto;
+				.whh(320px, 20px);
+				.fc(18px, @9);
+				.dan();
+			}
+		}
+	}
+}
+/*
+* 特色有机餐饮
+*/
+.eat{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 50px 0;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 25px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+		}
+		p{
+			.whh(100%, 26px);
+			.fc(24px, @9);
+		}
+	}
+	&_list{
+		padding-bottom: 50px;
+		.wh(1220px, 400px);
+		overflow: hidden;
+		li{
+			position: relative;
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(285px, 190px);
+			overflow: hidden;
+			img{
+				display: block;
+				.square(100%);
+			}
+			p{
+				position: absolute;
+				bottom: -36px;
+				left: 0;
+				padding: 0 10px;
+				.whh(265px, 36px);
+				.fc(18px, @b);
+				text-align: center;
+				.dan();
+				background: url(../img/tea_fun/86416e-5.png);
+				.trs(bottom, .3s);
+			}
+		}
+		li:hover p{
+			bottom: 0;
+		}
+	}
+}
+/*
+* 雨林寻宝、农耕体验、森林探险
+*/
+.action{
+	margin: auto;
+	padding-bottom: 50px;
+	.wh(1200px, auto);
+	&_title{
+		padding: 50px 0;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 25px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+		}
+		p{
+			.whh(100%, 26px);
+			.fc(24px, @9);
+		}
+	}
+	.active_container{
+		position: relative;
+		.wh(1200px, 750px);
+		overflow: hidden;
+		.swiper-slide{
+			.wh(1200px, 750px);
+			a{
+				display: block;
+				.wh(1200px, 750px);
+				img{
+					.wh(1200px, 100%);
+				}
+			}
+		}
+		.arrow-left, .arrow-right{
+			position: absolute;
+			top: 50%;
+			margin-top: -212/2px;
+			.wh(88px, 212px);
+			background: url(../img/tea_fun/fff-5.png);
+			i{
+				display: block;
+				margin: 70px auto;
+				.wh(32px, 72px);
+			}
+		}
+		.arrow-left{
+			left: 0;
+			i{
+				background: url(../img/tea_fun/left.png) no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+		}
+		.arrow-right{
+			right: 0;
+			i{
+				background: url(../img/tea_fun/right.png) no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+		}
+	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* banner
+*/
+.swiper-container{
+	.wh(100%, 750/1920*750px);
+	min-width: 750px;
+	.swiper-slide{
+		.wh(100%, 750/1920*750px);
+		a{
+			.wh(100%, 750/1920*750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+}
+/*
+* 穿黎服，做茶农，非凡体验，返璞归真
+*/
+.dress{
+	.wh(100%, auto);
+	&_title{
+		padding-top: 90px;
+		h1{
+			margin-bottom: 35px;
+			.whh(100%, 38*1.5px);
+			.fc(36*1.1px, @3);
+		}
+		p{
+			.whh(100%, 26*1.5px);
+			.fc(24*1.3px, @9);
+		}
+	}
+	&_list{
+		.wh(770px, 365/380*260*3+40px);
+		li{
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(365px, 365/380*260px);
+		}
+	}
+}
+/*
+* 对山歌，住民宿
+*/
+.live{
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.5px, @3);
+		}
+		p{
+			.whh(100%, 26*1.5px);
+			.fc(24*1.5px, @9);
+		}
+	}
+	&_list{
+		.wh(765px, 280px);
+		li{
+			margin-right: 15px;
+			.wh(240px, 280px);
+			.live_img{
+				margin-bottom: 240/380*25px;
+				.wh(240px, 240/380*265px);
+			}
+			h2{
+				margin-bottom: 240/380*35px;
+				.whh(240/380*320px, 38px);
+				.fc(36px, @6c304f);
+			}
+			p{
+				.whh(240/380*320px, 26px);
+				.fc(24px, @9);
+			}
+		}
+	}
+}
+/*
+* 特色有机餐饮
+*/
+.eat{
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.5px, @3);
+		}
+		p{
+			.whh(100%, 26*1.5px);
+			.fc(24*1.3px, @9);
+		}
+	}
+	&_list{
+		.wh(770px, 365/285*190*4+20*3px);
+		li{
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(365px, 365/285*190px);
+			p{
+				bottom: 0;
+				padding: 0 10*1.5px;
+				.whh(335px, 36*1.5px);
+				.fc(18*1.5px, @b);
+			}
+		}
+	}
+}
+/*
+* 雨林寻宝、农耕体验、森林探险
+*/
+.action{
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.4px, @3);
+		}
+		p{
+			.whh(100%, 26*1.5px);
+			.fc(24*1.5px, @9);
+		}
+	}
+	.active_container{
+		position: relative;
+		.wh(100%, 750/1200*750px);
+		.swiper-slide{
+			.wh(100%, 750/1200*750px);
+			a{
+				display: block;
+				.wh(100%, 750/1200*750px);
+				img{
+					.wh(100%, 100%);
+				}
+			}
+		}
+		.arrow-left, .arrow-right{
+			position: absolute;
+			top: 50%;
+			margin-top: -212/2/2px;
+			.wh(88/2px, 212/2px);
+			background: url(../img/tea_fun/fff-5.png);
+			i{
+				display: block;
+				margin: 70/2px auto;
+				.wh(32/2px, 72/2px);
+			}
+		}
+	}
+}
+}

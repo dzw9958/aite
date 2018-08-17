@@ -1,0 +1,78 @@
+@import "lib.less";
+/*
+* banner
+*/
+.detail{
+	margin: auto;
+	padding-top: 100px;
+	.wh(1200px, auto);
+	&_title{
+		padding: 90px 0;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 20px;
+			.whh(100%, 32px);
+			.fc(30px, @3);
+		}
+	}
+	&_info{
+		.whh(100%, 20px);
+		.fc(18px, @9);
+		b{
+			font-weight: normal;
+		}
+	}
+	&_box{
+		.wh(100%, auto);
+		p{
+			.wh(100%, auto);
+			line-height: 48px;
+			.fc(24px, @6);
+			text-align: center;
+		}
+		img{
+			display: block;
+			margin: 50px auto;
+			.wh(auto, auto);
+			max-width: 1200px;
+		}
+	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* banner
+*/
+.detail{
+	padding-top: 0px;
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 32*1.5px);
+			.fc(30*1.5px, @3);
+		}
+	}
+	&_info{
+		.whh(100%, 20*1.5px);
+		.fc(18*1.5px, @9);
+		b{
+			font-weight: normal;
+		}
+	}
+	&_box{
+		p{
+			line-height: 48*1.5px;
+			.fc(24*1.2px, @6);
+		}
+		img{
+			max-width: 750px;
+		}
+	}
+}
+}

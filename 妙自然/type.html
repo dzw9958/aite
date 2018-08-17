@@ -5,10 +5,11 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="cache-control" content="no-siteapp">
     <meta id="viewport" name="viewport" content="width=750">
-    <title>妙自然-妙课堂-详情页</title>
+    <title>妙自然-茶品系列</title>
     <link rel="stylesheet" href="./css/Public.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/classroom_details.css">
+    <link rel="stylesheet" href="./css/type.css">
 </head>
 <body>
 <!-- 通用导航条开始 -->
@@ -37,10 +38,10 @@
             <li>
                 <a href="#">茶庄乐趣</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="#">妙课堂</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="#">茶品系列</a>
             </li>
             <li>
@@ -50,23 +51,38 @@
     </div>
 </div>
 <!-- 通用导航条结束 -->
-<div class="detail">
-    <div class="detail_title">
-        <h1>茶文化礼仪</h1>
-        <div class="detail_info">
-            <span>日期：</span>
-            <b class="detail_time">2018-07-31&nbsp;15:40:15</b>&nbsp;
-            <span>浏览次数：</span>
-            <b class="detail_num">14</b>
+<!-- banner开始 -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#">
+                <img src="./img/type/banner.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">
+                <img src="./img/type/banner.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">
+                <img src="./img/type/banner.png" alt="">
+            </a>
         </div>
     </div>
-    <div class="detail_box">
-        <p>慢下来<br/>静静泡茶<br/>烦恼无影无踪<br/>心底寂静欢喜<br/>天籁般的禅乐<br/>让阳光和空气同时进来<br/>远离纷扰 让生命没有辜负</p>
-        <img src="./img/classroom_details/img.png" alt="">
-        <p>兰花之韵<br/>清新淡雅 幽雅高贵<br/>从此愿做若兰自我<br/>清新素雅，与世无争<br/>清澈的眼眸底下<br/>住着一颗纯净的心<br/>这世间的纷纷扰扰<br/>与我没有任何关系</p>
-        <img src="./img/classroom_details/img2.png" alt="">
-    </div>
+    <ul class="pagination"></ul>
 </div>
+<!-- banner结束 -->
+<!-- 上图片开始 -->
+<div class="type_top">
+    <img src="./img/type/top.png" alt="">
+</div>
+<!-- 上图片结束 -->
+<!-- 茶品系列开始 -->
+<div class="type">
+    <div class=""></div>
+</div>
+<!-- 茶品系列结束 -->
 <!-- 通用尾部开始 -->
 <div class="footer">
     <div class="footer_pc">
@@ -193,6 +209,8 @@
 </div>
 <!-- 通用尾部结束 -->
 <script src="./js/jquery.min.js"></script>
-<script src="./js/classroom_details.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/type.js"></script>
 </body>
 </html>

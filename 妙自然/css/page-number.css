@@ -1,0 +1,43 @@
+.page-number-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.page-number-wrapper > ul {
+  font-size: 0;
+  text-align: center;
+}
+.page-number-wrapper > ul li {
+  margin: 0 5px;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF;
+}
+.page-number-wrapper > ul li a {
+  display: block;
+  padding: 0 13px;
+  color: #333333;
+}
+.page-number-wrapper > ul li:hover {
+  background: #408244;
+}
+.page-number-wrapper > ul li:hover a {
+  color: #FFFFFF;
+}
+.page-number-wrapper > ul .current {
+  position: relative;
+  background: #408244;
+}
+.page-number-wrapper > ul .current a {
+  color: #FFFFFF;
+}
+.page-number-wrapper > ul .current:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

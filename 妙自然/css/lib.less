@@ -18,6 +18,7 @@
 @00753c: #00753c;
 @2aca1c: #2aca1c;
 @dcdcdc: #dcdcdc;
+@bfbfbf: #bfbfbf;
 /*
 * 通用函数
 */
@@ -68,4 +69,11 @@
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
+}
+.duo(@x){
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @x;
+  -webkit-box-orient: vertical;
 }

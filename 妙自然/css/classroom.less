@@ -1,0 +1,274 @@
+@import "lib.less";
+/*
+* banner
+*/
+.swiper-container{
+	position: relative;
+	.wh(100%, 750px);
+	min-width: 1200px;
+	.swiper-slide{
+		.wh(100%, 750px);
+		a{
+			display: block;
+			.wh(100%, 750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+	.pagination{
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		.whh(100%, 15px);
+		text-align: center;
+		z-index: 20px;
+	}
+	.swiper-pagination-switch {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: @b;
+		margin: 0 6px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.swiper-visible-switch {
+		background: @009c43;
+	}
+	.swiper-active-switch {
+		background: @009c43;
+	}
+}
+/*
+* 妙课堂
+*/
+.classroom{
+	margin: auto;
+	.wh(1200px, auto);
+	&_title{
+		padding: 90px 0 50px;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 50px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+		}
+		p{
+			margin: auto;
+			.wh(792px, auto);
+			line-height: 36px;
+			.fc(18px, @6);
+		}
+	}
+	&_btn{
+		margin-bottom: 87px;
+		.wh(100%, 33px);
+		li{
+			float: left;
+			.wh(50%, 33px);
+			button{
+				display: block;
+				margin: auto;
+				.whh(123px, 33px);
+				.fc(24px, @3);
+				text-align: center;
+				.bgc(@b);
+			}
+		}
+		li.active button{
+			color: @b;
+			.bgc(@009c43);
+		}
+	}
+	&_switch{
+		.wh(100%, auto);
+	}
+	&_list{
+		margin-bottom: 50px;
+		display: none;
+		.wh(100%, auto);
+		overflow: hidden;
+		li{
+			margin-bottom: 35px;
+			.wh(100%, 250px);
+			overflow: hidden;
+			.classroom_img{
+				float: left;
+				.wh(350px, 250px);
+				overflow: hidden;
+				img{
+					display: block;
+					.square(100%);
+					.trs(all, .5s);
+				}
+			}
+			.classroom_text{
+				position: relative;
+				float: right;
+				padding: 5px 0;
+				.wh(825px, 240px);
+				h2{
+					margin-bottom: 20px;
+					.whh(750px, 32px);
+					.fc(16px, @3);
+					font-weight: bold;
+					.dan();
+				}
+				.time{
+					margin-bottom: 30px;
+					.whh(100%, 18px);
+					.fc(16px, @3);
+					.dan();
+				}
+				.author{
+					margin-bottom: 30px;
+					.whh(100%, 18px);
+					.fc(16px, @3);
+					.dan();
+				}
+				.blurb{
+					.wh(100%, auto);
+					line-height: 24px;
+					.fc(16px, @3);
+					.duo(4);
+				}
+				a{
+					position: absolute;
+					top: 5px;
+					right: 0;
+					.whh(70px, 30px);
+					.fc(14px, @3);
+					text-align: center;
+					border: 1px solid @bfbfbf;
+					.bgc(@f2f2f2);
+				}
+			}
+		}
+		li:hover img{
+			.trd(1.1);
+		}
+	}
+	&_list.active{
+		display: block;
+	}
+}
+.page-number-wrapper{
+	margin-bottom: 50px;
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* banner
+*/
+.swiper-container{
+	.wh(100%, 750/1920*750px);
+	min-width: 750px;
+	.swiper-slide{
+		.wh(100%, 750/1920*750px);
+		a{
+			.wh(100%, 750/1920*750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+}
+/*
+* 妙课堂
+*/
+.classroom{
+	margin: auto;
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.5px, @3);
+		}
+		p{
+			.wh(710px, auto);
+			line-height: 36*1.5px;
+			.fc(18*1.5px, @6);
+		}
+	}
+	&_btn{
+		margin-bottom: 20px;
+		.wh(100%, 375/123*33px);
+		li{
+			.wh(50%, 375/123*33px);
+			button{
+				.whh(375px, 375/123*33px);
+				.fc(24*1.5px, @3);
+			}
+		}
+		li.active button{
+			color: @b;
+			.bgc(@009c43);
+		}
+	}
+	&_list{
+		margin-bottom: 0;
+		li{
+			margin-bottom: 20px;
+			.wh(100%, 750/1200*250px);
+			.classroom_img{
+				.wh(750/1200*350px, 750/1200*250px);
+			}
+			.classroom_text{
+				padding: 0;
+				.wh(750/1200*825px, 750/1200*240px);
+				h2{
+					margin-bottom: 5px;
+					.whh(360px, 32*1.5px);
+					.fc(16*1.5px, @3);
+				}
+				.time{
+					display: none;
+					// float: left;
+					// margin-bottom: 5px;
+					// .whh(360/2px, 18*1.5px);
+					// .fc(16*1.5px, @3);
+					// .dan();
+				}
+				.author{
+					float: left;
+					margin-bottom: 5px;
+					.whh(360px, 18*1.5px);
+					.fc(16*1.5px, @3);
+					.dan();
+				}
+				.blurb{
+					float: left;
+					.wh(100%, auto);
+					line-height: 24*1.5px;
+					.fc(16*1.5px, @3);
+					.duo(2);
+				}
+				a{
+					.whh(70*2px, 30*2px);
+					.fc(14*2px, @3);
+				}
+			}
+		}
+	}
+}
+.page-number-wrapper{
+	margin-bottom: 20px;
+	>ul li{
+    font-size: 14*2px;
+    height: 32*2px;
+		line-height: 32*2px;
+		a{
+			padding: 0 13*2px;
+		}
+	}
+}
+}

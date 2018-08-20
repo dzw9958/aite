@@ -1,0 +1,285 @@
+@import "lib.less";
+/*
+* banner
+*/
+.swiper-container{
+	position: relative;
+	.wh(100%, 750px);
+	min-width: 1200px;
+	.swiper-slide{
+		.wh(100%, 750px);
+		a{
+			display: block;
+			.wh(100%, 750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+	.pagination{
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		.whh(100%, 15px);
+		text-align: center;
+		z-index: 20px;
+	}
+	.swiper-pagination-switch {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: @b;
+		margin: 0 6px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.swiper-visible-switch {
+		background: @009c43;
+	}
+	.swiper-active-switch {
+		background: @009c43;
+	}
+}
+/*
+* 关于妙自然
+*/
+.about{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 90px 0 50px;
+		.wh(100%, auto);
+		text-align: center;
+		h1{
+			margin-bottom: 45px;
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+		}
+		p{
+			margin: auto;
+			.wh(755px, auto);
+			line-height: 36px;
+			.fc(18px, @6);
+		}
+	}
+	&_box{
+		margin-bottom: 5px;
+		.wh(100%, auto);
+		overflow: hidden;
+		img{
+			display: block;
+			margin: auto;
+			margin-bottom: 45px;
+			.wh(auto, auto);
+			max-width: 1200px;
+		}
+		p{
+			margin: auto;
+			margin-bottom: 15px;
+			.wh(100%, auto);
+			line-height: 36px;
+			.fc(18px, @6);
+			b{
+				display: inline-block;
+				.wh(36px, 0);
+			}
+		}
+	}
+}
+/*
+* 两组图片
+*/
+.image{
+	margin: auto;
+	.wh(1200px, auto);
+	&_top{
+		margin-bottom: 30px;
+		.wh(100%, 260px);
+		.bgc(@f2f2f2);
+		li{
+			float: left;
+			margin: 35px 10px;
+			.wh(280px, 190px);
+			img{
+				display: block;
+				.square(100%);
+			}
+		}
+	}
+	&_bottom{
+		position: relative;
+		.wh(100%, 550px);
+		.image_bg{
+			display: block;
+			.square(100%);
+		}
+		.image_text{
+			position: absolute;
+			top: 70px;
+			right: 265px;
+			.wh(322px, 329px);
+		}
+	}
+}
+/*
+* 联系我们
+*/
+.contact{
+	margin: auto;
+	margin-bottom: 50px;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 90px 0 50px;
+		.wh(100%, auto);
+		h1{
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	&_left{
+		float: left;
+		padding-top: 45px;
+		.wh(400px, 485px);
+		h1{
+			margin-bottom: 50px;
+			.whh(100%, 26px);
+			.fc(24px, @009c43);
+			text-align: center;
+		}
+		div{
+			margin-bottom: 40px;
+			.wh(100%, auto);
+			overflow: hidden;
+			span{
+				float: left;
+				.whh(150px, 24px);
+				.fc(18px, @3);
+				text-align: right;
+			}
+			p{
+				float: right;
+				.wh(250px, auto);
+				line-height: 24px;
+				.fc(18px, @3);
+				text-align: center;
+			}
+		}
+	}
+	&_right{
+		float: right;
+		.wh(800px, 530px);
+	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* banner
+*/
+.swiper-container{
+	.wh(100%, 750/1920*750px);
+	min-width: 750px;
+	.swiper-slide{
+		.wh(100%, 750/1920*750px);
+		a{
+			.wh(100%, 750/1920*750px);
+			img{
+				.wh(100%, 100%);
+			}
+		}
+	}
+}
+/*
+* 关于妙自然
+*/
+.about{
+	.wh(100%, auto);
+	&_title{
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.5px, @3);
+		}
+		p{
+			.wh(710px, auto);
+			line-height: 36*1.5px;
+			.fc(18*1.5px, @6);
+		}
+	}
+	&_box{
+		img{
+			max-width: 750px;
+		}
+		p{
+			.wh(710px, auto);
+			line-height: 36*1.5px;
+			.fc(18*1.5px, @6);
+			b{
+				display: inline-block;
+				.wh(36*1.5px, 0);
+			}
+		}
+	}
+}
+/*
+* 两组图片
+*/
+.image{
+	.wh(100%, auto);
+	&_top{
+		.wh(100%, 355/280*260*2px);
+		li{
+			.wh(355px, 355/280*190px);
+		}
+	}
+	&_bottom{
+		.wh(100%, 750/1200*550px);
+		.image_text{
+			top: 750/1200*70px;
+			right: 750/1200*265px;
+			.wh(750/1200*322px, 750/1200*329px);
+		}
+	}
+}
+/*
+* 联系我们
+*/
+.contact{
+	.wh(100%, auto);
+	&_title h1{
+		.whh(100%, 38*1.5px);
+		.fc(36*1.5px, @3);
+	}
+	&_left{
+		margin: 0 20px;
+		.wh(710px, 485px);
+		h1{
+			.whh(100%, 710/400*26px);
+			.fc(710/400*24px, @009c43);
+		}
+		div{
+			span{
+				.whh(710/400*150px, 710/400*24px);
+				.fc(710/400*18px, @3);
+			}
+			p{
+				.wh(710/400*250px, auto);
+				line-height: 710/400*24px;
+				.fc(710/400*18px, @3);
+			}
+		}
+	}
+	&_right{
+		.wh(750px, 750/800*530px);
+	}
+}
+}

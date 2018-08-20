@@ -42,14 +42,165 @@
 	}
 }
 /*
-* 妙课堂
+* 上图片
 */
+.type_top{
+	margin: 100px auto 50px;
+	.wh(1200px, auto);
+	img{
+		display: block;
+		margin: auto;
+		.wh(auto, auto);
+		max-width: 1200px;
+	}
+}
 /*
-* 妙课堂
+* 茶品系列
 */
+.type{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+	&_title{
+		padding: 50px 0;
+		.wh(100%, auto);
+		h1{
+			.whh(100%, 38px);
+			.fc(36px, @3);
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	&_switch{
+		.wh(100%, auto);
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-bottom: 10px;
+			padding: 0 18px;
+			.whh(auto, 40px);
+			.fc(18px, @3);
+			.bgc(@b);
+			cursor: pointer;
+		}
+		li.active{
+			color: @b;
+			.bgc(@405f4f);
+		}
+	}
+	&_switch&_two{
+		display: none;
+		margin-bottom: 45px;
+		li{
+			padding: 0 16px;
+			.whh(auto, 36px);
+			.fc(16px, @6);
+		}
+		li.active{
+			color: @b;
+			.bgc(@405f4f);
+		}
+	}
+	&_two.active_switch{
+		display: block;
+	}
+	&_list{
+		margin-bottom: 90px;
+		.wh(1230px, auto);
+		overflow: hidden;
+		li{
+			position: relative;
+			float: left;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			.wh(380px, 280px);
+			overflow: hidden;
+			img{
+				display: block;
+				.square(100%);
+			}
+			.type_text{
+				position: absolute;
+				top: 220px;
+				left: 0;
+				.wh(380px, 280px);
+				text-align: center;
+				background: url(../img/type/a17a8e-8.png);
+				.trs(top, .5s);
+				h2{
+					padding-top: 17px;
+					margin-bottom: 35px;
+					.whh(100%, 26px);
+					.fc(24px, @b);
+					font-weight: bold;
+					.trs(padding-top, .5s);
+				}
+				p{
+					margin: auto;
+					.wh(264px, auto);
+					line-height: 24px;
+					.fc(12px, @b);
+				}
+			}
+		}
+		li:hover .type_text{
+			top: 0;
+			h2{
+				padding-top: 80px;
+			}
+		}
+	}
+	&_btn{
+		margin-bottom: 45px;
+		.wh(100%, auto);
+		button{
+			display: block;
+			margin: auto;
+			.wh(121px, 33px);
+			background: url(../img/type/more.png) no-repeat;
+			.bgs(100%, 100%);
+			cursor: pointer;
+		}
+	}
+}
 /*
-* 妙课堂
+* 一组图片
 */
+.image{
+	margin: auto;
+	.wh(1200px, auto);
+	margin-bottom: 20px;
+	overflow: hidden;
+	&_title{
+		display: none;
+	}
+	&_left{
+		float: left;
+		.wh(880px, auto);
+		overflow: hidden;
+		li{
+			float: left;
+			margin-right: 40px;
+			margin-bottom: 40px;
+			.wh(400px, 310px);
+			img{
+				display: block;
+				.square(100%);
+			}
+		}
+	}
+	&_right{
+		float: right;
+		.wh(320px, auto);
+		img{
+			display: block;
+			margin: auto;
+			padding-top: 70px;
+			.wh(63px, 299px);
+		}
+	}
+}
+
 
 
 /******************************
@@ -73,6 +224,96 @@
 	}
 }
 /*
-* 妙课堂
+* 上图片
 */
+.type_top{
+	.wh(100%, auto);
+	img{
+		max-width: 710px;
+	}
+}
+/*
+* 茶品系列
+*/
+.type{
+	.wh(100%, auto);
+	&_title h1{
+		.whh(100%, 38*1.5px);
+		.fc(36*1.5px, @3);
+	}
+	&_switch{
+		text-align: left;
+		li{
+			padding: 0 18*1.5px;
+			.whh(auto, 40*1.5px);
+			.fc(18*1.5px, @3);
+		}
+	}
+	&_switch&_two{
+		margin-bottom: 45px;
+		li{
+			padding: 0 16*1.5px;
+			.whh(auto, 36*1.5px);
+			.fc(16*1.5px, @6);
+		}
+	}
+	&_list{
+		.wh(770px, auto);
+		li{
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(365px, 365/380*280px);
+			.type_text{
+				top: 365/380*280/4*3px;
+				.wh(365px, 365/380*280px);
+				h2{
+					padding-top: 15px;
+					margin-bottom: 365/380*35px;
+					.whh(100%, 26*1.5px);
+					.fc(24*1.5px, @b);
+				}
+				p{
+					.wh(325px, auto);
+					line-height: 24*1.5px;
+					.fc(24px, @b);
+					.duo(3);
+				}
+			}
+		}
+	}
+	&_btn{
+		button{
+			.wh(121*1.5px, 33*1.5px);
+		}
+	}
+}
+/*
+* 一组图片
+*/
+.image{
+	.wh(100%, auto);
+	&_left{
+		.wh(770px, auto);
+		li{
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(365px, 365/400*310px);
+		}
+	}
+	&_right{
+		display: none;
+	}
+	&_title{
+		display: block;
+		padding: 50px 0;
+		.wh(100%, auto);
+		h1{
+			.whh(100%, 38*1.5px);
+			.fc(36*1.5px, @3);
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+}
 }

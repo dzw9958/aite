@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* 弹出框表单
+*/
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../img/index/000-5.png);
+  z-index: 99999;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.popup h1 {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #009c43;
+  text-align: center;
+}
+.popup input {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  width: 360px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #333333;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+.popup .submit {
+  display: block;
+  margin: auto;
+  width: 402px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #009c43;
+  cursor: pointer;
+}
+.popup .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: url(../img/index/close.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px) {
+  /*
+* 弹出框表单
+*/
+  .popup {
+    margin-top: -350px;
+    margin-left: -350px;
+    width: 700px;
+    height: 700px;
+  }
+  .popup h1 {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 44px;
+    color: #009c43;
+  }
+  .popup input {
+    padding: 0 40px;
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 28px;
+    color: #333333;
+  }
+  .popup .submit {
+    width: 582px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 28px;
+    color: #ffffff;
+  }
+  .popup .close {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-size: 30px 30px;
+  }
+}

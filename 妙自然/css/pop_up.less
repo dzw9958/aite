@@ -1,0 +1,96 @@
+@import "lib.less";
+/*
+* 弹出框表单
+*/
+.mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url(../img/index/000-5.png);
+	z-index: 99999;
+}
+.popup{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+	.wh(500px, 500px);
+	border-radius: 10px;
+	.bgc(@b);
+	h1{
+		padding-top: 60px;
+		margin-bottom: 30px;
+		.whh(100%, 24px);
+		.fc(22px, @009c43);
+		text-align: center;
+	}
+	input{
+		display: block;
+		margin: auto;
+		margin-bottom: 25px;
+		padding: 0 20px;
+		.whh(360px, 40px);
+		.fc(14px, @3);
+		border-radius: 5px;
+		border: 1px solid @c;
+	}
+	.submit{
+		display: block;
+		margin: auto;
+		.whh(402px, 40px);
+		.fc(14px, @b);
+		text-align: center;
+		border-radius: 5px;
+		.bgc(@009c43);
+		cursor: pointer;
+	}
+	.close{
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		.whh(40px, 40px);
+		border-radius: 50%;
+		background: url(../img/index/close.png) no-repeat;
+		background-size: 20px 20px;
+		background-position: center;
+		.bgc(@c);
+		cursor: pointer;
+	}
+}
+
+
+
+/******************************
+**********   wap端   **********
+******************************/
+@media only screen and (max-width: 750px){
+/*
+* 弹出框表单
+*/
+.popup{
+	margin-top: -350px;
+	margin-left: -350px;
+	.wh(700px, 700px);
+	h1{
+		.whh(100%, 24*2px);
+		.fc(22*2px, @009c43);
+	}
+	input{
+		padding: 0 20*2px;
+		.whh(500px, 40*2px);
+		.fc(14*2px, @3);
+	}
+	.submit{
+		.whh(582px, 40*2px);
+		.fc(14*2px, @b);
+	}
+	.close{
+		.whh(40*1.5px, 40*1.5px);
+		background-size: 20*1.5px 20*1.5px;
+	}
+}
+}

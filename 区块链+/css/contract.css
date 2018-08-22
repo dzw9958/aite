@@ -114,7 +114,7 @@ body {
   margin-right: 35px;
   padding-left: 15px;
   padding-right: 65px;
-  background: url(../img/copyright/left.png) no-repeat;
+  background: url(../img/contract/left.png) no-repeat;
 }
 .core_contain .core_right p,
 .core_contain .core_right b {
@@ -124,16 +124,16 @@ body {
   margin-left: 35px;
   padding-left: 65px;
   padding-right: 15px;
-  background: url(../img/copyright/right.png) no-repeat;
+  background: url(../img/contract/right.png) no-repeat;
 }
 /*
 * 解决方案板块
 */
 .solution_contain {
   width: 100%;
-  height: 1005px;
+  height: 1280px;
   min-width: 1200px;
-  background: url(../img/copyright/bg.png) center no-repeat;
+  background: url(../img/contract/bg.png) center no-repeat;
 }
 .solution_contain .solution_title {
   margin: auto;
@@ -160,17 +160,16 @@ body {
 }
 .solution_contain .solution_box {
   margin: auto;
-  padding-top: 45px;
   width: 1200px;
-  height: 675px;
+  height: 975px;
   border-radius: 10px;
   background-color: #ffffff;
 }
 .solution_contain .solution_box .solution_center {
   margin: auto;
-  width: 1114px;
-  height: 622px;
-  background: url(../img/copyright/center.png) no-repeat;
+  width: 1200px;
+  height: 975px;
+  background: url(../img/contract/center.png) no-repeat;
 }
 /*
 * 方案优势板块

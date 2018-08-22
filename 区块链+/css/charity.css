@@ -1,0 +1,292 @@
+@charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+/*
+* banner板块
+*/
+.banner_contain {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner_contain a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner_contain a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用及标题
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.title_contain {
+  margin: auto;
+  padding: 55px 0 10px;
+  width: 1200px;
+  height: auto;
+}
+.title_contain h1 {
+  margin: auto;
+  width: 475px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #13a4ec;
+}
+/*
+* 核心痛点板块
+*/
+.core_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.core_contain .core_title {
+  padding: 50px 0 20px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.core_contain .core_title h1 {
+  margin-bottom: 35px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+.core_contain .core_title p {
+  width: 100%;
+  height: auto;
+  line-height: 28px;
+  font-size: 16px;
+  color: #999999;
+}
+.core_contain .core_box {
+  margin-bottom: 45px;
+  width: 1200px;
+  height: auto;
+}
+.core_contain .core_left,
+.core_contain .core_right {
+  width: 1200px;
+  height: 93px;
+}
+.core_contain .core_left p,
+.core_contain .core_right p {
+  padding-top: 18.5px;
+  padding-bottom: 18.5px;
+  width: 530px;
+  height: 56px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #666666;
+}
+.core_contain .core_left b,
+.core_contain .core_right b {
+  width: auto;
+  height: 93px;
+  line-height: 93px;
+  font-size: 48px;
+  color: #13a4ec;
+  font-weight: bold;
+}
+.core_contain .core_left p,
+.core_contain .core_left b {
+  float: left;
+}
+.core_contain .core_left p {
+  margin-right: 35px;
+  padding-left: 15px;
+  padding-right: 65px;
+  background: url(../img/charity/left.png) no-repeat;
+}
+.core_contain .core_right p,
+.core_contain .core_right b {
+  float: right;
+}
+.core_contain .core_right p {
+  margin-left: 35px;
+  padding-left: 65px;
+  padding-right: 15px;
+  background: url(../img/charity/right.png) no-repeat;
+}
+/*
+* 解决方案板块
+*/
+.solution_contain {
+  width: 100%;
+  height: 1125px;
+  min-width: 1200px;
+  background: url(../img/charity/bg.png) center no-repeat;
+}
+.solution_contain .solution_title {
+  margin: auto;
+  padding: 60px 0 40px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.solution_contain .solution_title h1 {
+  margin-bottom: 35px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.solution_contain .solution_title p {
+  width: 100%;
+  height: auto;
+  line-height: 28px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.solution_contain .solution_box {
+  margin: auto;
+  width: 1200px;
+  height: 860px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.solution_contain .solution_box .solution_center {
+  width: 1200px;
+  height: 860px;
+  background: url(../img/charity/center.png) no-repeat;
+}
+/*
+* 方案优势板块
+*/
+.edge_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.edge_contain .edge_title {
+  padding: 60px 0;
+  width: 100%;
+  height: auto;
+}
+.edge_contain .edge_title h1 {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.edge_contain .edge_list {
+  margin-bottom: 60px;
+  width: 1200px;
+  height: 350px;
+}
+.edge_contain .edge_list li {
+  float: left;
+  margin: 0 10px;
+  padding: 50px 35px 0;
+  width: 310px;
+  height: 300px;
+  border-radius: 4px;
+}
+.edge_contain .edge_list li .edge_img {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.edge_contain .edge_list li .edge_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 210px;
+  max-height: 60px;
+  vertical-align: middle;
+}
+.edge_contain .edge_list li h2 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.edge_contain .edge_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999999;
+}
+.edge_contain .edge_list li:hover {
+  box-shadow: 0 0 20px 0 #d5edf9;
+}
+/*
+* 快人一步，链上区块板块
+*/
+.tail_contain {
+  width: 100%;
+  height: 400px;
+  background-color: #4c859f;
+}
+.tail_contain .tail_box {
+  margin: auto;
+  padding-top: 55px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.tail_contain .tail_box i.tail_icon {
+  display: block;
+  margin: auto;
+  margin-bottom: 38px;
+  width: 72px;
+  height: 72px;
+  background: url(../img/charity/icon.png) no-repeat;
+}
+.tail_contain .tail_box h1 {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.tail_contain .tail_box p {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #cbddf0;
+}
+.tail_contain .tail_box button {
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #cbddf0;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  background-color: #4c859f;
+  cursor: pointer;
+}

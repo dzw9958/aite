@@ -1,0 +1,538 @@
+@charset "utf-8";
+
+@3: #333333;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.squ(@x){
+	width: @x;
+	height: @x;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.fc(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgc(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* banner板块
+*/
+.banner{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 下列板块通用及标题
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+}
+.common_title{
+  margin: auto;
+  padding: 70px 0 50px;
+  .wh(1200px, auto);
+	text-align: center;
+  h1{
+    .whh(100%, 38px);
+    .fc(36px, @3);
+	}
+	p{
+		margin-top: 15px;
+		.wh(100%, auto);
+		line-height: 20px;
+		.fc(14px, @9);
+	}
+}
+/*
+* 艾特服务板块
+*/
+.service{
+	&_list{
+		margin-bottom: 90px;
+		.wh(1275px, 212px);
+		overflow: hidden;
+		li{
+			position: relative;
+			float: left;
+			margin-right: 75px;
+			margin-bottom: 60px;
+			padding-left: 90px;
+			.wh(260px, 76px);
+			.dashed_box{
+				position: absolute;
+				top: 0;
+				left: 0;
+				.squ(74px);
+				border-radius: 50%;
+				border: 1px dashed #bfbfbf;
+				transition: all .5s linear;
+			}
+			.solid_box{
+				margin: 7px;
+				.squ(60px);
+				border-radius: 50%;
+				.bgc(@b);
+				transition: all .5s linear;
+			}
+			i{
+				position: relative;
+				top: 10.5px;
+				left: 11.5px;
+				display: block;
+				.wh(37px, 39px);
+				background: url(../img/elves.png) no-repeat;
+				.bgy(32px);
+			}
+			h2{
+				.whh(100%, 40px);
+				.fc(20px, @3);
+				transition: all .5s linear;
+			}
+			p{
+				.whh(100%, 28px);
+				.fc(16px, @9);
+			}
+			i.service_ia{
+				.bgx(0);
+			}
+			i.service_ib{
+				.bgx(39px);
+			}
+			i.service_ic{
+				.bgx(39*2px);
+			}
+			i.service_id{
+				.bgx(39*3px);
+			}
+			i.service_ie{
+				.bgx(39*4px);
+			}
+			i.service_if{
+				.bgx(39*5px);
+			}
+		}
+		li:hover{
+			.dashed_box{
+				border-color: #0093dd;
+			}
+			.solid_box{
+				.bgc(#0093dd);
+			}
+			i{
+				.bgy(73px);
+			}
+			h2{
+				color: #0093dd;
+			}
+		}
+	}
+}
+/*
+* 企业为什么做SEO板块
+*/
+.what{
+	.wh(100%, 780px);
+	min-width: 1200px;
+	background: url(../img/solutions_bg.png) center no-repeat;
+	&_box{
+		margin: auto;
+		.wh(1200px, auto);
+		overflow: hidden;
+	}
+	&_list{
+		.wh(1230px, 560px);
+		li{
+			position: relative;
+			float: left;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			padding: 115px 150/2px 0;
+			.wh(230px, 135px);
+			i{
+				position: absolute;
+				top: 25px;
+				left: 50%;
+				margin-left: -77/2px;
+				.wh(77px, 64px);
+				background: url(../img/elves.png) no-repeat;
+				.bgy(114px);
+			}
+			h2{
+				margin-bottom: 25px;
+				.whh(100%, 22px);
+				.fc(20px, @3);
+				font-weight: bold;
+				text-align: center;
+			}
+			p{
+				.wh(100%, auto);
+				line-height: 24px;
+				.fc(14px, @6);
+			}
+			i.what_ia{
+				.bgx(0);
+			}
+			i.what_ib{
+				.bgx(79*1px);
+			}
+			i.what_ic{
+				.bgx(79*2px);
+			}
+			i.what_id{
+				.bgx(79*3px);
+			}
+			i.what_ie{
+				.bgx(79*4px);
+			}
+			i.what_if{
+				.bgx(79*5px);
+			}
+		}
+		li:hover{
+			.bgc(#53baee);
+			i{
+				.bgy(180px);
+			}
+			h2, p{
+				color: @b;
+			}
+		}
+	}
+}
+/*
+* 五大功能体系板块
+*/
+.fun{
+	&_list{
+		margin-bottom: 90px;
+		.wh(1200px, 280px);
+		li{
+			position: relative;
+			float: left;
+			margin: auto 10px;
+			padding-top: 115px;
+			.wh(220px, 165px);
+			i{
+				position: absolute;
+				top: 38px;
+				left: 50%;
+				margin-left: -54/2px;
+				.wh(54px, 55px);
+				background: url(../img/elves.png) no-repeat;
+				.bgy(0);
+			}
+			h2{
+				margin-bottom: 25px;
+				.whh(100%, 20px);
+				.fc(18px, @3);
+				text-align: center;
+			}
+			p{
+				margin: auto;
+				.wh(168px, auto);
+				line-height: 24px;
+				.fc(14px, @6);
+			}
+			i.fun_ia{
+				.bgx(234px);
+			}
+			i.fun_ib{
+				.bgx(234+56*1px);
+			}
+			i.fun_ic{
+				.bgx(234+56*2px);
+			}
+			i.fun_id{
+				.bgx(234+56*3px);
+			}
+			i.fun_ie{
+				.bgx(234+56*4px);
+			}
+			i.fun_if{
+				.bgx(234+56*5px);
+			}
+		}
+		li:hover{
+			box-shadow: 0 2px 21px 0 #d5edf9;
+		}
+	}
+}
+/*
+* “专注于网站建设与网站优化的完美结合”板块
+*/
+.bit{
+	.wh(100%, 130px);
+	min-width: 1200px;
+	.bgc(#4cc5e7);
+	&_box{
+		margin: auto;
+		padding-top: 30px;
+		.wh(1200px, auto);
+		h1{
+			margin: auto;
+			margin-bottom: 10px;
+			.whh(1020px, 26px);
+			.fc(24px, @b);
+			font-weight: bold;
+		}
+		p{
+			margin: auto;
+			.wh(1020px, auto);
+			line-height: 22px;
+			.fc(12px, @b);
+		}
+	}
+}
+/*
+* SEO优化五大亮点板块
+*/
+.edge{
+	&_list{
+		margin-bottom: 90px;
+		.wh(1200px, 350px);
+		li{
+			position: relative;
+			float: left;
+			margin: 0 10px;
+			padding-top: 110px;
+			.wh(220px, 240px);
+			i{
+				position: absolute;
+				top: 38px;
+				left: 50%;
+				margin-left: -54/2px;
+				.wh(54px, 55px);
+				background: url(../img/elves.png) no-repeat;
+				.bgy(57px);
+			}
+			h2{
+				margin-bottom: 25px;
+				.wh(100%, auto);
+				line-height: 30px;
+				.fc(18px, @3);
+				text-align: center;
+			}
+			p{
+				margin: auto;
+				.wh(168px, auto);
+				line-height: 24px;
+				.fc(14px, @6);
+			}
+			i.edge_ia{
+				.bgx(234px);
+			}
+			i.edge_ib{
+				.bgx(234+56*1px);
+			}
+			i.edge_ic{
+				.bgx(234+56*2px);
+			}
+			i.edge_id{
+				.bgx(234+56*3px);
+			}
+			i.edge_ie{
+				.bgx(234+56*4px);
+			}
+			i.edge_if{
+				.bgx(234+56*5px);
+			}
+		}
+		li:hover{
+			box-shadow: 0 2px 21px 0 #d5edf9;
+		}
+	}
+}
+/*
+* SEO如此重要，你却做不好板块
+*/
+.space{
+	.wh(100%, 530px);
+	min-width: 1200px;
+	background: url(../img/img.png) center no-repeat;
+	&_box{
+		margin: auto;
+		padding-top: 450px;
+		.wh(1200px, 55px);
+	}
+	.btn_right{
+		float: right;
+		margin-right: 10px;
+		.whh(198px, 55px);
+		.fc(18px, @b);
+		text-align: center;
+		.bgc(#0dd7f2);
+	}
+	.btn_left{
+		float: right;
+		.whh(248px, 55px);
+		.fc(18px, @b);
+		text-align: center;
+		.bgc(#0c9ebf);
+	}
+}
+/*
+* 艾特SEO优化四大保障板块
+*/
+.ensure{
+	.wh(100%, auto);
+	min-width: 1200px;
+	.bgc(#f5f5f5);
+	&_box{
+		margin: auto;
+		padding-bottom: 70px;
+		.wh(1200px, auto);
+		overflow: hidden;
+	}
+	&_list{
+		.wh(1220px, 640px);
+		li{
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.wh(590px, 300px);
+			.bgc(@b);
+			transition: all .5s linear;
+		}
+	}
+	&_img, &_text{
+		float: left;
+		.wh(295px, 300px);
+	}
+	&_img{
+		position: relative;
+		img{
+			display: block;
+			.squ(100%);
+		}
+		b{
+			position: absolute;
+			top: 0;
+			left: 0;
+			.whh(295px, 300px);
+			.fc(100px, @b);
+			text-align: center;
+		}
+	}
+	&_text{
+		h2{
+			margin-bottom: 35px;
+			padding-top: 75px;
+			.whh(100%, 26px);
+			.fc(24px, @3);
+			text-align: center;
+			transition: all .5s linear;
+		}
+		p{
+			margin: auto;
+			.wh(224px, auto);
+			line-height: 26px;
+			.fc(16px, @9);
+			transition: all .5s linear;
+		}
+	}
+	&_list li:hover{
+		.bgc(#0093dd);
+		h2, p{
+			color: @b;
+		}
+	}
+}
+/*
+* 大环节，环环相扣，执行落地板块
+*/
+.link{
+	.wh(100%, 650px);
+	min-width: 1200px;
+	background: url(../img/bg.png) center no-repeat;
+	&_box{
+		margin: auto;
+		.wh(1200px, auto);
+	}
+	&_list{
+		position: relative;
+		margin: auto;
+		.wh(788px, 394px);
+		li{
+			position: absolute;
+			.squ(192px);
+			text-align: center;
+			background: url(../img/number.png) center no-repeat;
+			h6{
+				padding-top: 62px;
+				margin-bottom: 35px;
+				.whh(100%, 20px);
+				.fc(18px, @b);
+			}
+			p{
+				.whh(100%, 20px);
+				.fc(18px, @b);
+				font-weight: bold;
+			}
+		}
+		li.link_a, li.link_b{
+			top: 0;
+		}
+		li.link_c, li.link_d, li.link_e{
+			top: 101px;
+		}
+		li.link_f, li.link_g, li.link_h, li.link_i{
+			top: 202px;
+		}
+		li.link_f{
+			left: 0;
+		}
+		li.link_c{
+			left: 100px;
+		}
+		li.link_a, li.link_g{
+			left: 200px;
+		}
+		li.link_d{
+			left: 299px;
+		}
+		li.link_b, li.link_h{
+			left: 398px;
+		}
+		li.link_e{
+			left: 497px;
+		}
+		li.link_i{
+			left: 596px;
+		}
+	}
+}

@@ -1,0 +1,590 @@
+@charset "utf-8";
+/*
+* banner板块
+*/
+.banner {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用及标题
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.common_title {
+  margin: auto;
+  padding: 70px 0 50px;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #333333;
+}
+.common_title p {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+/*
+* 艾特服务板块
+*/
+.service_list {
+  margin-bottom: 90px;
+  width: 1275px;
+  height: 212px;
+  overflow: hidden;
+}
+.service_list li {
+  position: relative;
+  float: left;
+  margin-right: 75px;
+  margin-bottom: 60px;
+  padding-left: 90px;
+  width: 260px;
+  height: 76px;
+}
+.service_list li .dashed_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 1px dashed #bfbfbf;
+  transition: all .5s linear;
+}
+.service_list li .solid_box {
+  margin: 7px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all .5s linear;
+}
+.service_list li i {
+  position: relative;
+  top: 10.5px;
+  left: 11.5px;
+  display: block;
+  width: 37px;
+  height: 39px;
+  background: url(../img/elves.png) no-repeat;
+  background-position-y: -32px;
+}
+.service_list li h2 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #333333;
+  transition: all .5s linear;
+}
+.service_list li p {
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #999999;
+}
+.service_list li i.service_ia {
+  background-position-x: 0;
+}
+.service_list li i.service_ib {
+  background-position-x: -39px;
+}
+.service_list li i.service_ic {
+  background-position-x: -78px;
+}
+.service_list li i.service_id {
+  background-position-x: -117px;
+}
+.service_list li i.service_ie {
+  background-position-x: -156px;
+}
+.service_list li i.service_if {
+  background-position-x: -195px;
+}
+.service_list li:hover .dashed_box {
+  border-color: #0093dd;
+}
+.service_list li:hover .solid_box {
+  background-color: #0093dd;
+}
+.service_list li:hover i {
+  background-position-y: -73px;
+}
+.service_list li:hover h2 {
+  color: #0093dd;
+}
+/*
+* 企业为什么做SEO板块
+*/
+.what {
+  width: 100%;
+  height: 780px;
+  min-width: 1200px;
+  background: url(../img/solutions_bg.png) center no-repeat;
+}
+.what_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.what_list {
+  width: 1230px;
+  height: 560px;
+}
+.what_list li {
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 115px 75px 0;
+  width: 230px;
+  height: 135px;
+}
+.what_list li i {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -38.5px;
+  width: 77px;
+  height: 64px;
+  background: url(../img/elves.png) no-repeat;
+  background-position-y: -114px;
+}
+.what_list li h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.what_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+}
+.what_list li i.what_ia {
+  background-position-x: 0;
+}
+.what_list li i.what_ib {
+  background-position-x: -79px;
+}
+.what_list li i.what_ic {
+  background-position-x: -158px;
+}
+.what_list li i.what_id {
+  background-position-x: -237px;
+}
+.what_list li i.what_ie {
+  background-position-x: -316px;
+}
+.what_list li i.what_if {
+  background-position-x: -395px;
+}
+.what_list li:hover {
+  background-color: #53baee;
+}
+.what_list li:hover i {
+  background-position-y: -180px;
+}
+.what_list li:hover h2,
+.what_list li:hover p {
+  color: #ffffff;
+}
+/*
+* 五大功能体系板块
+*/
+.fun_list {
+  margin-bottom: 90px;
+  width: 1200px;
+  height: 280px;
+}
+.fun_list li {
+  position: relative;
+  float: left;
+  margin: auto 10px;
+  padding-top: 115px;
+  width: 220px;
+  height: 165px;
+}
+.fun_list li i {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  margin-left: -27px;
+  width: 54px;
+  height: 55px;
+  background: url(../img/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.fun_list li h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.fun_list li p {
+  margin: auto;
+  width: 168px;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+}
+.fun_list li i.fun_ia {
+  background-position-x: -234px;
+}
+.fun_list li i.fun_ib {
+  background-position-x: -290px;
+}
+.fun_list li i.fun_ic {
+  background-position-x: -346px;
+}
+.fun_list li i.fun_id {
+  background-position-x: -402px;
+}
+.fun_list li i.fun_ie {
+  background-position-x: -458px;
+}
+.fun_list li i.fun_if {
+  background-position-x: -514px;
+}
+.fun_list li:hover {
+  box-shadow: 0 2px 21px 0 #d5edf9;
+}
+/*
+* “专注于网站建设与网站优化的完美结合”板块
+*/
+.bit {
+  width: 100%;
+  height: 130px;
+  min-width: 1200px;
+  background-color: #4cc5e7;
+}
+.bit_box {
+  margin: auto;
+  padding-top: 30px;
+  width: 1200px;
+  height: auto;
+}
+.bit_box h1 {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 1020px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.bit_box p {
+  margin: auto;
+  width: 1020px;
+  height: auto;
+  line-height: 22px;
+  font-size: 12px;
+  color: #ffffff;
+}
+/*
+* SEO优化五大亮点板块
+*/
+.edge_list {
+  margin-bottom: 90px;
+  width: 1200px;
+  height: 350px;
+}
+.edge_list li {
+  position: relative;
+  float: left;
+  margin: 0 10px;
+  padding-top: 110px;
+  width: 220px;
+  height: 240px;
+}
+.edge_list li i {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  margin-left: -27px;
+  width: 54px;
+  height: 55px;
+  background: url(../img/elves.png) no-repeat;
+  background-position-y: -57px;
+}
+.edge_list li h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.edge_list li p {
+  margin: auto;
+  width: 168px;
+  height: auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #666666;
+}
+.edge_list li i.edge_ia {
+  background-position-x: -234px;
+}
+.edge_list li i.edge_ib {
+  background-position-x: -290px;
+}
+.edge_list li i.edge_ic {
+  background-position-x: -346px;
+}
+.edge_list li i.edge_id {
+  background-position-x: -402px;
+}
+.edge_list li i.edge_ie {
+  background-position-x: -458px;
+}
+.edge_list li i.edge_if {
+  background-position-x: -514px;
+}
+.edge_list li:hover {
+  box-shadow: 0 2px 21px 0 #d5edf9;
+}
+/*
+* SEO如此重要，你却做不好板块
+*/
+.space {
+  width: 100%;
+  height: 530px;
+  min-width: 1200px;
+  background: url(../img/img.png) center no-repeat;
+}
+.space_box {
+  margin: auto;
+  padding-top: 450px;
+  width: 1200px;
+  height: 55px;
+}
+.space .btn_right {
+  float: right;
+  margin-right: 10px;
+  width: 198px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #0dd7f2;
+}
+.space .btn_left {
+  float: right;
+  width: 248px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #0c9ebf;
+}
+/*
+* 艾特SEO优化四大保障板块
+*/
+.ensure {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  background-color: #f5f5f5;
+}
+.ensure_box {
+  margin: auto;
+  padding-bottom: 70px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.ensure_list {
+  width: 1220px;
+  height: 640px;
+}
+.ensure_list li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 590px;
+  height: 300px;
+  background-color: #ffffff;
+  transition: all .5s linear;
+}
+.ensure_img,
+.ensure_text {
+  float: left;
+  width: 295px;
+  height: 300px;
+}
+.ensure_img {
+  position: relative;
+}
+.ensure_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ensure_img b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 300px;
+  line-height: 300px;
+  font-size: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+.ensure_text h2 {
+  margin-bottom: 35px;
+  padding-top: 75px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  transition: all .5s linear;
+}
+.ensure_text p {
+  margin: auto;
+  width: 224px;
+  height: auto;
+  line-height: 26px;
+  font-size: 16px;
+  color: #999999;
+  transition: all .5s linear;
+}
+.ensure_list li:hover {
+  background-color: #0093dd;
+}
+.ensure_list li:hover h2,
+.ensure_list li:hover p {
+  color: #ffffff;
+}
+/*
+* 大环节，环环相扣，执行落地板块
+*/
+.link {
+  width: 100%;
+  height: 650px;
+  min-width: 1200px;
+  background: url(../img/bg.png) center no-repeat;
+}
+.link_box {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+.link_list {
+  position: relative;
+  margin: auto;
+  width: 788px;
+  height: 394px;
+}
+.link_list li {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  text-align: center;
+  background: url(../img/number.png) center no-repeat;
+}
+.link_list li h6 {
+  padding-top: 62px;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.link_list li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.link_list li.link_a,
+.link_list li.link_b {
+  top: 0;
+}
+.link_list li.link_c,
+.link_list li.link_d,
+.link_list li.link_e {
+  top: 101px;
+}
+.link_list li.link_f,
+.link_list li.link_g,
+.link_list li.link_h,
+.link_list li.link_i {
+  top: 202px;
+}
+.link_list li.link_f {
+  left: 0;
+}
+.link_list li.link_c {
+  left: 100px;
+}
+.link_list li.link_a,
+.link_list li.link_g {
+  left: 200px;
+}
+.link_list li.link_d {
+  left: 299px;
+}
+.link_list li.link_b,
+.link_list li.link_h {
+  left: 398px;
+}
+.link_list li.link_e {
+  left: 497px;
+}
+.link_list li.link_i {
+  left: 596px;
+}

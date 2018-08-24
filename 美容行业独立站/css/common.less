@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@3: #333333;
+@5: #555555;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.squ(@x){
+	width: @x;
+	height: @x;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.fc(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgc(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* 新增跳转板块
+*/
+.jump{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.wh(100%, 100px);
+	background: url(../img/index/000-5.png);
+	z-index: 999;
+	&_list{
+		margin: auto;
+		padding: 15px 0;
+		.wh(1200px, 70px);
+		li{
+			float: left;
+			.whh(240px, 35px);
+			text-align: center;
+			a{
+				.fc(18px, @b);
+			}
+			a:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

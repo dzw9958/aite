@@ -5,17 +5,17 @@ body {
 /*
 * banner板块
 */
-.banner {
+.banner_contain {
   width: 100%;
   height: auto;
   min-width: 1200px;
 }
-.banner a {
+.banner_contain a {
   display: block;
   width: 100%;
   height: auto;
 }
-.banner a img {
+.banner_contain a img {
   width: 100%;
   height: auto;
 }

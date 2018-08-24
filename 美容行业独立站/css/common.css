@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*
+* 新增跳转板块
+*/
+.jump {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/index/000-5.png);
+  z-index: 999;
+}
+.jump_list {
+  margin: auto;
+  padding: 15px 0;
+  width: 1200px;
+  height: 70px;
+}
+.jump_list li {
+  float: left;
+  width: 240px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.jump_list li a {
+  font-size: 18px;
+  color: #ffffff;
+}
+.jump_list li a:hover {
+  text-decoration: none;
+}

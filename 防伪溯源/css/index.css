@@ -1,0 +1,570 @@
+@charset "utf-8";
+/*
+* banner板块
+*/
+.banner {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.banner a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner a .banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+* 下列板块通用及标题
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.common_contain {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.common_title {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+.common_title h1 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 36px;
+  color: #555555;
+  font-weight: bold;
+}
+.common_title p {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #999999;
+}
+/*
+* 防伪溯源系统介绍板块
+*/
+.introduce {
+  padding: 40px 0;
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  background-color: #f6f6f6;
+}
+.introduce_contain {
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 24px 0 #eaebeb;
+  box-shadow: 0 1px 24px 0 #eaebeb;
+}
+.introduce_title {
+  padding: 50px 0 35px;
+}
+.introduce_box {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 1040px;
+  height: auto;
+  overflow: hidden;
+}
+.introduce_text {
+  padding-top: 35px;
+  width: 700px;
+  height: auto;
+  line-height: 36px;
+  font-size: 18px;
+  color: #555555;
+  text-indent: 36px;
+}
+.introduce_img {
+  width: 272px;
+  height: 195px;
+}
+/*
+* 为什么要溯源？板块
+*/
+.why_title {
+  padding: 60px 0 50px;
+}
+.why_list {
+  padding-bottom: 90px;
+  width: 100%;
+  height: 135px;
+}
+.why_list li {
+  float: left;
+  margin: 0 73px;
+  width: 94px;
+  height: 135px;
+}
+.why_list li .why_bit {
+  position: relative;
+  margin-bottom: 20px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 1px dashed #bfbfbf;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.why_list li i {
+  position: absolute;
+  top: 20px;
+  left: 21px;
+  width: 52px;
+  height: 55px;
+  background: url(../img/elves.png) no-repeat;
+  background-position-y: 0;
+}
+.why_list li p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  -webkit-transition: color .5s linear;
+  -o-transition: color .5s linear;
+  transition: color .5s linear;
+}
+.why_list li i.why_ia {
+  background-position-x: 0;
+}
+.why_list li i.why_ib {
+  background-position-x: -54px;
+}
+.why_list li i.why_ic {
+  background-position-x: -108px;
+}
+.why_list li i.why_id {
+  background-position-x: -162px;
+}
+.why_list li i.why_ie {
+  background-position-x: -216px;
+}
+.why_list li:hover .why_bit {
+  border-style: solid;
+  background-color: #0093dd;
+}
+.why_list li:hover i {
+  background-position-y: -57px;
+}
+.why_list li:hover p {
+  color: #0093dd;
+}
+/*
+* 溯源产品中心板块
+*/
+.products {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  background-color: #dff2fb;
+}
+.products_title {
+  padding: 60px 0 50px;
+}
+.products_list {
+  margin: auto;
+  padding-bottom: 75px;
+  width: 1200px;
+  height: 460px;
+}
+.products_list li {
+  position: relative;
+  top: 10px;
+  float: left;
+  margin: 0 50px;
+  width: 300px;
+  height: 450px;
+  background-color: #0093dd;
+  text-align: center;
+  -webkit-transition: top .5s linear;
+  -o-transition: top .5s linear;
+  transition: top .5s linear;
+}
+.products_list li .products_icon {
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+.products_list li .products_icon img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 150px;
+  vertical-align: middle;
+}
+.products_list li .products_text {
+  margin: auto;
+  width: 298px;
+  height: 299px;
+  border: 1px solid #ffffff;
+  border-top: none;
+  background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.products_list li h2 {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 20px;
+  color: #333333;
+}
+.products_list li span {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+.products_list li p {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #666666;
+}
+.products_list li:hover {
+  top: 0;
+}
+.products_list li:hover .products_text {
+  border-color: #0093dd;
+}
+/*
+* 溯源整体解决方案板块
+*/
+.solution_title {
+  padding: 60px 0 50px;
+}
+.solution_list {
+  padding-bottom: 50px;
+  width: 100%;
+  height: 450PX;
+}
+.solution_list li {
+  float: left;
+  padding-top: 45px;
+  width: 298px;
+  height: 178px;
+  border: 1px solid #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.solution_list li .solution_icon {
+  margin: auto;
+  margin-bottom: 25px;
+  width: 98px;
+  height: 96px;
+  background: url(../img/elves.png) no-repeat;
+  background-position: -216px -114px;
+}
+.solution_list li i {
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 50%;
+  margin-left: -26px;
+  width: 52px;
+  height: 55px;
+  background: url(../img/elves.png) no-repeat;
+}
+.solution_list li p {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #666666;
+  text-align: center;
+}
+.solution_list li i.solution_ia,
+.solution_list li i.solution_ib,
+.solution_list li i.solution_ic,
+.solution_list li i.solution_id {
+  background-position-y: -114px;
+}
+.solution_list li i.solution_ie,
+.solution_list li i.solution_if,
+.solution_list li i.solution_ig,
+.solution_list li i.solution_ih {
+  background-position-y: -171px;
+}
+.solution_list li i.solution_ia,
+.solution_list li i.solution_ie {
+  background-position-x: 0;
+}
+.solution_list li i.solution_ib,
+.solution_list li i.solution_if {
+  background-position-x: -54px;
+}
+.solution_list li i.solution_ic,
+.solution_list li i.solution_ig {
+  background-position-x: -108px;
+}
+.solution_list li i.solution_id,
+.solution_list li i.solution_ih {
+  background-position-x: -162px;
+}
+.solution_list li:hover {
+  border-color: #0093dd;
+  -webkit-box-shadow: 0 0 18px 0 #d5f0fd;
+  box-shadow: 0 0 18px 0 #d5f0fd;
+}
+/*
+* 二维码防伪溯源+移动营销板块
+*/
+.mobile {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  background-color: #f7f7f7;
+}
+.mobile_title {
+  padding: 60px 0 50px;
+}
+.mobile_window {
+  margin: auto;
+  padding-bottom: 60px;
+  width: 1200px;
+  height: auto;
+}
+.mobile_box {
+  width: 1198px;
+  height: 478px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.mobile_text {
+  margin: auto;
+  padding: 45px 0 20px;
+  width: 990px;
+  height: 56px;
+}
+.mobile_text li {
+  float: left;
+  margin: 0 53px;
+  width: 224px;
+  height: 56px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #999999;
+}
+.mobile_img {
+  margin: auto;
+  width: 890;
+  height: 310px;
+  line-height: 310px;
+  text-align: center;
+}
+.mobile_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 890px;
+  max-height: 310px;
+  vertical-align: middle;
+}
+.mobile_space {
+  padding-top: 10px;
+  width: 100%;
+  height: 50px;
+}
+.mobile_space .mobile_icon {
+  display: block;
+  margin: auto;
+  width: 35px;
+  height: 42px;
+  background: url(../img/elves.png) no-repeat;
+  background-position: -270px 0;
+}
+/*
+* 二维码防伪溯源系统流程板块
+*/
+.flow_title {
+  padding: 60px 0 30px;
+}
+.flow_box {
+  margin: auto;
+  padding-bottom: 55px;
+  width: 975px;
+  height: 405px;
+  line-height: 405px;
+  text-align: center;
+}
+.flow_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 975px;
+  max-height: 405px;
+  vertical-align: middle;
+}
+/*
+* 与企业共享防伪大数据价值产品防伪溯源管理一步到位板块
+*/
+.step {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  background-color: #f7f7f7;
+}
+.step_title {
+  padding: 60px 0 35px;
+}
+.step_box {
+  margin: auto;
+  padding-bottom: 45px;
+  width: 1200px;
+  height: 555px;
+  line-height: 555px;
+  text-align: center;
+}
+.step_box img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  max-height: 555px;
+  vertical-align: middle;
+}
+/*
+* 在众多社交、网络平台一键部署防伪服务板块
+*/
+.deploy_title {
+  padding: 60px 0 90px;
+}
+.deploy_box {
+  padding-bottom: 60px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.deploy_img {
+  margin-left: 80px;
+  width: 415px;
+  height: 350px;
+}
+.deploy_img img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 415px;
+  max-height: 350px;
+}
+.deploy_text {
+  margin-right: 65px;
+  padding-top: 20px;
+  width: 560px;
+  height: auto;
+}
+.deploy_text h2 {
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 20px;
+  color: #0093dd;
+  font-weight: bold;
+}
+.deploy_text p {
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 18px;
+  color: #999999;
+}
+/*
+* 提供稳定、安全的服务保障板块
+*/
+.ensure {
+  width: 100%;
+  height: 505px;
+  min-width: 1200px;
+  background: url(../img/fw_professional_architecture_bg.png) center no-repeat;
+}
+.ensure_title {
+  padding: 60px 0 90px;
+}
+.ensure_title h1 {
+  color: #ffffff;
+}
+.ensure_list {
+  margin: auto;
+  width: 1200px;
+  height: 120px;
+}
+.ensure_list li {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #55c0fd;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.ensure_list li p {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  line-height: 28px;
+  font-size: 20px;
+  color: #ffffff;
+  vertical-align: middle;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.ensure_list li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  opacity: 0;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.ensure_list li:hover {
+  background-color: #ffffff;
+}
+.ensure_list li:hover p {
+  color: #0093dd;
+}
+.ensure_list li:hover:after {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
+}

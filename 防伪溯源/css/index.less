@@ -1,0 +1,528 @@
+@charset "utf-8";
+
+@3: #333333;
+@5: #555555;
+@6: #666666;
+@9: #999999;
+@b: #ffffff;
+.wh(@w, @h){
+  width: @w;
+  height: @h;
+}
+.squ(@x){
+	width: @x;
+	height: @x;
+}
+.whh(@w, @h){
+  width: @w;
+  height: @h;
+  line-height: @h;
+}
+.fc(@s, @c){
+  font-size: @s;
+  color: @c;
+}
+.bgc(@c){
+  background-color: @c;
+}
+.bgp(@x, @y){
+  background-position: -@x -@y;
+}
+.bgx(@x){
+  background-position-x: -@x;
+}
+.bgy(@y){
+  background-position-y: -@y;
+}
+/*
+* banner板块
+*/
+.banner{
+  .wh(100%, auto);
+  min-width: 1200px;
+  a{
+    display: block;
+    .wh(100%, auto);
+    .banner_img{
+      display: block;
+      .wh(100%, auto);
+    }
+  }
+}
+/*
+* 下列板块通用及标题
+*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.common_contain{
+	margin: auto;
+	.wh(1200px, auto);
+	overflow: hidden;
+}
+.common_title{
+  margin: auto;
+  .wh(1200px, auto);
+	text-align: center;
+  h1{
+    .whh(100%, 38px);
+		.fc(36px, @5);
+		font-weight: bold;
+	}
+	p{
+		margin-top: 25px;
+		.wh(100%, auto);
+		line-height: 28px;
+		.fc(14px, @9);
+	}
+}
+/*
+* 防伪溯源系统介绍板块
+*/
+.introduce{
+	padding: 40px 0;
+	.wh(100%, auto);
+	min-width: 1200px;
+	.bgc(#f6f6f6);
+	&_contain{
+		border-radius: 10px;
+		.bgc(@b);
+		-webkit-box-shadow: 0 1px 24px 0 #eaebeb;
+		        box-shadow: 0 1px 24px 0 #eaebeb;
+	}
+	&_title{
+		padding: 50px 0 35px;
+	}
+	&_box{
+		margin: auto;
+		padding-bottom: 50px;
+		.wh(1040px, auto);
+		overflow: hidden;
+	}
+	&_text{
+		padding-top: 35px;
+		.wh(700px, auto);
+		line-height: 36px;
+		.fc(18px, @5);
+		text-indent: 36px;
+	}
+	&_img{
+		.wh(272px, 195px);
+	}
+}
+/*
+* 为什么要溯源？板块
+*/
+.why{
+	&_title{
+		padding: 60px 0 50px;
+	}
+	&_list{
+		padding-bottom: 90px;
+		.wh(100%, 135px);
+		li{
+			float: left;
+			margin: 0 146/2px;
+			.wh(94px, 135px);
+			.why_bit{
+				position: relative;
+				margin-bottom: 20px;
+				.squ(92px);
+				border-radius: 50%;
+				border: 1px dashed #bfbfbf;
+				.bgc(@b);
+				-webkit-transition: all .5s linear;
+				-o-transition: all .5s linear;
+				transition: all .5s linear;
+			}
+			i{
+				position: absolute;
+				top: 20px;
+				left: 21px;
+				.wh(52px, 55px);
+				background: url(../img/elves.png) no-repeat;
+				.bgy(0);
+			}
+			p{
+				.whh(100%, 20px);
+				.fc(18px, @6);
+				text-align: center;
+				-webkit-transition: color .5s linear;
+				-o-transition: color .5s linear;
+				transition: color .5s linear;
+			}
+			i.why_ia{
+				.bgx(0);
+			}
+			i.why_ib{
+				.bgx(54*1px);
+			}
+			i.why_ic{
+				.bgx(54*2px);
+			}
+			i.why_id{
+				.bgx(54*3px);
+			}
+			i.why_ie{
+				.bgx(54*4px);
+			}
+		}
+		li:hover{
+			.why_bit{
+				border-style: solid;
+				.bgc(#0093dd);
+			}
+			i{
+				.bgy(57px);
+			}
+			p{
+				color: #0093dd;
+			}
+		}
+	}
+}
+/*
+* 溯源产品中心板块
+*/
+.products{
+	.wh(100%, auto);
+	min-width: 1200px;
+	.bgc(#dff2fb);
+	&_title{
+		padding: 60px 0 50px;
+	}
+	&_list{
+		margin: auto;
+		padding-bottom: 75px;
+		.wh(1200px, 460px);
+		li{
+			position: relative;
+			top: 10px;
+			float: left;
+			margin: 0 50px;
+			.wh(300px, 450px);
+			.bgc(#0093dd);
+			text-align: center;
+			-webkit-transition: top .5s linear;
+			-o-transition: top .5s linear;
+			transition: top .5s linear;
+			.products_icon{
+				.whh(100%, 150px);
+				text-align: center;
+				img{
+					display: inline-block;
+					.wh(auto, auto);
+					max-width: 300px;
+					max-height: 150px;
+					vertical-align: middle;
+				}
+			}
+			.products_text{
+				margin: auto;
+				.wh(298px, 299px);
+				border: 1px solid @b;
+				border-top: none;
+				.bgc(@b);
+				-webkit-transition: all .5s linear;
+				-o-transition: all .5s linear;
+				transition: all .5s linear;
+			}
+			h2{
+				margin-bottom: 20px;
+				padding-top: 30px;
+				.whh(100%, 22px);
+				.fc(20px, @3);
+			}
+			span{
+				display: block;
+				margin-bottom: 30px;
+				.whh(100%, 16px);
+				.fc(14px, @3);
+			}
+			p{
+				.whh(100%, 38px);
+				.fc(16px, @6);
+			}
+		}
+		li:hover{
+			top: 0;
+			.products_text{
+				border-color: #0093dd;
+			}
+		}
+	}
+}
+/*
+* 溯源整体解决方案板块
+*/
+.solution{
+	&_title{
+		padding: 60px 0 50px;
+	}
+	&_list{
+		padding-bottom: 50px;
+		.wh(100%, 450PX);
+		li{
+			float: left;
+			padding-top: 45px;
+			.wh(300-2px, 225-45-2px);
+			border: 1px solid @b;
+			-webkit-transition: all .5s linear;
+			-o-transition: all .5s linear;
+			transition: all .5s linear;
+			.solution_icon{
+				margin: auto;
+				margin-bottom: 25px;
+				.wh(98px, 96px);
+				background: url(../img/elves.png) no-repeat;
+				.bgp(216px, 114px);
+			}
+			i{
+				display: block;
+				position: relative;
+				top: 25px;
+				left: 50%;
+				margin-left: -52/2px;
+				.wh(52px, 55px);
+				background: url(../img/elves.png) no-repeat;
+			}
+			p{
+				.whh(100%, 24px);
+				.fc(22px, @6);
+				text-align: center;
+			}
+			i.solution_ia, i.solution_ib, i.solution_ic, i.solution_id{
+				.bgy(114px);
+			}
+			i.solution_ie, i.solution_if, i.solution_ig, i.solution_ih{
+				.bgy(171px);
+			}
+			i.solution_ia, i.solution_ie{
+				.bgx(0);
+			}
+			i.solution_ib, i.solution_if{
+				.bgx(54*1px);
+			}
+			i.solution_ic, i.solution_ig{
+				.bgx(54*2px);
+			}
+			i.solution_id, i.solution_ih{
+				.bgx(54*3px);
+			}
+		}
+		li:hover{
+			border-color: #0093dd;
+			-webkit-box-shadow: 0 0 18px 0 #d5f0fd;
+			        box-shadow: 0 0 18px 0 #d5f0fd;
+		}
+	}
+}
+/*
+* 二维码防伪溯源+移动营销板块
+*/
+.mobile{
+	.wh(100%, auto);
+	min-width: 1200px;
+	.bgc(#f7f7f7);
+	&_title{
+		padding: 60px 0 50px;
+	}
+	&_window{
+		margin: auto;
+		padding-bottom: 60px;
+		.wh(1200px, auto);
+	}
+	&_box{
+		.wh(1198px, 478px);
+		border: 1px solid #cccccc;
+		.bgc(@b);
+	}
+	&_text{
+		margin: auto;
+		padding: 45px 0 20px;
+		.wh(990px, 56px);
+		li{
+			float: left;
+			margin: 0 53px;
+			.wh(224px, 56px);
+			line-height: 28px;
+			.fc(14px, @9);
+		}
+	}
+	&_img{
+		margin: auto;
+		.whh(890, 310px);
+		text-align: center;
+		img{
+			display: inline-block;
+			.wh(auto, auto);
+			max-width: 890px;
+			max-height: 310px;
+			vertical-align: middle;
+		}
+	}
+	&_space{
+		padding-top: 10px;
+		.wh(100%, 50px);
+		.mobile_icon{
+			display: block;
+			margin: auto;
+			.wh(35px, 42px);
+			background: url(../img/elves.png) no-repeat;
+			.bgp(270px, 0);
+		}
+	}
+}
+/*
+* 二维码防伪溯源系统流程板块
+*/
+.flow{
+	&_title{
+		padding: 60px 0 30px;
+	}
+	&_box{
+		margin: auto;
+		padding-bottom: 55px;
+		.whh(975px, 405px);
+		text-align: center;
+		img{
+			display: inline-block;
+			.wh(auto, auto);
+			max-width: 975px;
+			max-height: 405px;
+			vertical-align: middle;
+		}
+	}
+}
+/*
+* 与企业共享防伪大数据价值产品防伪溯源管理一步到位板块
+*/
+.step{
+	.wh(100%, auto);
+	min-width: 1200px;
+	.bgc(#f7f7f7);
+	&_title{
+		padding: 60px 0 35px;
+	}
+	&_box{
+		margin: auto;
+		padding-bottom: 45px;
+		.whh(1200px, 555px);
+		text-align: center;
+		img{
+			display: inline-block;
+			.wh(auto, auto);
+			max-width: 1200px;
+			max-height: 555px;
+			vertical-align: middle;
+		}
+	}
+}
+/*
+* 在众多社交、网络平台一键部署防伪服务板块
+*/
+.deploy{
+	&_title{
+		padding: 60px 0 90px;
+	}
+	&_box{
+		padding-bottom: 60px;
+		.wh(100%, auto);
+		overflow: hidden;
+	}
+	&_img{
+		margin-left: 80px;
+		.wh(415px, 350px);
+		img{
+			display: block;
+			.wh(auto, auto);
+			max-width: 415px;
+			max-height: 350px;
+		}
+	}
+	&_text{
+		margin-right: 65px;
+		padding-top: 20px;
+		.wh(560px, auto);
+		h2{
+			.wh(100%, auto);
+			line-height: 36px;
+			.fc(20px, #0093dd);
+			font-weight: bold;
+		}
+		p{
+			.wh(100%, auto);
+			line-height: 36px;
+			.fc(18px, @9);
+		}
+	}
+}
+/*
+* 提供稳定、安全的服务保障板块
+*/
+.ensure{
+	.wh(100%, 505px);
+	min-width: 1200px;
+	background: url(../img/fw_professional_architecture_bg.png) center no-repeat;
+	&_title{
+		padding: 60px 0 90px;
+		h1{
+			color: @b;
+		}
+	}
+	&_list{
+		margin: auto;
+		.wh(1200px, 120px);
+		li{
+			position: relative;
+			float: left;
+			margin: 0 30/2px;
+			.squ(120px);
+			line-height: 120px;
+			text-align: center;
+			border-radius: 50%;
+			.bgc(#55c0fd);
+			-webkit-transition: all .5s linear;
+			-o-transition: all .5s linear;
+			transition: all .5s linear;
+			p{
+				display: inline-block;
+				.wh(100%, auto);
+				line-height: 28px;
+				.fc(20px, @b);
+				vertical-align: middle;
+				-webkit-transition: all .5s linear;
+				-o-transition: all .5s linear;
+				transition: all .5s linear;
+			}
+		}
+		li:after{
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			.squ(112px);
+			border-radius: 50%;
+			border: 4px solid @b;
+			opacity: 0;
+			-webkit-transition: all .5s linear;
+			-o-transition: all .5s linear;
+			transition: all .5s linear;
+		}
+		li:hover{
+			.bgc(@b);
+			p{
+				color: #0093dd;
+			}
+		}
+		li:hover:after{
+			-webkit-transform: scale(1.2);
+			    -ms-transform: scale(1.2);
+			        transform: scale(1.2);
+			opacity: 1;
+		}
+	}
+}

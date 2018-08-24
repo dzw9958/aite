@@ -80,6 +80,8 @@
   height: 74px;
   border-radius: 50%;
   border: 1px dashed #bfbfbf;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .service_list li .solid_box {
@@ -88,6 +90,8 @@
   height: 60px;
   border-radius: 50%;
   background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .service_list li i {
@@ -106,6 +110,8 @@
   line-height: 40px;
   font-size: 20px;
   color: #333333;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .service_list li p {
@@ -290,6 +296,7 @@
   background-position-x: -514px;
 }
 .fun_list li:hover {
+  -webkit-box-shadow: 0 2px 21px 0 #d5edf9;
   box-shadow: 0 2px 21px 0 #d5edf9;
 }
 /*
@@ -387,6 +394,7 @@
   background-position-x: -514px;
 }
 .edge_list li:hover {
+  -webkit-box-shadow: 0 2px 21px 0 #d5edf9;
   box-shadow: 0 2px 21px 0 #d5edf9;
 }
 /*
@@ -452,6 +460,8 @@
   width: 590px;
   height: 300px;
   background-color: #ffffff;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .ensure_img,
@@ -488,6 +498,8 @@
   font-size: 24px;
   color: #333333;
   text-align: center;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .ensure_text p {
@@ -497,6 +509,8 @@
   line-height: 26px;
   font-size: 16px;
   color: #999999;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
 }
 .ensure_list li:hover {

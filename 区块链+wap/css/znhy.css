@@ -1,0 +1,280 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* 助您快速落地区块链应用板块
+*/
+.serve {
+  width: 10rem;
+  height: auto;
+}
+.serve_left {
+  float: left;
+  margin-left: 0.66666667rem;
+  margin-bottom: 0.13333333rem;
+  padding-top: 0.66666667rem;
+  width: 6rem;
+  height: 2.73333333rem;
+}
+.serve_left h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #666666;
+}
+.serve_left h1 {
+  margin-bottom: 0.6rem;
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.53333333rem;
+  color: #333333;
+  font-weight: bold;
+}
+.serve_left b {
+  display: block;
+  width: 2.2rem;
+  height: 0.04rem;
+  background-color: #f9b715;
+}
+.serve_right {
+  float: right;
+  margin-bottom: 0.13333333rem;
+  width: 3.16rem;
+  height: 3.4rem;
+}
+.serve_right img {
+  display: block;
+  width: 3.16rem;
+  height: 3.37333333rem;
+}
+.serve p {
+  margin: 0 0.53333333rem 0 0.66666667rem;
+  padding-bottom: 1.06666667rem;
+  width: 8.8rem;
+  height: auto;
+  font-size: 0.32rem;
+  color: #999999;
+}
+/*
+* 我们为您提供多行业的智能合约解决方案板块
+*/
+.solution {
+  width: 10rem;
+  height: 11.46666667rem;
+  background: url(../img/znhy/bg.png) no-repeat;
+  background-size: 10rem 11.46666667rem;
+}
+.solution_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.solution_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+}
+.solution_window {
+  width: 100%;
+  height: 9.2rem;
+  overflow: hidden;
+}
+.solution_list {
+  position: relative;
+  padding-bottom: 0.46666667rem;
+  left: 0;
+  width: 30rem;
+  height: 8.53333333rem;
+  transition: left .5s linear;
+}
+.solution_list li {
+  float: left;
+  margin: 0.13333333rem;
+  width: 3.06666667rem;
+  height: 4rem;
+  text-align: center;
+  border-radius: 0.06666667rem;
+  background-color: #ffffff;
+}
+.solution_list li .solution_img {
+  width: 100%;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  text-align: center;
+}
+.solution_list li .solution_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.solution_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #333333;
+}
+.solution_list li p {
+  margin: auto;
+  width: 2.66666667rem;
+  height: auto;
+  line-height: 0.42666667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.solution_list li img.solution_ia {
+  width: 0.88rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_ib {
+  width: 0.94666667rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_ic {
+  width: 0.82666667rem;
+  height: 0.89333333rem;
+}
+.solution_list li img.solution_id {
+  width: 0.77333333rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_ie {
+  width: 0.73333333rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_if {
+  width: 0.90666667rem;
+  height: 0.72rem;
+}
+.solution_list li img.solution_ig {
+  width: 0.76rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_ih {
+  width: 0.69333333rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_ii {
+  width: 0.92rem;
+  height: 0.92rem;
+}
+.solution_list li img.solution_ij {
+  width: 0.84rem;
+  height: 0.84rem;
+}
+.solution_list li img.solution_ik {
+  width: 0.8rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_il {
+  width: 0.70666667rem;
+  height: 0.88rem;
+}
+.solution_list li img.solution_im {
+  width: 0.86666667rem;
+  height: 0.86666667rem;
+}
+.solution_list li img.solution_in {
+  width: 0.74666667rem;
+  height: 0.85333333rem;
+}
+.solution_list li img.solution_io {
+  width: 0.86666667rem;
+  height: 0.88rem;
+}
+.solution_sub {
+  margin: auto;
+  width: 1.4rem;
+  height: 0.2rem;
+}
+.solution_sub li {
+  float: left;
+  margin: 0 0.13333333rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: #ace5f1;
+  transition: background-color 0.5s linear;
+}
+.solution_sub li.on {
+  background-color: #ffffff;
+}
+/*
+* 区块链智能合约特性板块
+*/
+.trait {
+  width: 10rem;
+  height: auto;
+}
+.trait_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.trait_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
+  color: #333333;
+  text-align: center;
+}
+.trait_list {
+  padding-bottom: 0.53333333rem;
+  width: 100%;
+  height: 5.06666667rem;
+}
+.trait_list li {
+  float: left;
+  width: 5rem;
+  height: 2.53333333rem;
+}
+.trait_list li .trait_img {
+  margin-bottom: 0.6rem;
+  width: 100%;
+  height: 1.13333333rem;
+  line-height: 1.13333333rem;
+  text-align: center;
+}
+.trait_list li .trait_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.trait_list li p {
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #333333;
+  text-align: center;
+}
+.trait_list li img.trait_ia {
+  width: 1.12rem;
+  height: 0.98666667rem;
+}
+.trait_list li img.trait_ib {
+  width: 1.01333333rem;
+  height: 1.01333333rem;
+}
+.trait_list li img.trait_ic {
+  width: 1.09333333rem;
+  height: 1.09333333rem;
+}
+.trait_list li img.trait_id {
+  width: 0.86666667rem;
+  height: 0.89333333rem;
+}

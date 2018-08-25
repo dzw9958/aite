@@ -1,23 +1,10 @@
 @charset "utf-8";
-body {
-  background-color: #ffffff;
-}
 /*
-* banner板块
+* 通用常量
 */
-.banner_contain {
-  width: 10rem;
-  height: 6.66666667rem;
-}
-.banner_contain a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.banner_contain a .banner_img {
-  width: 100%;
-  height: 100%;
-}
+/*
+* 通用函数
+*/
 /*
 * 分割块
 */
@@ -29,45 +16,45 @@ body {
 /*
 * 区块链的野蛮生长,给世界带来的三大巨变板块
 */
-.change_contain {
+.change {
   width: 10rem;
   height: auto;
 }
-.change_contain .change_title {
+.change .change_title {
   padding-top: 0.93333333rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.change_contain .change_title h1 {
+.change .change_title h1 {
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  font-size: 0.4rem;
   color: #333333;
   font-weight: bold;
 }
-.change_contain .change_title h1 span {
+.change .change_title h1 span {
   color: #0092dd;
 }
-.change_contain .change_box {
+.change .change_box {
   padding: 0.53333333rem 0.13333333rem;
   width: 9.73333333rem;
   height: auto;
   overflow: hidden;
 }
-.change_contain .change_box .change_left,
-.change_contain .change_box .change_right,
-.change_contain .change_box .change_bottom {
-  margin: 0.13333333rem;
+.change .change_box .change_left,
+.change .change_box .change_right,
+.change .change_box .change_bottom {
   float: left;
+  margin: 0.13333333rem;
   width: 4.54666667rem;
   height: 5.48rem;
   border: 0.02666667rem solid #069fdd;
 }
-.change_contain .change_box .change_left i,
-.change_contain .change_box .change_right i,
-.change_contain .change_box .change_bottom i {
+.change .change_box .change_left i,
+.change .change_box .change_right i,
+.change .change_box .change_bottom i {
   display: block;
   margin: 0.45333333rem auto 0.33333333rem;
   width: 0.98666667rem;
@@ -75,9 +62,9 @@ body {
   background: url(../img/index/elves.png) no-repeat;
   background-size: 7.4rem 2.93333333rem;
 }
-.change_contain .change_box .change_left h2,
-.change_contain .change_box .change_right h2,
-.change_contain .change_box .change_bottom h2 {
+.change .change_box .change_left h2,
+.change .change_box .change_right h2,
+.change .change_box .change_bottom h2 {
   margin-bottom: 0.33333333rem;
   width: 100%;
   height: 0.34666667rem;
@@ -87,9 +74,9 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.change_contain .change_box .change_left p,
-.change_contain .change_box .change_right p,
-.change_contain .change_box .change_bottom p {
+.change .change_box .change_left p,
+.change .change_box .change_right p,
+.change .change_box .change_bottom p {
   margin: auto;
   width: 3.73333333rem;
   height: auto;
@@ -97,29 +84,29 @@ body {
   font-size: 0.26666667rem;
   color: #666666;
 }
-.change_contain .change_box .change_left i {
+.change .change_box .change_left i {
   background-position: 0 0;
 }
-.change_contain .change_box .change_right i {
+.change .change_box .change_right i {
   background-position: -1rem 0;
 }
-.change_contain .change_box .change_bottom {
+.change .change_box .change_bottom {
   clear: both;
   width: 9.41333333rem;
   height: 3.38666667rem;
 }
-.change_contain .change_box .change_bottom i {
+.change .change_box .change_bottom i {
   float: left;
   margin: 0.64rem 1.80666667rem 0.48rem;
   background-position: -2rem 0;
 }
-.change_contain .change_box .change_bottom p {
+.change .change_box .change_bottom p {
   float: right;
   margin: 0.53333333rem 0.28rem 0.52rem 0;
   width: 4.53333333rem;
   height: auto;
 }
-.change_contain .change_box .change_bottom h2 {
+.change .change_box .change_bottom h2 {
   float: left;
   margin-bottom: 0.93333333rem;
   width: 4.6rem;
@@ -128,17 +115,17 @@ body {
 /*
 * 区块链+板块
 */
-.chain_contain {
+.chain {
   width: 10rem;
   height: auto;
 }
-.chain_contain .chain_title {
+.chain .chain_title {
   padding: 0.93333333rem 0 0.53333333rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.chain_contain .chain_title h1 {
+.chain .chain_title h1 {
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
@@ -146,26 +133,26 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.chain_contain .chain_box {
+.chain .chain_box {
   padding: 0 0.13333333rem 0.8rem;
   width: 9.73333333rem;
   height: auto;
   overflow: hidden;
 }
-.chain_contain .chain_box li {
+.chain .chain_box li {
   float: left;
   margin: 0.13333333rem;
   width: 4.6rem;
   height: 3.17333333rem;
   border-radius: 0.13333333rem;
 }
-.chain_contain .chain_box li .chain_content {
+.chain .chain_box li .chain_content {
   padding-top: 0.53333333rem;
   width: 100%;
   height: 2.64rem;
   background-color: rgba(0, 147, 221, 0.5);
 }
-.chain_contain .chain_box li .chain_content i {
+.chain .chain_box li .chain_content i {
   display: block;
   margin: 0 auto 0.44rem;
   width: 1.10666667rem;
@@ -173,7 +160,7 @@ body {
   background: url(../img/index/elves.png) no-repeat;
   background-size: 7.4rem 2.93333333rem;
 }
-.chain_contain .chain_box li .chain_content h2 {
+.chain .chain_box li .chain_content h2 {
   width: 100%;
   height: 0.34666667rem;
   line-height: 0.34666667rem;
@@ -181,49 +168,49 @@ body {
   color: #ffffff;
   text-align: center;
 }
-.chain_contain .chain_box li:nth-child(1) {
+.chain .chain_box li.chain_a {
   background: url(../img/index/bg-1.png) no-repeat;
   background-size: 4.6rem 3.17333333rem;
 }
-.chain_contain .chain_box li:nth-child(1) .chain_content i {
+.chain .chain_box li.chain_a .chain_content i {
   background-position: -3.01333333rem 0;
 }
-.chain_contain .chain_box li:nth-child(2) {
+.chain .chain_box li.chain_b {
   background: url(../img/index/bg-2.png) no-repeat;
   background-size: 4.6rem 3.17333333rem;
 }
-.chain_contain .chain_box li:nth-child(2) .chain_content i {
+.chain .chain_box li.chain_b .chain_content i {
   background-position: -4.14666667rem 0;
 }
-.chain_contain .chain_box li:nth-child(3) {
+.chain .chain_box li.chain_c {
   background: url(../img/index/bg-3.png) no-repeat;
   background-size: 4.6rem 3.17333333rem;
 }
-.chain_contain .chain_box li:nth-child(3) .chain_content i {
+.chain .chain_box li.chain_c .chain_content i {
   background-position: -5.28rem 0;
 }
-.chain_contain .chain_box li:nth-child(4) {
+.chain .chain_box li.chain_d {
   background: url(../img/index/bg-4.png) no-repeat;
   background-size: 4.6rem 3.17333333rem;
 }
-.chain_contain .chain_box li:nth-child(4) .chain_content i {
+.chain .chain_box li.chain_d .chain_content i {
   background-position: -6.41333333rem 0;
 }
 /*
 * 区块链行业需要的六大安全能力板块
 */
-.safety_contain {
+.safety {
   width: 10rem;
   height: 7.46666667rem;
   background-color: #f9f9f9;
 }
-.safety_contain .safety_title {
+.safety .safety_title {
   padding-top: 0.93333333rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.safety_contain .safety_title h1 {
+.safety .safety_title h1 {
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
@@ -231,26 +218,26 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.safety_contain .safety_title h1 span {
+.safety .safety_title h1 span {
   color: #0092dd;
 }
-.safety_contain .safety_window {
+.safety .safety_window {
   margin: auto;
   width: 9.73333333rem;
   height: 5.4rem;
   overflow: hidden;
 }
-.safety_contain .safety_box {
+.safety .safety_box {
   position: relative;
   left: 0;
   padding: 0.66666667rem 0 0.93333333rem;
   width: 29.2rem;
   height: 3.73333333rem;
-  -webkit-transition: all .5s linear;
-  -o-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: left .5s linear;
+  -o-transition: left .5s linear;
+  transition: left .5s linear;
 }
-.safety_contain .safety_box li {
+.safety .safety_box li {
   float: left;
   margin: 0 0.56666667rem;
   width: 3.73333333rem;
@@ -260,7 +247,7 @@ body {
   -webkit-box-shadow: 0 0.02666667rem 0.28rem 0 #c8e4f3;
   box-shadow: 0 0.02666667rem 0.28rem 0 #c8e4f3;
 }
-.safety_contain .safety_box li i {
+.safety .safety_box li i {
   display: block;
   margin: 0.32rem auto 0.24rem;
   width: 0.88rem;
@@ -268,7 +255,7 @@ body {
   background: url(../img/index/elves.png) no-repeat;
   background-size: 7.4rem 2.93333333rem;
 }
-.safety_contain .safety_box li h2 {
+.safety .safety_box li h2 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.32rem;
@@ -277,7 +264,7 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.safety_contain .safety_box li p {
+.safety .safety_box li p {
   margin: auto;
   width: 2.93333333rem;
   height: auto;
@@ -285,53 +272,53 @@ body {
   font-size: 0.24rem;
   color: #666666;
 }
-.safety_contain .safety_box li:nth-child(1) i {
+.safety .safety_box li i.safety_ia {
   background-position: 0 -1.13333333rem;
 }
-.safety_contain .safety_box li:nth-child(2) i {
+.safety .safety_box li i.safety_ib {
   background-position: -0.88rem -1.13333333rem;
 }
-.safety_contain .safety_box li:nth-child(3) i {
+.safety .safety_box li i.safety_ic {
   background-position: -1.76rem -1.13333333rem;
 }
-.safety_contain .safety_box li:nth-child(4) i {
+.safety .safety_box li i.safety_id {
   background-position: -2.64rem -1.13333333rem;
 }
-.safety_contain .safety_box li:nth-child(5) i {
+.safety .safety_box li i.safety_ie {
   background-position: -3.52rem -1.13333333rem;
 }
-.safety_contain .safety_box li:nth-child(6) i {
+.safety .safety_box li i.safety_if {
   background-position: -4.4rem -1.13333333rem;
 }
-.safety_contain .safety_sub {
+.safety .safety_sub {
   margin: auto;
   width: 2.32rem;
   height: 0.05333333rem;
 }
-.safety_contain .safety_sub li {
+.safety .safety_sub li {
   float: left;
   margin: 0 0.12rem;
   width: 0.53333333rem;
   height: 0.05333333rem;
   background-color: #bce8f9;
 }
-.safety_contain .safety_sub li.on {
+.safety .safety_sub li.on {
   background-color: #2ec2f9;
 }
 /*
 * 技术优势板块
 */
-.edge_contain {
+.edge {
   width: 10rem;
   height: auto;
 }
-.edge_contain .edge_title {
+.edge .edge_title {
   padding: 1.2rem 0 0.33333333rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.edge_contain .edge_title h1 {
+.edge .edge_title h1 {
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
@@ -339,30 +326,30 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.edge_contain .edge_box {
+.edge .edge_box {
   margin: auto;
   width: 9.68rem;
   height: 7.8rem;
 }
-.edge_contain .edge_box li {
+.edge .edge_box li {
   float: left;
   margin: 0.42666667rem 0.53333333rem;
   width: 3.77333333rem;
   height: 1.74666667rem;
 }
-.edge_contain .edge_box li .edge_img {
+.edge .edge_box li .edge_img {
   float: left;
   width: 1.48rem;
   height: 1.74666667rem;
 }
-.edge_contain .edge_box li .edge_img i {
+.edge .edge_box li .edge_img i {
   display: block;
   width: 1.13333333rem;
   height: 1.09333333rem;
   background: url(../img/index/elves.png) no-repeat;
   background-size: 7.4rem 2.93333333rem;
 }
-.edge_contain .edge_box li h2 {
+.edge .edge_box li h2 {
   float: left;
   margin-bottom: 0.13333333rem;
   width: 2.29333333rem;
@@ -372,7 +359,7 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.edge_contain .edge_box li p {
+.edge .edge_box li p {
   float: left;
   width: 2.29333333rem;
   height: auto;
@@ -380,38 +367,38 @@ body {
   font-size: 0.24rem;
   color: #666666;
 }
-.edge_contain .edge_box li:nth-child(1) .edge_img i {
+.edge .edge_box li i.edge_ia {
   background-position: 0 -1.82666667rem;
 }
-.edge_contain .edge_box li:nth-child(2) .edge_img i {
+.edge .edge_box li i.edge_ib {
   background-position: -1.13333333rem -1.82666667rem;
 }
-.edge_contain .edge_box li:nth-child(3) .edge_img i {
+.edge .edge_box li i.edge_ic {
   background-position: -2.26666667rem -1.82666667rem;
 }
-.edge_contain .edge_box li:nth-child(4) .edge_img i {
+.edge .edge_box li i.edge_id {
   background-position: -3.4rem -1.82666667rem;
 }
-.edge_contain .edge_box li:nth-child(5) .edge_img i {
+.edge .edge_box li i.edge_ie {
   background-position: -4.53333333rem -1.82666667rem;
 }
-.edge_contain .edge_box li:nth-child(6) .edge_img i {
+.edge .edge_box li i.edge_if {
   background-position: -5.66666667rem -1.82666667rem;
 }
 /*
 * 更多应用场景板块
 */
-.more_contain {
+.more {
   width: 10rem;
   height: auto;
 }
-.more_contain .more_title {
+.more .more_title {
   padding: 0.93333333rem 0 0.66666667rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.more_contain .more_title h1 {
+.more .more_title h1 {
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
@@ -419,23 +406,23 @@ body {
   color: #333333;
   font-weight: bold;
 }
-.more_contain .more_box {
+.more .more_box {
   position: relative;
   margin: auto;
   padding-bottom: 1.04rem;
   width: 8.61333333rem;
   height: 8.21333333rem;
 }
-.more_contain .more_box li {
+.more .more_box li {
   position: absolute;
   width: 2.74666667rem;
   height: 3.17333333rem;
 }
-.more_contain .more_box li img {
+.more .more_box li img {
   width: 100%;
   height: 100%;
 }
-.more_contain .more_box li h2 {
+.more .more_box li h2 {
   position: absolute;
   top: 1.38rem;
   left: 0;
@@ -446,27 +433,27 @@ body {
   color: #ffffff;
   text-align: center;
 }
-.more_contain .more_box li:nth-child(1) {
+.more .more_box li.more_a {
   top: 0;
   left: 2.93333333rem;
 }
-.more_contain .more_box li:nth-child(2) {
+.more .more_box li.more_b {
   top: 2.49333333rem;
   left: 1.46666667rem;
 }
-.more_contain .more_box li:nth-child(3) {
+.more .more_box li.more_c {
   top: 2.49333333rem;
   left: 4.4rem;
 }
-.more_contain .more_box li:nth-child(4) {
+.more .more_box li.more_d {
   top: 5.04rem;
   left: 0;
 }
-.more_contain .more_box li:nth-child(5) {
+.more .more_box li.more_e {
   top: 5.04rem;
   left: 2.93333333rem;
 }
-.more_contain .more_box li:nth-child(6) {
+.more .more_box li.more_f {
   top: 5.04rem;
   left: 5.86666667rem;
 }

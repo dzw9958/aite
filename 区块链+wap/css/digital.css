@@ -1,37 +1,24 @@
 @charset "utf-8";
-body {
-  background-color: #ffffff;
-}
 /*
-* banner板块
+* 通用常量
 */
-.banner_contain {
-  width: 10rem;
-  height: 6.66666667rem;
-}
-.banner_contain a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.banner_contain a .banner_img {
-  width: 100%;
-  height: 100%;
-}
+/*
+* 通用函数
+*/
 /*
 * 系统介绍板块
 */
-.introduce_contain {
+.introduce {
   width: 10rem;
   height: auto;
 }
-.introduce_contain .introduce_title {
+.introduce .introduce_title {
   padding: 0.93333333rem 0 0.8rem;
   width: 100%;
   height: auto;
   line-height: auto;
 }
-.introduce_contain .introduce_title h1 {
+.introduce .introduce_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.42666667rem;
@@ -41,7 +28,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.introduce_contain .introduce_title b {
+.introduce .introduce_title b {
   display: block;
   margin: auto;
   margin-bottom: 0.2rem;
@@ -50,7 +37,7 @@ body {
   border-radius: 0.04rem;
   background-color: #249fdf;
 }
-.introduce_contain .introduce_title p {
+.introduce .introduce_title p {
   margin: auto;
   width: 9.4rem;
   height: auto;
@@ -58,18 +45,18 @@ body {
   font-size: 0.24rem;
   color: #999999;
 }
-.introduce_contain .introduce_box {
+.introduce .introduce_box {
   padding-bottom: 0.84rem;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-.introduce_contain .introduce_box li {
+.introduce .introduce_box li {
   float: left;
   width: 3.33333333rem;
   height: auto;
 }
-.introduce_contain .introduce_box li i {
+.introduce .introduce_box li i {
   display: block;
   margin: auto;
   margin-bottom: 0.17333333rem;
@@ -78,7 +65,7 @@ body {
   background: url(../img/digital/elves.png) no-repeat;
   background-size: 5.46666667rem 3.86666667rem;
 }
-.introduce_contain .introduce_box li p {
+.introduce .introduce_box li p {
   margin: auto;
   width: 2.66666667rem;
   height: auto;
@@ -87,29 +74,29 @@ body {
   color: #333333;
   text-align: center;
 }
-.introduce_contain .introduce_box li:nth-child(1) i {
+.introduce .introduce_box li i.introduce_ia {
   background-position: 0 0;
 }
-.introduce_contain .introduce_box li:nth-child(2) i {
+.introduce .introduce_box li i.introduce_ib {
   background-position: -1.86666667rem 0;
 }
-.introduce_contain .introduce_box li:nth-child(3) i {
+.introduce .introduce_box li i.introduce_ic {
   background-position: -3.72rem 0;
 }
 /*
 * 核心技术板块
 */
-.core_contain {
+.core {
   width: 10rem;
   height: 7.6rem;
   background-color: #f4f8ff;
 }
-.core_contain .core_title {
+.core .core_title {
   padding: 0.66666667rem 0 0.84rem;
   width: 100%;
   height: auto;
 }
-.core_contain .core_title h1 {
+.core .core_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.42666667rem;
@@ -119,7 +106,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.core_contain .core_title b {
+.core .core_title b {
   display: block;
   margin: auto;
   width: 1.2rem;
@@ -127,13 +114,13 @@ body {
   border-radius: 0.04rem;
   background-color: #249fdf;
 }
-.core_contain .core_box {
+.core .core_box {
   position: relative;
   margin: auto;
   width: 9.04rem;
   height: 4.21333333rem;
 }
-.core_contain .core_center {
+.core .core_center {
   margin: auto;
   width: 4.58666667rem;
   height: 4.21333333rem;
@@ -142,7 +129,7 @@ body {
   background-size: 4.58666667rem 4.21333333rem;
   background-position: center center;
 }
-.core_contain .core_center h2 {
+.core .core_center h2 {
   padding-top: 1.78666667rem;
   margin-bottom: 0.10666667rem;
   width: 100%;
@@ -151,26 +138,26 @@ body {
   font-size: 0.32rem;
   color: #ffffff;
 }
-.core_contain .core_center p {
+.core .core_center p {
   width: 100%;
   height: 0.17333333rem;
   line-height: 0.17333333rem;
   font-size: 0.14666667rem;
   color: #ffffff;
 }
-.core_contain .core_both {
+.core .core_both {
   position: absolute;
   top: 0;
   left: 0;
   width: 9.04rem;
   height: 4.21333333rem;
 }
-.core_contain .core_both li {
+.core .core_both li {
   position: absolute;
   width: 1.89333333rem;
   height: 0.53333333rem;
 }
-.core_contain .core_both li i {
+.core .core_both li i {
   float: left;
   margin: 0.2rem 0;
   width: 0.13333333rem;
@@ -178,7 +165,7 @@ body {
   border-radius: 50%;
   background-color: #7dc6f1;
 }
-.core_contain .core_both li span {
+.core .core_both li span {
   float: left;
   margin: 0 0.09333333rem;
   width: 1.44rem;
@@ -190,51 +177,51 @@ body {
   border-radius: 0.26666667rem;
   background-color: #249fdf;
 }
-.core_contain .core_both li:nth-child(1) {
+.core .core_both li.core_a {
   top: 0;
   left: 0.46666667rem;
 }
-.core_contain .core_both li:nth-child(2) {
+.core .core_both li.core_b {
   top: 0;
   right: 0.46666667rem;
 }
-.core_contain .core_both li:nth-child(3) {
+.core .core_both li.core_c {
   top: 1.22666667rem;
   left: 0;
 }
-.core_contain .core_both li:nth-child(4) {
+.core .core_both li.core_d {
   top: 1.22666667rem;
   right: 0;
 }
-.core_contain .core_both li:nth-child(5) {
+.core .core_both li.core_e {
   bottom: 1.22666667rem;
   left: 0;
 }
-.core_contain .core_both li:nth-child(6) {
+.core .core_both li.core_f {
   bottom: 1.22666667rem;
   right: 0;
 }
-.core_contain .core_both li:nth-child(7) {
+.core .core_both li.core_g {
   bottom: 0;
   left: 0.46666667rem;
 }
-.core_contain .core_both li:nth-child(8) {
+.core .core_both li.core_h {
   bottom: 0;
   right: 0.46666667rem;
 }
 /*
 * 系统生态板块
 */
-.ecology_contain {
+.ecology {
   width: 10rem;
   height: auto;
 }
-.ecology_contain .ecology_title {
+.ecology .ecology_title {
   padding: 0.86666667rem 0 1.33333333rem;
   width: 100%;
   height: auto;
 }
-.ecology_contain .ecology_title h1 {
+.ecology .ecology_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.42666667rem;
@@ -244,7 +231,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.ecology_contain .ecology_title b {
+.ecology .ecology_title b {
   display: block;
   margin: auto;
   width: 1.2rem;
@@ -252,14 +239,14 @@ body {
   border-radius: 0.04rem;
   background-color: #249fdf;
 }
-.ecology_contain .ecology_bg {
+.ecology .ecology_bg {
   width: 10rem;
   height: 5.6rem;
   background: url(../img/digital/bg.png) no-repeat;
   background-size: 10rem 5.6rem;
   background-position: center center;
 }
-.ecology_contain .ecology_box {
+.ecology .ecology_box {
   position: relative;
   top: -0.66666667rem;
   margin: auto;
@@ -270,13 +257,13 @@ body {
   -webkit-box-shadow: 0 -0.13333333rem 0.4rem 0 #b8e2f7;
   box-shadow: 0 -0.13333333rem 0.4rem 0 #b8e2f7;
 }
-.ecology_contain .ecology_box li {
+.ecology .ecology_box li {
   float: left;
   padding-top: 0.6rem;
   width: 2.88rem;
   height: 2.26666667rem;
 }
-.ecology_contain .ecology_box li i {
+.ecology .ecology_box li i {
   display: block;
   margin: auto;
   margin-bottom: 0.2rem;
@@ -285,7 +272,7 @@ body {
   background: url(../img/digital/elves.png) no-repeat;
   background-size: 5.46666667rem 3.86666667rem;
 }
-.ecology_contain .ecology_box li p {
+.ecology .ecology_box li p {
   margin: auto;
   width: 1.44rem;
   height: auto;
@@ -294,44 +281,41 @@ body {
   color: #333333;
   text-align: center;
 }
-.ecology_contain .ecology_box li:nth-child(1) i {
+.ecology .ecology_box li i.ecology_ia {
   background-position: 0 -1.93333333rem;
 }
-.ecology_contain .ecology_box li:nth-child(2) i {
+.ecology .ecology_box li i.ecology_ib {
   background-position: -0.88rem -1.93333333rem;
 }
-.ecology_contain .ecology_box li:nth-child(2) p {
-  width: 1.92rem;
-}
-.ecology_contain .ecology_box li:nth-child(3) i {
+.ecology .ecology_box li i.ecology_ic {
   background-position: -1.76rem -1.93333333rem;
 }
-.ecology_contain .ecology_box li:nth-child(4) i {
+.ecology .ecology_box li i.ecology_id {
   background-position: -2.64rem -1.93333333rem;
 }
-.ecology_contain .ecology_box li:nth-child(5) i {
+.ecology .ecology_box li i.ecology_ie {
   background-position: -3.52rem -1.93333333rem;
 }
-.ecology_contain .ecology_box li:nth-child(5) p {
-  width: 1.92rem;
-}
-.ecology_contain .ecology_box li:nth-child(6) i {
+.ecology .ecology_box li i.ecology_if {
   background-position: -4.4rem -1.93333333rem;
+}
+.ecology .ecology_box li.ecology_center p {
+  width: 1.92rem;
 }
 /*
 * 系统优势板块
 */
-.edge_contain {
+.edge {
   width: 10rem;
   height: 13.6rem;
   background-color: #f6f6f6;
 }
-.edge_contain .edge_title {
+.edge .edge_title {
   padding: 0.66666667rem 0 0.53333333rem;
   width: 100%;
   height: auto;
 }
-.edge_contain .edge_title h1 {
+.edge .edge_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.42666667rem;
@@ -341,7 +325,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.edge_contain .edge_title b {
+.edge .edge_title b {
   display: block;
   margin: auto;
   width: 1.2rem;
@@ -349,12 +333,12 @@ body {
   border-radius: 0.04rem;
   background-color: #249fdf;
 }
-.edge_contain .edge_box {
+.edge .edge_box {
   margin: auto;
   width: 9.73333333rem;
   height: 10.93333333rem;
 }
-.edge_contain .edge_box li {
+.edge .edge_box li {
   float: left;
   margin: 0.13333333rem;
   padding-top: 0.45333333rem;
@@ -365,7 +349,7 @@ body {
   -webkit-box-shadow: 0 0.06666667rem 0.2rem 0 #e2e2e2;
   box-shadow: 0 0.06666667rem 0.2rem 0 #e2e2e2;
 }
-.edge_contain .edge_box li i {
+.edge .edge_box li i {
   display: block;
   margin: auto;
   margin-bottom: 0.4rem;
@@ -374,7 +358,7 @@ body {
   background: url(../img/digital/elves.png) no-repeat;
   background-size: 5.46666667rem 3.86666667rem;
 }
-.edge_contain .edge_box li h2 {
+.edge .edge_box li h2 {
   margin-bottom: 0.46666667rem;
   width: 100%;
   height: 0.34666667rem;
@@ -384,7 +368,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.edge_contain .edge_box li p {
+.edge .edge_box li p {
   margin: auto;
   width: 3.84rem;
   height: auto;
@@ -392,31 +376,31 @@ body {
   font-size: 0.24rem;
   color: #999999;
 }
-.edge_contain .edge_box li:nth-child(1) i {
+.edge .edge_box li i.edge_ia {
   background-position: 0 -2.86666667rem;
 }
-.edge_contain .edge_box li:nth-child(2) i {
+.edge .edge_box li i.edge_ib {
   background-position: -0.96rem -2.86666667rem;
 }
-.edge_contain .edge_box li:nth-child(3) i {
+.edge .edge_box li i.edge_ic {
   background-position: -1.92rem -2.86666667rem;
 }
-.edge_contain .edge_box li:nth-child(4) i {
+.edge .edge_box li i.edge_id {
   background-position: -2.88rem -2.86666667rem;
 }
 /*
 * 数字货币交易系统板块
 */
-.trade_contain {
+.trade {
   width: 10rem;
   height: auto;
 }
-.trade_contain .trade_title {
+.trade .trade_title {
   padding: 0.66666667rem 0 1.2rem;
   width: 100%;
   height: auto;
 }
-.trade_contain .trade_title h1 {
+.trade .trade_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
   height: 0.42666667rem;
@@ -426,7 +410,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.trade_contain .trade_title b {
+.trade .trade_title b {
   display: block;
   margin: auto;
   width: 1.2rem;
@@ -434,18 +418,18 @@ body {
   border-radius: 0.04rem;
   background-color: #249fdf;
 }
-.trade_contain .trade_box {
+.trade .trade_box {
   margin: auto;
   width: 9.6rem;
   height: 8.66666667rem;
   overflow: hidden;
 }
-.trade_contain .trade_box .trade_left {
+.trade .trade_box .trade_left {
   float: left;
   width: 4.26666667rem;
   height: 7.93333333rem;
 }
-.trade_contain .trade_box .trade_right {
+.trade .trade_box .trade_right {
   float: right;
   width: 5.02666667rem;
   height: 7.10666667rem;

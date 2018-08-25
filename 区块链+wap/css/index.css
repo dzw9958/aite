@@ -28,11 +28,10 @@
 }
 .change .change_title h1 {
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.4rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
 }
 .change .change_title h1 span {
   color: #0092dd;
@@ -48,8 +47,8 @@
 .change .change_box .change_bottom {
   float: left;
   margin: 0.13333333rem;
-  width: 4.54666667rem;
-  height: 5.48rem;
+  width: 4.53333333rem;
+  height: 6.01333333rem;
   border: 0.02666667rem solid #069fdd;
 }
 .change .change_box .change_left i,
@@ -67,11 +66,10 @@
 .change .change_box .change_bottom h2 {
   margin-bottom: 0.33333333rem;
   width: 100%;
-  height: 0.34666667rem;
-  line-height: 0.34666667rem;
-  font-size: 0.29333333rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .change .change_box .change_left p,
@@ -81,7 +79,7 @@
   width: 3.73333333rem;
   height: auto;
   line-height: 0.46666667rem;
-  font-size: 0.26666667rem;
+  font-size: 0.32rem;
   color: #666666;
 }
 .change .change_box .change_left i {
@@ -102,7 +100,7 @@
 }
 .change .change_box .change_bottom p {
   float: right;
-  margin: 0.53333333rem 0.28rem 0.52rem 0;
+  margin: 0.28rem 0.28rem 0.28rem 0;
   width: 4.53333333rem;
   height: auto;
 }
@@ -127,11 +125,10 @@
 }
 .chain .chain_title h1 {
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
 }
 .chain .chain_box {
   padding: 0 0.13333333rem 0.8rem;
@@ -162,9 +159,9 @@
 }
 .chain .chain_box li .chain_content h2 {
   width: 100%;
-  height: 0.34666667rem;
-  line-height: 0.34666667rem;
-  font-size: 0.32rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #ffffff;
   text-align: center;
 }
@@ -212,11 +209,10 @@
 }
 .safety .safety_title h1 {
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
 }
 .safety .safety_title h1 span {
   color: #0092dd;
@@ -230,7 +226,7 @@
 .safety .safety_box {
   position: relative;
   left: 0;
-  padding: 0.66666667rem 0 0.93333333rem;
+  padding: 0.53333333rem 0 0.8rem;
   width: 29.2rem;
   height: 3.73333333rem;
   -webkit-transition: left .5s linear;
@@ -239,9 +235,9 @@
 }
 .safety .safety_box li {
   float: left;
-  margin: 0 0.56666667rem;
-  width: 3.73333333rem;
-  height: 3.73333333rem;
+  margin: 0 0.43333333rem;
+  width: 4rem;
+  height: 4rem;
   text-align: center;
   border-radius: 50%;
   -webkit-box-shadow: 0 0.02666667rem 0.28rem 0 #c8e4f3;
@@ -258,18 +254,17 @@
 .safety .safety_box li h2 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.32rem;
-  line-height: 0.32rem;
-  font-size: 0.26666667rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #333333;
-  font-weight: bold;
 }
 .safety .safety_box li p {
   margin: auto;
-  width: 2.93333333rem;
+  width: 3.84rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #666666;
 }
 .safety .safety_box li i.safety_ia {
@@ -320,26 +315,25 @@
 }
 .edge .edge_title h1 {
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
 }
 .edge .edge_box {
   margin: auto;
-  width: 9.68rem;
+  width: 9.46666667rem;
   height: 7.8rem;
 }
 .edge .edge_box li {
   float: left;
-  margin: 0.42666667rem 0.53333333rem;
-  width: 3.77333333rem;
-  height: 1.74666667rem;
+  margin: 0.33333333rem 0.26666667rem;
+  width: 4.2rem;
+  height: 1.93333333rem;
 }
 .edge .edge_box li .edge_img {
   float: left;
-  width: 1.48rem;
+  width: 1.33333333rem;
   height: 1.74666667rem;
 }
 .edge .edge_box li .edge_img i {
@@ -352,19 +346,19 @@
 .edge .edge_box li h2 {
   float: left;
   margin-bottom: 0.13333333rem;
-  width: 2.29333333rem;
-  height: 0.32rem;
-  line-height: 0.32rem;
-  font-size: 0.26666667rem;
+  width: 2.86666667rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #333333;
   font-weight: bold;
 }
 .edge .edge_box li p {
   float: left;
-  width: 2.29333333rem;
+  width: 2.86666667rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #666666;
 }
 .edge .edge_box li i.edge_ia {
@@ -400,11 +394,10 @@
 }
 .more .more_title h1 {
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
 }
 .more .more_box {
   position: relative;
@@ -429,7 +422,7 @@
   width: 100%;
   height: 0.42666667rem;
   line-height: 0.42666667rem;
-  font-size: 0.38666667rem;
+  font-size: 0.4rem;
   color: #ffffff;
   text-align: center;
 }

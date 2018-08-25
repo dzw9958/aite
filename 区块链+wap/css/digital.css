@@ -21,11 +21,10 @@
 .introduce .introduce_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .introduce .introduce_title b {
@@ -39,11 +38,12 @@
 }
 .introduce .introduce_title p {
   margin: auto;
-  width: 9.4rem;
+  width: 9.2rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
-  color: #999999;
+  font-size: 0.32rem;
+  color: #666666;
+  text-indent: 2em;
 }
 .introduce .introduce_box {
   padding-bottom: 0.84rem;
@@ -70,7 +70,7 @@
   width: 2.66666667rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #333333;
   text-align: center;
 }
@@ -99,11 +99,10 @@
 .core .core_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .core .core_title b {
@@ -133,16 +132,16 @@
   padding-top: 1.78666667rem;
   margin-bottom: 0.10666667rem;
   width: 100%;
-  height: 0.34666667rem;
-  line-height: 0.34666667rem;
-  font-size: 0.32rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #ffffff;
 }
 .core .core_center p {
   width: 100%;
-  height: 0.17333333rem;
-  line-height: 0.17333333rem;
-  font-size: 0.14666667rem;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.24rem;
   color: #ffffff;
 }
 .core .core_both {
@@ -171,7 +170,7 @@
   width: 1.44rem;
   height: 0.53333333rem;
   line-height: 0.53333333rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #ffffff;
   text-align: center;
   border-radius: 0.26666667rem;
@@ -224,11 +223,10 @@
 .ecology .ecology_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .ecology .ecology_title b {
@@ -274,10 +272,10 @@
 }
 .ecology .ecology_box li p {
   margin: auto;
-  width: 1.44rem;
+  width: 1.92rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #333333;
   text-align: center;
 }
@@ -300,7 +298,7 @@
   background-position: -4.4rem -1.93333333rem;
 }
 .ecology .ecology_box li.ecology_center p {
-  width: 1.92rem;
+  width: 2.56rem;
 }
 /*
 * 系统优势板块
@@ -318,11 +316,10 @@
 .edge .edge_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .edge .edge_title b {
@@ -336,14 +333,14 @@
 .edge .edge_box {
   margin: auto;
   width: 9.73333333rem;
-  height: 10.93333333rem;
+  height: 11.46666667rem;
 }
 .edge .edge_box li {
   float: left;
   margin: 0.13333333rem;
-  padding-top: 0.45333333rem;
+  padding-top: 0.4rem;
   width: 4.6rem;
-  height: 4.74666667rem;
+  height: 5.06666667rem;
   background-color: #ffffff;
   border-radius: 0.06666667rem;
   -webkit-box-shadow: 0 0.06666667rem 0.2rem 0 #e2e2e2;
@@ -361,11 +358,10 @@
 .edge .edge_box li h2 {
   margin-bottom: 0.46666667rem;
   width: 100%;
-  height: 0.34666667rem;
-  line-height: 0.34666667rem;
-  font-size: 0.29333333rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .edge .edge_box li p {
@@ -373,7 +369,7 @@
   width: 3.84rem;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #999999;
 }
 .edge .edge_box li i.edge_ia {
@@ -403,11 +399,10 @@
 .trade .trade_title h1 {
   margin-bottom: 0.24rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.37333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #333333;
-  font-weight: bold;
   text-align: center;
 }
 .trade .trade_title b {

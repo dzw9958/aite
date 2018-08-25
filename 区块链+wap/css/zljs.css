@@ -1,0 +1,256 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* 艾特企业级区块链底层主链架构板块
+*/
+.chain {
+  padding-top: 0.26666667rem;
+  width: 10rem;
+  height: 5.73333333rem;
+  background-color: #f6f6f6;
+}
+.chain_box {
+  margin: auto;
+  width: 9.46666667rem;
+  height: 5.13333333rem;
+  border-radius: 0.26666667rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.06666667rem 0.33333333rem 0 #d0e6f1;
+}
+.chain_box h1 {
+  margin-bottom: 0.4rem;
+  padding-top: 0.66666667rem;
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
+  color: #333333;
+  text-align: center;
+}
+.chain_box h1 span {
+  font-weight: bold;
+}
+.chain_box p {
+  margin: auto;
+  width: 8.50666667rem;
+  height: auto;
+  line-height: 0.50666667rem;
+  font-size: 0.32rem;
+  color: #666666;
+  text-indent: 2em;
+}
+/*
+* 服务模块组成板块
+*/
+.module {
+  width: 10rem;
+  height: auto;
+}
+.module_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.module_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
+  color: #333333;
+  text-align: center;
+}
+.module_list {
+  position: relative;
+  padding-bottom: 0.8rem;
+  width: 100%;
+  height: 8.26666667rem;
+}
+.module_list li {
+  position: absolute;
+  padding-top: 0.26666667rem;
+  width: 2.66666667rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #0093dd;
+}
+.module_list li .module_img {
+  margin: auto;
+  margin-bottom: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.module_list li .module_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.module_list li p {
+  width: 100%;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+  text-align: center;
+}
+.module_list li.module_a {
+  top: 0;
+  left: 3.66666667rem;
+  padding-top: 0.53333333rem;
+  height: 2.13333333rem;
+}
+.module_list li.module_a img {
+  width: 1rem;
+  height: 1rem;
+}
+.module_list li.module_b {
+  top: 2.26666667rem;
+  left: 0.68rem;
+  padding-top: 0.53333333rem;
+  height: 2.13333333rem;
+}
+.module_list li.module_b img {
+  width: 0.93333333rem;
+  height: 0.89333333rem;
+}
+.module_list li.module_c {
+  top: 2.26666667rem;
+  left: 6.65333333rem;
+}
+.module_list li.module_c img {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+}
+.module_list li.module_d {
+  top: 3.01333333rem;
+  left: 3.66666667rem;
+}
+.module_list li.module_d img {
+  width: 0.98666667rem;
+  height: 0.98666667rem;
+}
+.module_list li.module_e {
+  top: 5.6rem;
+  left: 1.90666667rem;
+}
+.module_list li.module_e img {
+  width: 0.96rem;
+  height: 0.82666667rem;
+}
+.module_list li.module_f {
+  top: 5.6rem;
+  left: 5.42666667rem;
+  padding-top: 0.53333333rem;
+  height: 2.13333333rem;
+}
+.module_list li.module_f img {
+  width: 0.98666667rem;
+  height: 0.90666667rem;
+}
+/*
+* 核心技术优势板块
+*/
+.edge {
+  width: 10rem;
+  height: auto;
+  background-color: #ebf6ff;
+}
+.edge_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.edge_title h1 {
+  width: 100%;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
+  color: #333333;
+  text-align: center;
+}
+.edge_list {
+  margin: auto;
+  padding-bottom: 0.66666667rem;
+  width: 9.73333333rem;
+  height: auto;
+  overflow: hidden;
+}
+.edge_list li {
+  float: left;
+  margin: 0.13333333rem;
+  padding-top: 0.6rem;
+  width: 4.6rem;
+  height: 4.8rem;
+  border-radius: 0.05333333rem;
+  background-color: #ffffff;
+}
+.edge_list li .edge_img {
+  margin: auto;
+  margin-bottom: 0.33333333rem;
+  width: 0.93333333rem;
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  text-align: center;
+}
+.edge_list li .edge_img img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.edge_list li h2 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #333333;
+  text-align: center;
+}
+.edge_list li p {
+  margin: auto;
+  width: 3.84rem;
+  height: auto;
+  line-height: 0.42666667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.edge_list li img.edge_ia {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.edge_list li img.edge_ib {
+  width: 0.64rem;
+  height: 0.84rem;
+}
+.edge_list li img.edge_ic {
+  width: 0.73333333rem;
+  height: 0.81333333rem;
+}
+.edge_list li img.edge_id {
+  width: 0.81333333rem;
+  height: 0.81333333rem;
+}
+.edge_list li img.edge_ie {
+  width: 0.76rem;
+  height: 0.81333333rem;
+}
+.edge_list li img.edge_if {
+  width: 0.73333333rem;
+  height: 0.78666667rem;
+}
+.edge_list li img.edge_ig {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.edge_list li img.edge_ih {
+  width: 0.8rem;
+  height: 0.74666667rem;
+}

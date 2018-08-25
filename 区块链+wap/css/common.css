@@ -45,9 +45,9 @@
 .tail h1 {
   margin-bottom: 0.26666667rem;
   width: 100%;
-  height: 0.42666667rem;
-  line-height: 0.42666667rem;
-  font-size: 0.4rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.48rem;
   color: #ffffff;
 }
 .tail p {
@@ -55,7 +55,7 @@
   width: 100%;
   height: auto;
   line-height: 0.42666667rem;
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #cbddf0;
 }
 .tail button {
@@ -64,7 +64,7 @@
   width: 3.17333333rem;
   height: 0.64rem;
   line-height: 0.64rem;
-  font-size: 0.26666667rem;
+  font-size: 0.32rem;
   color: #ffffff;
   border-radius: 0.33333333rem;
   border: 0.01333333rem solid #ffffff;

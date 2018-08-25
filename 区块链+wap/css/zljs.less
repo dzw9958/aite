@@ -1,0 +1,203 @@
+@import "lib.less";
+/*
+* 艾特企业级区块链底层主链架构板块
+*/
+.chain{
+  padding-top: 20/@r;
+  .wh(750/@r, 430/@r);
+  .bgc(#f6f6f6);
+  &_box{
+    margin: auto;
+    .wh(710/@r, 385/@r);
+    border-radius: 20/@r;
+    .bgc(@b);
+    box-shadow: 0 5/@r 25/@r 0 #d0e6f1;
+    h1{
+      margin-bottom: 30/@r;
+      padding-top: 50/@r;
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+      span{
+        font-weight: bold;
+      }
+    }
+    p{
+      margin: auto;
+      .wh(638/@r, auto);
+      line-height: 38/@r;
+      .fc(@s3, @6);
+      text-indent: 2em;
+    }
+  }
+}
+/*
+* 服务模块组成板块
+*/
+.module{
+  .wh(750/@r, auto);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+    }
+  }
+  &_list{
+    position: relative;
+    padding-bottom: 60/@r;
+    .wh(100%, 620/@r);
+    li{
+      position: absolute;
+      padding-top: 20/@r;
+      .wh(200/@r, 180/@r);
+      border-radius: 50%;
+      .bgc(#0093dd);
+      .module_img{
+        margin: auto;
+        margin-bottom: 15/@r;
+        .squ(75/@r);
+        line-height: 75/@r;
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          vertical-align: middle;
+        }
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 30/@r;
+        .fc(@s3, @b);
+        text-align: center;
+      }
+    }
+    li.module_a{
+      top: 0;
+      left: 275/@r;
+      padding-top: 40/@r;
+      height: 160/@r;
+      img{
+        .wh(75/@r, 75/@r);
+      }
+    }
+    li.module_b{
+      top: 170/@r;
+      left: 51/@r;
+      padding-top: 40/@r;
+      height: 160/@r;
+      img{
+        .wh(70/@r, 67/@r);
+      }
+    }
+    li.module_c{
+      top: 170/@r;
+      left: 499/@r;
+      img{
+        .wh(68/@r, 68/@r);
+      }
+    }
+    li.module_d{
+      top: 226/@r;
+      left: 275/@r;
+      img{
+        .wh(74/@r, 74/@r);
+      }
+    }
+    li.module_e{
+      top: 420/@r;
+      left: 143/@r;
+      img{
+        .wh(72/@r, 62/@r);
+      }
+    }
+    li.module_f{
+      top: 420/@r;
+      left: 407/@r;
+      padding-top: 40/@r;
+      height: 160/@r;
+      img{
+        .wh(74/@r, 68/@r);
+      }
+    }
+  }
+}
+/*
+* 核心技术优势板块
+*/
+.edge{
+  .wh(750/@r, auto);
+  .bgc(#ebf6ff);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+    }
+  }
+  &_list{
+    margin: auto;
+    padding-bottom: 50/@r;
+    .wh(730/@r, auto);
+    overflow: hidden;
+    li{
+      float: left;
+      margin: 10/@r;
+      padding-top: 45/@r;
+      .wh(345/@r, 360/@r);
+      border-radius: 4/@r;
+      .bgc(@b);
+      .edge_img{
+        margin: auto;
+        margin-bottom: 25/@r;
+        .whh(70/@r, 70/@r);
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          vertical-align: middle;
+        }
+      }
+      h2{
+        margin-bottom: 20/@r;
+        .whh(100%, @h2);
+        .fc(@s2, @3);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(288/@r, auto);
+        line-height: 32/@r;
+        .fc(@s3, @9);
+      }
+      img.edge_ia{
+        .wh(60/@r, 60/@r);
+      }
+      img.edge_ib{
+        .wh(48/@r, 63/@r);
+      }
+      img.edge_ic{
+        .wh(55/@r, 61/@r);
+      }
+      img.edge_id{
+        .wh(61/@r, 61/@r);
+      }
+      img.edge_ie{
+        .wh(57/@r, 61/@r);
+      }
+      img.edge_if{
+        .wh(55/@r, 59/@r);
+      }
+      img.edge_ig{
+        .wh(60/@r, 60/@r);
+      }
+      img.edge_ih{
+        .wh(60/@r, 56/@r);
+      }
+    }
+  }
+}

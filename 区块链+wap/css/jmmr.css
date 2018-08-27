@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* 艾特『区块链+虚拟收藏品』解决方案板块
+*/
+.solution {
+  padding: 0.26666667rem 0 0.33333333rem;
+  width: 10rem;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.solution_box {
+  margin: auto;
+  padding-top: 0.66666667rem;
+  width: 9.46666667rem;
+  height: 4.66666667rem;
+  border-radius: 0.26666667rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.06666667rem 0.33333333rem 0 #d0e6f1;
+}
+.solution_box h1 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #37a1c8;
+  text-align: center;
+}
+.solution_box p {
+  margin: auto;
+  width: 8.66666667rem;
+  height: auto;
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  color: #999999;
+  text-indent: 2em;
+}
+/*
+* 标题板块
+*/
+.title {
+  padding-top: 0.66666667rem;
+  width: 10rem;
+  height: auto;
+}
+.title h1 {
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #37a1c8;
+  text-align: center;
+}
+/*
+* 通用板块
+*/
+.gray {
+  background-color: #fafafa;
+}
+.plate {
+  width: 10rem;
+  height: auto;
+}
+.plate_title {
+  padding: 0.66666667rem 0 0.4rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.plate_title h1 {
+  margin: auto;
+  margin-bottom: 0.26666667rem;
+  width: 2.34666667rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  font-size: 0.34666667rem;
+  color: #ffffff;
+  border-radius: 0.26666667rem;
+  background-color: #ffd951;
+}
+.plate_title p {
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.plate_window {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.46666667rem;
+  height: 4.46666667rem;
+  overflow: hidden;
+}
+.plate_list {
+  position: relative;
+  left: 0;
+  width: 18.93333333rem;
+  height: 4.33333333rem;
+  text-align: center;
+  transition: left .5s linear;
+}
+.plate_list li {
+  float: left;
+  margin-right: 0.33333333rem;
+  width: 2.93333333rem;
+  height: 4.33333333rem;
+}
+.plate_list li img {
+  display: block;
+  margin-bottom: 0.26666667rem;
+  width: 2.93333333rem;
+  height: 2.93333333rem;
+  border-radius: 0.05333333rem;
+}
+.plate_list li h6 {
+  margin-bottom: 0.13333333rem;
+  width: 100%;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  font-size: 0.34666667rem;
+  color: #666666;
+}
+.plate_list li p {
+  width: 100%;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  font-size: 0.26666667rem;
+  color: #999999;
+}
+.plate_sub {
+  margin: auto;
+  width: 0.8rem;
+  height: 0.13333333rem;
+  transition: width .5s linear;
+}
+.plate_sub li {
+  float: left;
+  margin: 0 0.06666667rem;
+  width: 0.13333333rem;
+  height: 0.13333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #37a1c8;
+}
+.plate_sub li.on {
+  width: 0.4rem;
+}

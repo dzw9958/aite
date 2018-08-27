@@ -1,0 +1,187 @@
+@import "lib.less";
+/*
+* 传统游戏存在的问题板块
+*/
+.problem{
+  .wh(750/@r, auto);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+    }
+  }
+  &_list{
+    position: relative;
+    .wh(750/@r, 450/@r);
+    background: url(../img/cwyc/column1-bg.png) no-repeat;
+    .bgs(100%, 100%);
+    li{
+      position: absolute;
+      .wh(240/@r, auto);
+      h2{
+        margin-bottom: 10/@r;
+        .whh(100%, 26/@r);
+        .fc(@s3, #3c5866);
+        font-weight: bold;
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 30/@r;
+        .fc(20/@r, @9);
+      }
+    }
+    li.problem_a{
+      top: 10/@r;
+      left: 70/@r;
+    }
+    li.problem_b{
+      top: 10/@r;
+      left: 500/@r;
+    }
+    li.problem_c{
+      top: 230/@r;
+      left: 30/@r;
+    }
+    li.problem_d{
+      top: 290/@r;
+      left: 470/@r;
+    }
+    li.problem_e{
+      top: 350/@r;
+      left: 145/@r;
+    }
+  }
+}
+/*
+* 区块链+宠物养成游戏的特色板块
+*/
+.feature{
+  .wh(750/@r, 1340/@r);
+  background: url(../img/cwyc/bg.png) no-repeat;
+  .bgs(100%, 100%);
+  &_title{
+    padding: 50/@r 0 30/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @b);
+      text-align: center;
+    }
+  }
+  &_list{
+    margin: auto;
+    .wh(730/@r, auto);
+    li{
+      float: left;
+      margin: 10/@r;
+      .wh(345/@r, 380/@r);
+      border-radius: 5/@r;
+      .bgc(@b);
+      .feature_img{
+        .whh(100%, 100/@r);
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          vertical-align: middle;
+        }
+      }
+      h2{
+        margin-bottom: 20/@r;
+        .whh(100%, @h2);
+        .fc(@s2, @3);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(300/@r, auto);
+        line-height: 30/@r;
+        .fc(@s3, @9);
+      }
+      img.feature_ia{
+        .wh(61/@r, 54/@r);
+      }
+      img.feature_ib{
+        .wh(54/@r, 60/@r);
+      }
+      img.feature_ic{
+        .wh(52/@r, 62/@r);
+      }
+      img.feature_id{
+        .wh(56/@r, 52/@r);
+      }
+      img.feature_ie{
+        .wh(71/@r, 44/@r);
+      }
+      img.feature_if{
+        .wh(66/@r, 48/@r);
+      }
+    }
+  }
+}
+/*
+* 丰富的游戏玩法板块
+*/
+.game{
+  .wh(750/@r, auto);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+    }
+  }
+  &_list{
+    padding-bottom: 20/@r;
+    .wh(100%, auto);
+    overflow: hidden;
+    li{
+      float: left;
+      .wh(750/4/@r, 170/@r);
+      .game_bg{
+        margin: auto;
+        margin-bottom: 20/@r;
+        .wh(82/@r, 80/@r);
+        background: url(../img/cwyc/start.png) no-repeat;
+        .bgs(100%, 100%);
+      }
+      i{
+        display: block;
+        position: relative;
+        top: 16/@r;
+        left: 16/@r;
+        .wh(50/@r, 48/@r);
+        background: url(../img/cwyc/elves.png) no-repeat;
+        .bgs(206/@r, 98/@r);
+      }
+      p{
+        .whh(100%, 26/@r);
+        .fc(@s3, @6);
+        text-align: center;
+      }
+      i.game_ia, i.game_ib, i.game_ic, i.game_id{
+        .bgy(0);
+      }
+      i.game_ie, i.game_if, i.game_ig, i.game_ih{
+        .bgy(50/@r);
+      }
+      i.game_ia, i.game_ie{
+        .bgx(0);
+      }
+      i.game_ib, i.game_if{
+        .bgx(52*1/@r);
+      }
+      i.game_ic, i.game_ig{
+        .bgx(52*2/@r);
+      }
+      i.game_id, i.game_ih{
+        .bgx(52*3/@r);
+      }
+    }
+  }
+}

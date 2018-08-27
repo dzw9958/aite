@@ -1,0 +1,126 @@
+@import "lib.less";
+/*
+* 便携式资产管理板块
+*/
+.portable{
+  .wh(750/@r, auto);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 30/@r;
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+    }
+    p{
+      .wh(100%, auto);
+      line-height: 36/@r;
+      .fc(@s3, @6);
+    }
+  }
+  &_box{
+    padding-bottom: 40/@r;
+    .whh(100%, 455/@r);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(730/@r, 455/@r);
+      vertical-align: middle;
+    }
+  }
+}
+/*
+* 全方位安全保障板块
+*/
+.security{
+  .wh(750/@r, 750/@r);
+  background: url(../img/szqb/bg.png) no-repeat;
+  .bgs(750/@r, 550/@r);
+  background-position: center top;
+  &_title{
+    padding: 50/@r 0 20/@r;
+    .wh(100%, auto);
+    text-align: center;
+    h1{
+      margin-bottom: 30/@r;
+      .whh(100%, @h1);
+      .fc(@s1, @b);
+    }
+    p{
+      .wh(100%, auto);
+      line-height: 36/@r;
+      .fc(@s3, @b);
+    }
+  }
+  &_box{
+    .whh(100%, 470/@r);
+    text-align: center;
+    img{
+      display: inline-block;
+      .wh(750/@r, 468/@r);
+      vertical-align: middle;
+    }
+  }
+}
+/*
+* 艾特区块链数字钱包三大优势板块
+*/
+.edge{
+  .wh(750/@r, auto);
+  .bgc(#f8f8f8);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, @h1);
+      .fc(@s1, @3);
+      text-align: center;
+    }
+    span{
+      color: #0092dd;
+    }
+  }
+  &_list{
+    margin: auto;
+    padding-bottom: 10/@r;
+    .wh(710/@r, auto);
+    li{
+      margin-bottom: 30/@r;
+      .wh(100%, 290/@r);
+      text-align: center;
+      .bgc(@b);
+      box-shadow: 0 2/@r 21/@r 0 #c6e3f1;
+      .edge_img{
+        margin: auto;
+        margin-bottom: 10/@r;
+        .whh(68/@r, 110/@r);
+        text-align: center;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          vertical-align: middle;
+        }
+      }
+      h2{
+        margin-bottom: 20/@r;
+        .whh(100%, @h2);
+        .fc(@s2, @3);
+      }
+      p{
+        .wh(100%, auto);
+        line-height: 34/@r;
+        .fc(@s3, @6);
+      }
+      img.edge_ia{
+        .wh(68/@r, 64/@r);
+      }
+      img.edge_ib{
+        .wh(60/@r, 60/@r);
+      }
+      img.edge_ic{
+        .wh(63/@r, 63/@r);
+      }
+    }
+  }
+}

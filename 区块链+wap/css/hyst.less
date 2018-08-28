@@ -1,0 +1,205 @@
+@import "lib.less";
+/*
+* 艾特『区块链会员生态系统』解决方案板块
+*/
+.solution{
+  padding: 20/@r 0 25/@r;
+  .wh(750/@r, auto);
+  .bgc(#f6f6f6);
+  &_box{
+    margin: auto;
+    padding-top: 50/@r;
+    .wh(710/@r, 400/@r);
+    border-radius: 20/@r;
+    .bgc(@b);
+    box-shadow: 0 5/@r 25/@r 0 #d0e6f1;
+    h1{
+      margin-bottom: 20/@r;
+      .whh(100%, 32/@r);
+      .fc(30/@r, #37a1c8);
+      text-align: center;
+    }
+    p{
+      margin: auto;
+      .wh(650/@r, auto);
+      line-height: 42/@r;
+      .fc(@s3, @9);
+      text-indent: 2em;
+    }
+  }
+}
+/*
+* 基于区块链的会员生态的特点板块
+*/
+.feature{
+  padding-bottom: 50/@r;
+  .wh(750/@r, auto);
+  &_title{
+    padding: 50/@r 0 40/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, 32/@r);
+      .fc(30/@r, #37a1c8);
+      text-align: center;
+    }
+  }
+  &_window{
+    .wh(100%, 335/@r);
+    overflow: hidden;
+  }
+  &_box{
+    padding-bottom: 50/@r;
+    .wh(100%, 335/@r);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  &_list{
+    padding: 0 10/@r;
+    .wh(1020/@r, 335/@r);
+    li{
+      float: left;
+      margin: 0 10/@r;
+      padding-top: 25/@r;
+      .wh(320/@r, 310/@r);
+      border-radius: 10/@r;
+      h2{
+        margin-bottom: 25/@r;
+        .wh(100%, auto);
+        line-height: 36/@r;
+        .fc(@s2, @b);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(270/@r, auto);
+        line-height: 30/@r;
+        .fc(@s3, @b);
+      }
+    }
+    li.feature_a{
+      background: url(../img/hyst/img1.png) no-repeat;
+      .bgs(100%, 100%);
+    }
+    li.feature_b{
+      background: url(../img/hyst/img2.png) no-repeat;
+      .bgs(100%, 100%);
+    }
+    li.feature_c{
+      background: url(../img/hyst/img3.png) no-repeat;
+      .bgs(100%, 100%);
+    }
+  }
+}
+/*
+* 应用场景板块
+*/
+.scene{
+  .wh(750/@r, auto);
+  .bgc(#f6f6f6);
+  &_title{
+    padding: 50/@r 0 25/@r;
+    .wh(100%, auto);
+    h1{
+      .whh(100%, 32/@r);
+      .fc(30/@r, #37a1c8);
+      text-align: center;
+    }
+  }
+  &_window{
+    margin: auto;
+    padding-bottom: 30/@r;
+    .wh(730/@r, 875/@r);
+    overflow: hidden;
+  }
+  &_list{
+    position: relative;
+    left: 0;
+    padding: 15/@r 0 10/@r;
+    .wh(1460/@r, 850/@r);
+    transition: left .5s linear;
+    li{
+      position: relative;
+      float: left;
+      margin: 50/@r 10/@r 40/@r;
+      padding-top: 65/@r;
+      .wh(345/@r, 270/@r);
+      border-radius: 5/@r;
+      .bgc(@b);
+      box-shadow: 0 0 15px 0 #d3e7f1;
+      .scene_icon{
+        position: absolute;
+        top: -50/@r;
+        left: 50%;
+        margin-left: -98/2/@r;
+        .squ(98/@r);
+        line-height: 98/@r;
+        text-align: center;
+        border-radius: 50%;
+        .bgc(@b);
+        box-shadow: 0 0 15px 0 #d3e7f1;
+        img{
+          display: inline-block;
+          .wh(auto, auto);
+          vertical-align: middle;
+        }
+      }
+      b{
+        display: block;
+        margin: 0 auto 15/@r;
+        .wh(25/@r, 2/@r);
+        .bgc(#13a4ec);
+      }
+      h2{
+        margin-bottom: 15/@r;
+        .whh(100%, @h2);
+        .fc(@s2, @6);
+        text-align: center;
+      }
+      p{
+        margin: auto;
+        .wh(290/@r, auto);
+        line-height: 32/@r;
+        .fc(@s3, @9);
+      }
+      img.scene_ia{
+        .wh(48/@r, 54/@r);
+      }
+      img.scene_ib{
+        .wh(54/@r, 54/@r);
+      }
+      img.scene_ic{
+        .wh(45/@r, 45/@r);
+      }
+      img.scene_id{
+        .wh(54/@r, 44/@r);
+      }
+      img.scene_ie{
+        .wh(53/@r, 51/@r);
+      }
+      img.scene_if{
+        .wh(53/@r, 46/@r);
+      }
+      img.scene_ig{
+        .wh(58/@r, 42/@r);
+      }
+      img.scene_ih{
+        .wh(50/@r, 45/@r);
+      }
+    }
+  }
+  &_sub{
+    margin: auto;
+    .wh(60/@r, 10/@r);
+    li{
+      float: left;
+      margin: 0 5/@r;
+      .squ(10/@r);
+      border-radius: 5/@r;
+      .bgc(#0093dd);
+      transition: width .5s linear;
+    }
+    li.on{
+      width: 30/@r;
+    }
+  }
+}

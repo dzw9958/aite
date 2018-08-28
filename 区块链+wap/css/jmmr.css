@@ -138,7 +138,6 @@
   margin: auto;
   width: 0.8rem;
   height: 0.13333333rem;
-  transition: width .5s linear;
 }
 .plate_sub li {
   float: left;
@@ -147,6 +146,7 @@
   height: 0.13333333rem;
   border-radius: 0.06666667rem;
   background-color: #37a1c8;
+  transition: width .5s linear;
 }
 .plate_sub li.on {
   width: 0.4rem;

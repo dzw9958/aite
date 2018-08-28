@@ -1,0 +1,257 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* 艾特『区块链会员生态系统』解决方案板块
+*/
+.solution {
+  padding: 0.26666667rem 0 0.33333333rem;
+  width: 10rem;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.solution_box {
+  margin: auto;
+  padding-top: 0.66666667rem;
+  width: 9.46666667rem;
+  height: 5.33333333rem;
+  border-radius: 0.26666667rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.06666667rem 0.33333333rem 0 #d0e6f1;
+}
+.solution_box h1 {
+  margin-bottom: 0.26666667rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #37a1c8;
+  text-align: center;
+}
+.solution_box p {
+  margin: auto;
+  width: 8.66666667rem;
+  height: auto;
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  color: #999999;
+  text-indent: 2em;
+}
+/*
+* 基于区块链的会员生态的特点板块
+*/
+.feature {
+  padding-bottom: 0.66666667rem;
+  width: 10rem;
+  height: auto;
+}
+.feature_title {
+  padding: 0.66666667rem 0 0.53333333rem;
+  width: 100%;
+  height: auto;
+}
+.feature_title h1 {
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #37a1c8;
+  text-align: center;
+}
+.feature_window {
+  width: 100%;
+  height: 4.46666667rem;
+  overflow: hidden;
+}
+.feature_box {
+  padding-bottom: 0.66666667rem;
+  width: 100%;
+  height: 4.46666667rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.feature_list {
+  padding: 0 0.13333333rem;
+  width: 13.6rem;
+  height: 4.46666667rem;
+}
+.feature_list li {
+  float: left;
+  margin: 0 0.13333333rem;
+  padding-top: 0.33333333rem;
+  width: 4.26666667rem;
+  height: 4.13333333rem;
+  border-radius: 0.13333333rem;
+}
+.feature_list li h2 {
+  margin-bottom: 0.33333333rem;
+  width: 100%;
+  height: auto;
+  line-height: 0.48rem;
+  font-size: 0.4rem;
+  color: #ffffff;
+  text-align: center;
+}
+.feature_list li p {
+  margin: auto;
+  width: 3.6rem;
+  height: auto;
+  line-height: 0.4rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+}
+.feature_list li.feature_a {
+  background: url(../img/hyst/img1.png) no-repeat;
+  background-size: 100% 100%;
+}
+.feature_list li.feature_b {
+  background: url(../img/hyst/img2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.feature_list li.feature_c {
+  background: url(../img/hyst/img3.png) no-repeat;
+  background-size: 100% 100%;
+}
+/*
+* 应用场景板块
+*/
+.scene {
+  width: 10rem;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.scene_title {
+  padding: 0.66666667rem 0 0.33333333rem;
+  width: 100%;
+  height: auto;
+}
+.scene_title h1 {
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #37a1c8;
+  text-align: center;
+}
+.scene_window {
+  margin: auto;
+  padding-bottom: 0.4rem;
+  width: 9.73333333rem;
+  height: 11.66666667rem;
+  overflow: hidden;
+}
+.scene_list {
+  position: relative;
+  left: 0;
+  padding: 0.2rem 0 0.13333333rem;
+  width: 19.46666667rem;
+  height: 11.33333333rem;
+  transition: left .5s linear;
+}
+.scene_list li {
+  position: relative;
+  float: left;
+  margin: 0.66666667rem 0.13333333rem 0.53333333rem;
+  padding-top: 0.86666667rem;
+  width: 4.6rem;
+  height: 3.6rem;
+  border-radius: 0.06666667rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 #d3e7f1;
+}
+.scene_list li .scene_icon {
+  position: absolute;
+  top: -0.66666667rem;
+  left: 50%;
+  margin-left: -0.65333333rem;
+  width: 1.30666667rem;
+  height: 1.30666667rem;
+  line-height: 1.30666667rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 #d3e7f1;
+}
+.scene_list li .scene_icon img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+.scene_list li b {
+  display: block;
+  margin: 0 auto 0.2rem;
+  width: 0.33333333rem;
+  height: 0.02666667rem;
+  background-color: #13a4ec;
+}
+.scene_list li h2 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.4rem;
+  color: #666666;
+  text-align: center;
+}
+.scene_list li p {
+  margin: auto;
+  width: 3.86666667rem;
+  height: auto;
+  line-height: 0.42666667rem;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.scene_list li img.scene_ia {
+  width: 0.64rem;
+  height: 0.72rem;
+}
+.scene_list li img.scene_ib {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.scene_list li img.scene_ic {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.scene_list li img.scene_id {
+  width: 0.72rem;
+  height: 0.58666667rem;
+}
+.scene_list li img.scene_ie {
+  width: 0.70666667rem;
+  height: 0.68rem;
+}
+.scene_list li img.scene_if {
+  width: 0.70666667rem;
+  height: 0.61333333rem;
+}
+.scene_list li img.scene_ig {
+  width: 0.77333333rem;
+  height: 0.56rem;
+}
+.scene_list li img.scene_ih {
+  width: 0.66666667rem;
+  height: 0.6rem;
+}
+.scene_sub {
+  margin: auto;
+  width: 0.8rem;
+  height: 0.13333333rem;
+}
+.scene_sub li {
+  float: left;
+  margin: 0 0.06666667rem;
+  width: 0.13333333rem;
+  height: 0.13333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #0093dd;
+  transition: width .5s linear;
+}
+.scene_sub li.on {
+  width: 0.4rem;
+}

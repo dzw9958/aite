@@ -1,0 +1,137 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+/*
+* body背景颜色
+*/
+body {
+  background-color: #eeeeee;
+}
+/*
+* 顶部导航
+*/
+.header_top {
+  padding-top: 1.17333333rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.17333333rem;
+  background-color: #fe6986;
+  z-index: 999;
+}
+.header_left {
+  position: absolute;
+  top: 0.32rem;
+  left: 0.26666667rem;
+}
+.header_left a {
+  display: block;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../img/icon/return.png) no-repeat;
+  background-size: 0.26666667rem 0.53333333rem;
+  background-position: left center;
+}
+.header_center p {
+  line-height: 1.17333333rem;
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+}
+.header_center input {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -3.33333333rem;
+  margin-top: -0.33333333rem;
+  padding-left: 0.33333333rem;
+  width: 6.33333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  border: none;
+  border-radius: 0.33333333rem;
+  background-color: #ffffff;
+}
+.header_right {
+  position: absolute;
+  top: 0.32rem;
+  right: 0.26666667rem;
+}
+.header_right .header_search {
+  display: block;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../img/icon/search.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+}
+/*
+* 底部导航
+*/
+.nav_bottom {
+  padding-bottom: 1.33333333rem;
+}
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.30666667rem;
+  border-top: 0.02666667rem solid #eeeeee;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.nav li {
+  float: left;
+  padding-top: 0.08rem;
+  width: 2rem;
+}
+.nav li a {
+  display: block;
+  margin: auto;
+  width: 1.17333333rem;
+}
+.nav li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.05333333rem;
+  width: 0.66666667rem;
+  height: 0.66666667rem;
+  background: url(../img/icon/nav.png) no-repeat;
+  background-size: 3.38666667rem 1.34666667rem;
+  background-position-y: 0;
+}
+.nav li p {
+  line-height: 0.4rem;
+  font-size: 0.48rem;
+  color: #666666;
+  text-align: center;
+}
+.nav li i.nav_ia {
+  background-position-x: 0;
+}
+.nav li i.nav_ib {
+  background-position-x: -0.68rem;
+}
+.nav li i.nav_ic {
+  background-position-x: -1.36rem;
+}
+.nav li i.nav_id {
+  background-position-x: -2.04rem;
+}
+.nav li i.nav_ie {
+  background-position-x: -2.72rem;
+}
+.nav li.active i {
+  background-position-y: -0.68rem;
+}
+.nav li.active p {
+  color: #fe6986;
+}

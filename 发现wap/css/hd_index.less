@@ -1,0 +1,137 @@
+@import "lib.less";
+/*
+* 页面通用标题
+*/
+.common_title{
+  padding: 30/@r 0;
+  height: 40/@r;
+  h1{
+    float: left;
+    padding-left: 30/@r;
+    line-height: 40/@r;
+    .fc(@s1, @c3);
+    border-left: 15/@r solid @ef434f;
+  }
+  a{
+    float: right;
+    line-height: 40/@r;
+    font-size: @s2;
+  }
+  span{
+    color: @ef434f;
+  }
+}
+/*
+* 分类
+*/
+.classify{
+  margin-bottom: 20/@r;
+  padding: 0 20/@r;
+  .wh(710/@r, 400/@r);
+  .bgc(@cf);
+  li{
+    float: left;
+    padding: 23/@r 0;
+    width: 710/4/@r;
+    a{
+      display: block;
+    }
+    img{
+      display: block;
+      margin: auto;
+      margin-bottom: 22/@r;
+      .squ(100/@r);
+    }
+    p{
+      line-height: 32/@r;
+      .fc(@s2, @c3);
+      text-align: center;
+    }
+  }
+}
+
+/*
+* 热门活动
+*/
+.activity{
+  margin-bottom: 20/@r;
+  padding: 0 20/@r 35/@r;
+  .wh(710/@r, auto);
+  .bgc(@cf);
+  overflow: hidden;
+  &_window{
+    height: 480/@r;
+    overflow: hidden;
+  }
+  &_box{
+    padding-bottom: 50/@r;
+    height: 480/@r;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  &_list{
+    .tanhz();
+    li{
+      margin-right: 25/@r;
+      width: 320/@r;
+      a{
+        display: block;
+      }
+      .activity_img{
+        position: relative;
+        margin-bottom: 5/@r;
+        height: 250/@r;
+        img{
+          display: block;
+          .wh(320/@r, 250/@r);
+        }
+        .activity_label{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 10/@r 15/@r;
+          .fc(@s2, @cf);
+          .bgc(@fe6986);
+        }
+      }
+      h2{
+        margin-bottom: 5/@r;
+        padding: 0 10/@r;
+        line-height: 40/@r;
+        .fc(@s1, @c3);
+        .duo(2);
+      }
+      .activity_time, .activity_cost, .activity_place{
+        padding: 0 10/@r;
+        line-height: 44/@r;
+        .fc(@s2, @c3);
+        .dan();
+      }
+      .activity_cost{
+        font-size: 30/@r;
+        span{
+          color: @ef434f;
+        }
+      }
+      
+    }
+  }
+}
+/*
+* vip-banner
+*/
+.vip_banner{
+  padding-top: 35/@r;
+  .wh(750/@r, 295/@r);
+  .bgc(@cf);
+  overflow: hidden;
+  a{
+    display: block;
+    margin: auto;
+    width: 710/@r;
+  }
+  img{
+    display: block;
+    .wh(710/@r, 260/@r);
+  }
+}

@@ -10,7 +10,7 @@ $(".friend_likes").on("click", function(){
 })
 // 点击评论弹出评论框获取/失去焦点
 $(".friend_btn").on("click", function(){
-  $(".comment").toggle();
+  $(".comment").fadeIn();
   $(".comment_text").focus();
 })
 
@@ -19,7 +19,7 @@ $(".comment").on("click touchstart", function(){
 })
 
 $(".comment_text").on("blur", function(){
-  $(".comment").toggle();
+  $(".comment").fadeOut();
 })
 
 // 阻止冒泡事件

@@ -33,6 +33,8 @@
       background-position-y: top;
     }
   }
+}
+.switch{
   &_box{
     display: none;
     position: fixed;
@@ -42,6 +44,7 @@
     left: 0;
     background: url(../img/icon/000-3.png);
     overflow: hidden;
+    z-index: 999;
   }
   &_list{
     display: none;
@@ -104,7 +107,7 @@
       h2{
         margin-bottom: 15/@r;
         line-height: 40/@r;
-        .fc(@s1, @c3);
+        .fc(@s2, @c3);
         .duo(2);
       }
       p{

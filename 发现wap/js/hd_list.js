@@ -1,22 +1,47 @@
-$(".switch_btn li").on("click", function () {
+// 切换显示分类
+var list = $(".switch_box");
+var item = $(".switch_btn li");
+
+item.on("click", function () {
   var that = $(this);
   var index = that.index();
   if (that.hasClass("on")) {
     that.removeClass("on");
-    that.parent().next().fadeOut()
-      .find(".switch_list").eq(index).hide();
+    list.fadeOut().find(".switch_list").eq(index).hide();
   } else {
     that.addClass("on").siblings().removeClass("on")
-      .parent().next().fadeIn()
-      .find(".switch_list").eq(index).show().siblings().hide();
+    list.fadeIn().find(".switch_list").eq(index).show().siblings().hide();
   }
 })
 
-$(".switch_box").on("click touchstart", function () {
+// 点击隐藏分类
+list.on("click touchstart", function () {
   var that = $(this);
-  that.fadeOut().prev().find("li").removeClass("on");
+  that.fadeOut();
+  item.removeClass("on");
+})
+// 分类的切换
+var type = 0;
+var time = 0;
+
+$(".switch_list").on("click touchstart", "li", function(e){
+  e.stopPropagation();
+  var that = $(this);
+  var index = that.parent().index();
+  if(e.handleObj.type !== "click"){
+    return;
+  }else if(index == 0){
+    type = that.data("type");
+    list.fadeOut()
+  }else if(index == 1){
+    time = that.data("time");
+    list.fadeOut()
+  }
+  console.log(type, time);
 })
 
+
+/* 下拉加载更多 */
 var page = 1;
 var timers = null;
 
@@ -50,7 +75,7 @@ $(document).ready(function () {
 //还可以基window窗口（body）来添加滚动事件, (因为布局不同,所以在这里没效果，因为[上面是基于body中的某个元素来添加滚动事的])
 $(window).scroll(function () {
   //当时滚动条离底部60px时开始加载下一页的内容
-  if (($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
+  if (($(window).height() + $(window).scrollTop() + 50) >= $(document).height()) {
     clearTimeout(timers);
     timers = setTimeout(function () {
       page++;

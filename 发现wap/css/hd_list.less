@@ -53,7 +53,8 @@
     overflow: hidden;
     li{
       float: left;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       margin: 10/@r;
       .wh(670/3/@r, 60/@r);
       line-height: 58/@r;
@@ -105,9 +106,8 @@
         width: 405/@r;
       }
       h2{
-        margin-bottom: 15/@r;
-        line-height: 40/@r;
-        .fc(@s2, @c3);
+        line-height: 50/@r;
+        .fc(@s1, @c3);
         .duo(2);
       }
       p{

@@ -78,6 +78,13 @@ body {
   font-size: 0.4rem;
   color: #ffffff;
 }
+.header_right .header_share {
+  display: block;
+  width: 0.45714286rem;
+  height: 0.53333333rem;
+  background: url(../img/icon/share.png) no-repeat;
+  background-size: 100% 100%;
+}
 /*
 * 底部导航
 */

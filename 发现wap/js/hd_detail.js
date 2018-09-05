@@ -1,5 +1,5 @@
 // 点赞功能
-$(".friend_likes").on("click", function(){
+$(".com_likes").on("click", function(){
   var that = $(this);
   if(that.hasClass("on")){
     return alert("你已经点过赞了！");
@@ -8,8 +8,9 @@ $(".friend_likes").on("click", function(){
     return alert("点赞成功！");
   }
 })
+
 // 点击评论弹出评论框获取/失去焦点
-$(".friend_btn").on("click", function(){
+$(".com_btn a").on("click", function(){
   $(".comment").fadeIn();
   $(".comment_text").focus();
 })
@@ -26,7 +27,7 @@ $(".comment_text").on("blur", function(){
 $(".comment_text").on("click touchstart", function(e){
   e.stopPropagation();
 })
-$(".comment_submit").on("click touchstart", function(e){
+$(".comment_submit").on("click", function(e){
   e.stopPropagation();
   var text = $(".comment_text").val();
   if(text == ""){
@@ -36,3 +37,4 @@ $(".comment_submit").on("click touchstart", function(e){
     return alert("评论成功！");
   }
 })
+

@@ -88,12 +88,12 @@
 }
 .activity_window {
   margin-bottom: 0.53333333rem;
-  height: 5.73333333rem;
+  height: 6rem;
   overflow: hidden;
 }
 .activity_box {
   padding-bottom: 0.66666667rem;
-  height: 5.73333333rem;
+  height: 6rem;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -145,8 +145,8 @@
 .activity_list li h2 {
   margin-bottom: 0.06666667rem;
   padding: 0 0.13333333rem;
-  line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  line-height: 0.66666667rem;
+  font-size: 0.48rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -279,7 +279,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.friend_com li span {
+.friend_com li a {
   color: #ef434f;
 }
 /*
@@ -428,10 +428,10 @@
   width: 6.26666667rem;
 }
 .card_list li h2 {
-  margin-bottom: 0.4rem;
-  height: 1.06666667rem;
-  line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  margin-bottom: 0.13333333rem;
+  height: 1.33333333rem;
+  line-height: 0.66666667rem;
+  font-size: 0.48rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -539,24 +539,26 @@
   overflow: hidden;
   z-index: 999;
 }
-.comment input {
+.comment .comment_text {
+  padding: 0.13333333rem;
+  width: 9.2rem;
+  height: 2rem;
+  line-height: 0.66666667rem;
+  font-size: 0.4rem;
+  color: #333333;
+  border-radius: 0.13333333rem;
+  border: 1px solid #eeeeee;
+}
+.comment .comment_submit {
+  float: right;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 1.33333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
   font-size: 0.4rem;
   color: #333333;
   border-radius: 0.13333333rem;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
-}
-.comment .comment_text {
-  float: left;
-  padding: 0 0.13333333rem;
-  width: 7.73333333rem;
-  height: 0.66666667rem;
-  line-height: 0.66666667rem;
-}
-.comment .comment_submit {
-  float: right;
-  box-sizing: content-box;
-  width: 1.33333333rem;
-  height: 0.66666667rem;
-  line-height: 0.66666667rem;
 }

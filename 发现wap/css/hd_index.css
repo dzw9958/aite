@@ -71,12 +71,12 @@
   overflow: hidden;
 }
 .activity_window {
-  height: 6.4rem;
+  height: 6.66666667rem;
   overflow: hidden;
 }
 .activity_box {
   padding-bottom: 0.66666667rem;
-  height: 6.4rem;
+  height: 6.66666667rem;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -116,8 +116,8 @@
 .activity_list li h2 {
   margin-bottom: 0.06666667rem;
   padding: 0 0.13333333rem;
-  line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  line-height: 0.66666667rem;
+  font-size: 0.48rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;

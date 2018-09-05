@@ -29,14 +29,14 @@ $(".switch_list").on("click touchstart", "li", function(e){
   var that = $(this);
   var index = that.parent().index();
   if(e.handleObj.type !== "click"){
-    return;
+    
   }else if(index == 0){
     type = that.data("type");
-    list.fadeOut()
   }else if(index == 1){
     time = that.data("time");
-    list.fadeOut()
   }
+  list.fadeOut();
+  item.removeClass("on");
   console.log(type, time);
 })
 

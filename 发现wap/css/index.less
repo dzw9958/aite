@@ -166,7 +166,7 @@
   &_inf{
     position: relative;
     display: block;
-    margin-bottom: 30/@r;
+    margin-bottom: 20/@r;
     img{
       position: absolute;
       top: 0;
@@ -183,6 +183,13 @@
       .fc(@s3, @c9);
     }
   }
+  &_text{
+    margin-bottom: 20/@r;
+    p{
+      line-height: 40/@r;
+      .fc(@s2, @c3);
+    }
+  }
   &_img{
     width: 630/@r;
     overflow: hidden;
@@ -190,10 +197,14 @@
       float: left;
       margin-right: 10/@r;
       margin-bottom: 10/@r;
-      .wh(200/@r, 170/@r);
+      .whh(200/@r, 200/@r);
+      text-align: center;
+      overflow: hidden;
       img{
-        display: block;
-        .squ(100%);
+        display: inline-block;
+        max-width: 200/@r;
+        max-height: 200/@r;
+        vertical-align: middle;
       }
     }
   }

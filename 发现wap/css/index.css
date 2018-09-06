@@ -201,7 +201,7 @@
 .friend_inf {
   position: relative;
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.26666667rem;
 }
 .friend_inf img {
   position: absolute;
@@ -221,6 +221,14 @@
   font-size: 0.32rem;
   color: #999999;
 }
+.friend_text {
+  margin-bottom: 0.26666667rem;
+}
+.friend_text p {
+  line-height: 0.53333333rem;
+  font-size: 0.4rem;
+  color: #333333;
+}
 .friend_img {
   width: 8.4rem;
   overflow: hidden;
@@ -230,12 +238,16 @@
   margin-right: 0.13333333rem;
   margin-bottom: 0.13333333rem;
   width: 2.66666667rem;
-  height: 2.26666667rem;
+  height: 2.66666667rem;
+  line-height: 2.66666667rem;
+  text-align: center;
+  overflow: hidden;
 }
 .friend_img li img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  max-width: 2.66666667rem;
+  max-height: 2.66666667rem;
+  vertical-align: middle;
 }
 .friend_speak {
   margin-bottom: 0.2rem;

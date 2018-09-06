@@ -36,8 +36,8 @@ body {
   width: 0.53333333rem;
   height: 0.53333333rem;
   background: url(../img/icon/return.png) no-repeat;
-  background-size: 0.26666667rem 0.53333333rem;
-  background-position: left center;
+  background-size: 0.26666667rem 1.09333333rem;
+  background-position: left top;
 }
 .header_center p {
   line-height: 1.17333333rem;

@@ -1,6 +1,6 @@
 @import "lib.less";
 /*
-* 热门帖子
+* 板块分类
 */
 .plate{
   margin: 20/@r 0;
@@ -28,6 +28,7 @@
     }
   }
   &_list{
+    overflow: hidden;
     li{
       float: left;
       padding: 23/@r 0;
@@ -62,6 +63,40 @@
       .bgc(@fe6986);
     }
   }
+}
+// 新增滑动特效
+.swiper-container-two{
+  position: relative;
+  padding-bottom: 50/@r;
+  .wh(100%, 400/@r);
+  overflow: hidden;
+	.swiper-slide{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+	.pagination-two{
+		position: absolute;
+		left: 0;
+		bottom: 35/2/@r;
+		.whh(100%, 15/@r);
+    text-align: center;
+    z-index: 20;
+	}
+	.swiper-pagination-switch {
+		display: inline-block;
+		.squ(15/@r);
+		border-radius: 50%;
+		background: @ce;
+		margin: 0 5/@r;
+    cursor: pointer;
+	}
+	.swiper-visible-switch {
+		background: @fe6986;
+	}
+	.swiper-active-switch {
+		background: @fe6986;
+	}
 }
 /*
 * 热门帖子

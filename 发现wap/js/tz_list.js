@@ -1,6 +1,6 @@
 
 /* 下拉加载更多 */
-var type = 0;
+var type = $(".switch_list .on").data("type");
 var page = 1;
 var timers = null;
 

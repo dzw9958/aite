@@ -319,11 +319,16 @@
   &_img{
     width: 600/@r;
     height: 87/@r;
-    img{
+    a{
       float: left;
       margin-right: 33/@r;
+      display: block;
       .squ(87/@r);
       border-radius: 50%;
+      overflow: hidden;
+    }
+    img{
+      .squ(100%);
     }
   }
 }

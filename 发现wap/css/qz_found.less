@@ -1,0 +1,72 @@
+@import "lib.less";
+body{
+  .bgc(@cf);
+}
+/*
+* 创建表单
+*/
+.found{
+  width: 750/@r;
+  &_img{
+    position: relative;
+    padding: 50/@r 0;
+    border-bottom: 2/@r solid @ce;
+    div{
+      display: block;
+      margin: auto;
+      margin-bottom: 25/@r;
+      .wh(156/@r, 156/@r);
+      // text-align: center;
+      border-radius: 10/@r;
+      border: 2/@r solid @c9;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 156/@r;
+        height: 156/@r;
+      }
+    }
+    p{
+      line-height: 32/@r;
+      .fc(@s2, @c3);
+      text-align: center;
+    }
+    input{
+      position: absolute;
+      top: 50/@r;
+      left: 50%;
+      margin-left: -160/2/@r;
+      .squ(160/@r);
+      border-radius: 10/@r;
+      opacity: 0;
+    }
+  }
+  &_name, &_label, &_condition, &_summary{
+    padding: 20/@r;
+    width: 710/@r;
+    line-height: 50/@r;
+    .fc(@s2, @c3);
+    border-bottom: 2/@r solid @ce;
+    input, textarea{
+      display: block;
+      width: 100%;
+      border: none;
+    }
+    textarea{
+      height: 4*50/@r;
+    }
+  }
+  &_submit{
+    padding-top: 65/@r;
+    input{
+      display: block;
+      margin: auto;
+      .whh(666/@r, 88/@r);
+      .fc(@s1, @cf);
+      text-align: center;
+      border-radius: 10/@r;
+      border: none;
+      .bgc(@fe6986);
+    }
+  }
+}

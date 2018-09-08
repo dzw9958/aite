@@ -228,3 +228,22 @@
   border: 1px solid #eeeeee;
   background-color: #ffffff;
 }
+/*
+* 底部发布
+*/
+.release {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.release a {
+  display: block;
+  width: 10rem;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #fe6986;
+}

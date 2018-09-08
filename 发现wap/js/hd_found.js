@@ -14,7 +14,7 @@ var increment = function (arr, start, num, postfix) {
 
 increment(year, 2018, 10, '年');
 increment(month, 1, 12, '月');
-increment(day, 1, 31, '号');
+increment(day, 1, 31, '');
 
 // 使用插件选择
 var mobileSelect1 = new MobileSelect({
@@ -51,6 +51,8 @@ var mobileSelect2 = new MobileSelect({
     //console.log(data);
   },
   callback: function (indexArr, data) {
+    // console.log(data);
+    isTrue(data);
     console.log(data);
     start = data;
   }
@@ -71,10 +73,11 @@ var mobileSelect3 = new MobileSelect({
   ],
   position: [0, 0, 0, 0, 0],
   transitionEnd: function (indexArr, data) {
-    //console.log(data);
+    // console.log(data);
   },
   callback: function (indexArr, data) {
-    console.log(data);
+    // console.log(data);
+    isTrue(data);
     end = data;
   }
 });
@@ -134,8 +137,35 @@ $(".release button").on("click", function () {
   if (str !== "") {
     console.log(theme, classify2, start, end, cost, place);
     alert(str);
+    return false;
   } else {
     // 暂时没有获取图片上传的东西
     alert(theme, classify2, start, end, cost, place, text);
+    return true;
   }
 })
+
+// 日期判断是否正确
+function isTrue(arr) {
+  var year = arr[0].substring(0, arr[0].length - 1) * 1;
+  var month = arr[1].substring(0, arr[1].length - 1) * 1;
+  var day = arr[2] * 1;
+  console.log(year, month, day);
+  if (day < 29) {
+    return;
+  } else if (day == 29 && month == 2) {
+    if (((year % 400 == 0) || (year % 100 != 0)) && (year % 4 == 0)) {
+      return;
+    } else {
+      alert("该年是平年！");
+      return arr = undefined;
+    }
+  } else if (day > 29 && month == 2) {
+    alert("二月份没有" + day);
+  } else if (day == 31) {
+    if (month == 4 || month == 6 || month == 9 || month == 11) {
+      alert("该月没有31！");
+      return arr = undefined;
+    }
+  }
+}

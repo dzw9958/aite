@@ -1,0 +1,102 @@
+@import "lib.less";
+/*
+* 顶部导航
+*/
+.header{
+  input{
+    display: block;
+    padding-right: 65/@r;
+    width: 410/@r;
+    background: url(../img/icon/search.png) no-repeat;
+    background-size: 40/@r 40/@r;
+    background-position: 435/@r center;
+    .bgc(@ffe2e7);
+  }
+}
+/*
+* 列表主体
+*/
+.main{
+  padding-left: 20/@r;
+  padding-right: 20/@r;
+  .wh(710/@r, auto);
+  .bgc(@cf);
+  &_list{
+    li{
+      padding: 25/@r 0;
+      border-top: 1/@r solid @ce;
+      a{
+        display: block;
+        overflow: hidden;
+      }
+      .main_text{
+        float: left;
+        width: 470/@r;
+      }
+      h2{
+        margin-bottom: 10/@r;
+        height: 100/@r;
+        line-height: 50/@r;
+        .fc(@s1, @c3);
+        .duo(2);
+      }
+      p{
+        width: 490/@r;
+        line-height: 40/@r;
+        .fc(@s2, @c9);
+      }
+      span{
+        float: left;
+        margin-right: 15/@r;
+      }
+      span.main_com{
+        padding-left: 35/@r;
+        background: url(../img/icon/comment.png) no-repeat;
+        background-size: 30/@r 30/@r;
+        background-position: left center;
+      }
+      span.main_eye{
+        padding-left: 45/@r;
+        background: url(../img/icon/eye.png) no-repeat;
+        background-size: 45/@r 30/@r;
+        background-position: left center;
+      }
+      .main_img{
+        float: right;
+      }
+      img{
+        display: block;
+        .wh(200/@r, 150/@r);
+      }
+    }
+    li.main_first{
+      border-top: none;
+      overflow: hidden;
+      h2{
+        margin-bottom: 20/@r;
+        height: auto;
+      }
+      .main_img{
+        float: none;
+        margin-bottom: 20/@r;
+        width: 735/@r;
+        overflow: hidden;
+        img{
+          float: left;
+          margin-right: 35/2/@r;
+          .wh(225/@r, 225/200*150/@r);
+        }
+      }
+      p{
+        width: 730/@r;
+      }
+      span.main_heat{
+        .whh(73/@r, 38/@r);
+        color: @fe4a54;
+        text-align: center;
+        border-radius: 8/@r;
+        border: 1px solid @fe4a54;
+      }
+    }
+  }
+}

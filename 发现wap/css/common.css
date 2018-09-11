@@ -41,7 +41,7 @@ body {
 }
 .header_center p {
   line-height: 1.17333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #ffffff;
   text-align: center;
 }
@@ -75,7 +75,7 @@ body {
 .header_right .header_text {
   display: block;
   line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #ffffff;
 }
 .header_right .header_share {
@@ -103,7 +103,7 @@ body {
 }
 .nav li {
   float: left;
-  padding-top: 0.08rem;
+  padding-top: 0.10666667rem;
   width: 2rem;
 }
 .nav li a {
@@ -114,16 +114,16 @@ body {
 .nav li i {
   display: block;
   margin: auto;
-  margin-bottom: 0.05333333rem;
-  width: 0.66666667rem;
-  height: 0.66666667rem;
+  margin-bottom: 0.08rem;
+  width: 0.6rem;
+  height: 0.6rem;
   background: url(../img/icon/nav.png) no-repeat;
-  background-size: 3.38666667rem 1.34666667rem;
+  background-size: 3.048rem 1.212rem;
   background-position-y: 0;
 }
 .nav li p {
   line-height: 0.4rem;
-  font-size: 0.48rem;
+  font-size: 0.37333333rem;
   color: #666666;
   text-align: center;
 }
@@ -131,19 +131,19 @@ body {
   background-position-x: 0;
 }
 .nav li i.nav_ib {
-  background-position-x: -0.68rem;
+  background-position-x: -0.612rem;
 }
 .nav li i.nav_ic {
-  background-position-x: -1.36rem;
+  background-position-x: -1.224rem;
 }
 .nav li i.nav_id {
-  background-position-x: -2.04rem;
+  background-position-x: -1.836rem;
 }
 .nav li i.nav_ie {
-  background-position-x: -2.72rem;
+  background-position-x: -2.448rem;
 }
 .nav li.active i {
-  background-position-y: -0.68rem;
+  background-position-y: -0.612rem;
 }
 .nav li.active p {
   color: #fe6986;

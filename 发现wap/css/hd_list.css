@@ -134,7 +134,7 @@
 .main_list li p {
   line-height: 0.53333333rem;
   font-size: 0.37333333rem;
-  color: #333333;
+  color: #999999;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;

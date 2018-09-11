@@ -14,7 +14,7 @@
 }
 .common_title h1 {
   float: left;
-  padding-left: 0.4rem;
+  padding-left: 0.13333333rem;
   line-height: 0.53333333rem;
   font-size: 0.42666667rem;
   color: #333333;
@@ -24,9 +24,7 @@
   float: right;
   line-height: 0.53333333rem;
   font-size: 0.37333333rem;
-}
-.common_title span {
-  color: #ef434f;
+  color: #666666;
 }
 /*
 * 分类
@@ -132,7 +130,7 @@
   padding: 0 0.13333333rem;
   line-height: 0.58666667rem;
   font-size: 0.37333333rem;
-  color: #333333;
+  color: #999999;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;

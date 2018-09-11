@@ -34,7 +34,7 @@
 }
 .switch_btn li span {
   padding-right: 0.6rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #666666;
   background: url(../img/icon/arrow.png) no-repeat;
   background-size: 0.64rem 1.28rem;
@@ -68,7 +68,7 @@
   width: 2.97777778rem;
   height: 0.8rem;
   line-height: 0.77333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   text-align: center;
   border-radius: 0.06666667rem;
@@ -104,7 +104,7 @@
 }
 .main_list li .main_img img {
   display: block;
-  width: 3.6rem;
+  width: 2.93333333rem;
   height: 2.93333333rem;
 }
 .main_list li .main_label {
@@ -112,17 +112,17 @@
   top: 0;
   left: 0;
   padding: 0.13333333rem 0.2rem;
-  font-size: 0.32rem;
+  font-size: 0.29333333rem;
   color: #ffffff;
   background-color: #fe6986;
 }
 .main_list li .main_text {
   float: right;
-  width: 5.4rem;
+  width: 6rem;
 }
 .main_list li h2 {
   line-height: 0.66666667rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -133,7 +133,7 @@
 }
 .main_list li p {
   line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -141,7 +141,7 @@
   white-space: nowrap;
 }
 .main_list li .main_cost {
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
 }
 .main_list li .main_cost span {
   color: #ef434f;

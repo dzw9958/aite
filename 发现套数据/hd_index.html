@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-    <title>活动首页</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="cache-control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
-    <link rel="stylesheet" href="./css/Public.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/hd_index.css">
-    <script src="./js/rem.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.tmpl.js"></script>
-    <script src="./js/swiper.min.js"></script>
-    <script>
-      var ERR_OK = 200;
-      $.ajax({
-        type: "get",
-        url: "http://aitecc.com/mobile/index.php?act=find_activity&op=index",
-        dataType: "json",
-        success: function (data) {
-          var dataJons = data.datas;
-          $(".swiper-wrapper").html($("#tmp1").tmpl(dataJons.adv_list));
-          var mySwiper = new switchImg();
-          $(".classify").html($("#tmp2").tmpl(dataJons.class_list));
-          $(".activity.hot").html($("#tmp3").tmpl(dataJons));
-          $(".activity.official").html($("#tmp4").tmpl(dataJons));
-          $(".vip_banner").html($("#tmp5").tmpl(dataJons.adv_buttom));
-        }
-      })
-    </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <title>活动首页</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="cache-control" content="no-siteapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="./css/Public.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/hd_index.css">
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.tmpl.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var ERR_OK = 200;
+    $.ajax({
+      type: "get",
+      url: "http://aitecc.com/mobile/index.php?act=find_activity&op=index",
+      dataType: "json",
+      success: function (data) {
+        var dataJons = data.datas;
+        $(".swiper-wrapper").html($("#tmp1").tmpl(dataJons.adv_list));
+        var mySwiper = new switchImg();
+        $(".classify").html($("#tmp2").tmpl(dataJons.class_list));
+        $(".activity.hot").html($("#tmp3").tmpl(dataJons));
+        $(".activity.official").html($("#tmp4").tmpl(dataJons));
+        $(".vip_banner").html($("#tmp5").tmpl(dataJons.adv_buttom));
+        $(".header .header_right").html($("#tmp6").tmpl(dataJons));
+      }
+    })
+  </script>
 </head>
 <body>
 <!-- 顶部导航开始 -->
@@ -45,6 +46,9 @@
     <a href="./hd_found.html" class="header_text">创建活动</a>
   </div>
 </div>
+<script type="text/x-jquery-tmpl" id="tmp6">
+  <a href="${activity_create_url}" class="header_text">创建活动</a>
+</script>
 <!-- 顶部导航结束 -->
 <!-- banner开始 -->
 <div class="swiper-container header_top">

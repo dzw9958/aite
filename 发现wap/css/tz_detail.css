@@ -26,7 +26,7 @@
 }
 .detail_inf p {
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #999999;
   overflow: hidden;
 }
@@ -46,7 +46,7 @@
 .detail_box p {
   padding: 0.53333333rem 0.26666667rem;
   line-height: 0.6rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   text-indent: 2em;
 }
@@ -73,7 +73,7 @@
 }
 .rec_title h1 {
   line-height: 1.04rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
 }
 .rec_list li {
@@ -92,10 +92,10 @@
   width: 6.26666667rem;
 }
 .rec_list li h2 {
-  margin-bottom: 0.13333333rem;
-  height: 1.33333333rem;
-  line-height: 0.66666667rem;
-  font-size: 0.48rem;
+  margin-bottom: 0.46666667rem;
+  height: 1.2rem;
+  line-height: 0.6rem;
+  font-size: 0.42666667rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -106,8 +106,8 @@
 }
 .rec_list li p {
   width: 6.53333333rem;
-  line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.29333333rem;
   color: #999999;
 }
 .rec_list li span {
@@ -115,15 +115,15 @@
   margin-right: 0.2rem;
 }
 .rec_list li span.rec_com {
-  padding-left: 0.46666667rem;
+  padding-left: 0.4rem;
   background: url(../img/icon/comment.png) no-repeat;
-  background-size: 0.4rem 0.4rem;
+  background-size: 0.33333333rem 0.33333333rem;
   background-position: left center;
 }
 .rec_list li span.rec_eye {
-  padding-left: 0.6rem;
+  padding-left: 0.53333333rem;
   background: url(../img/icon/eye.png) no-repeat;
-  background-size: 0.6rem 0.4rem;
+  background-size: 0.50666667rem 0.33777778rem;
   background-position: left center;
 }
 .rec_list li span.rec_type {
@@ -159,6 +159,7 @@
 }
 .rec_list li.rec_first p {
   width: 9.73333333rem;
+  line-height: 0.53333333rem;
 }
 .rec_list li.rec_first span.rec_heat {
   width: 0.97333333rem;
@@ -185,7 +186,7 @@
 }
 .com_title h1 {
   line-height: 1.01333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
 }
 .com_list {
@@ -211,13 +212,13 @@
 }
 .com_list li .com_name h2 {
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #666666;
 }
 .com_list li .com_text {
   margin: 0.26666667rem 0;
   line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -228,7 +229,7 @@
 }
 .com_list li .com_other {
   line-height: 0.53333333rem;
-  font-size: 0.32rem;
+  font-size: 0.29333333rem;
   color: #666666;
   overflow: hidden;
 }
@@ -258,7 +259,7 @@
   width: 4.53333333rem;
   height: 0.85333333rem;
   line-height: 0.85333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #ffffff;
   text-align: center;
   border-radius: 0.26666667rem;
@@ -286,7 +287,7 @@
   width: 9.2rem;
   height: 2rem;
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border-radius: 0.13333333rem;
   border: 1px solid #eeeeee;
@@ -298,7 +299,7 @@
   width: 1.33333333rem;
   height: 0.66666667rem;
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border-radius: 0.13333333rem;
   border: 1px solid #eeeeee;

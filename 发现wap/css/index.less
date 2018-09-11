@@ -16,10 +16,11 @@
     float: right;
     line-height: 40/@r;
     font-size: @s2;
+    color: @c6;
   }
-  span{
-    color: @ef434f;
-  }
+  // span{
+  //   color: @ef434f;
+  // }
 }
 .common_btn{
   padding-bottom: 40/@r;
@@ -126,7 +127,7 @@
       .activity_time, .activity_cost{
         padding: 0 10/@r;
         line-height: 44/@r;
-        .fc(@s2, @c3);
+        .fc(@s2, @c9);
         .dan();
       }
       .activity_cost{
@@ -211,32 +212,33 @@
     overflow: hidden;
     i.friend_btn{
       float: right;
-      margin-left: 20/@r;
-      .squ(40/@r);
+      margin-left: 30/@r;
+      margin-top: 2/@r;
+      .squ(26/@r);
       background: url(../img/icon/speak.png) no-repeat;
       .bgs(100%, 100%);
     }
     span.friend_likes{
       float: right;
-      padding-left: 45/@r;
-      height: 40/@r;
-      line-height: 50/@r;
+      padding-left: 35/@r;
+      height: 30/@r;
+      line-height: 30/@r;
       .fc(@s2, @c6);
       background: url(../img/icon/likes.png) no-repeat;
-      background-size: 40/@r 80/@r;
+      background-size: 30/@r 30/40*80/@r;
       .bgp(0, 0);
     }
     span.friend_likes.on{
-      .bgy(40/@r);
+      .bgy(30/@r);
     }
   } 
   &_com{
     .bgc(@ce);
+    padding: 20/@r;
     li{
-      padding: 0 20/@r;
       p{
         line-height: 45/@r;
-        .fc(@s2, @c3);
+        .fc(@s2, @c6);
         .duo(3);
       }
       a{
@@ -391,22 +393,22 @@
       p{
         width: 490/@r;
         line-height: 40/@r;
-        .fc(@s2, @c9);
+        .fc(@s3, @c9);
       }
       span{
         float: left;
         margin-right: 15/@r;
       }
       span.card_com{
-        padding-left: 35/@r;
+        padding-left: 30/@r;
         background: url(../img/icon/comment.png) no-repeat;
-        background-size: 30/@r 30/@r;
+        background-size: 25/@r 25/@r;
         background-position: left center;
       }
       span.card_eye{
-        padding-left: 45/@r;
+        padding-left: 40/@r;
         background: url(../img/icon/eye.png) no-repeat;
-        background-size: 45/@r 30/@r;
+        background-size: 38/@r 38/45*30/@r;
         background-position: left center;
       }
       .card_img{

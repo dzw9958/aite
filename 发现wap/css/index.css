@@ -228,6 +228,7 @@
   color: #333333;
 }
 .friend_img {
+  margin-bottom: 0.26666667rem;
   width: 8.4rem;
   overflow: hidden;
 }
@@ -247,7 +248,7 @@
   height: 100%;
 }
 .friend_speak {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
   overflow: hidden;
 }
 .friend_speak i.friend_btn {

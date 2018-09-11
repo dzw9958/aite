@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-    <title>活动列表页</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="cache-control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
-    <link rel="stylesheet" href="./css/Public.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/hd_list.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <title>活动列表页</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="cache-control" content="no-siteapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="./css/Public.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/hd_list.css">
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.tmpl.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var ERR_OK = 200;
+    $.ajax({
+      type: "get",
+      url: "http://aitecc.com/mobile/index.php?act=find&op=index",
+      dataType: "json",
+      success: function (data) {
+        var dataJons = data.datas;
+        // $(".swiper-wrapper").html($("#tmp1").tmpl(dataJons.adv_list));
+        // var mySwiper = new switchImg();
+        // $(".classify").html($("#tmp2").tmpl(dataJons.nav_list));
+        // $(".activity").html($("#tmp3").tmpl(dataJons));
+        // $(".friend").html($("#tmp4").tmpl(dataJons));
+        // $(".group").html($("#tmp5").tmpl(dataJons));
+        // $(".card").html($("#tmp6").tmpl(dataJons));
+        // $(".vip_banner").html($("#tmp7").tmpl(dataJons.adv_buttom));
+      }
+    })
+  </script>
 </head>
 <body>
 <!-- 顶部导航开始 -->
@@ -50,6 +73,8 @@
     <li data-time="3">近一个月</li>
   </ul>
 </div>
+<script type="text/x-jquery-tmpl" id="tmp1">
+</script>
 <!-- 切换列表结束 -->
 <!-- 主体列表开始 -->
 <div class="main">
@@ -99,9 +124,6 @@
   </ul>
 </div>
 <!-- 主体列表结束 -->
-<script src="./js/rem.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/swiper.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/hd_list.js"></script>
 </body>

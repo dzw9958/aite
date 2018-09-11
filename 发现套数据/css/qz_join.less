@@ -1,0 +1,40 @@
+@import "lib.less";
+html, body{
+  height: 100%;
+}
+/*
+* 创建表单
+*/
+.join{
+  width: 750/@r;
+  &_reason{
+    padding-top: 30/@r;
+    h1{
+      padding: 0 20/@r;
+      width: 710/@r;
+      line-height: 90/@r;
+      .fc(@s1, @c3);
+    }textarea{
+      padding: 20/@r;
+      width: 710/@r;
+      height: 290/@r;
+      line-height: 50/@r;
+      .fc(@s2, @c3);
+      border: none;
+      .bgc(@cf);
+    }
+  }
+  &_submit{
+    padding-top: 60/@r;
+    input{
+      display: block;
+      margin: auto;
+      .whh(666/@r, 88/@r);
+      .fc(@s1, @cf);
+      text-align: center;
+      border-radius: 10/@r;
+      border: none;
+      .bgc(@fe6986);
+    }
+  }
+}

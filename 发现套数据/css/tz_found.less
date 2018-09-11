@@ -1,0 +1,103 @@
+@import "lib.less";
+body{
+  .bgc(@cf);
+}
+/*
+* 发布表单
+*/
+.found{
+  padding-left: 20/@r;
+  padding-right: 20/@r;
+  width: 710/@r;
+  overflow: hidden;
+  &_classify, &_title{
+    padding: 20/@r 0;
+    .fc(@s2, @c3);
+    border-bottom: 2/@r solid @cc;
+    overflow: hidden;
+    span{
+      float: left;
+      width: 130/@r;
+      line-height: 50/@r;
+    }
+    input{
+      float: right;
+      width: 580/@r;
+      line-height: 50/@r;
+      text-align: right;
+      border: none;
+    }
+    p{
+      float: right;
+      padding-right: 40/@r;
+      width: 540/@r;
+      height: 50/@r;
+      line-height: 50/@r;
+      text-align: right;
+      background: url(../img/icon/arrow_right.png) no-repeat;
+      background-size: 40/@r 40/@r;
+      background-position: right center;
+    }
+  }
+  &_text{
+    padding: 20/@r 0;
+    textarea{
+      padding: 20/@r;
+      width: 670/@r;
+      height: 290/@r;
+      line-height: 50/@r;
+      .fc(@s2, @c3);
+      border: none;
+      .bgc(@ce);
+    }
+  }
+  &_img{
+    padding-bottom: 20/@r;
+    width: 735/@r;
+    overflow: hidden;
+    li{
+      position: relative;
+      float: left;
+      margin-right: 25/@r;
+      margin-bottom: 25/@r;
+      .squ(220/@r);
+      line-height: 220/@r;
+      text-align: center;
+      img{
+        display: inline-block;
+        max-width: 220/@r;
+        max-height: 220/@r;
+        vertical-align: middle;
+      }
+      input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .squ(220/@r);
+        border: none;
+        opacity: 0;
+      }
+    }
+    li.found_btn{
+      .squ(216/@r);
+      border: 2/@r solid @c9;
+      img{
+        display: block;
+        .squ(100%);
+      }
+    }
+  }
+  &_submit{
+    padding-top: 60/@r;
+    input{
+      display: block;
+      margin: auto;
+      .whh(666/@r, 88/@r);
+      .fc(@s1, @cf);
+      text-align: center;
+      border-radius: 10/@r;
+      border: none;
+      .bgc(@fe6986);
+    }
+  }
+}

@@ -23,14 +23,14 @@
   float: left;
   padding-left: 0.4rem;
   line-height: 0.53333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   border-left: 0.2rem solid #ef434f;
 }
 .plate_title a {
   float: right;
   line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
 }
 .plate_title span {
   color: #ef434f;
@@ -50,12 +50,12 @@
   display: block;
   margin: auto;
   margin-bottom: 0.29333333rem;
-  width: 1.33333333rem;
-  height: 1.33333333rem;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
 }
 .plate_list li p {
   line-height: 0.42666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   text-align: center;
 }
@@ -70,7 +70,7 @@
   width: 4.53333333rem;
   height: 0.85333333rem;
   line-height: 0.85333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #ffffff;
   text-align: center;
   border-radius: 0.26666667rem;
@@ -135,7 +135,7 @@
   width: 2.36666667rem;
   height: 0.53333333rem;
   line-height: 0.53333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   text-align: center;
 }
@@ -162,7 +162,7 @@
   margin-bottom: 0.13333333rem;
   height: 1.33333333rem;
   line-height: 0.66666667rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #333333;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -174,7 +174,7 @@
 .card_list li p {
   width: 6.53333333rem;
   line-height: 0.53333333rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #999999;
 }
 .card_list li span {
@@ -244,7 +244,7 @@
   width: 4.53333333rem;
   height: 0.85333333rem;
   line-height: 0.85333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #ffffff;
   text-align: center;
   border-radius: 0.26666667rem;
@@ -292,7 +292,7 @@
   width: 9.2rem;
   height: 2rem;
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border-radius: 0.13333333rem;
   border: 1px solid #eeeeee;
@@ -304,7 +304,7 @@
   width: 1.33333333rem;
   height: 0.66666667rem;
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border-radius: 0.13333333rem;
   border: 1px solid #eeeeee;

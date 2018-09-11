@@ -170,13 +170,16 @@ body {
   height: 100%;
 }
 .swiper-container .pagination {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 1.33333333rem;
+  text-align: right;
   position: absolute;
   left: 0;
   bottom: 0.4rem;
   width: 100%;
   height: 0.2rem;
   line-height: 0.2rem;
-  text-align: center;
   z-index: 20;
 }
 .swiper-container .swiper-pagination-switch {
@@ -187,10 +190,13 @@ body {
   background: #ffffff;
   margin: 0 0.06666667rem;
   cursor: pointer;
+  opacity: .5;
 }
 .swiper-container .swiper-visible-switch {
   background: #fe6986;
+  opacity: 1;
 }
 .swiper-container .swiper-active-switch {
   background: #fe6986;
+  opacity: 1;
 }

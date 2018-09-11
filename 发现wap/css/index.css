@@ -218,7 +218,7 @@
 }
 .friend_inf p {
   line-height: 0.34666667rem;
-  font-size: 0.29333333rem;
+  font-size: 0.32rem;
   color: #999999;
 }
 .friend_text {
@@ -264,7 +264,8 @@
 .friend_speak span.friend_likes {
   float: right;
   padding-left: 0.6rem;
-  line-height: 0.53333333rem;
+  height: 0.53333333rem;
+  line-height: 0.66666667rem;
   font-size: 0.37333333rem;
   color: #666666;
   background: url(../img/icon/likes.png) no-repeat;
@@ -337,7 +338,7 @@
 }
 .group_inf p {
   line-height: 0.36rem;
-  font-size: 0.29333333rem;
+  font-size: 0.32rem;
   color: #999999;
 }
 .group_join {

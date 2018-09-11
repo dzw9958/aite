@@ -1,12 +1,23 @@
 // 点赞功能
 $(".friend").on("click", ".friend_likes", function(){
   var that = $(this);
-  if(that.hasClass("on")){
-    return alert("你已经点过赞了！");
-  }else{
-    $(this).addClass("on");
-    return alert("点赞成功！");
-  }
+  var id = that.data("id");
+  $.ajax({
+    type: "get",
+    url: "http://aitecc.com/mobile/index.php?act=find_theme&op=Like&theme_id" + id,
+    dataType: "json",
+    success: function (data) {
+      var dataJons = data.datas;
+      if(dataJons.error){
+        return alert(dataJons.error);
+      }else if(dataJons.status == 1){
+        that.addClass("on");
+      }else if(dataJons.status == 2){
+        that.remove("on");
+      }
+      alert(dataJons.msg);
+    }
+  });
 })
 // 点击评论弹出评论框获取/失去焦点
 $(".friend").on("click", ".friend_btn", function(){

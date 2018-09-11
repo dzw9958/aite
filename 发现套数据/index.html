@@ -59,7 +59,7 @@
     </div>-->
     </div>
   <div class="pagination"></div>
-    </div>
+</div>
 <script type="text/x-jquery-tmpl" id="tmp1">
   <div class="swiper-slide">
     <a href="${adv_pic_url}">
@@ -144,7 +144,7 @@
           <li>
             <a href="${url}">
               <div class="activity_img">
-                <img src="${thumb}" alt="">
+                <img src="${thumb}" title="${title}">
                 <p class="activity_place">地点：<span>${city_name}</span></p>
                 <span class="activity_label">${class_name}</span>
               </div>
@@ -222,7 +222,7 @@
     {{each(i,list) theme_list}}
     <div class="friend_trends friend_first">
       <a class="friend_inf" href="${url}">
-        <img src="./img/head-one.png" alt="">
+        <img src="./img/head-one.png" title="${list.member_name}">
         <h2>${list.member_name}</h2>
         <p>${theme_addtime}</p>
       </a>
@@ -239,9 +239,9 @@
       <div class="friend_speak">
         <!-- <i class="friend_btn"></i> -->
         {{if is_like == 1}}
-          <span class="friend_likes on">${theme_likecount}</span>
+          <span class="friend_likes on" data-id="theme_id">${theme_likecount}</span>
         {{else}}
-          <span class="friend_likes">${theme_likecount}</span>
+          <span class="friend_likes" data-id="theme_id">${theme_likecount}</span>
         {{/if}}
       </div>
       <ul class="friend_com">
@@ -299,7 +299,7 @@
     {{each circle_list}}
       <li class="group_first">
         <a class="group_inf" href="${url}">
-          <img src="${circle_masterid_avatar}" alt="">
+          <img src="${circle_masterid_avatar}" title="${circle_name}">
           <h2>${circle_name}</h2>
           <p>本群共${circle_mcount}人</p>
         </a>
@@ -414,10 +414,10 @@
         <a href="${url}">
           <h2>${article_title}</h2>
           <div class="card_img">
-            <img src="${article_image}" alt="">
+            <img src="${article_image}" title="${article_title}">
             {{each(ii, img) article_image_all}}
               {{if ii<2}}
-                <img src="${img}" alt="">
+                <img src="${img}" title="${article_title}">
               {{/if}}
             {{/each}}
           </div>
@@ -445,7 +445,7 @@
             </p>
           </div>
           <div class="card_img">
-            <img src="${article_image}" alt="">
+            <img src="${article_image}" title="${article_title}">
           </div>
         </a>
       </li>

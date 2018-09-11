@@ -10,12 +10,33 @@
     <link rel="stylesheet" href="./css/Public.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/hd_index.css">
+    <script src="./js/rem.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.tmpl.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+      var ERR_OK = 200;
+      $.ajax({
+        type: "get",
+        url: "http://aitecc.com/mobile/index.php?act=find_activity&op=index",
+        dataType: "json",
+        success: function (data) {
+          var dataJons = data.datas;
+          $(".swiper-wrapper").html($("#tmp1").tmpl(dataJons.adv_list));
+          var mySwiper = new switchImg();
+          $(".classify").html($("#tmp2").tmpl(dataJons.class_list));
+          $(".activity.hot").html($("#tmp3").tmpl(dataJons));
+          $(".activity.official").html($("#tmp4").tmpl(dataJons));
+          $(".vip_banner").html($("#tmp5").tmpl(dataJons.adv_buttom));
+        }
+      })
+    </script>
 </head>
 <body>
 <!-- 顶部导航开始 -->
 <div class="header">
   <div class="header_left">
-    <a href="#"></a>
+    <a href="javascript:history.back(-1)"></a>
   </div>
   <div class="header_center">
     <p>活动首页</p>
@@ -28,28 +49,25 @@
 <!-- banner开始 -->
 <div class="swiper-container header_top">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <!-- <div class="swiper-slide">
             <a href="#">
                 <img src="./img/banner.png" alt="">
             </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="./img/banner.png" alt="">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="#">
-                <img src="./img/banner.png" alt="">
-            </a>
-        </div>
+        </div> -->
     </div>
     <div class="pagination"></div>
 </div>
+<script type="text/x-jquery-tmpl" id="tmp1">
+  <div class="swiper-slide">
+    <a href="${adv_pic_url}">
+      <img src="${adv_pic}" title="${adv_title}">
+    </a>
+  </div>
+</script>
 <!-- banner结束 -->
 <!-- 分类开始 -->
 <ul class="classify">
-  <li>
+  <!-- <li>
     <a href="./hd_list.html">
       <img src="./img/icon/classify_1.png" alt="">
       <p>聚会</p>
@@ -96,12 +114,20 @@
       <img src="./img/icon/classify_4.png" alt="">
       <p>其他</p>
     </a>
-  </li>
+  </li> -->
 </ul>
+<script type="text/x-jquery-tmpl" id="tmp2">
+  <li>
+    <a href="${url}">
+      <img src="${thumb}" title="${class_name}">
+      <p>${class_name}</p>
+    </a>
+  </li>
+</script>
 <!-- 分类结束 -->
 <!-- 热门活动开始 -->
 <div class="activity hot">
-  <div class="common_title">
+  <!-- <div class="common_title">
     <h1>热门活动</h1>
     <a href="./hd_list.html"><span>更多</span>&gt;</a>
   </div>
@@ -120,62 +146,40 @@
             <p class="activity_cost">费用：<span>1800</span></p>
           </a>
         </li>
+      </ul>
+    </div>
+  </div> -->
+</div>
+<script type="text/x-jquery-tmpl" id="tmp3">
+  <div class="common_title">
+    <h1>热门活动</h1>
+    <a href="${hot_list_url}"><span>更多</span>&gt;</a>
+  </div>
+  <div class="activity_window">
+    <div class="activity_box">
+      <ul class="activity_list">
+        {{each hot_list}}
         <li>
-          <a href="#">
+          <a href="${url}">
             <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">讨论会</span>
+              <img src="${thumb}" title="${title}">
+              <span class="activity_label">${class_name}</span>
             </div>
-            <h2>新材料私董会--每月定期举行每月定期举行月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
+            <h2>${title}</h2>
+            <p class="activity_time">时间：<span>${start_time} - ${end_time}</span></p>
+            <p class="activity_place">地点：<span>${city_name}</span></p>
+            <p class="activity_cost">费用：<span>${price}</span></p>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会--每月定期举行每月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会---每月定期举行每月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
+        {{/each}}
       </ul>
     </div>
   </div>
-</div>
+</script>
 <!-- 热门活动结束 -->
 <!-- 官方活动开始 -->
 <div class="activity official">
-  <div class="common_title">
+  <!-- <div class="common_title">
     <h1>官方活动</h1>
     <a href="./hd_list.html"><span>更多</span>&gt;</a>
   </div>
@@ -194,65 +198,48 @@
             <p class="activity_cost">费用：<span>1800</span></p>
           </a>
         </li>
+      </ul>
+    </div>
+  </div> -->
+</div>
+<script type="text/x-jquery-tmpl" id="tmp4">
+  <div class="common_title">
+    <h1>官方活动</h1>
+    <a href="${off_list_url}"><span>更多</span>&gt;</a>
+  </div>
+  <div class="activity_window">
+    <div class="activity_box">
+      <ul class="activity_list">
+        {{each hot_list}}
         <li>
-          <a href="#">
+          <a href="${url}">
             <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">讨论会</span>
+              <img src="${thumb}" title="${title}">
+              <span class="activity_label">${class_name}</span>
             </div>
-            <h2>新材料私董会--每月定期举行每月定期举行月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
+            <h2>${title}</h2>
+            <p class="activity_time">时间：<span>${start_time} - ${end_time}</span></p>
+            <p class="activity_place">地点：<span>${city_name}</span></p>
+            <p class="activity_cost">费用：<span>${price}</span></p>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会--每月定期举行每月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="activity_img">
-              <img src="./img/img.png" alt="">
-              <span class="activity_label">展览</span>
-            </div>
-            <h2>新材料私董会---每月定期举行每月定期举行</h2>
-            <p class="activity_time">时间：<span>2017-09-29 12:15</span></p>
-            <p class="activity_place">地点：<span>深圳</span></p>
-            <p class="activity_cost">费用：<span>1800</span></p>
-          </a>
-        </li>
+        {{/each}}
       </ul>
     </div>
   </div>
-</div>
+</script>
 <!-- 官方活动结束 -->
 <!-- vip-banner开始 -->
 <div class="vip_banner nav_bottom">
-  <a href="#">
+  <!-- <a href="#">
     <img src="./img/banner.png" alt="">
-  </a>
+  </a> -->
 </div>
+<script type="text/x-jquery-tmpl" id="tmp5">
+  <a href="${adv_pic_url}">
+    <img src="${adv_pic}" title="${adv_title}">
+  </a>
+</script>
 <!-- vip-banner结束 -->
 <!-- 底部导航开始 -->
 <ul class="nav">
@@ -288,9 +275,6 @@
   </li>
 </ul>
 <!-- 底部导航结束 -->
-<script src="./js/rem.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/swiper.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/hd_index.js"></script>
 </body>

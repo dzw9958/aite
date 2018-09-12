@@ -1,4 +1,4 @@
-// 分类的切换
+// 创建变量
 var type = 0;
 var time = 0;
 
@@ -28,6 +28,7 @@ mask.on("click touchstart", function () {
   btn.removeClass("on");
 })
 
+// 切换分类
 $(".switch_list").on("click touchstart", "li", function (e) {
   e.stopPropagation();
   var that = $(this);
@@ -90,9 +91,9 @@ $(window).scroll(function () {
   if (($(window).height() + $(window).scrollTop() + 60) >= $(document).height()) {
     clearTimeout(timers);
     timers = setTimeout(function () {
-      if(nextpage==0){
+      if (nextpage == 0) {
         return alert("没有更多数据了");
-      }else{
+      } else {
         LoadingDataFn();
       }
     }, 300);

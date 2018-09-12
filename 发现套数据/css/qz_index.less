@@ -13,16 +13,23 @@
     padding: 15/@r 30/@r;
     width: 690/@r;
     border-bottom: 1/@r solid @ce;
+    overflow: hidden;
     input{
-      padding: 0 60/@r 0 30/@r;
-      .whh(600/@r, 60/@r);
+      float: left;
+      padding: 0 30/@r;
+      .whh(550/@r, 60/@r);
       .fc(@s2, @c3);
       border-radius: 30/@r;
+      .bgc(@ce);
       border: none;
+    }
+    i{
+      float: right;
+      width: 60/@r;
+      height: 60/@r;
       background: url(../img/icon/search_block.png) no-repeat;
       .bgs(40/@r, 40/@r);
-      .bgc(@ce);
-      background-position: 630/@r center;
+      background-position: center;
     }
   }
   &_list{
@@ -55,7 +62,7 @@
       border-top: 1/@r solid @ce;
       overflow: hidden;
     }
-    li.group_first{
+    li:first-child{
       border-top: none;
     }
   }

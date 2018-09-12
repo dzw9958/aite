@@ -20,20 +20,27 @@
   padding: 0.2rem 0.4rem;
   width: 9.2rem;
   border-bottom: 0.01333333rem solid #eeeeee;
+  overflow: hidden;
 }
 .type_search input {
-  padding: 0 0.8rem 0 0.4rem;
-  width: 8rem;
+  float: left;
+  padding: 0 0.4rem;
+  width: 7.33333333rem;
   height: 0.8rem;
   line-height: 0.8rem;
   font-size: 0.37333333rem;
   color: #333333;
   border-radius: 0.4rem;
+  background-color: #eeeeee;
   border: none;
+}
+.type_search i {
+  float: right;
+  width: 0.8rem;
+  height: 0.8rem;
   background: url(../img/icon/search_block.png) no-repeat;
   background-size: 0.53333333rem 0.53333333rem;
-  background-color: #eeeeee;
-  background-position: 8.4rem center;
+  background-position: center;
 }
 .type_list {
   height: 1.2rem;
@@ -68,7 +75,7 @@
   border-top: 0.01333333rem solid #eeeeee;
   overflow: hidden;
 }
-.group_list li.group_first {
+.group_list li:first-child {
   border-top: none;
 }
 .group_inf {

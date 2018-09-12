@@ -360,7 +360,6 @@
 }
 .group_box p {
   margin-bottom: 0.13333333rem;
-  height: 1.06666667rem;
   line-height: 0.53333333rem;
   font-size: 0.37333333rem;
   color: #999999;
@@ -370,6 +369,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  border-bottom: 0.01333333rem solid #cccccc;
 }
 .group_img {
   width: 8rem;

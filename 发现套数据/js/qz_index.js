@@ -36,7 +36,7 @@ var LoadingDataFn = function () {
     dom += '</div>';
     dom += '</li>';
   }
-  $('.group_list').append(dom);
+  // $('.group_list').append(dom);
 };
 
 //初始化， 第一次加载

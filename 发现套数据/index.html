@@ -19,8 +19,8 @@
       type: "get",
       url: "http://aitecc.com/mobile/index.php?act=find&op=index",
       dataType: "json",
-      success: function (response) {
-        var data = response.datas;
+      success: function (res) {
+        var data = res.datas;
         $(".header_right").html($("#tmp1").tmpl(data));
         $(".swiper-wrapper").html($("#tmp2").tmpl(data.adv_list));
         var mySwiper = new switchImg();

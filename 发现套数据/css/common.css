@@ -60,6 +60,9 @@ body {
   border-radius: 0.33333333rem;
   background-color: #ffffff;
 }
+.header_center input.on {
+  display: block;
+}
 .header_right {
   position: absolute;
   top: 0.32rem;

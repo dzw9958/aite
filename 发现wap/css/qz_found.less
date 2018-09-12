@@ -8,36 +8,38 @@ body{
 .found{
   width: 750/@r;
   &_img{
-    position: relative;
-    padding: 50/@r 0;
+    padding-bottom: 50/@r;
     border-bottom: 2/@r solid @ce;
-    div{
-      margin: auto;
-      margin-bottom: 25/@r;
-      .wh(156/@r, 156/@r);
-      // text-align: center;
-      border-radius: 10/@r;
-      border: 2/@r solid @c9;
-      overflow: hidden;
-      img{
-        display: block;
-        width: 156/@r;
-        height: 156/@r;
-      }
-    }
     p{
       line-height: 32/@r;
       .fc(@s2, @c3);
       text-align: center;
     }
     input{
-      position: absolute;
-      top: 50/@r;
-      left: 50%;
-      margin-left: -160/2/@r;
-      .squ(160/@r);
-      border-radius: 10/@r;
-      opacity: 0;
+      display: none;
+    }
+  }
+  &_window{
+    margin-bottom: 20/@r;
+    .wh(750/@r, 350/@r);
+    overflow: hidden;
+  }
+  &_box{
+    padding-bottom: 50/@r;
+    .squ(100%);
+    overflow-x: scroll;
+  }
+  &_list{
+    .tanhz();
+    li{
+      padding: 25/@r (750-(300/350*750))/2/@r;
+      img{
+        display: block;
+        .wh(300/350*750/@r, 300/@r);
+      }
+    }
+    li.on img{
+      box-shadow: 0 0 10/@r 6/@r @fe6986;
     }
   }
   &_name, &_label, &_condition, &_summary{

@@ -1,3 +1,10 @@
+$(".found_list img").on("click", function(){
+  var that = $(this).parent();
+  var index = that.index();
+  that.addClass("on").siblings().removeClass("on");
+  $(".found_img input").val(index);
+})
+
 $(".found_img input").on("change", function () {
   var that = $(this);
   // 获取这次上传的图片

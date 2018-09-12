@@ -305,8 +305,10 @@
         </a>
         <a class="group_join" href="${join_url}">加入群组</a>
         <div class="group_box">
-          <h3>群组介绍</h3>
-          <p>${circle_desc}</p>
+          {{if circle_desc !== ""}}
+            <h3>群组介绍</h3>
+            <p>${circle_desc}</p>
+          {{/if}}
           <h3>入群需知</h3>
           <p>${circle_notice}</p>
           <h3>本群组人员</h3>

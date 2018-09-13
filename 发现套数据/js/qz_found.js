@@ -1,34 +1,9 @@
-$(".found_list img").on("click", function(){
-  var that = $(this).parent();
-  var index = that.index();
-  that.addClass("on").siblings().removeClass("on");
-  $(".found_img input").val(index);
-})
+// 设置form表单提交地址
+$(".found").attr("action", URL_wap + "index.php?act=find_circle&op=create");
 
-$(".found_img input").on("change", function () {
-  var that = $(this);
-  // 获取这次上传的图片
-  var obj = that[0];
-  var file = obj.files[0];
-  var reader = new FileReader();
-  //读取文件过程方法  
-  // reader.onloadstart = function (e) {  
-  // 	console.log("开始读取....");  
-  // }  
-  // reader.onprogress = function (e) {  
-  // 	console.log("正在读取中....");  
-  // }  
-  reader.onabort = function (e) {
-    alert("中断读取....")
-  }
-  reader.onerror = function (e) {
-    alert("读取异常....")
-  }
-  reader.onload = function (e) {
-    console.log(21);
-    $(".found_img img").attr("src", e.target.result);
-  }
-  reader.readAsDataURL(file);
+$(".found_list").on("click", "img", function(){
+  var that = $(this).parent();
+  that.addClass("on").siblings().removeClass("on");
 })
 
 $(".found_submit input").on("click", function () {
@@ -37,11 +12,13 @@ $(".found_submit input").on("click", function () {
   // var label = $(".found_label input").val();
   // var condition = $(".found_condition input").val();
   // var summary = $(".found_condition textarea").val();
+  var index = $(".found_list .on").data("input");
+  $(".found_img input").val(index);
   if(name == ""){
     alert("群名称不能为空！");
     return false;
   }else{
     alert("请等待!");
-    return true;
+    return false;
   }
 })

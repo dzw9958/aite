@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-    <title>创建群组</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="cache-control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
-    <link rel="stylesheet" href="./css/Public.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/qz_found.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <title>创建群组</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="cache-control" content="no-siteapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+  <link rel="stylesheet" href="./css/Public.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/qz_found.css">
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.tmpl.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script>
+    $.ajax({
+      type: "get",
+      url: URL_wap + "index.php?act=find_circle&op=theme_img",
+      dataType: "json",
+      success: function (res) {
+        var data = res.datas;
+        $(".found_list").html($("#tmp1").tmpl(data));
+      }
+    });
+  </script>
 </head>
 <body>
 <!-- 顶部导航开始 -->
@@ -28,26 +44,12 @@
     <div class="found_window">
       <div class="found_box">
         <ul class="found_list">
-          <li class="on">
-            <img src="./img/bg.png" alt="">
-          </li>
-          <li>
-            <img src="./img/bg.png" alt="">
-          </li>
-          <li>
-            <img src="./img/bg.png" alt="">
-          </li>
-          <li>
-            <img src="./img/bg.png" alt="">
-          </li>
-          <li>
-            <img src="./img/bg.png" alt="">
-          </li>
+          
         </ul>
       </div>
     </div>
     <p>选择群组背景图片</p>
-    <input type="text" name="bg" value="0">
+    <input type="text" name="bg">
   </div>
   <div class="found_name">
     <input type="text" name="name" placeholder="填写群名称"/>
@@ -65,11 +67,17 @@
     <input type="submit" value="创建群组">
   </div>
 </form>
+<script type="text/x-jquery-tmpl" id="tmp1">
+  {{each(i, data) adv_list}}
+    <li data-input="${adv_pic_value}" 
+    {{if i==0}}
+      class="on"
+    {{/if}}>
+      <img src="${adv_pic}" title="${adv_title}">
+    </li>
+  {{/each}}
+</script>
 <!-- 创建表单结束 -->
-<script src="./js/rem.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/swiper.min.js"></script>
-<script src="./js/common.js"></script>
 <script src="./js/qz_found.js"></script>
 </body>
 </html>

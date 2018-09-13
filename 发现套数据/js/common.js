@@ -29,3 +29,13 @@ function switchImg() {
     autoplayDisableOnInteraction: false
   })
 }
+
+// 处理url函数返回对象
+var Obj = {};
+var queryObj = function () {
+  // var str = window.location.href;
+  var str = 'http://aitecc.com/mobile/index.php?act=find_circle&op=detail&id=1';
+  str.split("?")[1].split("&").forEach(item => {
+    Obj[item.split("=")[0]] = item.split("=")[1];
+  })
+}

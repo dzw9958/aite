@@ -12,9 +12,9 @@
   padding: 0 0.26666667rem;
   width: 9.46666667rem;
   height: 4.93333333rem;
-  background: url(../img/bg.png) no-repeat;
-  background-size: 10rem 4.66666667rem;
-  background-position: center top;
+  background-repeat: no-repeat !important;
+  background-size: 10rem 4.66666667rem !important;
+  background-position: center top !important;
   background-color: #ffffff;
 }
 .top_header {

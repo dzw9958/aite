@@ -15,6 +15,17 @@
   <script src="./js/jquery.tmpl.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script src="./js/common.js"></script>
+  <script>
+    $.ajax({
+      type: "get",
+      url: URL_wap + "index.php?act=find_cms_article&op=index",
+      dataType: "json",
+      success: function (res) {
+        var data = res.datas;
+        console.log(data);
+      }
+    });
+  </script>
 </head>
 <body>
 <!-- 顶部导航开始 -->

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+body {
+  background-color: #ffffff;
+}
+/*
+* 顶部导航
+*/
+.header {
+  position: relative;
+}
+.header input {
+  display: block;
+  padding-right: 0.86666667rem;
+  width: 5.46666667rem;
+  background: url(../img/icon/search.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+  background-position: 5.8rem center;
+  background-color: #ffe2e7;
+}
+/*
+* 列表按钮
+*/
+.list {
+  padding: 0.66666667rem 0.26666667rem;
+  overflow: hidden;
+}
+.list li {
+  float: left;
+  margin-left: 0.4rem;
+  width: 2.06666667rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.42666667rem;
+  color: #333333;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.list li:first-child {
+  margin-left: 0;
+}

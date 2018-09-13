@@ -19,6 +19,6 @@ $(".found_submit input").on("click", function () {
     return false;
   }else{
     alert("请等待!");
-    return false;
+    return true;
   }
 })

@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="./css/hd_index.css">
   <script src="./js/rem.js"></script>
   <script src="./js/jquery.min.js"></script>
-  <script src="./js/swiper.min.js"></script>
   <script src="./js/jquery.tmpl.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/common.js"></script>
   <script>
     $.ajax({
       type: "get",
-      url: "http://aitecc.com/mobile/index.php?act=find_activity&op=index",
+      url: URL_wap + "index.php?act=find_activity&op=index",
       dataType: "json",
       success: function (res) {
         var data = res.datas;
@@ -183,7 +184,6 @@
   </li>
 </ul>
 <!-- 底部导航结束 -->
-<script src="./js/common.js"></script>
 <script src="./js/hd_index.js"></script>
 </body>
 </html>

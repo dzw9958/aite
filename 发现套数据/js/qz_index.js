@@ -28,7 +28,7 @@ $(".type_submit").on("click", function(){
 var LoadingDataFn = function () {
   $.ajax({
     type: "get",
-    url: "http://aitecc.com/mobile/index.php?act=find_circle&op=index",
+    url: URL_wap + "index.php?act=find_circle&op=index",
     data: {
       "keyword": key,
       "orderType": type,

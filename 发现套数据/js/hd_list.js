@@ -51,7 +51,7 @@ $(".switch_list").on("click touchstart", "li", function (e) {
 var LoadingDataFn = function () {
   $.ajax({
     type: "get",
-    url: "http://aitecc.com/mobile/index.php?act=find_activity&op=list",
+    url: URL_wap + "index.php?act=find_activity&op=list",
     data: {
       "class_id": type,
       "last_time": time,

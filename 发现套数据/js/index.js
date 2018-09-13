@@ -4,7 +4,7 @@ $(".friend").on("click", ".friend_likes", function(){
   var theme_id = that.data("id");
   $.ajax({
     type: "get",
-    url: "http://aitecc.com/mobile/index.php?act=find_theme&op=Like&theme_id" + theme_id,
+    url: URL_wap + "index.php?act=find_theme&op=Like&theme_id" + theme_id,
     dataType: "json",
     success: function (response) {
       var data = response.datas;

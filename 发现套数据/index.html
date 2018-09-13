@@ -14,10 +14,11 @@
   <script src="./js/jquery.min.js"></script>
   <script src="./js/jquery.tmpl.js"></script>
   <script src="./js/swiper.min.js"></script>
+  <script src="./js/common.js"></script>
   <script>
     $.ajax({
       type: "get",
-      url: "http://aitecc.com/mobile/index.php?act=find&op=index",
+      url: URL_wap + "index.php?act=find&op=index",
       dataType: "json",
       success: function (res) {
         var data = res.datas;
@@ -328,7 +329,6 @@
   </li>
 </ul>
 <!-- 底部导航结束 -->
-<script src="./js/common.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

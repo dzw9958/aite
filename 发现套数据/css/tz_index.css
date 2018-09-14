@@ -199,6 +199,39 @@
   width: 2.66666667rem;
   height: 2rem;
 }
+.card_list li.card_first {
+  border-top: none;
+  overflow: hidden;
+}
+.card_list li.card_first h2 {
+  margin-bottom: 0.26666667rem;
+  height: auto;
+}
+.card_list li.card_first .card_img {
+  float: none;
+  margin-bottom: 0.26666667rem;
+  width: 9.8rem;
+  overflow: hidden;
+}
+.card_list li.card_first .card_img img {
+  float: left;
+  margin-right: 0.23333333rem;
+  width: 3rem;
+  height: 2.25rem;
+}
+.card_list li.card_first p {
+  width: 9.73333333rem;
+  line-height: 0.53333333rem;
+}
+.card_list li.card_first span.card_heat {
+  width: 0.97333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  color: #fe4a54;
+  text-align: center;
+  border-radius: 0.10666667rem;
+  border: 1px solid #fe4a54;
+}
 .card_btn {
   clear: both;
   padding: 0.53333333rem 0;

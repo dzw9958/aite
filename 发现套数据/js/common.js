@@ -18,7 +18,7 @@ function switchImg() {
 var Obj = {};
 var queryObj = function () {
   // var str = window.location.href;
-  var str = 'http://aitecc.com/wap/index.php?act=find_circle&op=join&id=1';
+  var str = 'http://aitecc.com/wap/index.php?act=find_circle&op=join&id=67';
   str.split("?")[1].split("&").forEach(item => {
     Obj[item.split("=")[0]] = item.split("=")[1];
   })

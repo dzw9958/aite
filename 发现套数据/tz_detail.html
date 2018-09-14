@@ -35,6 +35,16 @@
         $(".detail_box").html(data);
       }
     });
+    $.ajax({
+      type: "get",
+      url: URL_wap + "index.php?act=find_cms_article&op=Comment&article_id=" + Obj.id,
+      dataType: "json",
+      success: function (res) {
+        var data = res.datas;
+        console.log(data);
+        $(".com_list").html($("#tmp3").tmpl(data.comment_info));
+      }
+    });
   </script>
 </head>
 <body>
@@ -125,44 +135,29 @@
     <h1>全部评论</h1>
   </div>
   <ul class="com_list">
-    <li>
-      <a href="./pyq_index.html" class="com_name">
-        <img src="./img/head-one.png" alt="">
-        <h2>惺惺惜惺惺想寻寻寻</h2>
-      </a>
-      <p class="com_text">学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>
-      <p class="com_other">
-        <span class="com_time">9/5 12:03</span>
-        <span class="com_likes">0</span>
-      </p>
-    </li>
-    <li>
-      <a href="#" class="com_name">
-        <img src="./img/head-one.png" alt="">
-        <h2>惺惺惜惺惺想寻寻寻</h2>
-      </a>
-      <p class="com_text">学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>
-      <p class="com_other">
-        <span class="com_time">9/5 12:03</span>
-        <span class="com_likes on">1</span>
-      </p>
-    </li>
-    <li>
-      <a href="#" class="com_name">
-        <img src="./img/head-one.png" alt="">
-        <h2>惺惺惜惺惺想寻寻寻</h2>
-      </a>
-      <p class="com_text">学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>
-      <p class="com_other">
-        <span class="com_time">9/5 12:03</span>
-        <span class="com_likes">0</span>
-      </p>
-    </li>
+
   </ul>
   <div class="com_btn">
     <a>我来说说</a>
   </div>
 </div>
+<script type="text/x-jquery-tmpl" id="tmp3">
+  <li>
+    <a class="com_name">
+      <img src="${member_avatar}" alt="">
+      <h2>${member_name}</h2>
+    </a>
+    <p class="com_text">${comment_message}</p>
+    <p class="com_other">
+      <span class="com_time">${comment_time}</span>
+      <span class="com_likes
+      {{if is_exist == 1}}
+        on
+      {{/if}}
+      ">${comment_up}</span>
+    </p>
+  </li>
+</script>
 <!-- 评论结束 -->
 <!-- 评论窗口开始 -->
 <div class="comment">

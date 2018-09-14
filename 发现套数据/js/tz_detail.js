@@ -1,5 +1,5 @@
 // 点赞功能
-$(".com_likes").on("click", function(){
+$(".com_list").on("click", ".com_likes", function(){
   var that = $(this);
   if(that.hasClass("on")){
     return alert("你已经点过赞了！");

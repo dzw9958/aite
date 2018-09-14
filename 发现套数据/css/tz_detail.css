@@ -41,10 +41,10 @@
   background-position: left center;
 }
 .detail_box {
-  padding: 0.26666667rem 0;
+  padding: 0.26666667rem 0.26666667rem;
 }
 .detail_box p {
-  padding: 0.53333333rem 0.26666667rem;
+  padding: 0.26666667rem 0;
   line-height: 0.6rem;
   font-size: 0.42666667rem;
   color: #333333;
@@ -53,8 +53,8 @@
 .detail_box img {
   display: block;
   margin: auto;
-  padding: 0.26666667rem 0;
-  max-width: 10rem;
+  max-width: 9.46666667rem !important;
+  height: auto !important;
 }
 /*
 * 推荐阅读

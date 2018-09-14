@@ -11,7 +11,7 @@ $(".found_submit input").on("click", function () {
   var index = $(".found_list .on").data("input");
   $(".found_img input").val(index);
   if (name == "") {
-    alert("群名称不能为空！");
+    return alert("群名称不能为空！");
   } else {
     // alert("请等待!");
     ajaxSubmit();

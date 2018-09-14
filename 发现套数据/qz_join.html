@@ -23,18 +23,20 @@
 </div>
 <!-- 顶部导航结束 -->
 <!-- 加群表单开始 -->
-<form class="join header_top" action="#" method="post">
+<form class="join header_top" action="#" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="circle_id">
   <div class="join_reason">
     <h1>加群理由</h1>
     <textarea name="c_desc" placeholder="请确保自己符合加群条件，再说说加群理由"></textarea>
   </div>
   <div class="join_submit">
-    <input type="submit" value="确认">
+    <input type="button" value="确认">
   </div>
 </form>
 <!-- 加群表单结束 -->
 <script src="./js/rem.js"></script>
 <script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.form.min.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/qz_join.js"></script>

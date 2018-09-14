@@ -22,6 +22,7 @@
       dataType: "json",
       success: function (res) {
         var data = res.datas;
+        // console.log(data);
         $(".header_right").html($("#tmp1").tmpl(data));
         $(".swiper-wrapper").html($("#tmp2").tmpl(data.adv_list));
         var mySwiper = new switchImg();
@@ -30,7 +31,7 @@
         $(".friend").html($("#tmp5").tmpl(data));
         $(".group").html($("#tmp6").tmpl(data));
         $(".card").html($("#tmp7").tmpl(data));
-        $(".vip_banner").html($("#tmp8").tmpl(dataJons.adv_buttom));
+        $(".vip_banner").html($("#tmp8").tmpl(data.adv_buttom));
       }
     });
   </script>
@@ -155,11 +156,9 @@
         </div>
         {{if reply_info}}
           <ul class="friend_com">
-            {{each(iii, text) reply_info}}
-              <li>
-                <p><a>${text.member_name}</a>：${text.reply_content}</p>
-              </li>
-            {{/each}}
+            <li>
+              <p><a>${reply_info.member_name}</a>：${reply_info.reply_content}</p>
+            </li>
           </ul>
         {{/if}}
       </div>
@@ -238,8 +237,8 @@
               <img src="${article_image}" title="${article_title}">
               {{each(ii, img) article_image_all}}
                 {{if ii<2}}
-                  <img src="${img}" alt="${article_title}">
-                {{if}}
+                  <img src="${img}">
+                {{/if}}
               {{/each}}
             </div>
             <p>

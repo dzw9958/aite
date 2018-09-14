@@ -13,6 +13,7 @@
   <script src="./js/rem.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/jquery.tmpl.js"></script>
+  <script src="./js/jquery.form.min.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script src="./js/common.js"></script>
   <script>
@@ -39,7 +40,7 @@
 </div>
 <!-- 顶部导航结束 -->
 <!-- 创建表单开始 -->
-<form class="found header_top" action="#" method="post">
+<form class="found header_top" action="#" method="post" enctype="multipart/form-data">
   <div class="found_img">
     <div class="found_window">
       <div class="found_box">
@@ -49,7 +50,7 @@
       </div>
     </div>
     <p>选择群组背景图片</p>
-    <input type="text" name="circle_img">
+    <input type="text" name="circle_back_img">
   </div>
   <div class="found_name">
     <input type="text" name="circle_name" placeholder="填写群名称"/>
@@ -64,7 +65,7 @@
     <textarea name="c_desc" placeholder="填写加群介绍"></textarea>
   </div>
   <div class="found_submit">
-    <input type="submit" value="创建群组">
+    <input type="button" value="创建群组">
   </div>
 </form>
 <script type="text/x-jquery-tmpl" id="tmp1">

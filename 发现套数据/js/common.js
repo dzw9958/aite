@@ -23,3 +23,20 @@ var queryObj = function () {
     Obj[item.split("=")[0]] = item.split("=")[1];
   })
 }
+// 表单提交
+function ajaxSubmit() {
+  var options = {
+    "success": resultForm,
+    "resetForm": true,
+    "dataType": "json"
+  }
+  $("form").ajaxSubmit(options);
+  function resultForm(res){
+    var data = res.datas;
+    if(data.error){
+      return alert(data.error);
+    }else{
+      return alert(data.msg);
+    }
+  }
+}

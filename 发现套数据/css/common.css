@@ -163,9 +163,12 @@ body {
 .swiper-container .swiper-slide {
   float: left;
   width: 100%;
+  height: 5rem;
 }
 .swiper-container .swiper-slide a {
-  display: 5rem;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .swiper-container .swiper-slide a img {
   width: 100%;

@@ -50,6 +50,7 @@
   margin-bottom: 0.29333333rem;
   width: 1.06666667rem;
   height: 1.06666667rem;
+  border-radius: 50%;
 }
 .classify li p {
   line-height: 0.42666667rem;

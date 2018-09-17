@@ -37,3 +37,22 @@ $(".comment_submit").on("click", function(e){
     return alert("评论成功！");
   }
 })
+
+var commentAjax = function(){
+  $.ajax({
+    type: "get",
+    url: URL_wap + "index.php?act=find_cms_article&op=Addcomment&theme_id" + theme_id,
+    dataType: "json",
+    success: function (response) {
+      var data = response.datas;
+      if(data.error){
+        return alert(data.error);
+      }else if(data.status == 1){
+        that.addClass("on");
+      }else if(data.status == 2){
+        that.remove("on");
+      }
+      alert(data.msg);
+    }
+  });
+}

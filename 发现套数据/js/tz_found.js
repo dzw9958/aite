@@ -1,24 +1,23 @@
 var classify2;
-var classify = ['聚会', '运动', '展览', '交友会', '讨论会', '论坛', '交流', '其他'];
+var classify = [];
 
+$(".found").attr("action", URL_wap + "index.php?act=find_cms_article&op=create");
 
-// 使用插件选择
-var mobileSelect1 = new MobileSelect({
-  trigger: '#trigger1',
-  title: '分类',
-  wheels: [{
-    data: classify
-  }],
-  position: [0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
-  transitionEnd: function (indexArr, data) {
-    //console.log(data);
-  },
-  callback: function (indexArr, data) {
-    // console.log(data);
-    classify2 = data;
+// 获取分类
+$.ajax({
+  type: "get",
+  url: URL_wap + "index.php?act=find_cms_article&op=GetClass",
+  dataType: "json",
+  success: function (res) {
+    var data = res.datas.list;
+    for (var i = 0; i < data.length; i++) {
+      var str = "" + data[i].class_id;
+      classify[str] = data[i].class_name;
+    }
+    classify = classify.notempty();
+    var mobileSelect1 = mobileSelect();
   }
 });
-
 
 $(".found_btn input").on("change", function () {
   var that = $(this);
@@ -50,6 +49,8 @@ $(".found_btn input").on("change", function () {
     reader.readAsDataURL(file);
   }
 })
+
+// 提交事件
 $(".found_submit input").on("click", function () {
   var str = "";
   var title = $(".found_title input").val();
@@ -68,10 +69,43 @@ $(".found_submit input").on("click", function () {
     str += " 图片不能为空！";
   }
   if (str !== "") {
-    alert(str);
-    return false;
+    return alert(str);
   } else {
-    alert("请等待！");
-    return true;
+    // alert("请等待！");
+    ajaxSubmit();
   }
 })
+
+/**
+ * 扩展Array方法, 去除数组中空白数据
+ */
+Array.prototype.notempty = function() {
+  var arr = [];
+  this.map(function(val, index) {
+      //过滤规则为，不为空串、不为null、不为undefined，也可自行修改
+      if (val !== "" && val != undefined) {
+          arr.push(val);
+      }
+  });
+  return arr;
+}
+
+// 使用插件选择
+var mobileSelect = function () {
+  this.name = new MobileSelect({
+    trigger: '#trigger1',
+    title: '分类',
+    wheels: [{
+      data: classify
+    }],
+    position: [0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+    transitionEnd: function (indexArr, data) {
+      //console.log(data);
+    },
+    callback: function (indexArr, data) {
+      // console.log(data);
+      $(".found_classify input").val(data);
+      classify2 = data;
+    }
+  });
+}

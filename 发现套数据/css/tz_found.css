@@ -20,7 +20,7 @@ body {
 .found_classify,
 .found_title {
   padding: 0.26666667rem 0;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border-bottom: 0.02666667rem solid #cccccc;
   overflow: hidden;
@@ -59,7 +59,7 @@ body {
   width: 8.93333333rem;
   height: 3.86666667rem;
   line-height: 0.66666667rem;
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   color: #333333;
   border: none;
   background-color: #eeeeee;
@@ -113,7 +113,7 @@ body {
   width: 8.88rem;
   height: 1.17333333rem;
   line-height: 1.17333333rem;
-  font-size: 0.48rem;
+  font-size: 0.42666667rem;
   color: #ffffff;
   text-align: center;
   border-radius: 0.13333333rem;

@@ -25,6 +25,7 @@
         var data = res.datas;
         $(".detail_inf").html($("#tmp1").tmpl(data.article_info));
         $(".rec_list").html($("#tmp2").tmpl(data));
+        $(".vip_banner").html($("#tmp4").tmpl(data.article_info));
       }
     });
     $.ajax({
@@ -169,10 +170,15 @@
 <!-- 评论窗口结束 -->
 <!-- vip-banner开始 -->
 <div class="vip_banner">
-  <a href="#">
+  <a>
     <img src="./img/banner.png" alt="">
   </a>
 </div>
+<script type="text/x-jquery-tmpl" id="tmp4">
+  <a>
+    <img src="${article_image}" title="${article_title}">
+  </a>
+</script>
 <!-- vip-banner结束 -->
 <script src="./js/tz_detail.js"></script>
 </body>

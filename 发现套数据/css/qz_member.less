@@ -1,0 +1,54 @@
+@import "lib.less";
+body{
+  .bgc(@cf);
+}
+/*
+* 群组成员
+*/
+.member{
+  padding-left: 20/@r;
+  padding-right: 20/@r;
+  width: 710/@r;
+  overflow: hidden;
+  &_list{
+    padding: 108/@r 0 20/@r;
+    width: 725/@r;
+    li{
+      float: left;
+      margin-right: 15/@r;
+      margin-bottom: 20/@r;
+      a{
+        display: block;
+        img{
+          display: block;
+          margin: auto;
+          margin-bottom: 10/@r;
+          .squ(100/@r);
+          border-radius: 50%;
+        }
+        p{
+          width: 130/@r;
+          line-height: 32/@r;
+          .fc(@s2, @c3);
+          text-align: center;
+          .dan();
+        }
+      }
+    }
+  }
+}
+/*
+* 群组成员
+*/
+.join{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  a{
+    display: block;
+    .whh(750/@r, 96/@r);
+    .fc(@s1, @cf);
+    text-align: center;
+    .bgc(@fe6986);
+  }
+}

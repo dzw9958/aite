@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+body {
+  background-color: #ffffff;
+}
+/*
+* 群组成员
+*/
+.member {
+  padding-left: 0.26666667rem;
+  padding-right: 0.26666667rem;
+  width: 9.46666667rem;
+  overflow: hidden;
+}
+.member_list {
+  padding: 1.44rem 0 0.26666667rem;
+  width: 9.66666667rem;
+}
+.member_list li {
+  float: left;
+  margin-right: 0.2rem;
+  margin-bottom: 0.26666667rem;
+}
+.member_list li a {
+  display: block;
+}
+.member_list li a img {
+  display: block;
+  margin: auto;
+  margin-bottom: 0.13333333rem;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  border-radius: 50%;
+}
+.member_list li a p {
+  width: 1.73333333rem;
+  line-height: 0.42666667rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+  text-align: center;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*
+* 群组成员
+*/
+.join {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.join a {
+  display: block;
+  width: 10rem;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.42666667rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #fe6986;
+}

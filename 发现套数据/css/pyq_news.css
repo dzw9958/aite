@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+body {
+  background-color: #ffffff;
+}
+/*
+* 页面主体内容
+*/
+.main {
+  width: 10rem;
+}
+.main li {
+  margin-left: 1.66666667rem;
+  padding: 0.26666667rem;
+  padding-left: 0;
+  border-bottom: 0.01333333rem solid #eeeeee;
+}
+.main li a {
+  position: relative;
+  display: block;
+  width: 8.06666667rem;
+}
+.main li img {
+  position: absolute;
+  top: 0.26666667rem;
+  left: -1.4rem;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  border-radius: 50%;
+}
+.main li h2 {
+  float: left;
+  width: 4.86666667rem;
+  line-height: 0.58666667rem;
+  font-size: 0.42666667rem;
+  color: #333333;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main li span {
+  float: right;
+  width: 3.2rem;
+  line-height: 0.66666667rem;
+  font-size: 0.37333333rem;
+  color: #666666;
+  text-align: right;
+}
+.main li p {
+  clear: both;
+  line-height: 0.48rem;
+  font-size: 0.37333333rem;
+  color: #666666;
+}

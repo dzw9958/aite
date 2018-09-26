@@ -1,0 +1,145 @@
+@import "lib.less";
+/*
+* 活动信息
+*/
+.info{
+  margin-bottom: 20/@r;
+  width: 750/@r;
+  border-bottom: 2/@r solid @cc;
+  .bgc(@cf);
+  &_theme, &_classify, &_start,
+  &_end, &_cost, &_place, &_qq{
+    padding: 20/@r;
+    width: 710/@r;
+    .fc(@s2, @c3);
+    border-top: 2/@r solid @cc;
+    overflow: hidden;
+    span{
+      float: left;
+      width: 130/@r;
+      line-height: 50/@r;
+    }
+    input{
+      float: right;
+      width: 580/@r;
+      line-height: 50/@r;
+      text-align: right;
+      border: none;
+    }
+    p{
+      float: right;
+      padding-right: 40/@r;
+      width: 540/@r;
+      height: 50/@r;
+      line-height: 50/@r;
+      text-align: right;
+      background: url(../img/icon/arrow_right.png) no-repeat;
+      background-size: 40/@r 40/@r;
+      background-position: right center;
+    }
+  }
+}
+/*
+* 活动文字及图片
+*/
+.sketch{
+  margin-bottom: 20/@r;
+  padding: 20/@r;
+  width: 710/@r;
+  .bgc(@cf);
+  overflow: hidden;
+  &_text{
+    margin-bottom: 20/@r;
+    textarea{
+      padding: 20/@r;
+      width: 670/@r;
+      height: 290/@r;
+      line-height: 50/@r;
+      .fc(@s2, @c3);
+      border: none;
+      .bgc(@ce);
+    }
+  }
+  &_box{
+    margin-bottom: 20/@r;
+    overflow: hidden;
+    .sketch_img{
+      position: relative;
+      float: left;
+      .squ(121/@r);
+      border: 2/@r solid @c9;
+      img{
+        display: block;
+        .squ(100%);
+      }
+      input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .squ(121/@r);
+        border: none;
+        opacity: 0;
+      }
+    }
+    h2{
+      float: right;
+      margin-bottom: 5/@r;
+      .whh(550/@r, 40/@r);
+      .fc(@s1, @c3);
+    }
+    p{
+      float: right;
+      width: 550/@r;
+      line-height: 40/@r;
+      .fc(@s2, @c6);
+    }
+  }
+  &_show{
+    width: 720/@r;
+    overflow: hidden;
+    li{
+      float: left;
+      margin-right: 10/@r;
+      .whh(230/@r, 230/@r);
+      text-align: center;
+      img{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+/*
+* 文字说明
+*/
+.explain{
+  padding: 20/@r;
+  width: 710/@r;
+  .bgc(@cf);
+  h2{
+    line-height: 50/@r;
+    .fc(@s1, @c3);
+  }
+  p{
+    margin-top: 20/@r; 
+    line-height: 40/@r;
+    .fc(@s2, @c6);
+  }
+}
+/*
+* 底部发布
+*/
+.release{
+  margin-bottom: 20/@r;
+  input{
+    .whh(750/@r, 96/@r);
+    .fc(@s1, @cf);
+    text-align: center;
+    border: none;
+    .bgc(@fe6986);
+  }
+}

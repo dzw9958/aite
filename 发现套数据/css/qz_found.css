@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*
+* 通用常量
+*/
+/*
+* 通用函数
+*/
+body {
+  background-color: #ffffff;
+}
+/*
+* 创建表单
+*/
+.found {
+  width: 10rem;
+}
+.found_img {
+  padding-bottom: 0.66666667rem;
+  border-bottom: 0.02666667rem solid #eeeeee;
+}
+.found_img p {
+  line-height: 0.42666667rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+  text-align: center;
+}
+.found_img input {
+  display: none;
+}
+.found_window {
+  margin-bottom: 0.26666667rem;
+  width: 10rem;
+  height: 4.66666667rem;
+  overflow: hidden;
+}
+.found_box {
+  padding-bottom: 0.66666667rem;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+}
+.found_list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.found_list li {
+  padding: 0.33333333rem 0.71428571rem;
+}
+.found_list li img {
+  display: block;
+  width: 8.57142857rem;
+  height: 4rem;
+}
+.found_list li.on img {
+  box-shadow: 0 0 0.13333333rem 0.08rem #fe6986;
+}
+.found_name,
+.found_label,
+.found_condition,
+.found_summary {
+  padding: 0.26666667rem;
+  width: 9.46666667rem;
+  line-height: 0.66666667rem;
+  font-size: 0.37333333rem;
+  color: #333333;
+  border-bottom: 0.02666667rem solid #eeeeee;
+}
+.found_name input,
+.found_label input,
+.found_condition input,
+.found_summary input,
+.found_name textarea,
+.found_label textarea,
+.found_condition textarea,
+.found_summary textarea {
+  display: block;
+  width: 100%;
+  border: none;
+}
+.found_name textarea,
+.found_label textarea,
+.found_condition textarea,
+.found_summary textarea {
+  height: 2.66666667rem;
+}
+.found_submit {
+  padding-top: 0.86666667rem;
+}
+.found_submit input {
+  display: block;
+  margin: auto;
+  width: 8.88rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  font-size: 0.42666667rem;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.13333333rem;
+  border: none;
+  background-color: #fe6986;
+}

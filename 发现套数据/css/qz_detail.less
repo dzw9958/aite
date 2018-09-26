@@ -1,0 +1,160 @@
+@import "lib.less";
+/*
+* 顶部信息栏
+*/
+.top{
+  padding: 0 20/@r;
+  .wh(710/@r, 370/@r);
+  // background: url(../img/bg.png) no-repeat;
+  background-repeat: no-repeat !important;
+  .bgs(750/@r, 350/@r) !important;
+  background-position: center top !important;
+  .bgc(@cf);
+  &_header{
+    margin-bottom:  90/@r;
+    padding: 25/@r 0;
+    height: 55/@r;
+    .top_left{
+      display: block;
+      .squ(55/@r);
+      background: url(../img/icon/return.png) no-repeat;
+      .bgs(55/40*20/@r, 55/40*82/@r);
+      background-position: left top;
+    }
+  }
+  &_inf{
+    position: relative;
+    padding-left: 200/@r;
+    .wh(510/@r, 155/@r);
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      .squ(175/@r);
+      border-radius: 8/@r;
+    }
+    h1{
+      line-height: 50/@r;
+      .fc(@s1, @cf);
+      .dan();
+    }
+    p{
+      line-height: 50/@r;
+      .fc(@s2, @cf);
+      .duo(2);
+    }
+  }
+}
+/*
+* 群组信息
+*/
+.info{
+  margin-bottom: 20/@r;
+  padding: 0 20/@r;
+  width: 710/@r;
+  .bgc(@cf);
+  overflow: hidden;
+  &_member, &_notice, &_activity, &_label,
+  &_condition, &_owner, &_time{
+    position: relative;
+    padding: 30/@r 0 30/@r 110/@r;
+    width: 600/@r;
+    min-height: 122/@r;
+  }
+  &_icon{
+    position: absolute;
+    top: 30/@r;
+    left: 0;
+    img{
+      display: block;
+      margin-bottom: 15/@r;
+      .squ(75/@r);
+      border-radius: 50%;
+    }
+    p{
+      line-height: 32/@r;
+      .fc(@s2, @c6);
+      text-align: center;
+    }
+  }
+  &_text p{
+    line-height: 36/@r;
+    .fc(@s2, @c6);
+    .duo(6);
+  }
+  &_member{
+    .info_num{
+      display: block;
+      margin-bottom: 20/@r;
+      line-height: 40/@r;
+      .fc(@s2, @c3);
+      background: url(../img/icon/arrow_right.png) no-repeat;
+      background-size: 40/@r 40/@r;
+      background-position: right center;
+      span{
+        margin-left: 25/@r;
+      }
+    }
+    .info_img{
+      width: 515/@r;
+      height: 88/@r;
+      overflow: hidden;
+      a{
+        float: left;
+        margin-right: 15/@r;
+        .squ(88/@r);
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          display: block;
+          .squ(100%);
+        }
+      }
+    }
+  }
+  &_label{
+    padding-bottom: 20/@r;
+    width: 610/@r;
+    overflow: hidden;
+    span{
+      float: left;
+      margin-right: 10/@r;
+      margin-bottom: 10/@r;
+      padding: 10/@r 15/@r;
+      .fc(@s2, @c3);
+      .bgc(@ce);
+    }
+  }
+  &_owner{
+    a{
+      display: block;
+      .squ(110/@r);
+      border-radius: 50/@r;
+      overflow: hidden;
+      img{
+        display: block;
+        .squ(100%);
+      }
+    }
+  }
+  &_time &_text p{
+    line-height: 75/@r;
+  }
+}
+/*
+* 申请加入
+*/
+.join{
+  padding: 50/@r 0;
+  width: 100%;
+  .bgc(@cf);
+  &_btn{
+    display: block;
+    margin: auto;
+    .whh(255/@r, 70/@r);
+    .fc(@s1, @cf);
+    text-align: center;
+    border-radius: 20/@r;
+    .bgc(@ef434f);
+  }
+}
